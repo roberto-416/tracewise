@@ -3,27 +3,63 @@
   const db = await loadCity();
   topbar("map");
 
-  // Sidebar: lines list
+  // ---- Sidebar ----
   const sidebar = document.getElementById("lines");
   for (const ln of db.lines) {
     const op = db.byId.operators[ln.operator_id];
-    sidebar.append(el("li", {
-      onclick: () => location.href = `line.html?id=${ln.id}`
-    },
+    sidebar.append(el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
       el("span", { class: "swatch", style: `background:${ln.colour}` }),
       el("span", {}, ln.name_en),
       el("div", { class: "small", style: "padding-left:18px;margin-top:1px" }, op?.name_en || "")
     ));
   }
 
-  // Build node → line colour lookup (first line wins for interchanges)
+  // ---- Node → line colour ----
   const nodeLineColour = {};
   for (const s of db.stops) {
-    if (!nodeLineColour[s.station_node_id]) {
+    if (!nodeLineColour[s.station_node_id])
       nodeLineColour[s.station_node_id] = db.byId.lines[s.line_id]?.colour || "#888";
-    }
   }
 
+  // ---- Union-Find: cluster co-located stations ----
+  // Merge nodes connected by same-name-connected or through-run-boundary transfers
+  // into single map dots. Different-name-connected (e.g. Umeda / Nishi-Umeda) stay separate.
+  const parent = {};
+  for (const n of db.station_nodes) parent[n.id] = n.id;
+  function find(id) {
+    if (parent[id] !== id) parent[id] = find(parent[id]);
+    return parent[id];
+  }
+  for (const t of db.transfers) {
+    if ((t.category === "same-name-connected" || t.category === "through-run-boundary") && t.a !== t.b) {
+      const ra = find(t.a), rb = find(t.b);
+      if (ra !== rb) parent[ra] = rb;
+    }
+  }
+  const clusters = {};
+  for (const n of db.station_nodes) {
+    const root = find(n.id);
+    (clusters[root] ||= []).push(n);
+  }
+
+  // Build GeoJSON: one feature per cluster
+  const clusterFeatures = Object.values(clusters).map(members => {
+    const lat = members.reduce((s, n) => s + n.lat, 0) / members.length;
+    const lon = members.reduce((s, n) => s + n.lon, 0) / members.length;
+    const colours = [...new Set(members.map(n => nodeLineColour[n.id]).filter(Boolean))];
+    const isInterchange = members.length > 1;
+    // Interchange: neutral dark stroke. Single-line: that line's colour.
+    const strokeColour = isInterchange ? "#2a2a2a" : (colours[0] || "#888");
+    const name = [...new Set(members.map(n => n.name_en))].join(" / ");
+    const ja   = [...new Set(members.map(n => n.name_ja).filter(Boolean))].join("・");
+    return {
+      type: "Feature",
+      properties: { id: members[0].id, name, ja, strokeColour, isInterchange },
+      geometry: { type: "Point", coordinates: [lon, lat] }
+    };
+  });
+
+  // ---- Map ----
   const map = new maplibregl.Map({
     container: "map",
     style: {
@@ -49,13 +85,10 @@
     zoom: 11
   });
 
-  // Load pre-baked geometry (produced by ingest_overpass.py).
-  // Format: { "line-id": [[lon, lat], ...], ... }
+  // Load pre-baked geometry
   const lineGeom = await fetch(`data/${CITY}/line_geometry.json`)
-    .then(r => r.ok ? r.json() : {})
-    .catch(() => ({}));
+    .then(r => r.ok ? r.json() : {}).catch(() => ({}));
 
-  // Fallback: station-to-station straight lines
   function stationLineCoords(line) {
     return (db.stopsByLine[line.id] || []).map(s => {
       const n = db.byId.station_nodes[s.station_node_id];
@@ -64,83 +97,82 @@
   }
 
   map.on("load", () => {
-    // Line geometries
-    const lineFeatures = db.lines.map(ln => {
-      const coords = (lineGeom[ln.id]?.length >= 2) ? lineGeom[ln.id] : stationLineCoords(ln);
-      return {
-        type: "Feature",
-        properties: { id: ln.id, name: ln.name_en, colour: ln.colour },
-        geometry: { type: "LineString", coordinates: coords }
-      };
-    });
+    // Lines
+    const lineFeatures = db.lines.map(ln => ({
+      type: "Feature",
+      properties: { id: ln.id, name: ln.name_en, colour: ln.colour },
+      geometry: {
+        type: "LineString",
+        coordinates: (lineGeom[ln.id]?.length >= 2) ? lineGeom[ln.id] : stationLineCoords(ln)
+      }
+    }));
 
-    map.addSource("lines", {
-      type: "geojson",
-      data: { type: "FeatureCollection", features: lineFeatures }
-    });
-    map.addLayer({
-      id: "lines-shadow", type: "line", source: "lines",
-      paint: { "line-color": "#000", "line-width": 10, "line-opacity": 0.10, "line-blur": 4 }
-    });
+    map.addSource("lines", { type: "geojson", data: { type: "FeatureCollection", features: lineFeatures } });
     map.addLayer({
       id: "lines-bg", type: "line", source: "lines",
-      paint: { "line-color": "#fff", "line-width": 8 }
+      paint: { "line-color": "#fff", "line-width": 5, "line-opacity": 0.8 }
     });
     map.addLayer({
       id: "lines-fg", type: "line", source: "lines",
       layout: { "line-cap": "round", "line-join": "round" },
-      paint: { "line-color": ["get", "colour"], "line-width": 5 }
+      paint: { "line-color": ["get", "colour"], "line-width": 2.5 }
     });
 
-    // Station dots — coloured by line, not operator
-    const nodeFeatures = db.station_nodes.map(n => ({
-      type: "Feature",
-      properties: {
-        id: n.id,
-        name: n.name_en,
-        ja: n.name_ja || "",
-        colour: nodeLineColour[n.id] || "#888"
-      },
-      geometry: { type: "Point", coordinates: [n.lon, n.lat] }
-    }));
-    map.addSource("nodes", { type: "geojson", data: { type: "FeatureCollection", features: nodeFeatures } });
+    // Station clusters — single circle per interchange group
+    map.addSource("nodes", {
+      type: "geojson",
+      generateId: true,
+      data: { type: "FeatureCollection", features: clusterFeatures }
+    });
+
+    // Base radius: interchange = 5.5px, single = 4px; hover adds 2.5px
+    const baseR   = ["case", ["boolean", ["get", "isInterchange"], false], 5.5, 4.0];
+    const hoverR  = ["case", ["boolean", ["get", "isInterchange"], false], 8.0, 6.5];
+    const baseW   = ["case", ["boolean", ["get", "isInterchange"], false], 2.0, 1.5];
+    const hoverW  = 2.5;
+
     map.addLayer({
-      id: "nodes-bg", type: "circle", source: "nodes",
+      id: "nodes", type: "circle", source: "nodes",
       paint: {
-        "circle-radius": 7, "circle-color": "#fff",
-        "circle-stroke-color": ["get", "colour"], "circle-stroke-width": 2.5
+        "circle-radius": ["case", ["boolean", ["feature-state", "hover"], false], hoverR, baseR],
+        "circle-color": "#fff",
+        "circle-stroke-color": ["get", "strokeColour"],
+        "circle-stroke-width": ["case", ["boolean", ["feature-state", "hover"], false], hoverW, baseW]
       }
     });
-    map.addLayer({
-      id: "nodes-fg", type: "circle", source: "nodes",
-      paint: { "circle-radius": 3, "circle-color": ["get", "colour"] }
-    });
 
-    // Hover popup
+    // Hover via feature-state
+    let hoveredId = null;
     const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 10 });
-    map.on("mouseenter", "nodes-fg", e => {
-      const f = e.features[0];
+
+    map.on("mousemove", "nodes", e => {
+      if (!e.features.length) return;
+      if (hoveredId !== null) map.setFeatureState({ source: "nodes", id: hoveredId }, { hover: false });
+      hoveredId = e.features[0].id;
+      map.setFeatureState({ source: "nodes", id: hoveredId }, { hover: true });
       map.getCanvas().style.cursor = "pointer";
-      popup.setLngLat(f.geometry.coordinates)
-        .setHTML(`<div style="font:600 13px/1.4 sans-serif;color:#111">${f.properties.name}</div>
-                  <div style="font:12px/1.3 sans-serif;color:#555">${f.properties.ja}</div>`)
+      const f = e.features[0].properties;
+      popup.setLngLat(e.features[0].geometry.coordinates)
+        .setHTML(`<div style="font:600 13px/1.4 sans-serif;color:#111">${f.name}</div>
+                  <div style="font:12px/1.3 sans-serif;color:#555">${f.ja}</div>`)
         .addTo(map);
     });
-    map.on("mouseleave", "nodes-fg", () => { map.getCanvas().style.cursor = ""; popup.remove(); });
+    map.on("mouseleave", "nodes", () => {
+      if (hoveredId !== null) map.setFeatureState({ source: "nodes", id: hoveredId }, { hover: false });
+      hoveredId = null;
+      map.getCanvas().style.cursor = "";
+      popup.remove();
+    });
+
     map.on("mouseenter", "lines-fg", () => map.getCanvas().style.cursor = "pointer");
     map.on("mouseleave", "lines-fg", () => map.getCanvas().style.cursor = "");
 
-    // Single click handler: nodes always take priority over lines
+    // Click: nodes beat lines
     map.on("click", e => {
-      const nodeHits = map.queryRenderedFeatures(e.point, { layers: ["nodes-fg", "nodes-bg"] });
-      if (nodeHits.length) {
-        location.href = `station.html?id=${nodeHits[0].properties.id}`;
-        return;
-      }
-      const lineHits = map.queryRenderedFeatures(e.point, { layers: ["lines-fg"] });
-      if (lineHits.length) {
-        location.href = `line.html?id=${lineHits[0].properties.id}`;
-      }
+      const nh = map.queryRenderedFeatures(e.point, { layers: ["nodes"] });
+      if (nh.length) { location.href = `station.html?id=${nh[0].properties.id}`; return; }
+      const lh = map.queryRenderedFeatures(e.point, { layers: ["lines-fg"] });
+      if (lh.length) location.href = `line.html?id=${lh[0].properties.id}`;
     });
   });
 })();

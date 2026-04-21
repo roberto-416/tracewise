@@ -1030,5 +1030,7309 @@
     "operator_id": "osaka-metro",
     "lat": 34.6994836,
     "lon": 135.4956212
+  },
+  {
+    "id": "node-hankyu-0129",
+    "name_en": "Shukugawa",
+    "name_ja": "夙川",
+    "operator_id": "hankyu",
+    "lat": 34.7425939,
+    "lon": 135.3281084
+  },
+  {
+    "id": "node-hankyu-0130",
+    "name_en": "Rakusaiguchi",
+    "name_ja": "洛西口",
+    "operator_id": "hankyu",
+    "lat": 34.9638037,
+    "lon": 135.7032145
+  },
+  {
+    "id": "node-hankyu-0131",
+    "name_en": "Rakusaiguchi",
+    "name_ja": "洛西口",
+    "operator_id": "hankyu",
+    "lat": 34.9638028,
+    "lon": 135.7031706
+  },
+  {
+    "id": "node-hankyu-0132",
+    "name_en": "Umeda",
+    "name_ja": "阪急梅田駅1号線",
+    "operator_id": "hankyu",
+    "lat": 34.7054787,
+    "lon": 135.498788
+  },
+  {
+    "id": "node-hankyu-0133",
+    "name_en": "Umeda",
+    "name_ja": "阪急梅田駅2号線",
+    "operator_id": "hankyu",
+    "lat": 34.7054639,
+    "lon": 135.4987049
+  },
+  {
+    "id": "node-hankyu-0134",
+    "name_en": "Umeda",
+    "name_ja": "阪急梅田駅3号線",
+    "operator_id": "hankyu",
+    "lat": 34.705453,
+    "lon": 135.4986253
+  },
+  {
+    "id": "node-hankyu-0135",
+    "name_en": "Shojaku",
+    "name_ja": "正雀駅5号線",
+    "operator_id": "hankyu",
+    "lat": 34.7755593,
+    "lon": 135.5458531
+  },
+  {
+    "id": "node-hankyu-0136",
+    "name_en": "Shojaku",
+    "name_ja": "正雀駅4号線",
+    "operator_id": "hankyu",
+    "lat": 34.7756007,
+    "lon": 135.5457689
+  },
+  {
+    "id": "node-hankyu-0137",
+    "name_en": "Shojaku",
+    "name_ja": "正雀駅3号線",
+    "operator_id": "hankyu",
+    "lat": 34.7756161,
+    "lon": 135.5457359
+  },
+  {
+    "id": "node-hankyu-0138",
+    "name_en": "Shojaku",
+    "name_ja": "正雀駅2号線",
+    "operator_id": "hankyu",
+    "lat": 34.7756634,
+    "lon": 135.5456486
+  },
+  {
+    "id": "node-hankyu-0139",
+    "name_en": "Kyoto Kawaramachi",
+    "name_ja": "京都河原町",
+    "operator_id": "hankyu",
+    "lat": 35.0037119,
+    "lon": 135.76876
+  },
+  {
+    "id": "node-hankyu-0140",
+    "name_en": "Karasuma",
+    "name_ja": "烏丸",
+    "operator_id": "hankyu",
+    "lat": 35.0036825,
+    "lon": 135.7604172
+  },
+  {
+    "id": "node-hankyu-0141",
+    "name_en": "Omiya",
+    "name_ja": "大宮",
+    "operator_id": "hankyu",
+    "lat": 35.0036455,
+    "lon": 135.748589
+  },
+  {
+    "id": "node-hankyu-0142",
+    "name_en": "Saiin",
+    "name_ja": "西院",
+    "operator_id": "hankyu",
+    "lat": 35.0035661,
+    "lon": 135.7317797
+  },
+  {
+    "id": "node-hankyu-0143",
+    "name_en": "Katsura",
+    "name_ja": "桂",
+    "operator_id": "hankyu",
+    "lat": 34.9794666,
+    "lon": 135.7032603
+  },
+  {
+    "id": "node-hankyu-0144",
+    "name_en": "Rakusaiguchi",
+    "name_ja": "洛西口",
+    "operator_id": "hankyu",
+    "lat": 34.9638528,
+    "lon": 135.7031916
+  },
+  {
+    "id": "node-hankyu-0145",
+    "name_en": "Aikawa",
+    "name_ja": "相川",
+    "operator_id": "hankyu",
+    "lat": 34.7576432,
+    "lon": 135.5336121
+  },
+  {
+    "id": "node-hankyu-0146",
+    "name_en": "Kami-Shinjō",
+    "name_ja": "上新庄",
+    "operator_id": "hankyu",
+    "lat": 34.7502694,
+    "lon": 135.5330538
+  },
+  {
+    "id": "node-hankyu-0147",
+    "name_en": "Ōsaka Umeda",
+    "name_ja": "大阪梅田",
+    "operator_id": "hankyu",
+    "lat": 34.7052911,
+    "lon": 135.4983887
+  },
+  {
+    "id": "node-hankyu-0148",
+    "name_en": "",
+    "name_ja": "阪急西院北改札口",
+    "operator_id": "hankyu",
+    "lat": 35.0036844,
+    "lon": 135.7333176
+  },
+  {
+    "id": "node-hankyu-0149",
+    "name_en": "",
+    "name_ja": "西改札口",
+    "operator_id": "hankyu",
+    "lat": 35.0033909,
+    "lon": 135.7316764
+  },
+  {
+    "id": "node-hankyu-0150",
+    "name_en": "",
+    "name_ja": "十三駅5号線",
+    "operator_id": "hankyu",
+    "lat": 34.7205192,
+    "lon": 135.4825015
+  },
+  {
+    "id": "node-hankyu-0151",
+    "name_en": "Minamikata",
+    "name_ja": "南方",
+    "operator_id": "hankyu",
+    "lat": 34.7256812,
+    "lon": 135.4997074
+  },
+  {
+    "id": "node-hankyu-0152",
+    "name_en": "Sōzenji",
+    "name_ja": "崇禅寺",
+    "operator_id": "hankyu",
+    "lat": 34.7309883,
+    "lon": 135.5101434
+  },
+  {
+    "id": "node-hankyu-0153",
+    "name_en": "Awaji",
+    "name_ja": "淡路",
+    "operator_id": "hankyu",
+    "lat": 34.7393121,
+    "lon": 135.5167863
+  },
+  {
+    "id": "node-hankyu-0154",
+    "name_en": "Kami-Shinjō",
+    "name_ja": "上新庄",
+    "operator_id": "hankyu",
+    "lat": 34.7502726,
+    "lon": 135.533031
+  },
+  {
+    "id": "node-hankyu-0155",
+    "name_en": "Aikawa",
+    "name_ja": "相川",
+    "operator_id": "hankyu",
+    "lat": 34.7576476,
+    "lon": 135.5335879
+  },
+  {
+    "id": "node-hankyu-0156",
+    "name_en": "Settushi",
+    "name_ja": "摂津市",
+    "operator_id": "hankyu",
+    "lat": 34.7867623,
+    "lon": 135.553916
+  },
+  {
+    "id": "node-hankyu-0157",
+    "name_en": "Minamiibaraki",
+    "name_ja": "南茨木",
+    "operator_id": "hankyu",
+    "lat": 34.8023691,
+    "lon": 135.5651602
+  },
+  {
+    "id": "node-hankyu-0158",
+    "name_en": "Ibaraki-shi",
+    "name_ja": "茨木市",
+    "operator_id": "hankyu",
+    "lat": 34.8166732,
+    "lon": 135.5758207
+  },
+  {
+    "id": "node-hankyu-0159",
+    "name_en": "Sojiji",
+    "name_ja": "総持寺",
+    "operator_id": "hankyu",
+    "lat": 34.826993,
+    "lon": 135.5846049
+  },
+  {
+    "id": "node-hankyu-0160",
+    "name_en": "Tonda",
+    "name_ja": "富田",
+    "operator_id": "hankyu",
+    "lat": 34.8351595,
+    "lon": 135.592561
+  },
+  {
+    "id": "node-hankyu-0161",
+    "name_en": "Takatsuki-shi",
+    "name_ja": "高槻市",
+    "operator_id": "hankyu",
+    "lat": 34.8498766,
+    "lon": 135.6232542
+  },
+  {
+    "id": "node-hankyu-0162",
+    "name_en": "Kammaki",
+    "name_ja": "上牧",
+    "operator_id": "hankyu",
+    "lat": 34.8721068,
+    "lon": 135.661727
+  },
+  {
+    "id": "node-hankyu-0163",
+    "name_en": "Minase",
+    "name_ja": "水無瀬",
+    "operator_id": "hankyu",
+    "lat": 34.8775819,
+    "lon": 135.6675576
+  },
+  {
+    "id": "node-hankyu-0164",
+    "name_en": "Oyamazaki",
+    "name_ja": "大山崎",
+    "operator_id": "hankyu",
+    "lat": 34.891451,
+    "lon": 135.6816076
+  },
+  {
+    "id": "node-hankyu-0165",
+    "name_en": "Nishiyama-Tennōzan",
+    "name_ja": "西山天王山",
+    "operator_id": "hankyu",
+    "lat": 34.9131923,
+    "lon": 135.6885606
+  },
+  {
+    "id": "node-hankyu-0166",
+    "name_en": "Nagaokatenjin",
+    "name_ja": "長岡天神",
+    "operator_id": "hankyu",
+    "lat": 34.9253688,
+    "lon": 135.6926952
+  },
+  {
+    "id": "node-hankyu-0167",
+    "name_en": "Nishi-Mukō",
+    "name_ja": "西向日",
+    "operator_id": "hankyu",
+    "lat": 34.9405271,
+    "lon": 135.7031981
+  },
+  {
+    "id": "node-hankyu-0168",
+    "name_en": "Higashimuko",
+    "name_ja": "東向日",
+    "operator_id": "hankyu",
+    "lat": 34.9535838,
+    "lon": 135.7047115
+  },
+  {
+    "id": "node-hankyu-0169",
+    "name_en": "Katsura",
+    "name_ja": "桂",
+    "operator_id": "hankyu",
+    "lat": 34.9794256,
+    "lon": 135.7032517
+  },
+  {
+    "id": "node-hankyu-0170",
+    "name_en": "Nishikyogoku",
+    "name_ja": "西京極",
+    "operator_id": "hankyu",
+    "lat": 34.9924933,
+    "lon": 135.7183565
+  },
+  {
+    "id": "node-hankyu-0171",
+    "name_en": "Saiin",
+    "name_ja": "西院",
+    "operator_id": "hankyu",
+    "lat": 35.0035369,
+    "lon": 135.7317672
+  },
+  {
+    "id": "node-hankyu-0172",
+    "name_en": "Omiya",
+    "name_ja": "大宮",
+    "operator_id": "hankyu",
+    "lat": 35.0036646,
+    "lon": 135.7485884
+  },
+  {
+    "id": "node-hankyu-0173",
+    "name_en": "Karasuma",
+    "name_ja": "烏丸",
+    "operator_id": "hankyu",
+    "lat": 35.0037097,
+    "lon": 135.7604223
+  },
+  {
+    "id": "node-hankyu-0174",
+    "name_en": "Kyoto Kawaramachi",
+    "name_ja": "京都河原町",
+    "operator_id": "hankyu",
+    "lat": 35.0037193,
+    "lon": 135.7684127
+  },
+  {
+    "id": "node-hankyu-0175",
+    "name_en": "Imazu",
+    "name_ja": "今津駅1号線",
+    "operator_id": "hankyu",
+    "lat": 34.7320438,
+    "lon": 135.3515724
+  },
+  {
+    "id": "node-hankyu-0176",
+    "name_en": "Imazu",
+    "name_ja": "今津駅2号線",
+    "operator_id": "hankyu",
+    "lat": 34.7320026,
+    "lon": 135.351682
+  },
+  {
+    "id": "node-hankyu-0177",
+    "name_en": "Track 5",
+    "name_ja": "西宮北口駅5号線",
+    "operator_id": "hankyu",
+    "lat": 34.7452433,
+    "lon": 135.3572776
+  },
+  {
+    "id": "node-hankyu-0178",
+    "name_en": "Hanshin-Kokudō",
+    "name_ja": "阪神国道",
+    "operator_id": "hankyu",
+    "lat": 34.7373762,
+    "lon": 135.3548158
+  },
+  {
+    "id": "node-hankyu-0179",
+    "name_en": "Hanshin-Kokudō",
+    "name_ja": "阪神国道",
+    "operator_id": "hankyu",
+    "lat": 34.7373706,
+    "lon": 135.3548433
+  },
+  {
+    "id": "node-hankyu-0180",
+    "name_en": "",
+    "name_ja": "塚口駅3号線",
+    "operator_id": "hankyu",
+    "lat": 34.7531596,
+    "lon": 135.416547
+  },
+  {
+    "id": "node-hankyu-0181",
+    "name_en": "Inano",
+    "name_ja": "稲野",
+    "operator_id": "hankyu",
+    "lat": 34.7648669,
+    "lon": 135.4156345
+  },
+  {
+    "id": "node-hankyu-0182",
+    "name_en": "Shinitami",
+    "name_ja": "新伊丹",
+    "operator_id": "hankyu",
+    "lat": 34.772637,
+    "lon": 135.4155741
+  },
+  {
+    "id": "node-hankyu-0183",
+    "name_en": "Itami",
+    "name_ja": "伊丹",
+    "operator_id": "hankyu",
+    "lat": 34.7798693,
+    "lon": 135.4137851
+  },
+  {
+    "id": "node-hankyu-0184",
+    "name_en": "Tenjinbashisuji 6-chome",
+    "name_ja": "天神橋筋六丁目",
+    "operator_id": "hankyu",
+    "lat": 34.7098048,
+    "lon": 135.5106908
+  },
+  {
+    "id": "node-hankyu-0185",
+    "name_en": "Awaji",
+    "name_ja": "淡路",
+    "operator_id": "hankyu",
+    "lat": 34.7392635,
+    "lon": 135.5168754
+  },
+  {
+    "id": "node-hankyu-0186",
+    "name_en": "",
+    "name_ja": "下新庄",
+    "operator_id": "hankyu",
+    "lat": 34.7461593,
+    "lon": 135.5199395
+  },
+  {
+    "id": "node-hankyu-0187",
+    "name_en": "",
+    "name_ja": "吹田",
+    "operator_id": "hankyu",
+    "lat": 34.7596656,
+    "lon": 135.5173498
+  },
+  {
+    "id": "node-hankyu-0188",
+    "name_en": "",
+    "name_ja": "豊津",
+    "operator_id": "hankyu",
+    "lat": 34.7643384,
+    "lon": 135.5092368
+  },
+  {
+    "id": "node-hankyu-0189",
+    "name_en": "",
+    "name_ja": "関大前",
+    "operator_id": "hankyu",
+    "lat": 34.7710851,
+    "lon": 135.5060206
+  },
+  {
+    "id": "node-hankyu-0190",
+    "name_en": "Senriyama",
+    "name_ja": "千里山",
+    "operator_id": "hankyu",
+    "lat": 34.779208,
+    "lon": 135.5053904
+  },
+  {
+    "id": "node-hankyu-0191",
+    "name_en": "Minami-Senri",
+    "name_ja": "南千里",
+    "operator_id": "hankyu",
+    "lat": 34.7925267,
+    "lon": 135.5087278
+  },
+  {
+    "id": "node-hankyu-0192",
+    "name_en": "",
+    "name_ja": "北千里",
+    "operator_id": "hankyu",
+    "lat": 34.8200233,
+    "lon": 135.5110356
+  },
+  {
+    "id": "node-hankyu-0193",
+    "name_en": "Yamada",
+    "name_ja": "山田",
+    "operator_id": "hankyu",
+    "lat": 34.8038359,
+    "lon": 135.5155804
+  },
+  {
+    "id": "node-hankyu-0194",
+    "name_en": "",
+    "name_ja": "柴島",
+    "operator_id": "hankyu",
+    "lat": 34.7289338,
+    "lon": 135.5118769
+  },
+  {
+    "id": "node-hankyu-0195",
+    "name_en": "Takarazuka",
+    "name_ja": "宝塚",
+    "operator_id": "hankyu",
+    "lat": 34.810935,
+    "lon": 135.3399646
+  },
+  {
+    "id": "node-hankyu-0196",
+    "name_en": "Kiyoshikōjin",
+    "name_ja": "清荒神",
+    "operator_id": "hankyu",
+    "lat": 34.8112713,
+    "lon": 135.3533066
+  },
+  {
+    "id": "node-hankyu-0197",
+    "name_en": "Mefu-jinja",
+    "name_ja": "売布神社",
+    "operator_id": "hankyu",
+    "lat": 34.8157965,
+    "lon": 135.3613121
+  },
+  {
+    "id": "node-hankyu-0198",
+    "name_en": "Nakayama-kannon",
+    "name_ja": "中山観音",
+    "operator_id": "hankyu",
+    "lat": 34.8196258,
+    "lon": 135.3692557
+  },
+  {
+    "id": "node-hankyu-0199",
+    "name_en": "Yamamoto",
+    "name_ja": "山本",
+    "operator_id": "hankyu",
+    "lat": 34.8220592,
+    "lon": 135.3886159
+  },
+  {
+    "id": "node-hankyu-0200",
+    "name_en": "Hibarigaoka-Hanayashiki",
+    "name_ja": "雲雀丘花屋敷",
+    "operator_id": "hankyu",
+    "lat": 34.827222,
+    "lon": 135.4027243
+  },
+  {
+    "id": "node-hankyu-0201",
+    "name_en": "Kawanishi-Noseguchi",
+    "name_ja": "川西能勢口",
+    "operator_id": "hankyu",
+    "lat": 34.8276051,
+    "lon": 135.4128832
+  },
+  {
+    "id": "node-hankyu-0202",
+    "name_en": "Ikeda",
+    "name_ja": "池田",
+    "operator_id": "hankyu",
+    "lat": 34.8216202,
+    "lon": 135.4258415
+  },
+  {
+    "id": "node-hankyu-0203",
+    "name_en": "Ishibashi Handai-mae",
+    "name_ja": "石橋阪大前",
+    "operator_id": "hankyu",
+    "lat": 34.8087961,
+    "lon": 135.4453483
+  },
+  {
+    "id": "node-hankyu-0204",
+    "name_en": "Hotarugaike",
+    "name_ja": "蛍池",
+    "operator_id": "hankyu",
+    "lat": 34.7946221,
+    "lon": 135.4492826
+  },
+  {
+    "id": "node-hankyu-0205",
+    "name_en": "Toyonaka",
+    "name_ja": "豊中",
+    "operator_id": "hankyu",
+    "lat": 34.7877073,
+    "lon": 135.4611965
+  },
+  {
+    "id": "node-hankyu-0206",
+    "name_en": "Okamachi",
+    "name_ja": "岡町",
+    "operator_id": "hankyu",
+    "lat": 34.7791698,
+    "lon": 135.4650662
+  },
+  {
+    "id": "node-hankyu-0207",
+    "name_en": "Sone",
+    "name_ja": "曽根",
+    "operator_id": "hankyu",
+    "lat": 34.7714971,
+    "lon": 135.4676127
+  },
+  {
+    "id": "node-hankyu-0208",
+    "name_en": "Hattori-tenjin",
+    "name_ja": "服部天神",
+    "operator_id": "hankyu",
+    "lat": 34.7629874,
+    "lon": 135.4751158
+  },
+  {
+    "id": "node-hankyu-0209",
+    "name_en": "Shōnai",
+    "name_ja": "庄内",
+    "operator_id": "hankyu",
+    "lat": 34.7502563,
+    "lon": 135.4750628
+  },
+  {
+    "id": "node-hankyu-0210",
+    "name_en": "Mikuni",
+    "name_ja": "三国",
+    "operator_id": "hankyu",
+    "lat": 34.7375867,
+    "lon": 135.4830685
+  },
+  {
+    "id": "node-hankyu-0211",
+    "name_en": "",
+    "name_ja": "十三駅4号線",
+    "operator_id": "hankyu",
+    "lat": 34.720503,
+    "lon": 135.4823711
+  },
+  {
+    "id": "node-hankyu-0212",
+    "name_en": "",
+    "name_ja": "中津駅4号線",
+    "operator_id": "hankyu",
+    "lat": 34.7099866,
+    "lon": 135.4923876
+  },
+  {
+    "id": "node-hankyu-0213",
+    "name_en": "Umeda",
+    "name_ja": "阪急梅田駅5号線",
+    "operator_id": "hankyu",
+    "lat": 34.7054268,
+    "lon": 135.4984283
+  },
+  {
+    "id": "node-hankyu-0214",
+    "name_en": "Arashiyama",
+    "name_ja": "嵐山",
+    "operator_id": "hankyu",
+    "lat": 35.0100683,
+    "lon": 135.6819443
+  },
+  {
+    "id": "node-hankyu-0215",
+    "name_en": "Matsuo-taisha",
+    "name_ja": "松尾大社",
+    "operator_id": "hankyu",
+    "lat": 35.0003257,
+    "lon": 135.6882629
+  },
+  {
+    "id": "node-hankyu-0216",
+    "name_en": "Kamikatsura",
+    "name_ja": "上桂",
+    "operator_id": "hankyu",
+    "lat": 34.9903078,
+    "lon": 135.6959487
+  },
+  {
+    "id": "node-hankyu-0217",
+    "name_en": "Katsura",
+    "name_ja": "桂",
+    "operator_id": "hankyu",
+    "lat": 34.9789092,
+    "lon": 135.7030562
+  },
+  {
+    "id": "node-hankyu-0218",
+    "name_en": "Kobe Sannomiya",
+    "name_ja": "神戸三宮駅1番ホーム",
+    "operator_id": "hankyu",
+    "lat": 34.6931114,
+    "lon": 135.1929406
+  },
+  {
+    "id": "node-hankyu-0219",
+    "name_en": "Kobe Sannomiya",
+    "name_ja": "神戸三宮",
+    "operator_id": "hankyu",
+    "lat": 34.6931604,
+    "lon": 135.1928621
+  },
+  {
+    "id": "node-hankyu-0220",
+    "name_en": "Kobe Sannomiya",
+    "name_ja": "神戸三宮駅4番ホーム",
+    "operator_id": "hankyu",
+    "lat": 34.6932265,
+    "lon": 135.1927968
+  },
+  {
+    "id": "node-hankyu-0221",
+    "name_en": "Nishinomiya-Kitaguchi",
+    "name_ja": "西宮北口",
+    "operator_id": "hankyu",
+    "lat": 34.7459724,
+    "lon": 135.3568006
+  },
+  {
+    "id": "node-hankyu-0222",
+    "name_en": "",
+    "name_ja": "武庫之荘駅梅田方面のりば",
+    "operator_id": "hankyu",
+    "lat": 34.7515729,
+    "lon": 135.3933611
+  },
+  {
+    "id": "node-hankyu-0223",
+    "name_en": "",
+    "name_ja": "武庫之荘駅三宮方面のりば",
+    "operator_id": "hankyu",
+    "lat": 34.7515366,
+    "lon": 135.3933701
+  },
+  {
+    "id": "node-hankyu-0224",
+    "name_en": "",
+    "name_ja": "阪急梅田駅7号線",
+    "operator_id": "hankyu",
+    "lat": 34.7053926,
+    "lon": 135.4981982
+  },
+  {
+    "id": "node-hankyu-0225",
+    "name_en": "",
+    "name_ja": "阪急梅田駅8号線",
+    "operator_id": "hankyu",
+    "lat": 34.7053777,
+    "lon": 135.4980847
+  },
+  {
+    "id": "node-hankyu-0226",
+    "name_en": "Umeda",
+    "name_ja": "阪急梅田駅9号線",
+    "operator_id": "hankyu",
+    "lat": 34.7053631,
+    "lon": 135.4979778
+  },
+  {
+    "id": "node-hankyu-0227",
+    "name_en": "Shinkaichi",
+    "name_ja": "新開地",
+    "operator_id": "hankyu",
+    "lat": 34.6768263,
+    "lon": 135.1704872
+  },
+  {
+    "id": "node-hankyu-0228",
+    "name_en": "Kosoku Kobe",
+    "name_ja": "高速神戸",
+    "operator_id": "hankyu",
+    "lat": 34.6805147,
+    "lon": 135.1761661
+  },
+  {
+    "id": "node-hankyu-0229",
+    "name_en": "",
+    "name_ja": "花隈",
+    "operator_id": "hankyu",
+    "lat": 34.6861172,
+    "lon": 135.1811184
+  },
+  {
+    "id": "node-hankyu-0230",
+    "name_en": "Minoh",
+    "name_ja": "箕面",
+    "operator_id": "hankyu",
+    "lat": 34.8347747,
+    "lon": 135.4683017
+  },
+  {
+    "id": "node-hankyu-0231",
+    "name_en": "Makiochi",
+    "name_ja": "牧落",
+    "operator_id": "hankyu",
+    "lat": 34.8233741,
+    "lon": 135.4658903
+  },
+  {
+    "id": "node-hankyu-0232",
+    "name_en": "Sakurai",
+    "name_ja": "桜井",
+    "operator_id": "hankyu",
+    "lat": 34.816601,
+    "lon": 135.4605203
+  },
+  {
+    "id": "node-hankyu-0233",
+    "name_en": "Ishibashi Handai-mae",
+    "name_ja": "石橋阪大前",
+    "operator_id": "hankyu",
+    "lat": 34.808441,
+    "lon": 135.4462901
+  },
+  {
+    "id": "node-hanshin-0234",
+    "name_en": "Motomachi",
+    "name_ja": "元町",
+    "operator_id": "hanshin",
+    "lat": 34.6894723,
+    "lon": 135.1872871
+  },
+  {
+    "id": "node-hanshin-0235",
+    "name_en": "Kobe Sannomiya",
+    "name_ja": "神戸三宮",
+    "operator_id": "hanshin",
+    "lat": 34.6941085,
+    "lon": 135.1962979
+  },
+  {
+    "id": "node-hanshin-0236",
+    "name_en": "Kasuganomichi",
+    "name_ja": "春日野道",
+    "operator_id": "hanshin",
+    "lat": 34.6991795,
+    "lon": 135.2082449
+  },
+  {
+    "id": "node-hanshin-0237",
+    "name_en": "Iwaya",
+    "name_ja": "岩屋",
+    "operator_id": "hanshin",
+    "lat": 34.7042211,
+    "lon": 135.2182916
+  },
+  {
+    "id": "node-hanshin-0238",
+    "name_en": "Nishinada",
+    "name_ja": "西灘",
+    "operator_id": "hanshin",
+    "lat": 34.7058484,
+    "lon": 135.2246678
+  },
+  {
+    "id": "node-hanshin-0239",
+    "name_en": "Oishi",
+    "name_ja": "大石",
+    "operator_id": "hanshin",
+    "lat": 34.7078075,
+    "lon": 135.2309784
+  },
+  {
+    "id": "node-hanshin-0240",
+    "name_en": "Shinzaike",
+    "name_ja": "新在家",
+    "operator_id": "hanshin",
+    "lat": 34.7106794,
+    "lon": 135.2407074
+  },
+  {
+    "id": "node-hanshin-0241",
+    "name_en": "Ishiyagawa",
+    "name_ja": "石屋川",
+    "operator_id": "hanshin",
+    "lat": 34.7134156,
+    "lon": 135.2496771
+  },
+  {
+    "id": "node-hanshin-0242",
+    "name_en": "Mikage",
+    "name_ja": "御影",
+    "operator_id": "hanshin",
+    "lat": 34.7149889,
+    "lon": 135.2555863
+  },
+  {
+    "id": "node-hanshin-0243",
+    "name_en": "Sumiyoshi",
+    "name_ja": "住吉",
+    "operator_id": "hanshin",
+    "lat": 34.7129868,
+    "lon": 135.2615536
+  },
+  {
+    "id": "node-hanshin-0244",
+    "name_en": "Uozaki",
+    "name_ja": "魚崎",
+    "operator_id": "hanshin",
+    "lat": 34.7126354,
+    "lon": 135.2693339
+  },
+  {
+    "id": "node-hanshin-0245",
+    "name_en": "Ogi",
+    "name_ja": "青木",
+    "operator_id": "hanshin",
+    "lat": 34.7172739,
+    "lon": 135.280775
+  },
+  {
+    "id": "node-hanshin-0246",
+    "name_en": "Fukae",
+    "name_ja": "深江",
+    "operator_id": "hanshin",
+    "lat": 34.7227135,
+    "lon": 135.2915994
+  },
+  {
+    "id": "node-hanshin-0247",
+    "name_en": "Ashiya",
+    "name_ja": "芦屋",
+    "operator_id": "hanshin",
+    "lat": 34.7279413,
+    "lon": 135.3038324
+  },
+  {
+    "id": "node-hanshin-0248",
+    "name_en": "Uchide",
+    "name_ja": "打出",
+    "operator_id": "hanshin",
+    "lat": 34.7316466,
+    "lon": 135.3155055
+  },
+  {
+    "id": "node-hanshin-0249",
+    "name_en": "Koroen",
+    "name_ja": "香櫨園",
+    "operator_id": "hanshin",
+    "lat": 34.7343968,
+    "lon": 135.3290839
+  },
+  {
+    "id": "node-hanshin-0250",
+    "name_en": "Nishinomiya",
+    "name_ja": "西宮",
+    "operator_id": "hanshin",
+    "lat": 34.7369464,
+    "lon": 135.3384438
+  },
+  {
+    "id": "node-hanshin-0251",
+    "name_en": "Imazu",
+    "name_ja": "今津",
+    "operator_id": "hanshin",
+    "lat": 34.7308039,
+    "lon": 135.3517898
+  },
+  {
+    "id": "node-hanshin-0252",
+    "name_en": "Kusugawa",
+    "name_ja": "久寿川",
+    "operator_id": "hanshin",
+    "lat": 34.7270678,
+    "lon": 135.3568049
+  },
+  {
+    "id": "node-hanshin-0253",
+    "name_en": "Koshien",
+    "name_ja": "甲子園",
+    "operator_id": "hanshin",
+    "lat": 34.7240893,
+    "lon": 135.3629098
+  },
+  {
+    "id": "node-hanshin-0254",
+    "name_en": "Naruo / Mukogawajoshidai-Mae",
+    "name_ja": "鳴尾・武庫川女子大前",
+    "operator_id": "hanshin",
+    "lat": 34.7196016,
+    "lon": 135.3706525
+  },
+  {
+    "id": "node-hanshin-0255",
+    "name_en": "Mukogawa",
+    "name_ja": "武庫川",
+    "operator_id": "hanshin",
+    "lat": 34.718776,
+    "lon": 135.3820621
+  },
+  {
+    "id": "node-hanshin-0256",
+    "name_en": "Amagasaki-Centerpool-Mae",
+    "name_ja": "尼崎センタープール前",
+    "operator_id": "hanshin",
+    "lat": 34.7180103,
+    "lon": 135.3953422
+  },
+  {
+    "id": "node-hanshin-0257",
+    "name_en": "Deyashiki",
+    "name_ja": "出屋敷",
+    "operator_id": "hanshin",
+    "lat": 34.7181958,
+    "lon": 135.4045305
+  },
+  {
+    "id": "node-hanshin-0258",
+    "name_en": "Amagasaki",
+    "name_ja": "尼崎",
+    "operator_id": "hanshin",
+    "lat": 34.7187814,
+    "lon": 135.4174157
+  },
+  {
+    "id": "node-hanshin-0259",
+    "name_en": "Daimotsu",
+    "name_ja": "大物",
+    "operator_id": "hanshin",
+    "lat": 34.7165548,
+    "lon": 135.4260297
+  },
+  {
+    "id": "node-hanshin-0260",
+    "name_en": "",
+    "name_ja": "杭瀬",
+    "operator_id": "hanshin",
+    "lat": 34.7183287,
+    "lon": 135.4388239
+  },
+  {
+    "id": "node-hanshin-0261",
+    "name_en": "",
+    "name_ja": "千船",
+    "operator_id": "hanshin",
+    "lat": 34.7124246,
+    "lon": 135.4453186
+  },
+  {
+    "id": "node-hanshin-0262",
+    "name_en": "Himejima",
+    "name_ja": "姫島",
+    "operator_id": "hanshin",
+    "lat": 34.7043778,
+    "lon": 135.4583214
+  },
+  {
+    "id": "node-hanshin-0263",
+    "name_en": "",
+    "name_ja": "淀川",
+    "operator_id": "hanshin",
+    "lat": 34.6963435,
+    "lon": 135.4650684
+  },
+  {
+    "id": "node-hanshin-0264",
+    "name_en": "Noda",
+    "name_ja": "野田",
+    "operator_id": "hanshin",
+    "lat": 34.6945266,
+    "lon": 135.4761872
+  },
+  {
+    "id": "node-hanshin-0265",
+    "name_en": "",
+    "name_ja": "福島",
+    "operator_id": "hanshin",
+    "lat": 34.6960379,
+    "lon": 135.488222
+  },
+  {
+    "id": "node-hanshin-0266",
+    "name_en": "",
+    "name_ja": "大阪梅田",
+    "operator_id": "hanshin",
+    "lat": 34.7014952,
+    "lon": 135.4970875
+  },
+  {
+    "id": "node-hanshin-0267",
+    "name_en": "",
+    "name_ja": "大阪梅田",
+    "operator_id": "hanshin",
+    "lat": 34.7014387,
+    "lon": 135.49712
+  },
+  {
+    "id": "node-hanshin-0268",
+    "name_en": "",
+    "name_ja": "福島",
+    "operator_id": "hanshin",
+    "lat": 34.6960017,
+    "lon": 135.4882408
+  },
+  {
+    "id": "node-hanshin-0269",
+    "name_en": "Noda",
+    "name_ja": "野田",
+    "operator_id": "hanshin",
+    "lat": 34.6943059,
+    "lon": 135.4761742
+  },
+  {
+    "id": "node-hanshin-0270",
+    "name_en": "",
+    "name_ja": "淀川",
+    "operator_id": "hanshin",
+    "lat": 34.6963167,
+    "lon": 135.4650336
+  },
+  {
+    "id": "node-hanshin-0271",
+    "name_en": "Himejima",
+    "name_ja": "姫島",
+    "operator_id": "hanshin",
+    "lat": 34.7043586,
+    "lon": 135.458291
+  },
+  {
+    "id": "node-hanshin-0272",
+    "name_en": "",
+    "name_ja": "千船",
+    "operator_id": "hanshin",
+    "lat": 34.7122978,
+    "lon": 135.4450926
+  },
+  {
+    "id": "node-hanshin-0273",
+    "name_en": "",
+    "name_ja": "杭瀬",
+    "operator_id": "hanshin",
+    "lat": 34.7183069,
+    "lon": 135.4388062
+  },
+  {
+    "id": "node-hanshin-0274",
+    "name_en": "Daimotsu",
+    "name_ja": "大物",
+    "operator_id": "hanshin",
+    "lat": 34.7165191,
+    "lon": 135.4260196
+  },
+  {
+    "id": "node-hanshin-0275",
+    "name_en": "",
+    "name_ja": "尼崎",
+    "operator_id": "hanshin",
+    "lat": 34.7183844,
+    "lon": 135.417291
+  },
+  {
+    "id": "node-hanshin-0276",
+    "name_en": "Deyashiki",
+    "name_ja": "出屋敷",
+    "operator_id": "hanshin",
+    "lat": 34.7181589,
+    "lon": 135.4045346
+  },
+  {
+    "id": "node-hanshin-0277",
+    "name_en": "Amagasaki-Centerpool-Mae",
+    "name_ja": "尼崎センタープール前",
+    "operator_id": "hanshin",
+    "lat": 34.7177777,
+    "lon": 135.3954475
+  },
+  {
+    "id": "node-hanshin-0278",
+    "name_en": "Mukogawa",
+    "name_ja": "武庫川",
+    "operator_id": "hanshin",
+    "lat": 34.7187483,
+    "lon": 135.3820485
+  },
+  {
+    "id": "node-hanshin-0279",
+    "name_en": "Naruo / Mukogawajoshidai-Mae",
+    "name_ja": "鳴尾・武庫川女子大前",
+    "operator_id": "hanshin",
+    "lat": 34.7195575,
+    "lon": 135.370637
+  },
+  {
+    "id": "node-hanshin-0280",
+    "name_en": "Koshien",
+    "name_ja": "甲子園",
+    "operator_id": "hanshin",
+    "lat": 34.7239613,
+    "lon": 135.3628508
+  },
+  {
+    "id": "node-hanshin-0281",
+    "name_en": "Kusugawa",
+    "name_ja": "久寿川",
+    "operator_id": "hanshin",
+    "lat": 34.7270375,
+    "lon": 135.3567856
+  },
+  {
+    "id": "node-hanshin-0282",
+    "name_en": "Imazu",
+    "name_ja": "今津",
+    "operator_id": "hanshin",
+    "lat": 34.7307745,
+    "lon": 135.351769
+  },
+  {
+    "id": "node-hanshin-0283",
+    "name_en": "Nishinomiya",
+    "name_ja": "西宮",
+    "operator_id": "hanshin",
+    "lat": 34.7367546,
+    "lon": 135.3384116
+  },
+  {
+    "id": "node-hanshin-0284",
+    "name_en": "Koroen",
+    "name_ja": "香櫨園",
+    "operator_id": "hanshin",
+    "lat": 34.7343708,
+    "lon": 135.329091
+  },
+  {
+    "id": "node-hanshin-0285",
+    "name_en": "Uchide",
+    "name_ja": "打出",
+    "operator_id": "hanshin",
+    "lat": 34.731616,
+    "lon": 135.3155203
+  },
+  {
+    "id": "node-hanshin-0286",
+    "name_en": "Ashiya",
+    "name_ja": "芦屋",
+    "operator_id": "hanshin",
+    "lat": 34.7279121,
+    "lon": 135.303846
+  },
+  {
+    "id": "node-hanshin-0287",
+    "name_en": "Fukae",
+    "name_ja": "深江",
+    "operator_id": "hanshin",
+    "lat": 34.7226786,
+    "lon": 135.2916205
+  },
+  {
+    "id": "node-hanshin-0288",
+    "name_en": "Ogi",
+    "name_ja": "青木",
+    "operator_id": "hanshin",
+    "lat": 34.7170976,
+    "lon": 135.2809627
+  },
+  {
+    "id": "node-hanshin-0289",
+    "name_en": "Uozaki",
+    "name_ja": "魚崎",
+    "operator_id": "hanshin",
+    "lat": 34.7126052,
+    "lon": 135.2693352
+  },
+  {
+    "id": "node-hanshin-0290",
+    "name_en": "Sumiyoshi",
+    "name_ja": "住吉",
+    "operator_id": "hanshin",
+    "lat": 34.7129497,
+    "lon": 135.2615376
+  },
+  {
+    "id": "node-hanshin-0291",
+    "name_en": "Mikage",
+    "name_ja": "御影",
+    "operator_id": "hanshin",
+    "lat": 34.7148087,
+    "lon": 135.2555897
+  },
+  {
+    "id": "node-hanshin-0292",
+    "name_en": "Ishiyagawa",
+    "name_ja": "石屋川",
+    "operator_id": "hanshin",
+    "lat": 34.7133407,
+    "lon": 135.2497204
+  },
+  {
+    "id": "node-hanshin-0293",
+    "name_en": "Shinzaike",
+    "name_ja": "新在家",
+    "operator_id": "hanshin",
+    "lat": 34.7106497,
+    "lon": 135.2407148
+  },
+  {
+    "id": "node-hanshin-0294",
+    "name_en": "Oishi",
+    "name_ja": "大石",
+    "operator_id": "hanshin",
+    "lat": 34.7075992,
+    "lon": 135.2311085
+  },
+  {
+    "id": "node-hanshin-0295",
+    "name_en": "Nishinada",
+    "name_ja": "西灘",
+    "operator_id": "hanshin",
+    "lat": 34.7058269,
+    "lon": 135.2246779
+  },
+  {
+    "id": "node-hanshin-0296",
+    "name_en": "Iwaya",
+    "name_ja": "岩屋",
+    "operator_id": "hanshin",
+    "lat": 34.7041594,
+    "lon": 135.2183157
+  },
+  {
+    "id": "node-hanshin-0297",
+    "name_en": "Kasuganomichi",
+    "name_ja": "春日野道",
+    "operator_id": "hanshin",
+    "lat": 34.6991363,
+    "lon": 135.2082671
+  },
+  {
+    "id": "node-hanshin-0298",
+    "name_en": "Kobe Sannomiya",
+    "name_ja": "神戸三宮",
+    "operator_id": "hanshin",
+    "lat": 34.6939424,
+    "lon": 135.1963854
+  },
+  {
+    "id": "node-hanshin-0299",
+    "name_en": "Motomachi",
+    "name_ja": "元町",
+    "operator_id": "hanshin",
+    "lat": 34.6894052,
+    "lon": 135.1873149
+  },
+  {
+    "id": "node-hanshin-0300",
+    "name_en": "Mukogawa",
+    "name_ja": "武庫川",
+    "operator_id": "hanshin",
+    "lat": 34.7184852,
+    "lon": 135.3813898
+  },
+  {
+    "id": "node-hanshin-0301",
+    "name_en": "Higashi-Naruo",
+    "name_ja": "東鳴尾",
+    "operator_id": "hanshin",
+    "lat": 34.7126317,
+    "lon": 135.3791537
+  },
+  {
+    "id": "node-hanshin-0302",
+    "name_en": "Suzaki",
+    "name_ja": "洲先",
+    "operator_id": "hanshin",
+    "lat": 34.7090689,
+    "lon": 135.3780693
+  },
+  {
+    "id": "node-hanshin-0303",
+    "name_en": "Mukogawadanchi-Mae",
+    "name_ja": "武庫川団地前",
+    "operator_id": "hanshin",
+    "lat": 34.704991,
+    "lon": 135.3747065
+  },
+  {
+    "id": "node-hanshin-0304",
+    "name_en": "Higashi-Naruo",
+    "name_ja": "東鳴尾",
+    "operator_id": "hanshin",
+    "lat": 34.7126346,
+    "lon": 135.3790846
+  },
+  {
+    "id": "node-hanshin-0305",
+    "name_en": "Nishi Motomachi",
+    "name_ja": "西元町",
+    "operator_id": "hanshin",
+    "lat": 34.6843533,
+    "lon": 135.1800462
+  },
+  {
+    "id": "node-hanshin-0306",
+    "name_en": "Kosoku Kobe",
+    "name_ja": "高速神戸",
+    "operator_id": "hanshin",
+    "lat": 34.6794391,
+    "lon": 135.1749746
+  },
+  {
+    "id": "node-hanshin-0307",
+    "name_en": "Shinkaichi",
+    "name_ja": "新開地",
+    "operator_id": "hanshin",
+    "lat": 34.6758358,
+    "lon": 135.1692719
+  },
+  {
+    "id": "node-hanshin-0308",
+    "name_en": "Daikai",
+    "name_ja": "大開",
+    "operator_id": "hanshin",
+    "lat": 34.6711897,
+    "lon": 135.161767
+  },
+  {
+    "id": "node-hanshin-0309",
+    "name_en": "Kōsoku Nagata",
+    "name_ja": "高速長田",
+    "operator_id": "hanshin",
+    "lat": 34.6672852,
+    "lon": 135.151656
+  },
+  {
+    "id": "node-hanshin-0310",
+    "name_en": "Nishidai",
+    "name_ja": "西代",
+    "operator_id": "hanshin",
+    "lat": 34.662396,
+    "lon": 135.1441406
+  },
+  {
+    "id": "node-hanshin-0311",
+    "name_en": "Nishidai",
+    "name_ja": "西代",
+    "operator_id": "hanshin",
+    "lat": 34.6624319,
+    "lon": 135.1441112
+  },
+  {
+    "id": "node-hanshin-0312",
+    "name_en": "Kōsoku Nagata",
+    "name_ja": "高速長田",
+    "operator_id": "hanshin",
+    "lat": 34.6673219,
+    "lon": 135.1516336
+  },
+  {
+    "id": "node-hanshin-0313",
+    "name_en": "Daikai",
+    "name_ja": "大開",
+    "operator_id": "hanshin",
+    "lat": 34.67122,
+    "lon": 135.1617292
+  },
+  {
+    "id": "node-hanshin-0314",
+    "name_en": "Kosoku Kobe",
+    "name_ja": "高速神戸",
+    "operator_id": "hanshin",
+    "lat": 34.6804369,
+    "lon": 135.1762299
+  },
+  {
+    "id": "node-hanshin-0315",
+    "name_en": "Nishi Motomachi",
+    "name_ja": "西元町",
+    "operator_id": "hanshin",
+    "lat": 34.6843703,
+    "lon": 135.1799906
+  },
+  {
+    "id": "node-hanshin-0316",
+    "name_en": "Ōsaka Namba",
+    "name_ja": "大阪難波",
+    "operator_id": "hanshin",
+    "lat": 34.6671691,
+    "lon": 135.4977727
+  },
+  {
+    "id": "node-hanshin-0317",
+    "name_en": "Sakuragawa",
+    "name_ja": "桜川",
+    "operator_id": "hanshin",
+    "lat": 34.6681563,
+    "lon": 135.4903641
+  },
+  {
+    "id": "node-hanshin-0318",
+    "name_en": "Dome-Mae",
+    "name_ja": "ドーム前",
+    "operator_id": "hanshin",
+    "lat": 34.6704224,
+    "lon": 135.478374
+  },
+  {
+    "id": "node-hanshin-0319",
+    "name_en": "Kujō",
+    "name_ja": "九条",
+    "operator_id": "hanshin",
+    "lat": 34.6741164,
+    "lon": 135.4731142
+  },
+  {
+    "id": "node-hanshin-0320",
+    "name_en": "",
+    "name_ja": "西九条",
+    "operator_id": "hanshin",
+    "lat": 34.6827812,
+    "lon": 135.465734
+  },
+  {
+    "id": "node-hanshin-0321",
+    "name_en": "Chidoribashi",
+    "name_ja": "千鳥橋",
+    "operator_id": "hanshin",
+    "lat": 34.6854224,
+    "lon": 135.4580535
+  },
+  {
+    "id": "node-hanshin-0322",
+    "name_en": "Dempō",
+    "name_ja": "伝法",
+    "operator_id": "hanshin",
+    "lat": 34.6892297,
+    "lon": 135.4516208
+  },
+  {
+    "id": "node-hanshin-0323",
+    "name_en": "Fuku",
+    "name_ja": "福",
+    "operator_id": "hanshin",
+    "lat": 34.6996108,
+    "lon": 135.4429796
+  },
+  {
+    "id": "node-hanshin-0324",
+    "name_en": "Dekijima",
+    "name_ja": "出来島",
+    "operator_id": "hanshin",
+    "lat": 34.7071231,
+    "lon": 135.4368945
+  },
+  {
+    "id": "node-hanshin-0325",
+    "name_en": "Daimotsu",
+    "name_ja": "大物",
+    "operator_id": "hanshin",
+    "lat": 34.7163714,
+    "lon": 135.4259669
+  },
+  {
+    "id": "node-hanshin-0326",
+    "name_en": "",
+    "name_ja": "尼崎",
+    "operator_id": "hanshin",
+    "lat": 34.7185631,
+    "lon": 135.4173498
+  },
+  {
+    "id": "node-hanshin-0327",
+    "name_en": "",
+    "name_ja": "尼崎",
+    "operator_id": "hanshin",
+    "lat": 34.718599,
+    "lon": 135.4173598
+  },
+  {
+    "id": "node-hanshin-0328",
+    "name_en": "Daimotsu",
+    "name_ja": "大物",
+    "operator_id": "hanshin",
+    "lat": 34.7164012,
+    "lon": 135.4259754
+  },
+  {
+    "id": "node-hanshin-0329",
+    "name_en": "Dekijima",
+    "name_ja": "出来島",
+    "operator_id": "hanshin",
+    "lat": 34.7071368,
+    "lon": 135.4369286
+  },
+  {
+    "id": "node-hanshin-0330",
+    "name_en": "Fuku",
+    "name_ja": "福",
+    "operator_id": "hanshin",
+    "lat": 34.6996294,
+    "lon": 135.4430143
+  },
+  {
+    "id": "node-hanshin-0331",
+    "name_en": "Dempō",
+    "name_ja": "伝法",
+    "operator_id": "hanshin",
+    "lat": 34.6892452,
+    "lon": 135.4516611
+  },
+  {
+    "id": "node-hanshin-0332",
+    "name_en": "Chidoribashi",
+    "name_ja": "千鳥橋",
+    "operator_id": "hanshin",
+    "lat": 34.685448,
+    "lon": 135.4580526
+  },
+  {
+    "id": "node-hanshin-0333",
+    "name_en": "",
+    "name_ja": "西九条",
+    "operator_id": "hanshin",
+    "lat": 34.6827929,
+    "lon": 135.4657629
+  },
+  {
+    "id": "node-hanshin-0334",
+    "name_en": "Kujō",
+    "name_ja": "九条",
+    "operator_id": "hanshin",
+    "lat": 34.6741706,
+    "lon": 135.4731706
+  },
+  {
+    "id": "node-hanshin-0335",
+    "name_en": "Dome-Mae",
+    "name_ja": "ドーム前",
+    "operator_id": "hanshin",
+    "lat": 34.6704611,
+    "lon": 135.4784834
+  },
+  {
+    "id": "node-hanshin-0336",
+    "name_en": "Sakuragawa",
+    "name_ja": "桜川",
+    "operator_id": "hanshin",
+    "lat": 34.6682402,
+    "lon": 135.4903962
+  },
+  {
+    "id": "node-hanshin-0337",
+    "name_en": "Ōsaka Namba",
+    "name_ja": "大阪難波",
+    "operator_id": "hanshin",
+    "lat": 34.6672485,
+    "lon": 135.4977872
+  },
+  {
+    "id": "node-keihan-0338",
+    "name_en": "Chushojima",
+    "name_ja": "中書島",
+    "operator_id": "keihan",
+    "lat": 34.926668,
+    "lon": 135.7601793
+  },
+  {
+    "id": "node-keihan-0339",
+    "name_en": "Kangetsukyo",
+    "name_ja": "観月橋",
+    "operator_id": "keihan",
+    "lat": 34.9281422,
+    "lon": 135.7687726
+  },
+  {
+    "id": "node-keihan-0340",
+    "name_en": "Momoyama-minamiguchi",
+    "name_ja": "桃山南口",
+    "operator_id": "keihan",
+    "lat": 34.9310624,
+    "lon": 135.7837206
+  },
+  {
+    "id": "node-keihan-0341",
+    "name_en": "Rokujizo",
+    "name_ja": "六地蔵",
+    "operator_id": "keihan",
+    "lat": 34.9319685,
+    "lon": 135.7933456
+  },
+  {
+    "id": "node-keihan-0342",
+    "name_en": "Kowata",
+    "name_ja": "木幡",
+    "operator_id": "keihan",
+    "lat": 34.9260054,
+    "lon": 135.7960876
+  },
+  {
+    "id": "node-keihan-0343",
+    "name_en": "Obaku",
+    "name_ja": "黄檗",
+    "operator_id": "keihan",
+    "lat": 34.9141986,
+    "lon": 135.8028741
+  },
+  {
+    "id": "node-keihan-0344",
+    "name_en": "Mimurodo",
+    "name_ja": "三室戸",
+    "operator_id": "keihan",
+    "lat": 34.8988732,
+    "lon": 135.8063956
+  },
+  {
+    "id": "node-keihan-0345",
+    "name_en": "Uji",
+    "name_ja": "宇治",
+    "operator_id": "keihan",
+    "lat": 34.8950117,
+    "lon": 135.8063772
+  },
+  {
+    "id": "node-keihan-0346",
+    "name_en": "Uji",
+    "name_ja": "宇治",
+    "operator_id": "keihan",
+    "lat": 34.8950437,
+    "lon": 135.8062099
+  },
+  {
+    "id": "node-keihan-0347",
+    "name_en": "Mimurodo",
+    "name_ja": "三室戸",
+    "operator_id": "keihan",
+    "lat": 34.8988506,
+    "lon": 135.8062878
+  },
+  {
+    "id": "node-keihan-0348",
+    "name_en": "Obaku",
+    "name_ja": "黄檗",
+    "operator_id": "keihan",
+    "lat": 34.914175,
+    "lon": 135.8028439
+  },
+  {
+    "id": "node-keihan-0349",
+    "name_en": "Kowata",
+    "name_ja": "木幡",
+    "operator_id": "keihan",
+    "lat": 34.9260084,
+    "lon": 135.7960511
+  },
+  {
+    "id": "node-keihan-0350",
+    "name_en": "Rokujizo",
+    "name_ja": "六地蔵",
+    "operator_id": "keihan",
+    "lat": 34.9319366,
+    "lon": 135.793334
+  },
+  {
+    "id": "node-keihan-0351",
+    "name_en": "Momoyama-minamiguchi",
+    "name_ja": "桃山南口",
+    "operator_id": "keihan",
+    "lat": 34.9310346,
+    "lon": 135.7837275
+  },
+  {
+    "id": "node-keihan-0352",
+    "name_en": "Kangetsukyo",
+    "name_ja": "観月橋",
+    "operator_id": "keihan",
+    "lat": 34.9281115,
+    "lon": 135.7687867
+  },
+  {
+    "id": "node-keihan-0353",
+    "name_en": "Chushojima",
+    "name_ja": "中書島",
+    "operator_id": "keihan",
+    "lat": 34.9266346,
+    "lon": 135.7601889
+  },
+  {
+    "id": "node-keihan-0354",
+    "name_en": "Demachiyanagi",
+    "name_ja": "出町柳",
+    "operator_id": "keihan",
+    "lat": 35.0302612,
+    "lon": 135.7727036
+  },
+  {
+    "id": "node-keihan-0355",
+    "name_en": "Jingu-marutamachi",
+    "name_ja": "神宮丸太町",
+    "operator_id": "keihan",
+    "lat": 35.0186658,
+    "lon": 135.7722764
+  },
+  {
+    "id": "node-keihan-0356",
+    "name_en": "Sanjo",
+    "name_ja": "三条",
+    "operator_id": "keihan",
+    "lat": 35.0090176,
+    "lon": 135.7723609
+  },
+  {
+    "id": "node-keihan-0357",
+    "name_en": "Gion-shijo",
+    "name_ja": "祇園四条",
+    "operator_id": "keihan",
+    "lat": 35.003226,
+    "lon": 135.7719569
+  },
+  {
+    "id": "node-keihan-0358",
+    "name_en": "Kiyomizu-gojo",
+    "name_ja": "清水五条",
+    "operator_id": "keihan",
+    "lat": 34.9965042,
+    "lon": 135.7686916
+  },
+  {
+    "id": "node-keihan-0359",
+    "name_en": "Shichijō",
+    "name_ja": "七条",
+    "operator_id": "keihan",
+    "lat": 34.9900936,
+    "lon": 135.7676657
+  },
+  {
+    "id": "node-keihan-0360",
+    "name_en": "Tofukuji",
+    "name_ja": "東福寺",
+    "operator_id": "keihan",
+    "lat": 34.9812648,
+    "lon": 135.7700401
+  },
+  {
+    "id": "node-keihan-0361",
+    "name_en": "Tobakaido",
+    "name_ja": "鳥羽街道",
+    "operator_id": "keihan",
+    "lat": 34.9734924,
+    "lon": 135.7700534
+  },
+  {
+    "id": "node-keihan-0362",
+    "name_en": "Fushimi-Inari",
+    "name_ja": "伏見稲荷",
+    "operator_id": "keihan",
+    "lat": 34.9688952,
+    "lon": 135.7692763
+  },
+  {
+    "id": "node-keihan-0363",
+    "name_en": "Ryukokudai-mae-Fukakusa",
+    "name_ja": "龍谷大前深草",
+    "operator_id": "keihan",
+    "lat": 34.9643399,
+    "lon": 135.7701198
+  },
+  {
+    "id": "node-keihan-0364",
+    "name_en": "Fujinomori",
+    "name_ja": "藤森",
+    "operator_id": "keihan",
+    "lat": 34.9568116,
+    "lon": 135.7702305
+  },
+  {
+    "id": "node-keihan-0365",
+    "name_en": "Sumizome",
+    "name_ja": "墨染",
+    "operator_id": "keihan",
+    "lat": 34.948029,
+    "lon": 135.7690431
+  },
+  {
+    "id": "node-keihan-0366",
+    "name_en": "Tambabashi",
+    "name_ja": "丹波橋",
+    "operator_id": "keihan",
+    "lat": 34.9389056,
+    "lon": 135.76542
+  },
+  {
+    "id": "node-keihan-0367",
+    "name_en": "Fushimi-momoyama",
+    "name_ja": "伏見桃山",
+    "operator_id": "keihan",
+    "lat": 34.9328048,
+    "lon": 135.7643884
+  },
+  {
+    "id": "node-keihan-0368",
+    "name_en": "Chushojima",
+    "name_ja": "中書島",
+    "operator_id": "keihan",
+    "lat": 34.926777,
+    "lon": 135.760152
+  },
+  {
+    "id": "node-keihan-0369",
+    "name_en": "Yodo",
+    "name_ja": "淀",
+    "operator_id": "keihan",
+    "lat": 34.9065031,
+    "lon": 135.7211891
+  },
+  {
+    "id": "node-keihan-0370",
+    "name_en": "",
+    "name_ja": "石清水八幡宮",
+    "operator_id": "keihan",
+    "lat": 34.8846192,
+    "lon": 135.7000611
+  },
+  {
+    "id": "node-keihan-0371",
+    "name_en": "Hashimoto",
+    "name_ja": "橋本",
+    "operator_id": "keihan",
+    "lat": 34.8817402,
+    "lon": 135.684059
+  },
+  {
+    "id": "node-keihan-0372",
+    "name_en": "Kuzuha",
+    "name_ja": "樟葉",
+    "operator_id": "keihan",
+    "lat": 34.8619121,
+    "lon": 135.6755048
+  },
+  {
+    "id": "node-keihan-0373",
+    "name_en": "",
+    "name_ja": "牧野",
+    "operator_id": "keihan",
+    "lat": 34.843692,
+    "lon": 135.6654786
+  },
+  {
+    "id": "node-keihan-0374",
+    "name_en": "",
+    "name_ja": "御殿山",
+    "operator_id": "keihan",
+    "lat": 34.8291613,
+    "lon": 135.6539619
+  },
+  {
+    "id": "node-keihan-0375",
+    "name_en": "Hirakatashi",
+    "name_ja": "枚方市",
+    "operator_id": "keihan",
+    "lat": 34.8161122,
+    "lon": 135.6487593
+  },
+  {
+    "id": "node-keihan-0376",
+    "name_en": "Hirakata-koen",
+    "name_ja": "枚方公園",
+    "operator_id": "keihan",
+    "lat": 34.8113927,
+    "lon": 135.6393945
+  },
+  {
+    "id": "node-keihan-0377",
+    "name_en": "Kozenji",
+    "name_ja": "光善寺",
+    "operator_id": "keihan",
+    "lat": 34.7976613,
+    "lon": 135.6301099
+  },
+  {
+    "id": "node-keihan-0378",
+    "name_en": "Korien",
+    "name_ja": "香里園",
+    "operator_id": "keihan",
+    "lat": 34.7847423,
+    "lon": 135.6310058
+  },
+  {
+    "id": "node-keihan-0379",
+    "name_en": "Neyagawashi",
+    "name_ja": "寝屋川市",
+    "operator_id": "keihan",
+    "lat": 34.7640462,
+    "lon": 135.6208603
+  },
+  {
+    "id": "node-keihan-0380",
+    "name_en": "Kayashima",
+    "name_ja": "萱島",
+    "operator_id": "keihan",
+    "lat": 34.7472023,
+    "lon": 135.6109291
+  },
+  {
+    "id": "node-keihan-0381",
+    "name_en": "Owada",
+    "name_ja": "大和田",
+    "operator_id": "keihan",
+    "lat": 34.7429561,
+    "lon": 135.6028901
+  },
+  {
+    "id": "node-keihan-0382",
+    "name_en": "Furukawabashi",
+    "name_ja": "古川橋",
+    "operator_id": "keihan",
+    "lat": 34.7398289,
+    "lon": 135.5912997
+  },
+  {
+    "id": "node-keihan-0383",
+    "name_en": "Kadomashi",
+    "name_ja": "門真市",
+    "operator_id": "keihan",
+    "lat": 34.7380055,
+    "lon": 135.5829238
+  },
+  {
+    "id": "node-keihan-0384",
+    "name_en": "Nishisanso",
+    "name_ja": "西三荘",
+    "operator_id": "keihan",
+    "lat": 34.7373475,
+    "lon": 135.5753566
+  },
+  {
+    "id": "node-keihan-0385",
+    "name_en": "Moriguchishi",
+    "name_ja": "守口市",
+    "operator_id": "keihan",
+    "lat": 34.7354051,
+    "lon": 135.5655304
+  },
+  {
+    "id": "node-keihan-0386",
+    "name_en": "Doi",
+    "name_ja": "土居",
+    "operator_id": "keihan",
+    "lat": 34.7306857,
+    "lon": 135.5599675
+  },
+  {
+    "id": "node-keihan-0387",
+    "name_en": "Takii",
+    "name_ja": "滝井",
+    "operator_id": "keihan",
+    "lat": 34.7275823,
+    "lon": 135.5573262
+  },
+  {
+    "id": "node-keihan-0388",
+    "name_en": "Sembayashi",
+    "name_ja": "千林",
+    "operator_id": "keihan",
+    "lat": 34.7242928,
+    "lon": 135.5550709
+  },
+  {
+    "id": "node-keihan-0389",
+    "name_en": "Morishoji",
+    "name_ja": "森小路",
+    "operator_id": "keihan",
+    "lat": 34.7193375,
+    "lon": 135.5517304
+  },
+  {
+    "id": "node-keihan-0390",
+    "name_en": "Sekime",
+    "name_ja": "関目",
+    "operator_id": "keihan",
+    "lat": 34.7126457,
+    "lon": 135.5471111
+  },
+  {
+    "id": "node-keihan-0391",
+    "name_en": "Noe",
+    "name_ja": "野江",
+    "operator_id": "keihan",
+    "lat": 34.707102,
+    "lon": 135.543315
+  },
+  {
+    "id": "node-keihan-0392",
+    "name_en": "Kyobashi",
+    "name_ja": "京橋",
+    "operator_id": "keihan",
+    "lat": 34.6968741,
+    "lon": 135.5322301
+  },
+  {
+    "id": "node-keihan-0393",
+    "name_en": "Temmabashi",
+    "name_ja": "天満橋",
+    "operator_id": "keihan",
+    "lat": 34.690252,
+    "lon": 135.5164339
+  },
+  {
+    "id": "node-keihan-0394",
+    "name_en": "Kitahama",
+    "name_ja": "北浜",
+    "operator_id": "keihan",
+    "lat": 34.691486,
+    "lon": 135.5075732
+  },
+  {
+    "id": "node-keihan-0395",
+    "name_en": "Yodoyabashi",
+    "name_ja": "淀屋橋",
+    "operator_id": "keihan",
+    "lat": 34.6924784,
+    "lon": 135.5012859
+  },
+  {
+    "id": "node-keihan-0396",
+    "name_en": "Temmabashi",
+    "name_ja": "天満橋",
+    "operator_id": "keihan",
+    "lat": 34.6903711,
+    "lon": 135.5164285
+  },
+  {
+    "id": "node-keihan-0397",
+    "name_en": "Naniwabashi",
+    "name_ja": "なにわ橋",
+    "operator_id": "keihan",
+    "lat": 34.6929376,
+    "lon": 135.5059672
+  },
+  {
+    "id": "node-keihan-0398",
+    "name_en": "Oebashi",
+    "name_ja": "大江橋",
+    "operator_id": "keihan",
+    "lat": 34.6943,
+    "lon": 135.4999262
+  },
+  {
+    "id": "node-keihan-0399",
+    "name_en": "Watanabebashi",
+    "name_ja": "渡辺橋",
+    "operator_id": "keihan",
+    "lat": 34.6937939,
+    "lon": 135.4944907
+  },
+  {
+    "id": "node-keihan-0400",
+    "name_en": "Nakanoshima",
+    "name_ja": "中之島",
+    "operator_id": "keihan",
+    "lat": 34.6908773,
+    "lon": 135.4868048
+  },
+  {
+    "id": "node-keihan-0401",
+    "name_en": "Kisaichi",
+    "name_ja": "私市",
+    "operator_id": "keihan",
+    "lat": 34.7677198,
+    "lon": 135.6865852
+  },
+  {
+    "id": "node-keihan-0402",
+    "name_en": "Kawachimori",
+    "name_ja": "河内森",
+    "operator_id": "keihan",
+    "lat": 34.773922,
+    "lon": 135.6854754
+  },
+  {
+    "id": "node-keihan-0403",
+    "name_en": "Katanoshi",
+    "name_ja": "交野市",
+    "operator_id": "keihan",
+    "lat": 34.7869873,
+    "lon": 135.6754866
+  },
+  {
+    "id": "node-keihan-0404",
+    "name_en": "Kozu",
+    "name_ja": "郡津",
+    "operator_id": "keihan",
+    "lat": 34.7945277,
+    "lon": 135.6697079
+  },
+  {
+    "id": "node-keihan-0405",
+    "name_en": "Murano",
+    "name_ja": "村野",
+    "operator_id": "keihan",
+    "lat": 34.8017563,
+    "lon": 135.6641947
+  },
+  {
+    "id": "node-keihan-0406",
+    "name_en": "Hoshigaoka",
+    "name_ja": "星ヶ丘",
+    "operator_id": "keihan",
+    "lat": 34.8074147,
+    "lon": 135.6598643
+  },
+  {
+    "id": "node-keihan-0407",
+    "name_en": "Miyanosaka",
+    "name_ja": "宮之阪",
+    "operator_id": "keihan",
+    "lat": 34.8136393,
+    "lon": 135.6566933
+  },
+  {
+    "id": "node-keihan-0408",
+    "name_en": "Hirakatashi",
+    "name_ja": "枚方市",
+    "operator_id": "keihan",
+    "lat": 34.8159724,
+    "lon": 135.6489256
+  },
+  {
+    "id": "node-keihan-0409",
+    "name_en": "Uzumasa-Tenjingawa",
+    "name_ja": "太秦天神川",
+    "operator_id": "keihan",
+    "lat": 35.0108537,
+    "lon": 135.7162038
+  },
+  {
+    "id": "node-keihan-0410",
+    "name_en": "Nishioji-oike",
+    "name_ja": "西大路御池",
+    "operator_id": "keihan",
+    "lat": 35.0109869,
+    "lon": 135.7311771
+  },
+  {
+    "id": "node-keihan-0411",
+    "name_en": "Nijo",
+    "name_ja": "二条",
+    "operator_id": "keihan",
+    "lat": 35.0122021,
+    "lon": 135.7420586
+  },
+  {
+    "id": "node-keihan-0412",
+    "name_en": "Nijojo-mae",
+    "name_ja": "二条城前",
+    "operator_id": "keihan",
+    "lat": 35.0119106,
+    "lon": 135.7508259
+  },
+  {
+    "id": "node-keihan-0413",
+    "name_en": "Karasuma Oike",
+    "name_ja": "烏丸御池",
+    "operator_id": "keihan",
+    "lat": 35.0108708,
+    "lon": 135.760185
+  },
+  {
+    "id": "node-keihan-0414",
+    "name_en": "Kyoto Shiyakusho-mae",
+    "name_ja": "京都市役所前",
+    "operator_id": "keihan",
+    "lat": 35.0109804,
+    "lon": 135.7694346
+  },
+  {
+    "id": "node-keihan-0415",
+    "name_en": "Sanjo Keihan",
+    "name_ja": "三条京阪",
+    "operator_id": "keihan",
+    "lat": 35.0093775,
+    "lon": 135.7745388
+  },
+  {
+    "id": "node-keihan-0416",
+    "name_en": "Higashiyama",
+    "name_ja": "東山",
+    "operator_id": "keihan",
+    "lat": 35.0094254,
+    "lon": 135.7803432
+  },
+  {
+    "id": "node-keihan-0417",
+    "name_en": "Keage",
+    "name_ja": "蹴上",
+    "operator_id": "keihan",
+    "lat": 35.0071767,
+    "lon": 135.790818
+  },
+  {
+    "id": "node-keihan-0418",
+    "name_en": "Misasagi",
+    "name_ja": "御陵",
+    "operator_id": "keihan",
+    "lat": 34.9958168,
+    "lon": 135.8023362
+  },
+  {
+    "id": "node-keihan-0419",
+    "name_en": "Keihan-Yamashina",
+    "name_ja": "京阪山科",
+    "operator_id": "keihan",
+    "lat": 34.9920742,
+    "lon": 135.8166279
+  },
+  {
+    "id": "node-keihan-0420",
+    "name_en": "Shinomiya",
+    "name_ja": "四宮",
+    "operator_id": "keihan",
+    "lat": 34.991884,
+    "lon": 135.8239117
+  },
+  {
+    "id": "node-keihan-0421",
+    "name_en": "Oiwake",
+    "name_ja": "追分",
+    "operator_id": "keihan",
+    "lat": 34.9916,
+    "lon": 135.8371735
+  },
+  {
+    "id": "node-keihan-0422",
+    "name_en": "",
+    "name_ja": "大谷",
+    "operator_id": "keihan",
+    "lat": 34.9942127,
+    "lon": 135.853546
+  },
+  {
+    "id": "node-keihan-0423",
+    "name_en": "Kamisakaemachi",
+    "name_ja": "上栄町",
+    "operator_id": "keihan",
+    "lat": 35.0054396,
+    "lon": 135.8601935
+  },
+  {
+    "id": "node-keihan-0424",
+    "name_en": "Biwako-hamaotsu",
+    "name_ja": "びわ湖浜大津",
+    "operator_id": "keihan",
+    "lat": 35.0111576,
+    "lon": 135.8644379
+  },
+  {
+    "id": "node-keihan-0425",
+    "name_en": "Biwako-hamaotsu",
+    "name_ja": "びわ湖浜大津",
+    "operator_id": "keihan",
+    "lat": 35.01108,
+    "lon": 135.8644086
+  },
+  {
+    "id": "node-keihan-0426",
+    "name_en": "Kamisakaemachi",
+    "name_ja": "上栄町",
+    "operator_id": "keihan",
+    "lat": 35.0058266,
+    "lon": 135.8607258
+  },
+  {
+    "id": "node-keihan-0427",
+    "name_en": "",
+    "name_ja": "大谷",
+    "operator_id": "keihan",
+    "lat": 34.9941832,
+    "lon": 135.8535384
+  },
+  {
+    "id": "node-keihan-0428",
+    "name_en": "Oiwake",
+    "name_ja": "追分",
+    "operator_id": "keihan",
+    "lat": 34.9915707,
+    "lon": 135.8371618
+  },
+  {
+    "id": "node-keihan-0429",
+    "name_en": "Shinomiya",
+    "name_ja": "四宮",
+    "operator_id": "keihan",
+    "lat": 34.9918573,
+    "lon": 135.8239155
+  },
+  {
+    "id": "node-keihan-0430",
+    "name_en": "Keihan-Yamashina",
+    "name_ja": "京阪山科",
+    "operator_id": "keihan",
+    "lat": 34.9920476,
+    "lon": 135.8166251
+  },
+  {
+    "id": "node-keihan-0431",
+    "name_en": "Misasagi",
+    "name_ja": "御陵",
+    "operator_id": "keihan",
+    "lat": 34.9963461,
+    "lon": 135.8012231
+  },
+  {
+    "id": "node-keihan-0432",
+    "name_en": "Keage",
+    "name_ja": "蹴上",
+    "operator_id": "keihan",
+    "lat": 35.0079846,
+    "lon": 135.7902859
+  },
+  {
+    "id": "node-keihan-0433",
+    "name_en": "Higashiyama",
+    "name_ja": "東山",
+    "operator_id": "keihan",
+    "lat": 35.0094372,
+    "lon": 135.7792256
+  },
+  {
+    "id": "node-keihan-0434",
+    "name_en": "Sanjo Keihan",
+    "name_ja": "三条京阪",
+    "operator_id": "keihan",
+    "lat": 35.0091943,
+    "lon": 135.7734416
+  },
+  {
+    "id": "node-keihan-0435",
+    "name_en": "Kyoto Shiyakusho-mae",
+    "name_ja": "京都市役所前",
+    "operator_id": "keihan",
+    "lat": 35.0108131,
+    "lon": 135.7683425
+  },
+  {
+    "id": "node-keihan-0436",
+    "name_en": "Karasuma Oike",
+    "name_ja": "烏丸御池",
+    "operator_id": "keihan",
+    "lat": 35.0107637,
+    "lon": 135.7590768
+  },
+  {
+    "id": "node-keihan-0437",
+    "name_en": "Nijojo-mae",
+    "name_ja": "二条城前",
+    "operator_id": "keihan",
+    "lat": 35.0118652,
+    "lon": 135.7497173
+  },
+  {
+    "id": "node-keihan-0438",
+    "name_en": "Nijo",
+    "name_ja": "二条",
+    "operator_id": "keihan",
+    "lat": 35.0116917,
+    "lon": 135.7411165
+  },
+  {
+    "id": "node-keihan-0439",
+    "name_en": "Nishioji-oike",
+    "name_ja": "西大路御池",
+    "operator_id": "keihan",
+    "lat": 35.010888,
+    "lon": 135.7300728
+  },
+  {
+    "id": "node-keihan-0440",
+    "name_en": "Uzumasa-Tenjingawa",
+    "name_ja": "太秦天神川",
+    "operator_id": "keihan",
+    "lat": 35.0107802,
+    "lon": 135.7162017
+  },
+  {
+    "id": "node-kintetsu-0441",
+    "name_en": "Gakken-Nara-Tomigaoka",
+    "name_ja": "学研奈良登美ヶ丘",
+    "operator_id": "kintetsu",
+    "lat": 34.7264941,
+    "lon": 135.752186
+  },
+  {
+    "id": "node-kintetsu-0442",
+    "name_en": "Gakken-Kita-Ikoma",
+    "name_ja": "学研北生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.7248154,
+    "lon": 135.7232483
+  },
+  {
+    "id": "node-kintetsu-0443",
+    "name_en": "Shiraniwadai",
+    "name_ja": "白庭台",
+    "operator_id": "kintetsu",
+    "lat": 34.7210103,
+    "lon": 135.7168012
+  },
+  {
+    "id": "node-kintetsu-0444",
+    "name_en": "Ikoma",
+    "name_ja": "生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6932723,
+    "lon": 135.6980818
+  },
+  {
+    "id": "node-kintetsu-0445",
+    "name_en": "Yoshita",
+    "name_ja": "吉田",
+    "operator_id": "kintetsu",
+    "lat": 34.6802493,
+    "lon": 135.6230088
+  },
+  {
+    "id": "node-kintetsu-0446",
+    "name_en": "Aramoto",
+    "name_ja": "荒本",
+    "operator_id": "kintetsu",
+    "lat": 34.678583,
+    "lon": 135.604899
+  },
+  {
+    "id": "node-kintetsu-0447",
+    "name_en": "Nagata",
+    "name_ja": "長田",
+    "operator_id": "kintetsu",
+    "lat": 34.6787381,
+    "lon": 135.5910595
+  },
+  {
+    "id": "node-kintetsu-0448",
+    "name_en": "Aramoto",
+    "name_ja": "荒本",
+    "operator_id": "kintetsu",
+    "lat": 34.678627,
+    "lon": 135.6048978
+  },
+  {
+    "id": "node-kintetsu-0449",
+    "name_en": "Yoshita",
+    "name_ja": "吉田",
+    "operator_id": "kintetsu",
+    "lat": 34.6802873,
+    "lon": 135.6230041
+  },
+  {
+    "id": "node-kintetsu-0450",
+    "name_en": "Shin-Ishikiri",
+    "name_ja": "新石切",
+    "operator_id": "kintetsu",
+    "lat": 34.6802344,
+    "lon": 135.640881
+  },
+  {
+    "id": "node-kintetsu-0451",
+    "name_en": "Ikoma",
+    "name_ja": "生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6933716,
+    "lon": 135.6980683
+  },
+  {
+    "id": "node-kintetsu-0452",
+    "name_en": "Shiraniwadai",
+    "name_ja": "白庭台",
+    "operator_id": "kintetsu",
+    "lat": 34.7210306,
+    "lon": 135.7167792
+  },
+  {
+    "id": "node-kintetsu-0453",
+    "name_en": "Gakken-Kita-Ikoma",
+    "name_ja": "学研北生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.7248341,
+    "lon": 135.7232261
+  },
+  {
+    "id": "node-kintetsu-0454",
+    "name_en": "Gakken-Nara-Tomigaoka",
+    "name_ja": "学研奈良登美ヶ丘",
+    "operator_id": "kintetsu",
+    "lat": 34.7266192,
+    "lon": 135.7521799
+  },
+  {
+    "id": "node-kintetsu-0455",
+    "name_en": "Yamatosaidaiji",
+    "name_ja": "大和西大寺",
+    "operator_id": "kintetsu",
+    "lat": 34.6937476,
+    "lon": 135.7826498
+  },
+  {
+    "id": "node-kintetsu-0456",
+    "name_en": "Heijo",
+    "name_ja": "平城",
+    "operator_id": "kintetsu",
+    "lat": 34.701671,
+    "lon": 135.7849702
+  },
+  {
+    "id": "node-kintetsu-0457",
+    "name_en": "Takanohara",
+    "name_ja": "高の原",
+    "operator_id": "kintetsu",
+    "lat": 34.7237622,
+    "lon": 135.7917204
+  },
+  {
+    "id": "node-kintetsu-0458",
+    "name_en": "Yamadagawa",
+    "name_ja": "山田川",
+    "operator_id": "kintetsu",
+    "lat": 34.7375564,
+    "lon": 135.793793
+  },
+  {
+    "id": "node-kintetsu-0459",
+    "name_en": "Kizugawadai",
+    "name_ja": "木津川台",
+    "operator_id": "kintetsu",
+    "lat": 34.7467114,
+    "lon": 135.7960179
+  },
+  {
+    "id": "node-kintetsu-0460",
+    "name_en": "Shin-Hōsono",
+    "name_ja": "新祝園",
+    "operator_id": "kintetsu",
+    "lat": 34.7602831,
+    "lon": 135.7926873
+  },
+  {
+    "id": "node-kintetsu-0461",
+    "name_en": "Komada",
+    "name_ja": "狛田",
+    "operator_id": "kintetsu",
+    "lat": 34.7803011,
+    "lon": 135.7894807
+  },
+  {
+    "id": "node-kintetsu-0462",
+    "name_en": "Kintetsu Miyazu",
+    "name_ja": "近鉄宮津",
+    "operator_id": "kintetsu",
+    "lat": 34.7916062,
+    "lon": 135.7873933
+  },
+  {
+    "id": "node-kintetsu-0463",
+    "name_en": "Miyamaki",
+    "name_ja": "三山木",
+    "operator_id": "kintetsu",
+    "lat": 34.7982009,
+    "lon": 135.7860187
+  },
+  {
+    "id": "node-kintetsu-0464",
+    "name_en": "Kōdo",
+    "name_ja": "興戸",
+    "operator_id": "kintetsu",
+    "lat": 34.8085335,
+    "lon": 135.7784582
+  },
+  {
+    "id": "node-kintetsu-0465",
+    "name_en": "Shin-Tanabe",
+    "name_ja": "新田辺",
+    "operator_id": "kintetsu",
+    "lat": 34.8209027,
+    "lon": 135.7728986
+  },
+  {
+    "id": "node-kintetsu-0466",
+    "name_en": "Tonoshō",
+    "name_ja": "富野荘",
+    "operator_id": "kintetsu",
+    "lat": 34.8401987,
+    "lon": 135.7728919
+  },
+  {
+    "id": "node-kintetsu-0467",
+    "name_en": "Terada",
+    "name_ja": "寺田",
+    "operator_id": "kintetsu",
+    "lat": 34.8532284,
+    "lon": 135.7720216
+  },
+  {
+    "id": "node-kintetsu-0468",
+    "name_en": "Kutsukawa",
+    "name_ja": "久津川",
+    "operator_id": "kintetsu",
+    "lat": 34.8648449,
+    "lon": 135.7747628
+  },
+  {
+    "id": "node-kintetsu-0469",
+    "name_en": "Ōkubo",
+    "name_ja": "大久保",
+    "operator_id": "kintetsu",
+    "lat": 34.8746625,
+    "lon": 135.7770122
+  },
+  {
+    "id": "node-kintetsu-0470",
+    "name_en": "Iseda",
+    "name_ja": "伊勢田",
+    "operator_id": "kintetsu",
+    "lat": 34.8818605,
+    "lon": 135.7788753
+  },
+  {
+    "id": "node-kintetsu-0471",
+    "name_en": "Ogura",
+    "name_ja": "小倉",
+    "operator_id": "kintetsu",
+    "lat": 34.8928085,
+    "lon": 135.7818002
+  },
+  {
+    "id": "node-kintetsu-0472",
+    "name_en": "Mukaijima",
+    "name_ja": "向島",
+    "operator_id": "kintetsu",
+    "lat": 34.9149739,
+    "lon": 135.7694587
+  },
+  {
+    "id": "node-kintetsu-0473",
+    "name_en": "Momoyamagoryōmae",
+    "name_ja": "桃山御陵前",
+    "operator_id": "kintetsu",
+    "lat": 34.9334486,
+    "lon": 135.7655169
+  },
+  {
+    "id": "node-kintetsu-0474",
+    "name_en": "Kintetsu-Tambabashi",
+    "name_ja": "近鉄丹波橋",
+    "operator_id": "kintetsu",
+    "lat": 34.9384731,
+    "lon": 135.7663608
+  },
+  {
+    "id": "node-kintetsu-0475",
+    "name_en": "Fushimi",
+    "name_ja": "伏見",
+    "operator_id": "kintetsu",
+    "lat": 34.9460287,
+    "lon": 135.7614449
+  },
+  {
+    "id": "node-kintetsu-0476",
+    "name_en": "Takeda",
+    "name_ja": "竹田",
+    "operator_id": "kintetsu",
+    "lat": 34.956307,
+    "lon": 135.7559357
+  },
+  {
+    "id": "node-kintetsu-0477",
+    "name_en": "Kamitobaguti",
+    "name_ja": "上鳥羽口",
+    "operator_id": "kintetsu",
+    "lat": 34.9654927,
+    "lon": 135.7523616
+  },
+  {
+    "id": "node-kintetsu-0478",
+    "name_en": "Jujo",
+    "name_ja": "十条",
+    "operator_id": "kintetsu",
+    "lat": 34.973729,
+    "lon": 135.7523838
+  },
+  {
+    "id": "node-kintetsu-0479",
+    "name_en": "Toji",
+    "name_ja": "東寺",
+    "operator_id": "kintetsu",
+    "lat": 34.9798278,
+    "lon": 135.7525581
+  },
+  {
+    "id": "node-kintetsu-0480",
+    "name_en": "Kintetsu Kyoto",
+    "name_ja": "近鉄京都",
+    "operator_id": "kintetsu",
+    "lat": 34.9848284,
+    "lon": 135.756256
+  },
+  {
+    "id": "node-kintetsu-0481",
+    "name_en": "Kintetsu Kyoto",
+    "name_ja": "近鉄京都",
+    "operator_id": "kintetsu",
+    "lat": 34.9847209,
+    "lon": 135.7562373
+  },
+  {
+    "id": "node-kintetsu-0482",
+    "name_en": "Toji",
+    "name_ja": "東寺",
+    "operator_id": "kintetsu",
+    "lat": 34.9798289,
+    "lon": 135.7526017
+  },
+  {
+    "id": "node-kintetsu-0483",
+    "name_en": "Jujo",
+    "name_ja": "十条",
+    "operator_id": "kintetsu",
+    "lat": 34.9737301,
+    "lon": 135.752487
+  },
+  {
+    "id": "node-kintetsu-0484",
+    "name_en": "Kamitobaguchi",
+    "name_ja": "上鳥羽口",
+    "operator_id": "kintetsu",
+    "lat": 34.9655119,
+    "lon": 135.7524502
+  },
+  {
+    "id": "node-kintetsu-0485",
+    "name_en": "Takeda",
+    "name_ja": "竹田",
+    "operator_id": "kintetsu",
+    "lat": 34.9563261,
+    "lon": 135.7563186
+  },
+  {
+    "id": "node-kintetsu-0486",
+    "name_en": "Fushimi",
+    "name_ja": "伏見",
+    "operator_id": "kintetsu",
+    "lat": 34.9460485,
+    "lon": 135.7614718
+  },
+  {
+    "id": "node-kintetsu-0487",
+    "name_en": "Kintetsu-Tambabashi",
+    "name_ja": "近鉄丹波橋",
+    "operator_id": "kintetsu",
+    "lat": 34.9384747,
+    "lon": 135.7663965
+  },
+  {
+    "id": "node-kintetsu-0488",
+    "name_en": "Momoyamagoryōmae",
+    "name_ja": "桃山御陵前",
+    "operator_id": "kintetsu",
+    "lat": 34.9334494,
+    "lon": 135.7655554
+  },
+  {
+    "id": "node-kintetsu-0489",
+    "name_en": "Mukaijima",
+    "name_ja": "向島",
+    "operator_id": "kintetsu",
+    "lat": 34.9149882,
+    "lon": 135.7694963
+  },
+  {
+    "id": "node-kintetsu-0490",
+    "name_en": "Ogura",
+    "name_ja": "小倉",
+    "operator_id": "kintetsu",
+    "lat": 34.8928013,
+    "lon": 135.7818371
+  },
+  {
+    "id": "node-kintetsu-0491",
+    "name_en": "Iseda",
+    "name_ja": "伊勢田",
+    "operator_id": "kintetsu",
+    "lat": 34.8818566,
+    "lon": 135.7789122
+  },
+  {
+    "id": "node-kintetsu-0492",
+    "name_en": "Ōkubo",
+    "name_ja": "大久保",
+    "operator_id": "kintetsu",
+    "lat": 34.8746561,
+    "lon": 135.777049
+  },
+  {
+    "id": "node-kintetsu-0493",
+    "name_en": "Kutsukawa",
+    "name_ja": "久津川",
+    "operator_id": "kintetsu",
+    "lat": 34.8648361,
+    "lon": 135.7748057
+  },
+  {
+    "id": "node-kintetsu-0494",
+    "name_en": "Terada",
+    "name_ja": "寺田",
+    "operator_id": "kintetsu",
+    "lat": 34.8532235,
+    "lon": 135.7720625
+  },
+  {
+    "id": "node-kintetsu-0495",
+    "name_en": "Tonoshō",
+    "name_ja": "富野荘",
+    "operator_id": "kintetsu",
+    "lat": 34.8402026,
+    "lon": 135.7729389
+  },
+  {
+    "id": "node-kintetsu-0496",
+    "name_en": "Shin-Tanabe",
+    "name_ja": "新田辺",
+    "operator_id": "kintetsu",
+    "lat": 34.8208972,
+    "lon": 135.7729442
+  },
+  {
+    "id": "node-kintetsu-0497",
+    "name_en": "Kōdo",
+    "name_ja": "興戸",
+    "operator_id": "kintetsu",
+    "lat": 34.80855,
+    "lon": 135.778485
+  },
+  {
+    "id": "node-kintetsu-0498",
+    "name_en": "Miyamaki",
+    "name_ja": "三山木",
+    "operator_id": "kintetsu",
+    "lat": 34.7982091,
+    "lon": 135.7860596
+  },
+  {
+    "id": "node-kintetsu-0499",
+    "name_en": "Kintetsu Miyazu",
+    "name_ja": "近鉄宮津",
+    "operator_id": "kintetsu",
+    "lat": 34.7916172,
+    "lon": 135.7874981
+  },
+  {
+    "id": "node-kintetsu-0500",
+    "name_en": "Komada",
+    "name_ja": "狛田",
+    "operator_id": "kintetsu",
+    "lat": 34.7803005,
+    "lon": 135.7895156
+  },
+  {
+    "id": "node-kintetsu-0501",
+    "name_en": "Shin-Hōsono",
+    "name_ja": "新祝園",
+    "operator_id": "kintetsu",
+    "lat": 34.7602881,
+    "lon": 135.7927275
+  },
+  {
+    "id": "node-kintetsu-0502",
+    "name_en": "Kizugawadai",
+    "name_ja": "木津川台",
+    "operator_id": "kintetsu",
+    "lat": 34.7467087,
+    "lon": 135.7960528
+  },
+  {
+    "id": "node-kintetsu-0503",
+    "name_en": "Yamadagawa",
+    "name_ja": "山田川",
+    "operator_id": "kintetsu",
+    "lat": 34.7375509,
+    "lon": 135.7938326
+  },
+  {
+    "id": "node-kintetsu-0504",
+    "name_en": "Takanohara",
+    "name_ja": "高の原",
+    "operator_id": "kintetsu",
+    "lat": 34.7237621,
+    "lon": 135.7920158
+  },
+  {
+    "id": "node-kintetsu-0505",
+    "name_en": "Heijo",
+    "name_ja": "平城",
+    "operator_id": "kintetsu",
+    "lat": 34.7016449,
+    "lon": 135.7849834
+  },
+  {
+    "id": "node-kintetsu-0506",
+    "name_en": "Yamatosaidaiji",
+    "name_ja": "大和西大寺",
+    "operator_id": "kintetsu",
+    "lat": 34.6939603,
+    "lon": 135.7828282
+  },
+  {
+    "id": "node-kintetsu-0507",
+    "name_en": "Ōsaka Abenobashi",
+    "name_ja": "大阪阿部野橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6453277,
+    "lon": 135.5153456
+  },
+  {
+    "id": "node-kintetsu-0508",
+    "name_en": "Koboreguchi",
+    "name_ja": "河堀口",
+    "operator_id": "kintetsu",
+    "lat": 34.6411564,
+    "lon": 135.5242043
+  },
+  {
+    "id": "node-kintetsu-0509",
+    "name_en": "Kita-Tanabe",
+    "name_ja": "北田辺",
+    "operator_id": "kintetsu",
+    "lat": 34.6322956,
+    "lon": 135.5289202
+  },
+  {
+    "id": "node-kintetsu-0510",
+    "name_en": "Imagawa",
+    "name_ja": "今川",
+    "operator_id": "kintetsu",
+    "lat": 34.6260634,
+    "lon": 135.5311901
+  },
+  {
+    "id": "node-kintetsu-0511",
+    "name_en": "Harinakano",
+    "name_ja": "針中野",
+    "operator_id": "kintetsu",
+    "lat": 34.6170775,
+    "lon": 135.5330662
+  },
+  {
+    "id": "node-kintetsu-0512",
+    "name_en": "Yata",
+    "name_ja": "矢田",
+    "operator_id": "kintetsu",
+    "lat": 34.605935,
+    "lon": 135.5329454
+  },
+  {
+    "id": "node-kintetsu-0513",
+    "name_en": "Kawachi-Amami",
+    "name_ja": "河内天美",
+    "operator_id": "kintetsu",
+    "lat": 34.5861623,
+    "lon": 135.5354561
+  },
+  {
+    "id": "node-kintetsu-0514",
+    "name_en": "Nunose",
+    "name_ja": "布忍",
+    "operator_id": "kintetsu",
+    "lat": 34.5772659,
+    "lon": 135.5397287
+  },
+  {
+    "id": "node-kintetsu-0515",
+    "name_en": "Takaminosato",
+    "name_ja": "高見ノ里",
+    "operator_id": "kintetsu",
+    "lat": 34.5752393,
+    "lon": 135.5463164
+  },
+  {
+    "id": "node-kintetsu-0516",
+    "name_en": "Kawachi-Matsubara",
+    "name_ja": "河内松原",
+    "operator_id": "kintetsu",
+    "lat": 34.575526,
+    "lon": 135.5570437
+  },
+  {
+    "id": "node-kintetsu-0517",
+    "name_en": "Eganoshō",
+    "name_ja": "恵我ノ荘",
+    "operator_id": "kintetsu",
+    "lat": 34.5735726,
+    "lon": 135.5728602
+  },
+  {
+    "id": "node-kintetsu-0518",
+    "name_en": "Takawashi",
+    "name_ja": "高鷲",
+    "operator_id": "kintetsu",
+    "lat": 34.5715811,
+    "lon": 135.5845191
+  },
+  {
+    "id": "node-kintetsu-0519",
+    "name_en": "Fujiidera",
+    "name_ja": "藤井寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5715926,
+    "lon": 135.5945826
+  },
+  {
+    "id": "node-kintetsu-0520",
+    "name_en": "Hajinosato",
+    "name_ja": "土師ノ里",
+    "operator_id": "kintetsu",
+    "lat": 34.5716931,
+    "lon": 135.6155589
+  },
+  {
+    "id": "node-kintetsu-0521",
+    "name_en": "Dōmyōji",
+    "name_ja": "道明寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5683802,
+    "lon": 135.620297
+  },
+  {
+    "id": "node-kintetsu-0522",
+    "name_en": "Furuichi",
+    "name_ja": "古市",
+    "operator_id": "kintetsu",
+    "lat": 34.5541873,
+    "lon": 135.6093046
+  },
+  {
+    "id": "node-kintetsu-0523",
+    "name_en": "Komagatani",
+    "name_ja": "駒ヶ谷",
+    "operator_id": "kintetsu",
+    "lat": 34.5456142,
+    "lon": 135.622154
+  },
+  {
+    "id": "node-kintetsu-0524",
+    "name_en": "Kaminotaishi",
+    "name_ja": "上ノ太子",
+    "operator_id": "kintetsu",
+    "lat": 34.5329955,
+    "lon": 135.6377607
+  },
+  {
+    "id": "node-kintetsu-0525",
+    "name_en": "Nijozan",
+    "name_ja": "二上山",
+    "operator_id": "kintetsu",
+    "lat": 34.5388889,
+    "lon": 135.6863074
+  },
+  {
+    "id": "node-kintetsu-0526",
+    "name_en": "Nijō-Jinjaguchi",
+    "name_ja": "二上神社口",
+    "operator_id": "kintetsu",
+    "lat": 34.5318515,
+    "lon": 135.6943764
+  },
+  {
+    "id": "node-kintetsu-0527",
+    "name_en": "Taimadera",
+    "name_ja": "当麻寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5164379,
+    "lon": 135.7059265
+  },
+  {
+    "id": "node-kintetsu-0528",
+    "name_en": "Iwaki",
+    "name_ja": "磐城",
+    "operator_id": "kintetsu",
+    "lat": 34.5113595,
+    "lon": 135.7108657
+  },
+  {
+    "id": "node-kintetsu-0529",
+    "name_en": "Shakudo",
+    "name_ja": "尺土",
+    "operator_id": "kintetsu",
+    "lat": 34.5086233,
+    "lon": 135.7210132
+  },
+  {
+    "id": "node-kintetsu-0530",
+    "name_en": "Takadashi",
+    "name_ja": "高田市",
+    "operator_id": "kintetsu",
+    "lat": 34.5067389,
+    "lon": 135.7432036
+  },
+  {
+    "id": "node-kintetsu-0531",
+    "name_en": "Ukiana",
+    "name_ja": "浮孔",
+    "operator_id": "kintetsu",
+    "lat": 34.4982014,
+    "lon": 135.7545588
+  },
+  {
+    "id": "node-kintetsu-0532",
+    "name_en": "Bojo",
+    "name_ja": "坊城",
+    "operator_id": "kintetsu",
+    "lat": 34.4934927,
+    "lon": 135.7651134
+  },
+  {
+    "id": "node-kintetsu-0533",
+    "name_en": "Kashiharajingū-Nishiguchi",
+    "name_ja": "橿原神宮西口",
+    "operator_id": "kintetsu",
+    "lat": 34.4861171,
+    "lon": 135.7816406
+  },
+  {
+    "id": "node-kintetsu-0534",
+    "name_en": "Kashiharajingū-mae",
+    "name_ja": "橿原神宮前",
+    "operator_id": "kintetsu",
+    "lat": 34.4832823,
+    "lon": 135.7932891
+  },
+  {
+    "id": "node-kintetsu-0535",
+    "name_en": "Kashiharajingū-mae",
+    "name_ja": "橿原神宮前",
+    "operator_id": "kintetsu",
+    "lat": 34.483265,
+    "lon": 135.7932533
+  },
+  {
+    "id": "node-kintetsu-0536",
+    "name_en": "Kashiharajingū-Nishiguchi",
+    "name_ja": "橿原神宮西口",
+    "operator_id": "kintetsu",
+    "lat": 34.4860911,
+    "lon": 135.7816198
+  },
+  {
+    "id": "node-kintetsu-0537",
+    "name_en": "Bojo",
+    "name_ja": "坊城",
+    "operator_id": "kintetsu",
+    "lat": 34.4934606,
+    "lon": 135.7650938
+  },
+  {
+    "id": "node-kintetsu-0538",
+    "name_en": "Ukiana",
+    "name_ja": "浮孔",
+    "operator_id": "kintetsu",
+    "lat": 34.4981701,
+    "lon": 135.7545375
+  },
+  {
+    "id": "node-kintetsu-0539",
+    "name_en": "Takadashi",
+    "name_ja": "高田市",
+    "operator_id": "kintetsu",
+    "lat": 34.5067004,
+    "lon": 135.7431885
+  },
+  {
+    "id": "node-kintetsu-0540",
+    "name_en": "Shakudo",
+    "name_ja": "尺土",
+    "operator_id": "kintetsu",
+    "lat": 34.5085979,
+    "lon": 135.7210134
+  },
+  {
+    "id": "node-kintetsu-0541",
+    "name_en": "Iwaki",
+    "name_ja": "磐城",
+    "operator_id": "kintetsu",
+    "lat": 34.511333,
+    "lon": 135.7108337
+  },
+  {
+    "id": "node-kintetsu-0542",
+    "name_en": "Taimadera",
+    "name_ja": "当麻寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5164314,
+    "lon": 135.7058763
+  },
+  {
+    "id": "node-kintetsu-0543",
+    "name_en": "Nijō-Jinjaguchi",
+    "name_ja": "二上神社口",
+    "operator_id": "kintetsu",
+    "lat": 34.5318298,
+    "lon": 135.6943461
+  },
+  {
+    "id": "node-kintetsu-0544",
+    "name_en": "Nijozan",
+    "name_ja": "二上山",
+    "operator_id": "kintetsu",
+    "lat": 34.5388617,
+    "lon": 135.6863008
+  },
+  {
+    "id": "node-kintetsu-0545",
+    "name_en": "Kaminotaishi",
+    "name_ja": "上ノ太子",
+    "operator_id": "kintetsu",
+    "lat": 34.5329637,
+    "lon": 135.6377486
+  },
+  {
+    "id": "node-kintetsu-0546",
+    "name_en": "Komagatani",
+    "name_ja": "駒ヶ谷",
+    "operator_id": "kintetsu",
+    "lat": 34.5455946,
+    "lon": 135.6221275
+  },
+  {
+    "id": "node-kintetsu-0547",
+    "name_en": "Furuichi",
+    "name_ja": "古市",
+    "operator_id": "kintetsu",
+    "lat": 34.5542246,
+    "lon": 135.6091616
+  },
+  {
+    "id": "node-kintetsu-0548",
+    "name_en": "Dōmyōji",
+    "name_ja": "道明寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5683879,
+    "lon": 135.6202568
+  },
+  {
+    "id": "node-kintetsu-0549",
+    "name_en": "Hajinosato",
+    "name_ja": "土師ノ里",
+    "operator_id": "kintetsu",
+    "lat": 34.5716633,
+    "lon": 135.6155576
+  },
+  {
+    "id": "node-kintetsu-0550",
+    "name_en": "Fujiidera",
+    "name_ja": "藤井寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5715657,
+    "lon": 135.5945818
+  },
+  {
+    "id": "node-kintetsu-0551",
+    "name_en": "Takawashi",
+    "name_ja": "高鷲",
+    "operator_id": "kintetsu",
+    "lat": 34.5715529,
+    "lon": 135.5845211
+  },
+  {
+    "id": "node-kintetsu-0552",
+    "name_en": "Eganoshō",
+    "name_ja": "恵我ノ荘",
+    "operator_id": "kintetsu",
+    "lat": 34.5735417,
+    "lon": 135.5728434
+  },
+  {
+    "id": "node-kintetsu-0553",
+    "name_en": "Kawachi-Matsubara",
+    "name_ja": "河内松原",
+    "operator_id": "kintetsu",
+    "lat": 34.5754944,
+    "lon": 135.5570461
+  },
+  {
+    "id": "node-kintetsu-0554",
+    "name_en": "Takaminosato",
+    "name_ja": "高見ノ里",
+    "operator_id": "kintetsu",
+    "lat": 34.5752098,
+    "lon": 135.5463132
+  },
+  {
+    "id": "node-kintetsu-0555",
+    "name_en": "Nunose",
+    "name_ja": "布忍",
+    "operator_id": "kintetsu",
+    "lat": 34.5772536,
+    "lon": 135.5396936
+  },
+  {
+    "id": "node-kintetsu-0556",
+    "name_en": "Kawachi-Amami",
+    "name_ja": "河内天美",
+    "operator_id": "kintetsu",
+    "lat": 34.5861517,
+    "lon": 135.535401
+  },
+  {
+    "id": "node-kintetsu-0557",
+    "name_en": "Yata",
+    "name_ja": "矢田",
+    "operator_id": "kintetsu",
+    "lat": 34.6059389,
+    "lon": 135.5329091
+  },
+  {
+    "id": "node-kintetsu-0558",
+    "name_en": "Harinakano",
+    "name_ja": "針中野",
+    "operator_id": "kintetsu",
+    "lat": 34.6170743,
+    "lon": 135.5330232
+  },
+  {
+    "id": "node-kintetsu-0559",
+    "name_en": "Imagawa",
+    "name_ja": "今川",
+    "operator_id": "kintetsu",
+    "lat": 34.6260526,
+    "lon": 135.5311484
+  },
+  {
+    "id": "node-kintetsu-0560",
+    "name_en": "Kita-Tanabe",
+    "name_ja": "北田辺",
+    "operator_id": "kintetsu",
+    "lat": 34.6322888,
+    "lon": 135.528878
+  },
+  {
+    "id": "node-kintetsu-0561",
+    "name_en": "Koboreguchi",
+    "name_ja": "河堀口",
+    "operator_id": "kintetsu",
+    "lat": 34.6411475,
+    "lon": 135.5241521
+  },
+  {
+    "id": "node-kintetsu-0562",
+    "name_en": "Ōsaka Abenobashi",
+    "name_ja": "大阪阿部野橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6452754,
+    "lon": 135.515306
+  },
+  {
+    "id": "node-kintetsu-0563",
+    "name_en": "Yoshino",
+    "name_ja": "吉野",
+    "operator_id": "kintetsu",
+    "lat": 34.3769798,
+    "lon": 135.8534892
+  },
+  {
+    "id": "node-kintetsu-0564",
+    "name_en": "Yoshino-jingū",
+    "name_ja": "吉野神宮",
+    "operator_id": "kintetsu",
+    "lat": 34.3905399,
+    "lon": 135.848032
+  },
+  {
+    "id": "node-kintetsu-0565",
+    "name_en": "Yamato-Kamiichi",
+    "name_ja": "大和上市",
+    "operator_id": "kintetsu",
+    "lat": 34.3956627,
+    "lon": 135.8455387
+  },
+  {
+    "id": "node-kintetsu-0566",
+    "name_en": "Muda",
+    "name_ja": "六田",
+    "operator_id": "kintetsu",
+    "lat": 34.3901165,
+    "lon": 135.8231488
+  },
+  {
+    "id": "node-kintetsu-0567",
+    "name_en": "Koshibe",
+    "name_ja": "越部",
+    "operator_id": "kintetsu",
+    "lat": 34.386049,
+    "lon": 135.8028536
+  },
+  {
+    "id": "node-kintetsu-0568",
+    "name_en": "Shimoichiguchi",
+    "name_ja": "下市口",
+    "operator_id": "kintetsu",
+    "lat": 34.3839733,
+    "lon": 135.786986
+  },
+  {
+    "id": "node-kintetsu-0569",
+    "name_en": "Oada",
+    "name_ja": "大阿太",
+    "operator_id": "kintetsu",
+    "lat": 34.3882961,
+    "lon": 135.7664175
+  },
+  {
+    "id": "node-kintetsu-0570",
+    "name_en": "Fukugami",
+    "name_ja": "福神",
+    "operator_id": "kintetsu",
+    "lat": 34.3952795,
+    "lon": 135.7506636
+  },
+  {
+    "id": "node-kintetsu-0571",
+    "name_en": "Kusurimizu",
+    "name_ja": "薬水",
+    "operator_id": "kintetsu",
+    "lat": 34.4073303,
+    "lon": 135.7430875
+  },
+  {
+    "id": "node-kintetsu-0572",
+    "name_en": "Yoshinoguchi",
+    "name_ja": "吉野口",
+    "operator_id": "kintetsu",
+    "lat": 34.420652,
+    "lon": 135.7505673
+  },
+  {
+    "id": "node-kintetsu-0573",
+    "name_en": "Kuzu",
+    "name_ja": "葛",
+    "operator_id": "kintetsu",
+    "lat": 34.4313573,
+    "lon": 135.7598755
+  },
+  {
+    "id": "node-kintetsu-0574",
+    "name_en": "Ichio",
+    "name_ja": "市尾",
+    "operator_id": "kintetsu",
+    "lat": 34.4417506,
+    "lon": 135.7762826
+  },
+  {
+    "id": "node-kintetsu-0575",
+    "name_en": "Tsubosakayama",
+    "name_ja": "壺阪山",
+    "operator_id": "kintetsu",
+    "lat": 34.4496552,
+    "lon": 135.7947976
+  },
+  {
+    "id": "node-kintetsu-0576",
+    "name_en": "Asuka",
+    "name_ja": "飛鳥",
+    "operator_id": "kintetsu",
+    "lat": 34.4649429,
+    "lon": 135.7981497
+  },
+  {
+    "id": "node-kintetsu-0577",
+    "name_en": "Okadera",
+    "name_ja": "岡寺",
+    "operator_id": "kintetsu",
+    "lat": 34.4741805,
+    "lon": 135.7959385
+  },
+  {
+    "id": "node-kintetsu-0578",
+    "name_en": "Okadera",
+    "name_ja": "岡寺",
+    "operator_id": "kintetsu",
+    "lat": 34.4741936,
+    "lon": 135.7959829
+  },
+  {
+    "id": "node-kintetsu-0579",
+    "name_en": "Asuka",
+    "name_ja": "飛鳥",
+    "operator_id": "kintetsu",
+    "lat": 34.4649307,
+    "lon": 135.7981738
+  },
+  {
+    "id": "node-kintetsu-0580",
+    "name_en": "Tsubosakayama",
+    "name_ja": "壺阪山",
+    "operator_id": "kintetsu",
+    "lat": 34.4496523,
+    "lon": 135.7948395
+  },
+  {
+    "id": "node-kintetsu-0581",
+    "name_en": "Ichio",
+    "name_ja": "市尾",
+    "operator_id": "kintetsu",
+    "lat": 34.4416539,
+    "lon": 135.776102
+  },
+  {
+    "id": "node-kintetsu-0582",
+    "name_en": "Yoshinoguchi",
+    "name_ja": "吉野口",
+    "operator_id": "kintetsu",
+    "lat": 34.420646,
+    "lon": 135.750608
+  },
+  {
+    "id": "node-kintetsu-0583",
+    "name_en": "Fukugami",
+    "name_ja": "福神",
+    "operator_id": "kintetsu",
+    "lat": 34.3953099,
+    "lon": 135.7506747
+  },
+  {
+    "id": "node-kintetsu-0584",
+    "name_en": "Shimoichiguchi",
+    "name_ja": "下市口",
+    "operator_id": "kintetsu",
+    "lat": 34.3839984,
+    "lon": 135.7870093
+  },
+  {
+    "id": "node-kintetsu-0585",
+    "name_en": "Koshibe",
+    "name_ja": "越部",
+    "operator_id": "kintetsu",
+    "lat": 34.3860844,
+    "lon": 135.8028487
+  },
+  {
+    "id": "node-kintetsu-0586",
+    "name_en": "Muda",
+    "name_ja": "六田",
+    "operator_id": "kintetsu",
+    "lat": 34.3901468,
+    "lon": 135.8231432
+  },
+  {
+    "id": "node-kintetsu-0587",
+    "name_en": "Yoshino-jingū",
+    "name_ja": "吉野神宮",
+    "operator_id": "kintetsu",
+    "lat": 34.3905448,
+    "lon": 135.8480583
+  },
+  {
+    "id": "node-kintetsu-0588",
+    "name_en": "Yoshino",
+    "name_ja": "吉野",
+    "operator_id": "kintetsu",
+    "lat": 34.3769843,
+    "lon": 135.8536335
+  },
+  {
+    "id": "node-kintetsu-0589",
+    "name_en": "Ise-Nakagawa",
+    "name_ja": "伊勢中川",
+    "operator_id": "kintetsu",
+    "lat": 34.6352574,
+    "lon": 136.4780233
+  },
+  {
+    "id": "node-kintetsu-0590",
+    "name_en": "Kawaitakaoka",
+    "name_ja": "川合高岡",
+    "operator_id": "kintetsu",
+    "lat": 34.6565519,
+    "lon": 136.4364111
+  },
+  {
+    "id": "node-kintetsu-0591",
+    "name_en": "Ise-Ishibashi",
+    "name_ja": "伊勢石橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6568414,
+    "lon": 136.4084111
+  },
+  {
+    "id": "node-kintetsu-0592",
+    "name_en": "Omitsu",
+    "name_ja": "大三",
+    "operator_id": "kintetsu",
+    "lat": 34.664101,
+    "lon": 136.3687776
+  },
+  {
+    "id": "node-kintetsu-0593",
+    "name_en": "Sakakibara-Onsenguchi",
+    "name_ja": "榊原温泉口",
+    "operator_id": "kintetsu",
+    "lat": 34.6748125,
+    "lon": 136.3486902
+  },
+  {
+    "id": "node-kintetsu-0594",
+    "name_en": "Higashi-Aoyama",
+    "name_ja": "東青山",
+    "operator_id": "kintetsu",
+    "lat": 34.6756008,
+    "lon": 136.3217956
+  },
+  {
+    "id": "node-kintetsu-0595",
+    "name_en": "Nishi-Aoyama",
+    "name_ja": "西青山",
+    "operator_id": "kintetsu",
+    "lat": 34.6764484,
+    "lon": 136.2380269
+  },
+  {
+    "id": "node-kintetsu-0596",
+    "name_en": "Igakouzu",
+    "name_ja": "伊賀上津",
+    "operator_id": "kintetsu",
+    "lat": 34.6826656,
+    "lon": 136.2047732
+  },
+  {
+    "id": "node-kintetsu-0597",
+    "name_en": "Aoyamachou",
+    "name_ja": "青山町",
+    "operator_id": "kintetsu",
+    "lat": 34.6729642,
+    "lon": 136.1778196
+  },
+  {
+    "id": "node-kintetsu-0598",
+    "name_en": "Iga-Kambe",
+    "name_ja": "伊賀神戸",
+    "operator_id": "kintetsu",
+    "lat": 34.6736871,
+    "lon": 136.1525425
+  },
+  {
+    "id": "node-kintetsu-0599",
+    "name_en": "Mihata",
+    "name_ja": "美旗",
+    "operator_id": "kintetsu",
+    "lat": 34.663411,
+    "lon": 136.1333589
+  },
+  {
+    "id": "node-kintetsu-0600",
+    "name_en": "Kikyōgaoka",
+    "name_ja": "桔梗が丘",
+    "operator_id": "kintetsu",
+    "lat": 34.6413522,
+    "lon": 136.1127218
+  },
+  {
+    "id": "node-kintetsu-0601",
+    "name_en": "Nabari",
+    "name_ja": "名張",
+    "operator_id": "kintetsu",
+    "lat": 34.6217873,
+    "lon": 136.0957097
+  },
+  {
+    "id": "node-kintetsu-0602",
+    "name_en": "Akameguchi",
+    "name_ja": "赤目口",
+    "operator_id": "kintetsu",
+    "lat": 34.5999109,
+    "lon": 136.0744413
+  },
+  {
+    "id": "node-kintetsu-0603",
+    "name_en": "Sambommatsu",
+    "name_ja": "三本松",
+    "operator_id": "kintetsu",
+    "lat": 34.5786806,
+    "lon": 136.036321
+  },
+  {
+    "id": "node-kintetsu-0604",
+    "name_en": "Murōguchi-Ōno",
+    "name_ja": "室生口大野",
+    "operator_id": "kintetsu",
+    "lat": 34.5661297,
+    "lon": 136.015359
+  },
+  {
+    "id": "node-kintetsu-0605",
+    "name_en": "Haibara",
+    "name_ja": "榛原",
+    "operator_id": "kintetsu",
+    "lat": 34.5297737,
+    "lon": 135.9543231
+  },
+  {
+    "id": "node-kintetsu-0606",
+    "name_en": "Hasedera",
+    "name_ja": "長谷寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5266911,
+    "lon": 135.9060958
+  },
+  {
+    "id": "node-kintetsu-0607",
+    "name_en": "Yamato-Asakura",
+    "name_ja": "大和朝倉",
+    "operator_id": "kintetsu",
+    "lat": 34.5160891,
+    "lon": 135.8690954
+  },
+  {
+    "id": "node-kintetsu-0608",
+    "name_en": "Sakurai",
+    "name_ja": "桜井",
+    "operator_id": "kintetsu",
+    "lat": 34.513437,
+    "lon": 135.8466057
+  },
+  {
+    "id": "node-kintetsu-0609",
+    "name_en": "Daifuku",
+    "name_ja": "大福",
+    "operator_id": "kintetsu",
+    "lat": 34.512864,
+    "lon": 135.8299036
+  },
+  {
+    "id": "node-kintetsu-0610",
+    "name_en": "Miminashi",
+    "name_ja": "耳成",
+    "operator_id": "kintetsu",
+    "lat": 34.5123845,
+    "lon": 135.8147545
+  },
+  {
+    "id": "node-kintetsu-0611",
+    "name_en": "Yamato-Yagi",
+    "name_ja": "大和八木",
+    "operator_id": "kintetsu",
+    "lat": 34.5131319,
+    "lon": 135.7920889
+  },
+  {
+    "id": "node-kintetsu-0612",
+    "name_en": "Masuga",
+    "name_ja": "真菅",
+    "operator_id": "kintetsu",
+    "lat": 34.5195661,
+    "lon": 135.7729477
+  },
+  {
+    "id": "node-kintetsu-0613",
+    "name_en": "Matsuzuka",
+    "name_ja": "松塚",
+    "operator_id": "kintetsu",
+    "lat": 34.5205645,
+    "lon": 135.7615522
+  },
+  {
+    "id": "node-kintetsu-0614",
+    "name_en": "Yamato-Takada",
+    "name_ja": "大和高田",
+    "operator_id": "kintetsu",
+    "lat": 34.5197823,
+    "lon": 135.7424265
+  },
+  {
+    "id": "node-kintetsu-0615",
+    "name_en": "Tsukiyama",
+    "name_ja": "築山",
+    "operator_id": "kintetsu",
+    "lat": 34.5261772,
+    "lon": 135.7330673
+  },
+  {
+    "id": "node-kintetsu-0616",
+    "name_en": "Goidō",
+    "name_ja": "五位堂",
+    "operator_id": "kintetsu",
+    "lat": 34.534788,
+    "lon": 135.7180542
+  },
+  {
+    "id": "node-kintetsu-0617",
+    "name_en": "Kintetsu-Shimoda",
+    "name_ja": "近鉄下田",
+    "operator_id": "kintetsu",
+    "lat": 34.5414787,
+    "lon": 135.7040906
+  },
+  {
+    "id": "node-kintetsu-0618",
+    "name_en": "Nijō",
+    "name_ja": "二上",
+    "operator_id": "kintetsu",
+    "lat": 34.5465159,
+    "lon": 135.6881903
+  },
+  {
+    "id": "node-kintetsu-0619",
+    "name_en": "Sekiya",
+    "name_ja": "関屋",
+    "operator_id": "kintetsu",
+    "lat": 34.5536503,
+    "lon": 135.6676419
+  },
+  {
+    "id": "node-kintetsu-0620",
+    "name_en": "Ōsakakyōikudai-mae",
+    "name_ja": "大阪教育大前",
+    "operator_id": "kintetsu",
+    "lat": 34.55543,
+    "lon": 135.6449299
+  },
+  {
+    "id": "node-kintetsu-0621",
+    "name_en": "Kawachi-Kokubu",
+    "name_ja": "河内国分",
+    "operator_id": "kintetsu",
+    "lat": 34.5669661,
+    "lon": 135.6355722
+  },
+  {
+    "id": "node-kintetsu-0622",
+    "name_en": "Andō",
+    "name_ja": "安堂",
+    "operator_id": "kintetsu",
+    "lat": 34.5800979,
+    "lon": 135.6291289
+  },
+  {
+    "id": "node-kintetsu-0623",
+    "name_en": "Katashimo",
+    "name_ja": "堅下",
+    "operator_id": "kintetsu",
+    "lat": 34.5890379,
+    "lon": 135.6272209
+  },
+  {
+    "id": "node-kintetsu-0624",
+    "name_en": "Hōzenji",
+    "name_ja": "法善寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5947025,
+    "lon": 135.6263747
+  },
+  {
+    "id": "node-kintetsu-0625",
+    "name_en": "Onji",
+    "name_ja": "恩智",
+    "operator_id": "kintetsu",
+    "lat": 34.6097709,
+    "lon": 135.6262433
+  },
+  {
+    "id": "node-kintetsu-0626",
+    "name_en": "Takayau",
+    "name_ja": "高安",
+    "operator_id": "kintetsu",
+    "lat": 34.6190633,
+    "lon": 135.6244922
+  },
+  {
+    "id": "node-kintetsu-0627",
+    "name_en": "Kawachi-Yamamoto",
+    "name_ja": "河内山本",
+    "operator_id": "kintetsu",
+    "lat": 34.6279242,
+    "lon": 135.6193209
+  },
+  {
+    "id": "node-kintetsu-0628",
+    "name_en": "Kintetsu-Yao",
+    "name_ja": "近鉄八尾",
+    "operator_id": "kintetsu",
+    "lat": 34.6298364,
+    "lon": 135.6032831
+  },
+  {
+    "id": "node-kintetsu-0629",
+    "name_en": "Kyūhōjiguchi",
+    "name_ja": "久宝寺口",
+    "operator_id": "kintetsu",
+    "lat": 34.6345861,
+    "lon": 135.5905735
+  },
+  {
+    "id": "node-kintetsu-0630",
+    "name_en": "Mito",
+    "name_ja": "弥刀",
+    "operator_id": "kintetsu",
+    "lat": 34.6412441,
+    "lon": 135.5834566
+  },
+  {
+    "id": "node-kintetsu-0631",
+    "name_en": "Nagase",
+    "name_ja": "長瀬",
+    "operator_id": "kintetsu",
+    "lat": 34.6494863,
+    "lon": 135.5778597
+  },
+  {
+    "id": "node-kintetsu-0632",
+    "name_en": "Shuntokumichi",
+    "name_ja": "俊徳道",
+    "operator_id": "kintetsu",
+    "lat": 34.6582981,
+    "lon": 135.5718215
+  },
+  {
+    "id": "node-kintetsu-0633",
+    "name_en": "Fuse",
+    "name_ja": "布施",
+    "operator_id": "kintetsu",
+    "lat": 34.6640039,
+    "lon": 135.563573
+  },
+  {
+    "id": "node-kintetsu-0634",
+    "name_en": "Imazato",
+    "name_ja": "今里",
+    "operator_id": "kintetsu",
+    "lat": 34.6646904,
+    "lon": 135.5497586
+  },
+  {
+    "id": "node-kintetsu-0635",
+    "name_en": "Tsuruhashi",
+    "name_ja": "鶴橋",
+    "operator_id": "kintetsu",
+    "lat": 34.66507,
+    "lon": 135.5307293
+  },
+  {
+    "id": "node-kintetsu-0636",
+    "name_en": "Ōsaka Uehommachi",
+    "name_ja": "大阪上本町",
+    "operator_id": "kintetsu",
+    "lat": 34.665541,
+    "lon": 135.5207039
+  },
+  {
+    "id": "node-kintetsu-0637",
+    "name_en": "Ōsaka Uehommachi",
+    "name_ja": "大阪上本町",
+    "operator_id": "kintetsu",
+    "lat": 34.665599,
+    "lon": 135.5207033
+  },
+  {
+    "id": "node-kintetsu-0638",
+    "name_en": "Tsuruhashi",
+    "name_ja": "鶴橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6652664,
+    "lon": 135.5307394
+  },
+  {
+    "id": "node-kintetsu-0639",
+    "name_en": "Imazato",
+    "name_ja": "今里",
+    "operator_id": "kintetsu",
+    "lat": 34.6647992,
+    "lon": 135.5497704
+  },
+  {
+    "id": "node-kintetsu-0640",
+    "name_en": "Fuse",
+    "name_ja": "布施",
+    "operator_id": "kintetsu",
+    "lat": 34.664171,
+    "lon": 135.5635958
+  },
+  {
+    "id": "node-kintetsu-0641",
+    "name_en": "Shuntokumichi",
+    "name_ja": "俊徳道",
+    "operator_id": "kintetsu",
+    "lat": 34.6583136,
+    "lon": 135.5718671
+  },
+  {
+    "id": "node-kintetsu-0642",
+    "name_en": "Nagase",
+    "name_ja": "長瀬",
+    "operator_id": "kintetsu",
+    "lat": 34.6495046,
+    "lon": 135.5778913
+  },
+  {
+    "id": "node-kintetsu-0643",
+    "name_en": "Mito",
+    "name_ja": "弥刀",
+    "operator_id": "kintetsu",
+    "lat": 34.641261,
+    "lon": 135.5834922
+  },
+  {
+    "id": "node-kintetsu-0644",
+    "name_en": "Kyūhōjiguchi",
+    "name_ja": "久宝寺口",
+    "operator_id": "kintetsu",
+    "lat": 34.6346093,
+    "lon": 135.590601
+  },
+  {
+    "id": "node-kintetsu-0645",
+    "name_en": "Kintetsu-Yao",
+    "name_ja": "近鉄八尾",
+    "operator_id": "kintetsu",
+    "lat": 34.6298743,
+    "lon": 135.6032985
+  },
+  {
+    "id": "node-kintetsu-0646",
+    "name_en": "Kawachi-Yamamoto",
+    "name_ja": "河内山本",
+    "operator_id": "kintetsu",
+    "lat": 34.6279574,
+    "lon": 135.6193353
+  },
+  {
+    "id": "node-kintetsu-0647",
+    "name_en": "Takayau",
+    "name_ja": "高安",
+    "operator_id": "kintetsu",
+    "lat": 34.6190696,
+    "lon": 135.6245376
+  },
+  {
+    "id": "node-kintetsu-0648",
+    "name_en": "Onji",
+    "name_ja": "恩智",
+    "operator_id": "kintetsu",
+    "lat": 34.6097741,
+    "lon": 135.6262764
+  },
+  {
+    "id": "node-kintetsu-0649",
+    "name_en": "Hōzenji",
+    "name_ja": "法善寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5947055,
+    "lon": 135.6264145
+  },
+  {
+    "id": "node-kintetsu-0650",
+    "name_en": "Katashimo",
+    "name_ja": "堅下",
+    "operator_id": "kintetsu",
+    "lat": 34.5890354,
+    "lon": 135.6272699
+  },
+  {
+    "id": "node-kintetsu-0651",
+    "name_en": "Andō",
+    "name_ja": "安堂",
+    "operator_id": "kintetsu",
+    "lat": 34.5801068,
+    "lon": 135.6291658
+  },
+  {
+    "id": "node-kintetsu-0652",
+    "name_en": "Kawachi-Kokubu",
+    "name_ja": "河内国分",
+    "operator_id": "kintetsu",
+    "lat": 34.5669705,
+    "lon": 135.6356125
+  },
+  {
+    "id": "node-kintetsu-0653",
+    "name_en": "Ōsakakyōikudai-mae",
+    "name_ja": "大阪教育大前",
+    "operator_id": "kintetsu",
+    "lat": 34.5554618,
+    "lon": 135.6449398
+  },
+  {
+    "id": "node-kintetsu-0654",
+    "name_en": "Sekiya",
+    "name_ja": "関屋",
+    "operator_id": "kintetsu",
+    "lat": 34.5536731,
+    "lon": 135.6676206
+  },
+  {
+    "id": "node-kintetsu-0655",
+    "name_en": "Nijō",
+    "name_ja": "二上",
+    "operator_id": "kintetsu",
+    "lat": 34.5465447,
+    "lon": 135.6882052
+  },
+  {
+    "id": "node-kintetsu-0656",
+    "name_en": "Kintetsu-Shimoda",
+    "name_ja": "近鉄下田",
+    "operator_id": "kintetsu",
+    "lat": 34.5415042,
+    "lon": 135.704104
+  },
+  {
+    "id": "node-kintetsu-0657",
+    "name_en": "Goidō",
+    "name_ja": "五位堂",
+    "operator_id": "kintetsu",
+    "lat": 34.5348205,
+    "lon": 135.718071
+  },
+  {
+    "id": "node-kintetsu-0658",
+    "name_en": "Tsukiyama",
+    "name_ja": "築山",
+    "operator_id": "kintetsu",
+    "lat": 34.5262045,
+    "lon": 135.733092
+  },
+  {
+    "id": "node-kintetsu-0659",
+    "name_en": "Yamato-Takada",
+    "name_ja": "大和高田",
+    "operator_id": "kintetsu",
+    "lat": 34.5198119,
+    "lon": 135.7424267
+  },
+  {
+    "id": "node-kintetsu-0660",
+    "name_en": "Matsuzuka",
+    "name_ja": "松塚",
+    "operator_id": "kintetsu",
+    "lat": 34.520592,
+    "lon": 135.7615422
+  },
+  {
+    "id": "node-kintetsu-0661",
+    "name_en": "Masuga",
+    "name_ja": "真菅",
+    "operator_id": "kintetsu",
+    "lat": 34.5196008,
+    "lon": 135.7729476
+  },
+  {
+    "id": "node-kintetsu-0662",
+    "name_en": "Yamato-Yagi",
+    "name_ja": "大和八木",
+    "operator_id": "kintetsu",
+    "lat": 34.5131685,
+    "lon": 135.7920925
+  },
+  {
+    "id": "node-kintetsu-0663",
+    "name_en": "Miminashi",
+    "name_ja": "耳成",
+    "operator_id": "kintetsu",
+    "lat": 34.5124148,
+    "lon": 135.8147424
+  },
+  {
+    "id": "node-kintetsu-0664",
+    "name_en": "Daifuku",
+    "name_ja": "大福",
+    "operator_id": "kintetsu",
+    "lat": 34.5129005,
+    "lon": 135.8299056
+  },
+  {
+    "id": "node-kintetsu-0665",
+    "name_en": "Sakurai",
+    "name_ja": "桜井",
+    "operator_id": "kintetsu",
+    "lat": 34.5134724,
+    "lon": 135.8465856
+  },
+  {
+    "id": "node-kintetsu-0666",
+    "name_en": "Yamato-Asakura",
+    "name_ja": "大和朝倉",
+    "operator_id": "kintetsu",
+    "lat": 34.516125,
+    "lon": 135.8690619
+  },
+  {
+    "id": "node-kintetsu-0667",
+    "name_en": "Hasedera",
+    "name_ja": "長谷寺",
+    "operator_id": "kintetsu",
+    "lat": 34.526716,
+    "lon": 135.9060723
+  },
+  {
+    "id": "node-kintetsu-0668",
+    "name_en": "Haibara",
+    "name_ja": "榛原",
+    "operator_id": "kintetsu",
+    "lat": 34.5298058,
+    "lon": 135.9543139
+  },
+  {
+    "id": "node-kintetsu-0669",
+    "name_en": "Murōguchi-Ōno",
+    "name_ja": "室生口大野",
+    "operator_id": "kintetsu",
+    "lat": 34.5661715,
+    "lon": 136.0153462
+  },
+  {
+    "id": "node-kintetsu-0670",
+    "name_en": "Sambommatsu",
+    "name_ja": "三本松",
+    "operator_id": "kintetsu",
+    "lat": 34.5787294,
+    "lon": 136.0363097
+  },
+  {
+    "id": "node-kintetsu-0671",
+    "name_en": "Akameguchi",
+    "name_ja": "赤目口",
+    "operator_id": "kintetsu",
+    "lat": 34.5999344,
+    "lon": 136.0744151
+  },
+  {
+    "id": "node-kintetsu-0672",
+    "name_en": "Nabari",
+    "name_ja": "名張",
+    "operator_id": "kintetsu",
+    "lat": 34.6217939,
+    "lon": 136.0956717
+  },
+  {
+    "id": "node-kintetsu-0673",
+    "name_en": "Kikyōgaoka",
+    "name_ja": "桔梗が丘",
+    "operator_id": "kintetsu",
+    "lat": 34.641371,
+    "lon": 136.1126943
+  },
+  {
+    "id": "node-kintetsu-0674",
+    "name_en": "Mihata",
+    "name_ja": "美旗",
+    "operator_id": "kintetsu",
+    "lat": 34.6634343,
+    "lon": 136.1333322
+  },
+  {
+    "id": "node-kintetsu-0675",
+    "name_en": "Iga-Kambe",
+    "name_ja": "伊賀神戸",
+    "operator_id": "kintetsu",
+    "lat": 34.6737178,
+    "lon": 136.1525577
+  },
+  {
+    "id": "node-kintetsu-0676",
+    "name_en": "Aoyamachou",
+    "name_ja": "青山町",
+    "operator_id": "kintetsu",
+    "lat": 34.6730766,
+    "lon": 136.1777486
+  },
+  {
+    "id": "node-kintetsu-0677",
+    "name_en": "Igakouzu",
+    "name_ja": "伊賀上津",
+    "operator_id": "kintetsu",
+    "lat": 34.6826932,
+    "lon": 136.2047423
+  },
+  {
+    "id": "node-kintetsu-0678",
+    "name_en": "Nishi-Aoyama",
+    "name_ja": "西青山",
+    "operator_id": "kintetsu",
+    "lat": 34.6764835,
+    "lon": 136.2380339
+  },
+  {
+    "id": "node-kintetsu-0679",
+    "name_en": "Higashi-Aoyama",
+    "name_ja": "東青山",
+    "operator_id": "kintetsu",
+    "lat": 34.6756299,
+    "lon": 136.321798
+  },
+  {
+    "id": "node-kintetsu-0680",
+    "name_en": "Sakakibara-Onsenguchi",
+    "name_ja": "榊原温泉口",
+    "operator_id": "kintetsu",
+    "lat": 34.6748459,
+    "lon": 136.3487046
+  },
+  {
+    "id": "node-kintetsu-0681",
+    "name_en": "Omitsu",
+    "name_ja": "大三",
+    "operator_id": "kintetsu",
+    "lat": 34.6641346,
+    "lon": 136.3687836
+  },
+  {
+    "id": "node-kintetsu-0682",
+    "name_en": "Ise-Ishibashi",
+    "name_ja": "伊勢石橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6568674,
+    "lon": 136.4083944
+  },
+  {
+    "id": "node-kintetsu-0683",
+    "name_en": "Kawaitakaoka",
+    "name_ja": "川合高岡",
+    "operator_id": "kintetsu",
+    "lat": 34.656586,
+    "lon": 136.4364275
+  },
+  {
+    "id": "node-kintetsu-0684",
+    "name_en": "Ise-Nakagawa",
+    "name_ja": "伊勢中川",
+    "operator_id": "kintetsu",
+    "lat": 34.6353088,
+    "lon": 136.4781542
+  },
+  {
+    "id": "node-kintetsu-0685",
+    "name_en": "Tenri",
+    "name_ja": "天理",
+    "operator_id": "kintetsu",
+    "lat": 34.6011172,
+    "lon": 135.8297977
+  },
+  {
+    "id": "node-kintetsu-0686",
+    "name_en": "Senzai",
+    "name_ja": "前栽",
+    "operator_id": "kintetsu",
+    "lat": 34.6010703,
+    "lon": 135.8164537
+  },
+  {
+    "id": "node-kintetsu-0687",
+    "name_en": "Nikaidō",
+    "name_ja": "二階堂",
+    "operator_id": "kintetsu",
+    "lat": 34.6020732,
+    "lon": 135.7958577
+  },
+  {
+    "id": "node-kintetsu-0688",
+    "name_en": "Hirahata",
+    "name_ja": "平端",
+    "operator_id": "kintetsu",
+    "lat": 34.6064963,
+    "lon": 135.7832815
+  },
+  {
+    "id": "node-kintetsu-0689",
+    "name_en": "Hirahata",
+    "name_ja": "平端",
+    "operator_id": "kintetsu",
+    "lat": 34.6065085,
+    "lon": 135.7833173
+  },
+  {
+    "id": "node-kintetsu-0690",
+    "name_en": "Nikaidō",
+    "name_ja": "二階堂",
+    "operator_id": "kintetsu",
+    "lat": 34.6021584,
+    "lon": 135.7958803
+  },
+  {
+    "id": "node-kintetsu-0691",
+    "name_en": "Senzai",
+    "name_ja": "前栽",
+    "operator_id": "kintetsu",
+    "lat": 34.601143,
+    "lon": 135.816467
+  },
+  {
+    "id": "node-kintetsu-0692",
+    "name_en": "Tenri",
+    "name_ja": "天理",
+    "operator_id": "kintetsu",
+    "lat": 34.6012202,
+    "lon": 135.8298027
+  },
+  {
+    "id": "node-kintetsu-0693",
+    "name_en": "Fuse",
+    "name_ja": "布施",
+    "operator_id": "kintetsu",
+    "lat": 34.6642008,
+    "lon": 135.5635877
+  },
+  {
+    "id": "node-kintetsu-0694",
+    "name_en": "Kawachi-Eiwa",
+    "name_ja": "河内永和",
+    "operator_id": "kintetsu",
+    "lat": 34.664311,
+    "lon": 135.5732056
+  },
+  {
+    "id": "node-kintetsu-0695",
+    "name_en": "Kawachi Kosaka",
+    "name_ja": "河内小阪",
+    "operator_id": "kintetsu",
+    "lat": 34.6640364,
+    "lon": 135.5811931
+  },
+  {
+    "id": "node-kintetsu-0696",
+    "name_en": "Yaenosato",
+    "name_ja": "八戸ノ里",
+    "operator_id": "kintetsu",
+    "lat": 34.663762,
+    "lon": 135.5894234
+  },
+  {
+    "id": "node-kintetsu-0697",
+    "name_en": "Wakae-Iwata",
+    "name_ja": "若江岩田",
+    "operator_id": "kintetsu",
+    "lat": 34.6631901,
+    "lon": 135.608114
+  },
+  {
+    "id": "node-kintetsu-0698",
+    "name_en": "Kawachi-Hanazono",
+    "name_ja": "河内花園",
+    "operator_id": "kintetsu",
+    "lat": 34.662858,
+    "lon": 135.6179962
+  },
+  {
+    "id": "node-kintetsu-0699",
+    "name_en": "Higashi-Hanazono",
+    "name_ja": "東花園",
+    "operator_id": "kintetsu",
+    "lat": 34.6625325,
+    "lon": 135.6265223
+  },
+  {
+    "id": "node-kintetsu-0700",
+    "name_en": "Hyōtan-yama",
+    "name_ja": "瓢箪山",
+    "operator_id": "kintetsu",
+    "lat": 34.6621066,
+    "lon": 135.6390222
+  },
+  {
+    "id": "node-kintetsu-0701",
+    "name_en": "Hiraoka",
+    "name_ja": "枚岡",
+    "operator_id": "kintetsu",
+    "lat": 34.6698091,
+    "lon": 135.6481525
+  },
+  {
+    "id": "node-kintetsu-0702",
+    "name_en": "Nukata",
+    "name_ja": "額田",
+    "operator_id": "kintetsu",
+    "lat": 34.6753487,
+    "lon": 135.6511424
+  },
+  {
+    "id": "node-kintetsu-0703",
+    "name_en": "Ishikiri",
+    "name_ja": "石切",
+    "operator_id": "kintetsu",
+    "lat": 34.6852351,
+    "lon": 135.6554266
+  },
+  {
+    "id": "node-kintetsu-0704",
+    "name_en": "Ikoma",
+    "name_ja": "生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6932381,
+    "lon": 135.6980865
+  },
+  {
+    "id": "node-kintetsu-0705",
+    "name_en": "Higashi-Ikoma",
+    "name_ja": "東生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6920197,
+    "lon": 135.7097433
+  },
+  {
+    "id": "node-kintetsu-0706",
+    "name_en": "Tomio",
+    "name_ja": "富雄",
+    "operator_id": "kintetsu",
+    "lat": 34.6942961,
+    "lon": 135.7347134
+  },
+  {
+    "id": "node-kintetsu-0707",
+    "name_en": "Gakuemmae",
+    "name_ja": "学園前",
+    "operator_id": "kintetsu",
+    "lat": 34.6971443,
+    "lon": 135.7508689
+  },
+  {
+    "id": "node-kintetsu-0708",
+    "name_en": "Ayameike",
+    "name_ja": "菖蒲池",
+    "operator_id": "kintetsu",
+    "lat": 34.6979883,
+    "lon": 135.7612223
+  },
+  {
+    "id": "node-kintetsu-0709",
+    "name_en": "Yamatosaidaiji",
+    "name_ja": "大和西大寺",
+    "operator_id": "kintetsu",
+    "lat": 34.693849,
+    "lon": 135.7827705
+  },
+  {
+    "id": "node-kintetsu-0710",
+    "name_en": "Shinomiya",
+    "name_ja": "新大宮",
+    "operator_id": "kintetsu",
+    "lat": 34.6854003,
+    "lon": 135.811499
+  },
+  {
+    "id": "node-kintetsu-0711",
+    "name_en": "Kintetsu Nara",
+    "name_ja": "近鉄奈良",
+    "operator_id": "kintetsu",
+    "lat": 34.6841593,
+    "lon": 135.8284083
+  },
+  {
+    "id": "node-kintetsu-0712",
+    "name_en": "Kintetsu Nara",
+    "name_ja": "近鉄奈良",
+    "operator_id": "kintetsu",
+    "lat": 34.6841235,
+    "lon": 135.828409
+  },
+  {
+    "id": "node-kintetsu-0713",
+    "name_en": "Shinomiya",
+    "name_ja": "新大宮",
+    "operator_id": "kintetsu",
+    "lat": 34.685363,
+    "lon": 135.8114953
+  },
+  {
+    "id": "node-kintetsu-0714",
+    "name_en": "Yamatosaidaiji",
+    "name_ja": "大和西大寺",
+    "operator_id": "kintetsu",
+    "lat": 34.6938224,
+    "lon": 135.7827555
+  },
+  {
+    "id": "node-kintetsu-0715",
+    "name_en": "Ayameike",
+    "name_ja": "菖蒲池",
+    "operator_id": "kintetsu",
+    "lat": 34.6979534,
+    "lon": 135.7612195
+  },
+  {
+    "id": "node-kintetsu-0716",
+    "name_en": "Gakuemmae",
+    "name_ja": "学園前",
+    "operator_id": "kintetsu",
+    "lat": 34.6971113,
+    "lon": 135.7508697
+  },
+  {
+    "id": "node-kintetsu-0717",
+    "name_en": "Tomio",
+    "name_ja": "富雄",
+    "operator_id": "kintetsu",
+    "lat": 34.694169,
+    "lon": 135.7347539
+  },
+  {
+    "id": "node-kintetsu-0718",
+    "name_en": "Higashi-Ikoma",
+    "name_ja": "東生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6918973,
+    "lon": 135.7096951
+  },
+  {
+    "id": "node-kintetsu-0719",
+    "name_en": "Ikoma",
+    "name_ja": "生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.693129,
+    "lon": 135.698124
+  },
+  {
+    "id": "node-kintetsu-0720",
+    "name_en": "Ishikiri",
+    "name_ja": "石切",
+    "operator_id": "kintetsu",
+    "lat": 34.6852206,
+    "lon": 135.6554612
+  },
+  {
+    "id": "node-kintetsu-0721",
+    "name_en": "Nukata",
+    "name_ja": "額田",
+    "operator_id": "kintetsu",
+    "lat": 34.6753404,
+    "lon": 135.6511813
+  },
+  {
+    "id": "node-kintetsu-0722",
+    "name_en": "Hiraoka",
+    "name_ja": "枚岡",
+    "operator_id": "kintetsu",
+    "lat": 34.6697964,
+    "lon": 135.648192
+  },
+  {
+    "id": "node-kintetsu-0723",
+    "name_en": "Hyōtan-yama",
+    "name_ja": "瓢箪山",
+    "operator_id": "kintetsu",
+    "lat": 34.6620101,
+    "lon": 135.6390162
+  },
+  {
+    "id": "node-kintetsu-0724",
+    "name_en": "Higashi-Hanazono",
+    "name_ja": "東花園",
+    "operator_id": "kintetsu",
+    "lat": 34.6624064,
+    "lon": 135.6265138
+  },
+  {
+    "id": "node-kintetsu-0725",
+    "name_en": "Kawachi-Hanazono",
+    "name_ja": "河内花園",
+    "operator_id": "kintetsu",
+    "lat": 34.6628207,
+    "lon": 135.6179917
+  },
+  {
+    "id": "node-kintetsu-0726",
+    "name_en": "Wakae-Iwata",
+    "name_ja": "若江岩田",
+    "operator_id": "kintetsu",
+    "lat": 34.6631634,
+    "lon": 135.6081135
+  },
+  {
+    "id": "node-kintetsu-0727",
+    "name_en": "Kawachi Kosaka",
+    "name_ja": "河内小阪",
+    "operator_id": "kintetsu",
+    "lat": 34.664005,
+    "lon": 135.5811907
+  },
+  {
+    "id": "node-kintetsu-0728",
+    "name_en": "Kawachi-Eiwa",
+    "name_ja": "河内永和",
+    "operator_id": "kintetsu",
+    "lat": 34.6642744,
+    "lon": 135.5732036
+  },
+  {
+    "id": "node-kintetsu-0729",
+    "name_en": "Fuse",
+    "name_ja": "布施",
+    "operator_id": "kintetsu",
+    "lat": 34.6640232,
+    "lon": 135.5635737
+  },
+  {
+    "id": "node-kintetsu-0730",
+    "name_en": "Shakudo",
+    "name_ja": "尺土",
+    "operator_id": "kintetsu",
+    "lat": 34.5084917,
+    "lon": 135.7210133
+  },
+  {
+    "id": "node-kintetsu-0731",
+    "name_en": "Kintetsu-Shinjō",
+    "name_ja": "近鉄新庄",
+    "operator_id": "kintetsu",
+    "lat": 34.4891393,
+    "lon": 135.727375
+  },
+  {
+    "id": "node-kintetsu-0732",
+    "name_en": "Oshimi",
+    "name_ja": "忍海",
+    "operator_id": "kintetsu",
+    "lat": 34.4762865,
+    "lon": 135.7319693
+  },
+  {
+    "id": "node-kintetsu-0733",
+    "name_en": "Kintetsu Gose",
+    "name_ja": "近鉄御所",
+    "operator_id": "kintetsu",
+    "lat": 34.4646125,
+    "lon": 135.7324564
+  },
+  {
+    "id": "node-kintetsu-0734",
+    "name_en": "Kintetsu Gose",
+    "name_ja": "近鉄御所",
+    "operator_id": "kintetsu",
+    "lat": 34.4646117,
+    "lon": 135.7324183
+  },
+  {
+    "id": "node-kintetsu-0735",
+    "name_en": "Kintetsu-Shinjō",
+    "name_ja": "近鉄新庄",
+    "operator_id": "kintetsu",
+    "lat": 34.4891397,
+    "lon": 135.7273314
+  },
+  {
+    "id": "node-kintetsu-0736",
+    "name_en": "Amagatsuji",
+    "name_ja": "尼ヶ辻",
+    "operator_id": "kintetsu",
+    "lat": 34.6812021,
+    "lon": 135.783598
+  },
+  {
+    "id": "node-kintetsu-0737",
+    "name_en": "Nishinokyō",
+    "name_ja": "西ノ京",
+    "operator_id": "kintetsu",
+    "lat": 34.6704636,
+    "lon": 135.7832106
+  },
+  {
+    "id": "node-kintetsu-0738",
+    "name_en": "Kujō",
+    "name_ja": "九条",
+    "operator_id": "kintetsu",
+    "lat": 34.6598342,
+    "lon": 135.7830374
+  },
+  {
+    "id": "node-kintetsu-0739",
+    "name_en": "Kintetsu-Koriyama",
+    "name_ja": "近鉄郡山",
+    "operator_id": "kintetsu",
+    "lat": 34.6466885,
+    "lon": 135.7808812
+  },
+  {
+    "id": "node-kintetsu-0740",
+    "name_en": "Tsutsui",
+    "name_ja": "筒井",
+    "operator_id": "kintetsu",
+    "lat": 34.6202563,
+    "lon": 135.7807238
+  },
+  {
+    "id": "node-kintetsu-0741",
+    "name_en": "",
+    "name_ja": "平端",
+    "operator_id": "kintetsu",
+    "lat": 34.6065558,
+    "lon": 135.7828447
+  },
+  {
+    "id": "node-kintetsu-0742",
+    "name_en": "Family-Kōenmae",
+    "name_ja": "ファミリー公園前",
+    "operator_id": "kintetsu",
+    "lat": 34.5984237,
+    "lon": 135.7850556
+  },
+  {
+    "id": "node-kintetsu-0743",
+    "name_en": "Yūzaki",
+    "name_ja": "結崎",
+    "operator_id": "kintetsu",
+    "lat": 34.5843781,
+    "lon": 135.7848075
+  },
+  {
+    "id": "node-kintetsu-0744",
+    "name_en": "Iwami",
+    "name_ja": "石見",
+    "operator_id": "kintetsu",
+    "lat": 34.5715579,
+    "lon": 135.7858256
+  },
+  {
+    "id": "node-kintetsu-0745",
+    "name_en": "Tawaramoto",
+    "name_ja": "田原本",
+    "operator_id": "kintetsu",
+    "lat": 34.5528349,
+    "lon": 135.7909383
+  },
+  {
+    "id": "node-kintetsu-0746",
+    "name_en": "Kasanui",
+    "name_ja": "笠縫",
+    "operator_id": "kintetsu",
+    "lat": 34.5414547,
+    "lon": 135.7941305
+  },
+  {
+    "id": "node-kintetsu-0747",
+    "name_en": "Ninokuchi",
+    "name_ja": "新ノ口",
+    "operator_id": "kintetsu",
+    "lat": 34.5254022,
+    "lon": 135.794747
+  },
+  {
+    "id": "node-kintetsu-0748",
+    "name_en": "Yamato-Yagi",
+    "name_ja": "大和八木",
+    "operator_id": "kintetsu",
+    "lat": 34.5130814,
+    "lon": 135.7915063
+  },
+  {
+    "id": "node-kintetsu-0749",
+    "name_en": "Yagi-Nishiguchi",
+    "name_ja": "八木西口",
+    "operator_id": "kintetsu",
+    "lat": 34.5096046,
+    "lon": 135.7907635
+  },
+  {
+    "id": "node-kintetsu-0750",
+    "name_en": "Unebigoryōmae",
+    "name_ja": "畝傍御陵前",
+    "operator_id": "kintetsu",
+    "lat": 34.4930155,
+    "lon": 135.7942888
+  },
+  {
+    "id": "node-kintetsu-0751",
+    "name_en": "Kashiharajingū-Mae",
+    "name_ja": "橿原神宮前",
+    "operator_id": "kintetsu",
+    "lat": 34.484119,
+    "lon": 135.7942517
+  },
+  {
+    "id": "node-kintetsu-0752",
+    "name_en": "Kashiharajingū-Mae",
+    "name_ja": "橿原神宮前",
+    "operator_id": "kintetsu",
+    "lat": 34.4841245,
+    "lon": 135.7942128
+  },
+  {
+    "id": "node-kintetsu-0753",
+    "name_en": "Unebigoryōmae",
+    "name_ja": "畝傍御陵前",
+    "operator_id": "kintetsu",
+    "lat": 34.4930182,
+    "lon": 135.794255
+  },
+  {
+    "id": "node-kintetsu-0754",
+    "name_en": "Yagi-Nishiguchi",
+    "name_ja": "八木西口",
+    "operator_id": "kintetsu",
+    "lat": 34.5096047,
+    "lon": 135.7907269
+  },
+  {
+    "id": "node-kintetsu-0755",
+    "name_en": "Yamato-Yagi",
+    "name_ja": "大和八木",
+    "operator_id": "kintetsu",
+    "lat": 34.5130845,
+    "lon": 135.7914756
+  },
+  {
+    "id": "node-kintetsu-0756",
+    "name_en": "Ninokuchi",
+    "name_ja": "新ノ口",
+    "operator_id": "kintetsu",
+    "lat": 34.5254034,
+    "lon": 135.7947091
+  },
+  {
+    "id": "node-kintetsu-0757",
+    "name_en": "Kasanui",
+    "name_ja": "笠縫",
+    "operator_id": "kintetsu",
+    "lat": 34.5414522,
+    "lon": 135.7940894
+  },
+  {
+    "id": "node-kintetsu-0758",
+    "name_en": "Tawaramoto",
+    "name_ja": "田原本",
+    "operator_id": "kintetsu",
+    "lat": 34.5528298,
+    "lon": 135.7909164
+  },
+  {
+    "id": "node-kintetsu-0759",
+    "name_en": "Iwami",
+    "name_ja": "石見",
+    "operator_id": "kintetsu",
+    "lat": 34.5715551,
+    "lon": 135.7857934
+  },
+  {
+    "id": "node-kintetsu-0760",
+    "name_en": "Yūzaki",
+    "name_ja": "結崎",
+    "operator_id": "kintetsu",
+    "lat": 34.5843749,
+    "lon": 135.7847735
+  },
+  {
+    "id": "node-kintetsu-0761",
+    "name_en": "Family-Kōenmae",
+    "name_ja": "ファミリー公園前",
+    "operator_id": "kintetsu",
+    "lat": 34.5984225,
+    "lon": 135.7850182
+  },
+  {
+    "id": "node-kintetsu-0762",
+    "name_en": "",
+    "name_ja": "平端",
+    "operator_id": "kintetsu",
+    "lat": 34.6065482,
+    "lon": 135.7828
+  },
+  {
+    "id": "node-kintetsu-0763",
+    "name_en": "Tsutsui",
+    "name_ja": "筒井",
+    "operator_id": "kintetsu",
+    "lat": 34.6202561,
+    "lon": 135.7806885
+  },
+  {
+    "id": "node-kintetsu-0764",
+    "name_en": "Kintetsu-Koriyama",
+    "name_ja": "近鉄郡山",
+    "operator_id": "kintetsu",
+    "lat": 34.6466921,
+    "lon": 135.7808496
+  },
+  {
+    "id": "node-kintetsu-0765",
+    "name_en": "Kujō",
+    "name_ja": "九条",
+    "operator_id": "kintetsu",
+    "lat": 34.6598379,
+    "lon": 135.7830048
+  },
+  {
+    "id": "node-kintetsu-0766",
+    "name_en": "Nishinokyō",
+    "name_ja": "西ノ京",
+    "operator_id": "kintetsu",
+    "lat": 34.6704649,
+    "lon": 135.7831842
+  },
+  {
+    "id": "node-kintetsu-0767",
+    "name_en": "Amagatsuji",
+    "name_ja": "尼ヶ辻",
+    "operator_id": "kintetsu",
+    "lat": 34.6812044,
+    "lon": 135.7835624
+  },
+  {
+    "id": "node-kintetsu-0768",
+    "name_en": "Oji",
+    "name_ja": "王寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5976836,
+    "lon": 135.7019228
+  },
+  {
+    "id": "node-kintetsu-0769",
+    "name_en": "Shigisanshita",
+    "name_ja": "信貴山下",
+    "operator_id": "kintetsu",
+    "lat": 34.6009529,
+    "lon": 135.6951677
+  },
+  {
+    "id": "node-kintetsu-0770",
+    "name_en": "Seyakitaguchi",
+    "name_ja": "勢野北口",
+    "operator_id": "kintetsu",
+    "lat": 34.6060019,
+    "lon": 135.7008322
+  },
+  {
+    "id": "node-kintetsu-0771",
+    "name_en": "Tatsutagawa",
+    "name_ja": "竜田川",
+    "operator_id": "kintetsu",
+    "lat": 34.617514,
+    "lon": 135.7045627
+  },
+  {
+    "id": "node-kintetsu-0772",
+    "name_en": "Heguri",
+    "name_ja": "平群",
+    "operator_id": "kintetsu",
+    "lat": 34.6293357,
+    "lon": 135.7043855
+  },
+  {
+    "id": "node-kintetsu-0773",
+    "name_en": "Motosanjōguchi",
+    "name_ja": "元山上口",
+    "operator_id": "kintetsu",
+    "lat": 34.6403451,
+    "lon": 135.7007693
+  },
+  {
+    "id": "node-kintetsu-0774",
+    "name_en": "Higashiyama",
+    "name_ja": "東山",
+    "operator_id": "kintetsu",
+    "lat": 34.648607,
+    "lon": 135.7084955
+  },
+  {
+    "id": "node-kintetsu-0775",
+    "name_en": "Haginodai",
+    "name_ja": "萩の台",
+    "operator_id": "kintetsu",
+    "lat": 34.6570107,
+    "lon": 135.7089984
+  },
+  {
+    "id": "node-kintetsu-0776",
+    "name_en": "Minami-Ikoma",
+    "name_ja": "南生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6655349,
+    "lon": 135.7087066
+  },
+  {
+    "id": "node-kintetsu-0777",
+    "name_en": "Ichibu",
+    "name_ja": "一分",
+    "operator_id": "kintetsu",
+    "lat": 34.6759033,
+    "lon": 135.7078913
+  },
+  {
+    "id": "node-kintetsu-0778",
+    "name_en": "Nabata",
+    "name_ja": "菜畑",
+    "operator_id": "kintetsu",
+    "lat": 34.6855799,
+    "lon": 135.7067623
+  },
+  {
+    "id": "node-kintetsu-0779",
+    "name_en": "Ikoma",
+    "name_ja": "生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.69299,
+    "lon": 135.6981415
+  },
+  {
+    "id": "node-kintetsu-0780",
+    "name_en": "Ikoma",
+    "name_ja": "生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6930926,
+    "lon": 135.698128
+  },
+  {
+    "id": "node-kintetsu-0781",
+    "name_en": "Nabata",
+    "name_ja": "菜畑",
+    "operator_id": "kintetsu",
+    "lat": 34.685591,
+    "lon": 135.7067919
+  },
+  {
+    "id": "node-kintetsu-0782",
+    "name_en": "Ichibu",
+    "name_ja": "一分",
+    "operator_id": "kintetsu",
+    "lat": 34.675904,
+    "lon": 135.7079287
+  },
+  {
+    "id": "node-kintetsu-0783",
+    "name_en": "Minami-Ikoma",
+    "name_ja": "南生駒",
+    "operator_id": "kintetsu",
+    "lat": 34.6655493,
+    "lon": 135.7087376
+  },
+  {
+    "id": "node-kintetsu-0784",
+    "name_en": "Haginodai",
+    "name_ja": "萩の台",
+    "operator_id": "kintetsu",
+    "lat": 34.656987,
+    "lon": 135.709115
+  },
+  {
+    "id": "node-kintetsu-0785",
+    "name_en": "Heguri",
+    "name_ja": "平群",
+    "operator_id": "kintetsu",
+    "lat": 34.6293542,
+    "lon": 135.7044292
+  },
+  {
+    "id": "node-kintetsu-0786",
+    "name_en": "Shigisanshita",
+    "name_ja": "信貴山下",
+    "operator_id": "kintetsu",
+    "lat": 34.6009468,
+    "lon": 135.6952051
+  },
+  {
+    "id": "node-kintetsu-0787",
+    "name_en": "Oji",
+    "name_ja": "王寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5977745,
+    "lon": 135.7019193
+  },
+  {
+    "id": "node-kintetsu-0788",
+    "name_en": "Shin-Oji",
+    "name_ja": "新王寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5977051,
+    "lon": 135.704737
+  },
+  {
+    "id": "node-kintetsu-0789",
+    "name_en": "Owada",
+    "name_ja": "大輪田",
+    "operator_id": "kintetsu",
+    "lat": 34.5892399,
+    "lon": 135.7201361
+  },
+  {
+    "id": "node-kintetsu-0790",
+    "name_en": "Samitagawa",
+    "name_ja": "佐味田川",
+    "operator_id": "kintetsu",
+    "lat": 34.5852864,
+    "lon": 135.7310793
+  },
+  {
+    "id": "node-kintetsu-0791",
+    "name_en": "Ikebe",
+    "name_ja": "池部",
+    "operator_id": "kintetsu",
+    "lat": 34.57869,
+    "lon": 135.7375641
+  },
+  {
+    "id": "node-kintetsu-0792",
+    "name_en": "Hashio",
+    "name_ja": "箸尾",
+    "operator_id": "kintetsu",
+    "lat": 34.5702458,
+    "lon": 135.7514744
+  },
+  {
+    "id": "node-kintetsu-0793",
+    "name_en": "Tajima",
+    "name_ja": "但馬",
+    "operator_id": "kintetsu",
+    "lat": 34.5694135,
+    "lon": 135.7680797
+  },
+  {
+    "id": "node-kintetsu-0794",
+    "name_en": "Kuroda",
+    "name_ja": "黒田",
+    "operator_id": "kintetsu",
+    "lat": 34.568536,
+    "lon": 135.7774978
+  },
+  {
+    "id": "node-kintetsu-0795",
+    "name_en": "Nishi-Tawaramoto",
+    "name_ja": "西田原本",
+    "operator_id": "kintetsu",
+    "lat": 34.5538936,
+    "lon": 135.7896431
+  },
+  {
+    "id": "node-kintetsu-0796",
+    "name_en": "Nishi-Tawaramoto",
+    "name_ja": "西田原本",
+    "operator_id": "kintetsu",
+    "lat": 34.5538846,
+    "lon": 135.7895431
+  },
+  {
+    "id": "node-kintetsu-0797",
+    "name_en": "Hashio",
+    "name_ja": "箸尾",
+    "operator_id": "kintetsu",
+    "lat": 34.5702111,
+    "lon": 135.7514634
+  },
+  {
+    "id": "node-kintetsu-0798",
+    "name_en": "Owada",
+    "name_ja": "大輪田",
+    "operator_id": "kintetsu",
+    "lat": 34.5891665,
+    "lon": 135.7201105
+  },
+  {
+    "id": "node-kintetsu-0799",
+    "name_en": "Kashiwara",
+    "name_ja": "柏原",
+    "operator_id": "kintetsu",
+    "lat": 34.586141,
+    "lon": 135.623614
+  },
+  {
+    "id": "node-kintetsu-0800",
+    "name_en": "Kashiwara-Minamiguchi",
+    "name_ja": "柏原南口",
+    "operator_id": "kintetsu",
+    "lat": 34.5812913,
+    "lon": 135.6249013
+  },
+  {
+    "id": "node-kintetsu-0801",
+    "name_en": "Dōmyōji",
+    "name_ja": "道明寺",
+    "operator_id": "kintetsu",
+    "lat": 34.5683719,
+    "lon": 135.620385
+  },
+  {
+    "id": "node-kintetsu-0802",
+    "name_en": "Furuichi",
+    "name_ja": "古市",
+    "operator_id": "kintetsu",
+    "lat": 34.5542091,
+    "lon": 135.6092025
+  },
+  {
+    "id": "node-kintetsu-0803",
+    "name_en": "Kishi",
+    "name_ja": "喜志",
+    "operator_id": "kintetsu",
+    "lat": 34.5229024,
+    "lon": 135.6073628
+  },
+  {
+    "id": "node-kintetsu-0804",
+    "name_en": "Tondabayashi",
+    "name_ja": "富田林",
+    "operator_id": "kintetsu",
+    "lat": 34.5045286,
+    "lon": 135.6010576
+  },
+  {
+    "id": "node-kintetsu-0805",
+    "name_en": "Tondabayashi-Nishiguchi",
+    "name_ja": "富田林西口",
+    "operator_id": "kintetsu",
+    "lat": 34.5008329,
+    "lon": 135.5966647
+  },
+  {
+    "id": "node-kintetsu-0806",
+    "name_en": "Kawanishi",
+    "name_ja": "川西",
+    "operator_id": "kintetsu",
+    "lat": 34.4921869,
+    "lon": 135.5908456
+  },
+  {
+    "id": "node-kintetsu-0807",
+    "name_en": "Takidanifudō",
+    "name_ja": "滝谷不動",
+    "operator_id": "kintetsu",
+    "lat": 34.4809774,
+    "lon": 135.5865373
+  },
+  {
+    "id": "node-kintetsu-0808",
+    "name_en": "Sionomiya",
+    "name_ja": "汐ノ宮",
+    "operator_id": "kintetsu",
+    "lat": 34.4668331,
+    "lon": 135.5791889
+  },
+  {
+    "id": "node-kintetsu-0809",
+    "name_en": "Kawachinagano",
+    "name_ja": "河内長野",
+    "operator_id": "kintetsu",
+    "lat": 34.4513039,
+    "lon": 135.5733289
+  },
+  {
+    "id": "node-kintetsu-0810",
+    "name_en": "Takidanifudō",
+    "name_ja": "滝谷不動",
+    "operator_id": "kintetsu",
+    "lat": 34.4809835,
+    "lon": 135.5865168
+  },
+  {
+    "id": "node-kintetsu-0811",
+    "name_en": "Tondabayashi",
+    "name_ja": "富田林",
+    "operator_id": "kintetsu",
+    "lat": 34.5045557,
+    "lon": 135.6010406
+  },
+  {
+    "id": "node-kintetsu-0812",
+    "name_en": "Kishi",
+    "name_ja": "喜志",
+    "operator_id": "kintetsu",
+    "lat": 34.522907,
+    "lon": 135.6073269
+  },
+  {
+    "id": "node-kintetsu-0813",
+    "name_en": "Furuichi",
+    "name_ja": "古市",
+    "operator_id": "kintetsu",
+    "lat": 34.554264,
+    "lon": 135.6090579
+  },
+  {
+    "id": "node-kintetsu-0814",
+    "name_en": "Ōsaka Uehommachi",
+    "name_ja": "大阪上本町",
+    "operator_id": "kintetsu",
+    "lat": 34.6660588,
+    "lon": 135.5196575
+  },
+  {
+    "id": "node-kintetsu-0815",
+    "name_en": "Kintetsu-Nippombashi",
+    "name_ja": "近鉄日本橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6668884,
+    "lon": 135.5057003
+  },
+  {
+    "id": "node-kintetsu-0816",
+    "name_en": "Ōsaka Namba",
+    "name_ja": "大阪難波",
+    "operator_id": "kintetsu",
+    "lat": 34.6671934,
+    "lon": 135.4977784
+  },
+  {
+    "id": "node-kintetsu-0817",
+    "name_en": "Kintetsu-Nippombashi",
+    "name_ja": "近鉄日本橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6669303,
+    "lon": 135.5057003
+  },
+  {
+    "id": "node-kintetsu-0818",
+    "name_en": "Ōsaka Uehommachi",
+    "name_ja": "大阪上本町",
+    "operator_id": "kintetsu",
+    "lat": 34.6660924,
+    "lon": 135.5196657
+  },
+  {
+    "id": "node-kintetsu-0819",
+    "name_en": "Ise-Nakagawa",
+    "name_ja": "伊勢中川",
+    "operator_id": "kintetsu",
+    "lat": 34.6353696,
+    "lon": 136.4782298
+  },
+  {
+    "id": "node-kintetsu-0820",
+    "name_en": "Matsusaka",
+    "name_ja": "松阪",
+    "operator_id": "kintetsu",
+    "lat": 34.5770996,
+    "lon": 136.5365772
+  },
+  {
+    "id": "node-kintetsu-0821",
+    "name_en": "Iseshi",
+    "name_ja": "伊勢市",
+    "operator_id": "kintetsu",
+    "lat": 34.4920049,
+    "lon": 136.7103709
+  },
+  {
+    "id": "node-kintetsu-0822",
+    "name_en": "Ujiyamada",
+    "name_ja": "宇治山田",
+    "operator_id": "kintetsu",
+    "lat": 34.4882245,
+    "lon": 136.7138658
+  },
+  {
+    "id": "node-kintetsu-0823",
+    "name_en": "Isuzugawa",
+    "name_ja": "五十鈴川",
+    "operator_id": "kintetsu",
+    "lat": 34.4765022,
+    "lon": 136.727173
+  },
+  {
+    "id": "node-kintetsu-0824",
+    "name_en": "Toba",
+    "name_ja": "鳥羽",
+    "operator_id": "kintetsu",
+    "lat": 34.4869262,
+    "lon": 136.8426388
+  },
+  {
+    "id": "node-kintetsu-0825",
+    "name_en": "Shima-isobe",
+    "name_ja": "志摩磯部",
+    "operator_id": "kintetsu",
+    "lat": 34.3699432,
+    "lon": 136.8055059
+  },
+  {
+    "id": "node-kintetsu-0826",
+    "name_en": "Ugata",
+    "name_ja": "鵜方",
+    "operator_id": "kintetsu",
+    "lat": 34.3294273,
+    "lon": 136.8259678
+  },
+  {
+    "id": "node-kintetsu-0827",
+    "name_en": "Kashikojima",
+    "name_ja": "賢島",
+    "operator_id": "kintetsu",
+    "lat": 34.3085319,
+    "lon": 136.8191922
+  },
+  {
+    "id": "node-kintetsu-0828",
+    "name_en": "Tsuruhashi",
+    "name_ja": "鶴橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6653993,
+    "lon": 135.5307182
+  },
+  {
+    "id": "node-kintetsu-0829",
+    "name_en": "Toba",
+    "name_ja": "鳥羽",
+    "operator_id": "kintetsu",
+    "lat": 34.4868168,
+    "lon": 136.84258
+  },
+  {
+    "id": "node-kintetsu-0830",
+    "name_en": "Isuzugawa",
+    "name_ja": "五十鈴川",
+    "operator_id": "kintetsu",
+    "lat": 34.4764735,
+    "lon": 136.7271527
+  },
+  {
+    "id": "node-kintetsu-0831",
+    "name_en": "Ujiyamada",
+    "name_ja": "宇治山田",
+    "operator_id": "kintetsu",
+    "lat": 34.4882257,
+    "lon": 136.7138269
+  },
+  {
+    "id": "node-kintetsu-0832",
+    "name_en": "Iseshi",
+    "name_ja": "伊勢市",
+    "operator_id": "kintetsu",
+    "lat": 34.4919718,
+    "lon": 136.7103589
+  },
+  {
+    "id": "node-kintetsu-0833",
+    "name_en": "Matsusaka",
+    "name_ja": "松阪",
+    "operator_id": "kintetsu",
+    "lat": 34.5770222,
+    "lon": 136.5364468
+  },
+  {
+    "id": "node-kintetsu-0834",
+    "name_en": "Kashikojima",
+    "name_ja": "賢島",
+    "operator_id": "kintetsu",
+    "lat": 34.3086172,
+    "lon": 136.8191607
+  },
+  {
+    "id": "node-kintetsu-0835",
+    "name_en": "Ugata",
+    "name_ja": "鵜方",
+    "operator_id": "kintetsu",
+    "lat": 34.3293122,
+    "lon": 136.8259701
+  },
+  {
+    "id": "node-kintetsu-0836",
+    "name_en": "Shima-isobe",
+    "name_ja": "志摩磯部",
+    "operator_id": "kintetsu",
+    "lat": 34.369932,
+    "lon": 136.8054733
+  },
+  {
+    "id": "node-kintetsu-0837",
+    "name_en": "Tsuruhashi",
+    "name_ja": "鶴橋",
+    "operator_id": "kintetsu",
+    "lat": 34.6652335,
+    "lon": 135.5307382
+  },
+  {
+    "id": "node-kintetsu-0838",
+    "name_en": "Kintetsu Nara",
+    "name_ja": "近鉄奈良",
+    "operator_id": "kintetsu",
+    "lat": 34.6840888,
+    "lon": 135.8284062
+  },
+  {
+    "id": "node-kintetsu-0839",
+    "name_en": "Tsu",
+    "name_ja": "津",
+    "operator_id": "kintetsu",
+    "lat": 34.7339924,
+    "lon": 136.5101825
+  },
+  {
+    "id": "node-kintetsu-0840",
+    "name_en": "",
+    "name_ja": "",
+    "operator_id": "kintetsu",
+    "lat": 35.1698564,
+    "lon": 136.8836581
+  },
+  {
+    "id": "node-kintetsu-0841",
+    "name_en": "Tsu",
+    "name_ja": "津",
+    "operator_id": "kintetsu",
+    "lat": 34.7339917,
+    "lon": 136.5103559
+  },
+  {
+    "id": "node-kintetsu-0842",
+    "name_en": "Kintetsu-Yokkaichi",
+    "name_ja": "近鉄四日市",
+    "operator_id": "kintetsu",
+    "lat": 34.9670648,
+    "lon": 136.6185871
+  },
+  {
+    "id": "node-kintetsu-0843",
+    "name_en": "Kuwana",
+    "name_ja": "桑名",
+    "operator_id": "kintetsu",
+    "lat": 35.067107,
+    "lon": 136.6832994
+  },
+  {
+    "id": "node-kintetsu-0844",
+    "name_en": "Shiroko",
+    "name_ja": "白子",
+    "operator_id": "kintetsu",
+    "lat": 34.8340518,
+    "lon": 136.5896509
+  },
+  {
+    "id": "node-kintetsu-0845",
+    "name_en": "",
+    "name_ja": "",
+    "operator_id": "kintetsu",
+    "lat": 35.1698557,
+    "lon": 136.8835984
+  },
+  {
+    "id": "node-kintetsu-0846",
+    "name_en": "Kuwana",
+    "name_ja": "桑名",
+    "operator_id": "kintetsu",
+    "lat": 35.0671059,
+    "lon": 136.683349
+  },
+  {
+    "id": "node-kintetsu-0847",
+    "name_en": "Kintetsu-Yokkaichi",
+    "name_ja": "近鉄四日市",
+    "operator_id": "kintetsu",
+    "lat": 34.9670594,
+    "lon": 136.6186286
+  },
+  {
+    "id": "node-kintetsu-0848",
+    "name_en": "Shiroko",
+    "name_ja": "白子",
+    "operator_id": "kintetsu",
+    "lat": 34.8340333,
+    "lon": 136.5896775
+  },
+  {
+    "id": "node-nankai-0849",
+    "name_en": "Kada",
+    "name_ja": "加太",
+    "operator_id": "nankai",
+    "lat": 34.2751332,
+    "lon": 135.0805732
+  },
+  {
+    "id": "node-nankai-0850",
+    "name_en": "Isonoura",
+    "name_ja": "磯ノ浦",
+    "operator_id": "nankai",
+    "lat": 34.2605076,
+    "lon": 135.0947999
+  },
+  {
+    "id": "node-nankai-0851",
+    "name_en": "Nirigahama",
+    "name_ja": "二里ヶ浜",
+    "operator_id": "nankai",
+    "lat": 34.2576122,
+    "lon": 135.1041348
+  },
+  {
+    "id": "node-nankai-0852",
+    "name_en": "Nishinoshō",
+    "name_ja": "西ノ庄",
+    "operator_id": "nankai",
+    "lat": 34.2555637,
+    "lon": 135.1105139
+  },
+  {
+    "id": "node-nankai-0853",
+    "name_en": "Hachimanmae",
+    "name_ja": "八幡前",
+    "operator_id": "nankai",
+    "lat": 34.2526381,
+    "lon": 135.1218071
+  },
+  {
+    "id": "node-nankai-0854",
+    "name_en": "Nakamatsue",
+    "name_ja": "中松江",
+    "operator_id": "nankai",
+    "lat": 34.2487139,
+    "lon": 135.1331001
+  },
+  {
+    "id": "node-nankai-0855",
+    "name_en": "Higashi-Matsue",
+    "name_ja": "東松江",
+    "operator_id": "nankai",
+    "lat": 34.2478386,
+    "lon": 135.1409006
+  },
+  {
+    "id": "node-nankai-0856",
+    "name_en": "Kinokawa",
+    "name_ja": "紀ノ川",
+    "operator_id": "nankai",
+    "lat": 34.255137,
+    "lon": 135.165562
+  },
+  {
+    "id": "node-nankai-0857",
+    "name_en": "Wakayamashi",
+    "name_ja": "和歌山市",
+    "operator_id": "nankai",
+    "lat": 34.2367675,
+    "lon": 135.166883
+  },
+  {
+    "id": "node-nankai-0858",
+    "name_en": "Kinokawa",
+    "name_ja": "紀ノ川",
+    "operator_id": "nankai",
+    "lat": 34.2551071,
+    "lon": 135.1655351
+  },
+  {
+    "id": "node-nankai-0859",
+    "name_en": "Higashi-Matsue",
+    "name_ja": "東松江",
+    "operator_id": "nankai",
+    "lat": 34.2477737,
+    "lon": 135.1408782
+  },
+  {
+    "id": "node-nankai-0860",
+    "name_en": "Nakamatsue",
+    "name_ja": "中松江",
+    "operator_id": "nankai",
+    "lat": 34.248654,
+    "lon": 135.1330764
+  },
+  {
+    "id": "node-nankai-0861",
+    "name_en": "Hachimanmae",
+    "name_ja": "八幡前",
+    "operator_id": "nankai",
+    "lat": 34.2526108,
+    "lon": 135.1217883
+  },
+  {
+    "id": "node-nankai-0862",
+    "name_en": "Nirigahama",
+    "name_ja": "二里ヶ浜",
+    "operator_id": "nankai",
+    "lat": 34.2575786,
+    "lon": 135.1041184
+  },
+  {
+    "id": "node-nankai-0863",
+    "name_en": "Isonoura",
+    "name_ja": "磯ノ浦",
+    "operator_id": "nankai",
+    "lat": 34.2604806,
+    "lon": 135.0947827
+  },
+  {
+    "id": "node-nankai-0864",
+    "name_en": "Misaki-kōen",
+    "name_ja": "みさき公園",
+    "operator_id": "nankai",
+    "lat": 34.324268,
+    "lon": 135.1611015
+  },
+  {
+    "id": "node-nankai-0865",
+    "name_en": "Fukechō",
+    "name_ja": "深日町",
+    "operator_id": "nankai",
+    "lat": 34.3182963,
+    "lon": 135.1484254
+  },
+  {
+    "id": "node-nankai-0866",
+    "name_en": "Fukekō",
+    "name_ja": "深日港",
+    "operator_id": "nankai",
+    "lat": 34.3173615,
+    "lon": 135.1415804
+  },
+  {
+    "id": "node-nankai-0867",
+    "name_en": "Tanagawa",
+    "name_ja": "多奈川",
+    "operator_id": "nankai",
+    "lat": 34.3167324,
+    "lon": 135.1371293
+  },
+  {
+    "id": "node-nankai-0868",
+    "name_en": "Namba",
+    "name_ja": "なんば",
+    "operator_id": "nankai",
+    "lat": 34.663345,
+    "lon": 135.501876
+  },
+  {
+    "id": "node-nankai-0869",
+    "name_en": "Shin-Imaimiya",
+    "name_ja": "新今宮",
+    "operator_id": "nankai",
+    "lat": 34.6501579,
+    "lon": 135.5001545
+  },
+  {
+    "id": "node-nankai-0870",
+    "name_en": "Tengachaya",
+    "name_ja": "天下茶屋",
+    "operator_id": "nankai",
+    "lat": 34.6371753,
+    "lon": 135.4965747
+  },
+  {
+    "id": "node-nankai-0871",
+    "name_en": "Sakai",
+    "name_ja": "堺",
+    "operator_id": "nankai",
+    "lat": 34.5819059,
+    "lon": 135.4688341
+  },
+  {
+    "id": "node-nankai-0872",
+    "name_en": "Hagoromo",
+    "name_ja": "羽衣",
+    "operator_id": "nankai",
+    "lat": 34.5344765,
+    "lon": 135.4418136
+  },
+  {
+    "id": "node-nankai-0873",
+    "name_en": "Izumiōtsu",
+    "name_ja": "泉大津",
+    "operator_id": "nankai",
+    "lat": 34.5032281,
+    "lon": 135.4066569
+  },
+  {
+    "id": "node-nankai-0874",
+    "name_en": "Haruki",
+    "name_ja": "春木",
+    "operator_id": "nankai",
+    "lat": 34.477453,
+    "lon": 135.392019
+  },
+  {
+    "id": "node-nankai-0875",
+    "name_en": "Kishiwada",
+    "name_ja": "岸和田",
+    "operator_id": "nankai",
+    "lat": 34.4603172,
+    "lon": 135.3781215
+  },
+  {
+    "id": "node-nankai-0876",
+    "name_en": "Kaizuka",
+    "name_ja": "貝塚",
+    "operator_id": "nankai",
+    "lat": 34.4455168,
+    "lon": 135.3575974
+  },
+  {
+    "id": "node-nankai-0877",
+    "name_en": "Izumisano",
+    "name_ja": "泉佐野",
+    "operator_id": "nankai",
+    "lat": 34.411133,
+    "lon": 135.3169955
+  },
+  {
+    "id": "node-nankai-0878",
+    "name_en": "Ozaki",
+    "name_ja": "尾崎",
+    "operator_id": "nankai",
+    "lat": 34.3615399,
+    "lon": 135.2407396
+  },
+  {
+    "id": "node-nankai-0879",
+    "name_en": "Misaki-kōen",
+    "name_ja": "みさき公園",
+    "operator_id": "nankai",
+    "lat": 34.3241611,
+    "lon": 135.1612195
+  },
+  {
+    "id": "node-nankai-0880",
+    "name_en": "Wakayamadaigakumae",
+    "name_ja": "和歌山大学前",
+    "operator_id": "nankai",
+    "lat": 34.2763594,
+    "lon": 135.1470977
+  },
+  {
+    "id": "node-nankai-0881",
+    "name_en": "Wakayamashi",
+    "name_ja": "和歌山市",
+    "operator_id": "nankai",
+    "lat": 34.2369019,
+    "lon": 135.1666489
+  },
+  {
+    "id": "node-nankai-0882",
+    "name_en": "Izumisano",
+    "name_ja": "泉佐野",
+    "operator_id": "nankai",
+    "lat": 34.4110588,
+    "lon": 135.3170451
+  },
+  {
+    "id": "node-nankai-0883",
+    "name_en": "Hagurazaki",
+    "name_ja": "羽倉崎",
+    "operator_id": "nankai",
+    "lat": 34.3994279,
+    "lon": 135.2998594
+  },
+  {
+    "id": "node-nankai-0884",
+    "name_en": "Yoshiminosato",
+    "name_ja": "吉見ノ里",
+    "operator_id": "nankai",
+    "lat": 34.391162,
+    "lon": 135.2894653
+  },
+  {
+    "id": "node-nankai-0885",
+    "name_en": "Okadaura",
+    "name_ja": "岡田浦",
+    "operator_id": "nankai",
+    "lat": 34.3843523,
+    "lon": 135.2765679
+  },
+  {
+    "id": "node-nankai-0886",
+    "name_en": "Tarui",
+    "name_ja": "樽井",
+    "operator_id": "nankai",
+    "lat": 34.3742474,
+    "lon": 135.2614973
+  },
+  {
+    "id": "node-nankai-0887",
+    "name_en": "Ozaki",
+    "name_ja": "尾崎",
+    "operator_id": "nankai",
+    "lat": 34.3614722,
+    "lon": 135.2408034
+  },
+  {
+    "id": "node-nankai-0888",
+    "name_en": "Tottorinoshō",
+    "name_ja": "鳥取ノ荘",
+    "operator_id": "nankai",
+    "lat": 34.3513048,
+    "lon": 135.231716
+  },
+  {
+    "id": "node-nankai-0889",
+    "name_en": "Hakotsukuri",
+    "name_ja": "箱作",
+    "operator_id": "nankai",
+    "lat": 34.3414169,
+    "lon": 135.2128011
+  },
+  {
+    "id": "node-nankai-0890",
+    "name_en": "Tannowa",
+    "name_ja": "淡輪",
+    "operator_id": "nankai",
+    "lat": 34.3312614,
+    "lon": 135.1782013
+  },
+  {
+    "id": "node-nankai-0891",
+    "name_en": "Misaki-kōen",
+    "name_ja": "みさき公園",
+    "operator_id": "nankai",
+    "lat": 34.3241024,
+    "lon": 135.1612732
+  },
+  {
+    "id": "node-nankai-0892",
+    "name_en": "Kyōshi",
+    "name_ja": "孝子",
+    "operator_id": "nankai",
+    "lat": 34.2908265,
+    "lon": 135.1508528
+  },
+  {
+    "id": "node-nankai-0893",
+    "name_en": "Wakayamashi",
+    "name_ja": "和歌山市",
+    "operator_id": "nankai",
+    "lat": 34.2367308,
+    "lon": 135.1665765
+  },
+  {
+    "id": "node-nankai-0894",
+    "name_en": "Wakayamadaigakumae",
+    "name_ja": "和歌山大学前",
+    "operator_id": "nankai",
+    "lat": 34.2763583,
+    "lon": 135.1470655
+  },
+  {
+    "id": "node-nankai-0895",
+    "name_en": "Kyōshi",
+    "name_ja": "孝子",
+    "operator_id": "nankai",
+    "lat": 34.2908094,
+    "lon": 135.1508197
+  },
+  {
+    "id": "node-nankai-0896",
+    "name_en": "Misaki-kōen",
+    "name_ja": "みさき公園",
+    "operator_id": "nankai",
+    "lat": 34.3241905,
+    "lon": 135.1611899
+  },
+  {
+    "id": "node-nankai-0897",
+    "name_en": "Tannowa",
+    "name_ja": "淡輪",
+    "operator_id": "nankai",
+    "lat": 34.3313433,
+    "lon": 135.178359
+  },
+  {
+    "id": "node-nankai-0898",
+    "name_en": "Hakotsukuri",
+    "name_ja": "箱作",
+    "operator_id": "nankai",
+    "lat": 34.3414453,
+    "lon": 135.2127797
+  },
+  {
+    "id": "node-nankai-0899",
+    "name_en": "Tottorinoshō",
+    "name_ja": "鳥取ノ荘",
+    "operator_id": "nankai",
+    "lat": 34.3513317,
+    "lon": 135.2316996
+  },
+  {
+    "id": "node-nankai-0900",
+    "name_en": "Ozaki",
+    "name_ja": "尾崎",
+    "operator_id": "nankai",
+    "lat": 34.3616272,
+    "lon": 135.2406263
+  },
+  {
+    "id": "node-nankai-0901",
+    "name_en": "Tarui",
+    "name_ja": "樽井",
+    "operator_id": "nankai",
+    "lat": 34.3742701,
+    "lon": 135.2614852
+  },
+  {
+    "id": "node-nankai-0902",
+    "name_en": "Okadaura",
+    "name_ja": "岡田浦",
+    "operator_id": "nankai",
+    "lat": 34.3843731,
+    "lon": 135.2765563
+  },
+  {
+    "id": "node-nankai-0903",
+    "name_en": "Yoshiminosato",
+    "name_ja": "吉見ノ里",
+    "operator_id": "nankai",
+    "lat": 34.3911861,
+    "lon": 135.2894378
+  },
+  {
+    "id": "node-nankai-0904",
+    "name_en": "Hagurazaki",
+    "name_ja": "羽倉崎",
+    "operator_id": "nankai",
+    "lat": 34.3994459,
+    "lon": 135.2998354
+  },
+  {
+    "id": "node-nankai-0905",
+    "name_en": "Izumisano",
+    "name_ja": "泉佐野",
+    "operator_id": "nankai",
+    "lat": 34.4112447,
+    "lon": 135.3169405
+  },
+  {
+    "id": "node-nankai-0906",
+    "name_en": "Kaizuka",
+    "name_ja": "貝塚",
+    "operator_id": "nankai",
+    "lat": 34.4455371,
+    "lon": 135.3575727
+  },
+  {
+    "id": "node-nankai-0907",
+    "name_en": "Kishiwada",
+    "name_ja": "岸和田",
+    "operator_id": "nankai",
+    "lat": 34.460333,
+    "lon": 135.3780909
+  },
+  {
+    "id": "node-nankai-0908",
+    "name_en": "Haruki",
+    "name_ja": "春木",
+    "operator_id": "nankai",
+    "lat": 34.4774695,
+    "lon": 135.3919888
+  },
+  {
+    "id": "node-nankai-0909",
+    "name_en": "Izumiōtsu",
+    "name_ja": "泉大津",
+    "operator_id": "nankai",
+    "lat": 34.5032577,
+    "lon": 135.4066296
+  },
+  {
+    "id": "node-nankai-0910",
+    "name_en": "Hagoromo",
+    "name_ja": "羽衣",
+    "operator_id": "nankai",
+    "lat": 34.5344801,
+    "lon": 135.4417842
+  },
+  {
+    "id": "node-nankai-0911",
+    "name_en": "Sakai",
+    "name_ja": "堺",
+    "operator_id": "nankai",
+    "lat": 34.5819809,
+    "lon": 135.4687088
+  },
+  {
+    "id": "node-nankai-0912",
+    "name_en": "Tengachaya",
+    "name_ja": "天下茶屋",
+    "operator_id": "nankai",
+    "lat": 34.6371748,
+    "lon": 135.496548
+  },
+  {
+    "id": "node-nankai-0913",
+    "name_en": "Shin-Imaimiya",
+    "name_ja": "新今宮",
+    "operator_id": "nankai",
+    "lat": 34.6501635,
+    "lon": 135.5001251
+  },
+  {
+    "id": "node-nankai-0914",
+    "name_en": "Wakayamakō",
+    "name_ja": "和歌山港",
+    "operator_id": "nankai",
+    "lat": 34.2170618,
+    "lon": 135.146315
+  },
+  {
+    "id": "node-nankai-0915",
+    "name_en": "Namba",
+    "name_ja": "なんば",
+    "operator_id": "nankai",
+    "lat": 34.6633224,
+    "lon": 135.5018015
+  },
+  {
+    "id": "node-nankai-0916",
+    "name_en": "Kishinosato-tamade",
+    "name_ja": "岸里玉出",
+    "operator_id": "nankai",
+    "lat": 34.6290333,
+    "lon": 135.4946632
+  },
+  {
+    "id": "node-nankai-0917",
+    "name_en": "Kohama",
+    "name_ja": "粉浜",
+    "operator_id": "nankai",
+    "lat": 34.6182134,
+    "lon": 135.4919168
+  },
+  {
+    "id": "node-nankai-0918",
+    "name_en": "Sumiyoshitaisha",
+    "name_ja": "住吉大社",
+    "operator_id": "nankai",
+    "lat": 34.6128734,
+    "lon": 135.4904426
+  },
+  {
+    "id": "node-nankai-0919",
+    "name_en": "Suminoe",
+    "name_ja": "住ノ江",
+    "operator_id": "nankai",
+    "lat": 34.6055403,
+    "lon": 135.487336
+  },
+  {
+    "id": "node-nankai-0920",
+    "name_en": "Shichido",
+    "name_ja": "七道",
+    "operator_id": "nankai",
+    "lat": 34.5924103,
+    "lon": 135.4807558
+  },
+  {
+    "id": "node-nankai-0921",
+    "name_en": "Sakai",
+    "name_ja": "堺",
+    "operator_id": "nankai",
+    "lat": 34.5818335,
+    "lon": 135.4689313
+  },
+  {
+    "id": "node-nankai-0922",
+    "name_en": "Minato",
+    "name_ja": "湊",
+    "operator_id": "nankai",
+    "lat": 34.5705493,
+    "lon": 135.4600548
+  },
+  {
+    "id": "node-nankai-0923",
+    "name_en": "Ishizugawa",
+    "name_ja": "石津川",
+    "operator_id": "nankai",
+    "lat": 34.559389,
+    "lon": 135.4532362
+  },
+  {
+    "id": "node-nankai-0924",
+    "name_en": "Suwanomori",
+    "name_ja": "諏訪ノ森",
+    "operator_id": "nankai",
+    "lat": 34.5501556,
+    "lon": 135.4483848
+  },
+  {
+    "id": "node-nankai-0925",
+    "name_en": "Hamaderakōen",
+    "name_ja": "浜寺公園",
+    "operator_id": "nankai",
+    "lat": 34.5413806,
+    "lon": 135.4446086
+  },
+  {
+    "id": "node-nankai-0926",
+    "name_en": "Takaishi",
+    "name_ja": "高石",
+    "operator_id": "nankai",
+    "lat": 34.5215711,
+    "lon": 135.4331177
+  },
+  {
+    "id": "node-nankai-0927",
+    "name_en": "Kita-Sukematsu",
+    "name_ja": "北助松",
+    "operator_id": "nankai",
+    "lat": 34.5147823,
+    "lon": 135.4231701
+  },
+  {
+    "id": "node-nankai-0928",
+    "name_en": "Matsunohama",
+    "name_ja": "松ノ浜",
+    "operator_id": "nankai",
+    "lat": 34.5089514,
+    "lon": 135.4148096
+  },
+  {
+    "id": "node-nankai-0929",
+    "name_en": "Izumiōtsu",
+    "name_ja": "泉大津",
+    "operator_id": "nankai",
+    "lat": 34.5031449,
+    "lon": 135.4067402
+  },
+  {
+    "id": "node-nankai-0930",
+    "name_en": "Tadaoka",
+    "name_ja": "忠岡",
+    "operator_id": "nankai",
+    "lat": 34.4885345,
+    "lon": 135.3976387
+  },
+  {
+    "id": "node-nankai-0931",
+    "name_en": "Izumi-Ōmiya",
+    "name_ja": "和泉大宮",
+    "operator_id": "nankai",
+    "lat": 34.4675827,
+    "lon": 135.3847096
+  },
+  {
+    "id": "node-nankai-0932",
+    "name_en": "Kishiwada",
+    "name_ja": "岸和田",
+    "operator_id": "nankai",
+    "lat": 34.4602389,
+    "lon": 135.3781853
+  },
+  {
+    "id": "node-nankai-0933",
+    "name_en": "Takojizō",
+    "name_ja": "蛸地蔵",
+    "operator_id": "nankai",
+    "lat": 34.4562109,
+    "lon": 135.3699059
+  },
+  {
+    "id": "node-nankai-0934",
+    "name_en": "Kaizuka",
+    "name_ja": "貝塚",
+    "operator_id": "nankai",
+    "lat": 34.4454453,
+    "lon": 135.3576625
+  },
+  {
+    "id": "node-nankai-0935",
+    "name_en": "Nishikinohama",
+    "name_ja": "二色浜",
+    "operator_id": "nankai",
+    "lat": 34.4324953,
+    "lon": 135.3451042
+  },
+  {
+    "id": "node-nankai-0936",
+    "name_en": "Tsuruhara",
+    "name_ja": "鶴原",
+    "operator_id": "nankai",
+    "lat": 34.4266794,
+    "lon": 135.3386064
+  },
+  {
+    "id": "node-nankai-0937",
+    "name_en": "Iharanosato",
+    "name_ja": "井原里",
+    "operator_id": "nankai",
+    "lat": 34.4195848,
+    "lon": 135.3307032
+  },
+  {
+    "id": "node-nankai-0938",
+    "name_en": "Izumisano",
+    "name_ja": "泉佐野",
+    "operator_id": "nankai",
+    "lat": 34.4113487,
+    "lon": 135.3168802
+  },
+  {
+    "id": "node-nankai-0939",
+    "name_en": "Iharanosato",
+    "name_ja": "井原里",
+    "operator_id": "nankai",
+    "lat": 34.4196101,
+    "lon": 135.3306777
+  },
+  {
+    "id": "node-nankai-0940",
+    "name_en": "Tsuruhara",
+    "name_ja": "鶴原",
+    "operator_id": "nankai",
+    "lat": 34.4267076,
+    "lon": 135.3385712
+  },
+  {
+    "id": "node-nankai-0941",
+    "name_en": "Nishikinohama",
+    "name_ja": "二色浜",
+    "operator_id": "nankai",
+    "lat": 34.4325206,
+    "lon": 135.3450702
+  },
+  {
+    "id": "node-nankai-0942",
+    "name_en": "Kaizuka",
+    "name_ja": "貝塚",
+    "operator_id": "nankai",
+    "lat": 34.4455902,
+    "lon": 135.3575002
+  },
+  {
+    "id": "node-nankai-0943",
+    "name_en": "Takojizō",
+    "name_ja": "蛸地蔵",
+    "operator_id": "nankai",
+    "lat": 34.456246,
+    "lon": 135.369882
+  },
+  {
+    "id": "node-nankai-0944",
+    "name_en": "Kishiwada",
+    "name_ja": "岸和田",
+    "operator_id": "nankai",
+    "lat": 34.4604124,
+    "lon": 135.3780184
+  },
+  {
+    "id": "node-nankai-0945",
+    "name_en": "Izumi-Ōmiya",
+    "name_ja": "和泉大宮",
+    "operator_id": "nankai",
+    "lat": 34.4675969,
+    "lon": 135.3846805
+  },
+  {
+    "id": "node-nankai-0946",
+    "name_en": "Tadaoka",
+    "name_ja": "忠岡",
+    "operator_id": "nankai",
+    "lat": 34.4885479,
+    "lon": 135.3975995
+  },
+  {
+    "id": "node-nankai-0947",
+    "name_en": "Izumiōtsu",
+    "name_ja": "泉大津",
+    "operator_id": "nankai",
+    "lat": 34.5033279,
+    "lon": 135.4065384
+  },
+  {
+    "id": "node-nankai-0948",
+    "name_en": "Matsunohama",
+    "name_ja": "松ノ浜",
+    "operator_id": "nankai",
+    "lat": 34.5089783,
+    "lon": 135.4147795
+  },
+  {
+    "id": "node-nankai-0949",
+    "name_en": "Kita-Sukematsu",
+    "name_ja": "北助松",
+    "operator_id": "nankai",
+    "lat": 34.5148043,
+    "lon": 135.4231516
+  },
+  {
+    "id": "node-nankai-0950",
+    "name_en": "Takaishi",
+    "name_ja": "高石",
+    "operator_id": "nankai",
+    "lat": 34.5217522,
+    "lon": 135.4329299
+  },
+  {
+    "id": "node-nankai-0951",
+    "name_en": "Hamaderakōen",
+    "name_ja": "浜寺公園",
+    "operator_id": "nankai",
+    "lat": 34.5410808,
+    "lon": 135.4443495
+  },
+  {
+    "id": "node-nankai-0952",
+    "name_en": "Suwanomori",
+    "name_ja": "諏訪ノ森",
+    "operator_id": "nankai",
+    "lat": 34.5501374,
+    "lon": 135.4483004
+  },
+  {
+    "id": "node-nankai-0953",
+    "name_en": "Ishizugawa",
+    "name_ja": "石津川",
+    "operator_id": "nankai",
+    "lat": 34.5594004,
+    "lon": 135.4532035
+  },
+  {
+    "id": "node-nankai-0954",
+    "name_en": "Minato",
+    "name_ja": "湊",
+    "operator_id": "nankai",
+    "lat": 34.5705921,
+    "lon": 135.4599418
+  },
+  {
+    "id": "node-nankai-0955",
+    "name_en": "Sakai",
+    "name_ja": "堺",
+    "operator_id": "nankai",
+    "lat": 34.5819163,
+    "lon": 135.4687949
+  },
+  {
+    "id": "node-nankai-0956",
+    "name_en": "Shichido",
+    "name_ja": "七道",
+    "operator_id": "nankai",
+    "lat": 34.5924927,
+    "lon": 135.4806784
+  },
+  {
+    "id": "node-nankai-0957",
+    "name_en": "Suminoe",
+    "name_ja": "住ノ江",
+    "operator_id": "nankai",
+    "lat": 34.6055678,
+    "lon": 135.487206
+  },
+  {
+    "id": "node-nankai-0958",
+    "name_en": "Sumiyoshitaisha",
+    "name_ja": "住吉大社",
+    "operator_id": "nankai",
+    "lat": 34.612901,
+    "lon": 135.4902884
+  },
+  {
+    "id": "node-nankai-0959",
+    "name_en": "Kohama",
+    "name_ja": "粉浜",
+    "operator_id": "nankai",
+    "lat": 34.6182315,
+    "lon": 135.4917623
+  },
+  {
+    "id": "node-nankai-0960",
+    "name_en": "Kishinosato-tamade",
+    "name_ja": "岸里玉出",
+    "operator_id": "nankai",
+    "lat": 34.6290468,
+    "lon": 135.4945606
+  },
+  {
+    "id": "node-nankai-0961",
+    "name_en": "Rinkū Town",
+    "name_ja": "りんくうタウン",
+    "operator_id": "nankai",
+    "lat": 34.4106646,
+    "lon": 135.2995485
+  },
+  {
+    "id": "node-nankai-0962",
+    "name_en": "Kansai Airport",
+    "name_ja": "関西空港",
+    "operator_id": "nankai",
+    "lat": 34.4358178,
+    "lon": 135.2436868
+  },
+  {
+    "id": "node-nankai-0963",
+    "name_en": "Rinkū Town",
+    "name_ja": "りんくうタウン",
+    "operator_id": "nankai",
+    "lat": 34.4108352,
+    "lon": 135.299733
+  },
+  {
+    "id": "node-nankai-0964",
+    "name_en": "Kishinosato-tamade",
+    "name_ja": "岸里玉出",
+    "operator_id": "nankai",
+    "lat": 34.6295076,
+    "lon": 135.4946079
+  },
+  {
+    "id": "node-nankai-0965",
+    "name_en": "Nishi-Tengachaya",
+    "name_ja": "西天下茶屋",
+    "operator_id": "nankai",
+    "lat": 34.6385474,
+    "lon": 135.4892249
+  },
+  {
+    "id": "node-nankai-0966",
+    "name_en": "Tsumori",
+    "name_ja": "津守",
+    "operator_id": "nankai",
+    "lat": 34.6469859,
+    "lon": 135.4833592
+  },
+  {
+    "id": "node-nankai-0967",
+    "name_en": "Kizugawa",
+    "name_ja": "木津川",
+    "operator_id": "nankai",
+    "lat": 34.6547949,
+    "lon": 135.4831493
+  },
+  {
+    "id": "node-nankai-0968",
+    "name_en": "Ashiharacho",
+    "name_ja": "芦原町",
+    "operator_id": "nankai",
+    "lat": 34.6605078,
+    "lon": 135.4864397
+  },
+  {
+    "id": "node-nankai-0969",
+    "name_en": "Shiomibashi",
+    "name_ja": "汐見橋",
+    "operator_id": "nankai",
+    "lat": 34.6679406,
+    "lon": 135.4862263
+  },
+  {
+    "id": "node-nankai-0970",
+    "name_en": "Shiomibashi",
+    "name_ja": "汐見橋",
+    "operator_id": "nankai",
+    "lat": 34.6679608,
+    "lon": 135.4863244
+  },
+  {
+    "id": "node-nankai-0971",
+    "name_en": "Ashiharacho",
+    "name_ja": "芦原町",
+    "operator_id": "nankai",
+    "lat": 34.660506,
+    "lon": 135.4864836
+  },
+  {
+    "id": "node-nankai-0972",
+    "name_en": "Kizugawa",
+    "name_ja": "木津川",
+    "operator_id": "nankai",
+    "lat": 34.6547349,
+    "lon": 135.4832107
+  },
+  {
+    "id": "node-nankai-0973",
+    "name_en": "Tsumori",
+    "name_ja": "津守",
+    "operator_id": "nankai",
+    "lat": 34.6470051,
+    "lon": 135.4834011
+  },
+  {
+    "id": "node-nankai-0974",
+    "name_en": "Nishi-Tengachaya",
+    "name_ja": "西天下茶屋",
+    "operator_id": "nankai",
+    "lat": 34.638564,
+    "lon": 135.4892537
+  },
+  {
+    "id": "node-nankai-0975",
+    "name_en": "Namba",
+    "name_ja": "なんば",
+    "operator_id": "nankai",
+    "lat": 34.6634446,
+    "lon": 135.5021063
+  },
+  {
+    "id": "node-nankai-0976",
+    "name_en": "Imaimiyaebisu",
+    "name_ja": "今宮戎",
+    "operator_id": "nankai",
+    "lat": 34.6550493,
+    "lon": 135.5016227
+  },
+  {
+    "id": "node-nankai-0977",
+    "name_en": "Shin-Imaimiya",
+    "name_ja": "新今宮",
+    "operator_id": "nankai",
+    "lat": 34.650124,
+    "lon": 135.5003197
+  },
+  {
+    "id": "node-nankai-0978",
+    "name_en": "Haginochaya",
+    "name_ja": "萩ノ茶屋",
+    "operator_id": "nankai",
+    "lat": 34.645834,
+    "lon": 135.4991826
+  },
+  {
+    "id": "node-nankai-0979",
+    "name_en": "Tengachaya",
+    "name_ja": "天下茶屋",
+    "operator_id": "nankai",
+    "lat": 34.6371516,
+    "lon": 135.4967881
+  },
+  {
+    "id": "node-nankai-0980",
+    "name_en": "Kishinosato-tamade",
+    "name_ja": "岸里玉出",
+    "operator_id": "nankai",
+    "lat": 34.6291153,
+    "lon": 135.4958071
+  },
+  {
+    "id": "node-nankai-0981",
+    "name_en": "Tezukayama",
+    "name_ja": "帝塚山",
+    "operator_id": "nankai",
+    "lat": 34.6214485,
+    "lon": 135.4982498
+  },
+  {
+    "id": "node-nankai-0982",
+    "name_en": "Sumiyoshihigashi",
+    "name_ja": "住吉東",
+    "operator_id": "nankai",
+    "lat": 34.6135484,
+    "lon": 135.497653
+  },
+  {
+    "id": "node-nankai-0983",
+    "name_en": "Sawanochō",
+    "name_ja": "沢ノ町",
+    "operator_id": "nankai",
+    "lat": 34.6058451,
+    "lon": 135.4969515
+  },
+  {
+    "id": "node-nankai-0984",
+    "name_en": "Abikomae",
+    "name_ja": "我孫子前",
+    "operator_id": "nankai",
+    "lat": 34.6004057,
+    "lon": 135.496959
+  },
+  {
+    "id": "node-nankai-0985",
+    "name_en": "Asakayama",
+    "name_ja": "浅香山",
+    "operator_id": "nankai",
+    "lat": 34.5890479,
+    "lon": 135.4908931
+  },
+  {
+    "id": "node-nankai-0986",
+    "name_en": "Sakaihigashi",
+    "name_ja": "堺東",
+    "operator_id": "nankai",
+    "lat": 34.5755081,
+    "lon": 135.4849729
+  },
+  {
+    "id": "node-nankai-0987",
+    "name_en": "Mikunigaoka",
+    "name_ja": "三国ヶ丘",
+    "operator_id": "nankai",
+    "lat": 34.5651964,
+    "lon": 135.492762
+  },
+  {
+    "id": "node-nankai-0988",
+    "name_en": "Mozuhachiman",
+    "name_ja": "百舌鳥八幡",
+    "operator_id": "nankai",
+    "lat": 34.5605877,
+    "lon": 135.4987031
+  },
+  {
+    "id": "node-nankai-0989",
+    "name_en": "Nakamozu",
+    "name_ja": "中百舌鳥",
+    "operator_id": "nankai",
+    "lat": 34.5563394,
+    "lon": 135.5044819
+  },
+  {
+    "id": "node-nankai-0990",
+    "name_en": "Shirasagi",
+    "name_ja": "白鷺",
+    "operator_id": "nankai",
+    "lat": 34.5501976,
+    "lon": 135.5133668
+  },
+  {
+    "id": "node-nankai-0991",
+    "name_en": "Hatsushiba",
+    "name_ja": "初芝",
+    "operator_id": "nankai",
+    "lat": 34.5424111,
+    "lon": 135.5263004
+  },
+  {
+    "id": "node-nankai-0992",
+    "name_en": "Hagiharatenjin",
+    "name_ja": "萩原天神",
+    "operator_id": "nankai",
+    "lat": 34.5374385,
+    "lon": 135.5346069
+  },
+  {
+    "id": "node-nankai-0993",
+    "name_en": "Kitanoda",
+    "name_ja": "北野田",
+    "operator_id": "nankai",
+    "lat": 34.523043,
+    "lon": 135.5431831
+  },
+  {
+    "id": "node-nankai-0994",
+    "name_en": "Sayama",
+    "name_ja": "狭山",
+    "operator_id": "nankai",
+    "lat": 34.5163731,
+    "lon": 135.5485365
+  },
+  {
+    "id": "node-nankai-0995",
+    "name_en": "Ōsakasayamashi",
+    "name_ja": "大阪狭山市",
+    "operator_id": "nankai",
+    "lat": 34.5041374,
+    "lon": 135.5574918
+  },
+  {
+    "id": "node-nankai-0996",
+    "name_en": "Kongō",
+    "name_ja": "金剛",
+    "operator_id": "nankai",
+    "lat": 34.4952734,
+    "lon": 135.5594096
+  },
+  {
+    "id": "node-nankai-0997",
+    "name_en": "Takidani",
+    "name_ja": "滝谷",
+    "operator_id": "nankai",
+    "lat": 34.4792206,
+    "lon": 135.5623037
+  },
+  {
+    "id": "node-nankai-0998",
+    "name_en": "Chiyoda",
+    "name_ja": "千代田",
+    "operator_id": "nankai",
+    "lat": 34.4688889,
+    "lon": 135.566396
+  },
+  {
+    "id": "node-nankai-0999",
+    "name_en": "Kawachinagano",
+    "name_ja": "河内長野",
+    "operator_id": "nankai",
+    "lat": 34.4514598,
+    "lon": 135.5732417
+  },
+  {
+    "id": "node-nankai-1000",
+    "name_en": "Mikkaichichō",
+    "name_ja": "三日市町",
+    "operator_id": "nankai",
+    "lat": 34.436653,
+    "lon": 135.571336
+  },
+  {
+    "id": "node-nankai-1001",
+    "name_en": "Mikanodai",
+    "name_ja": "美加の台",
+    "operator_id": "nankai",
+    "lat": 34.4243791,
+    "lon": 135.5776084
+  },
+  {
+    "id": "node-nankai-1002",
+    "name_en": "Chihayaguchi",
+    "name_ja": "千早口",
+    "operator_id": "nankai",
+    "lat": 34.4117227,
+    "lon": 135.5901284
+  },
+  {
+    "id": "node-nankai-1003",
+    "name_en": "Amami",
+    "name_ja": "天見",
+    "operator_id": "nankai",
+    "lat": 34.3971728,
+    "lon": 135.5955499
+  },
+  {
+    "id": "node-nankai-1004",
+    "name_en": "Kimitōge",
+    "name_ja": "紀見峠",
+    "operator_id": "nankai",
+    "lat": 34.3661151,
+    "lon": 135.6001536
+  },
+  {
+    "id": "node-nankai-1005",
+    "name_en": "Rinkanden-Entoshi",
+    "name_ja": "林間田園都市",
+    "operator_id": "nankai",
+    "lat": 34.3555005,
+    "lon": 135.6033616
+  },
+  {
+    "id": "node-nankai-1006",
+    "name_en": "Miyukitsuji",
+    "name_ja": "御幸辻",
+    "operator_id": "nankai",
+    "lat": 34.3378827,
+    "lon": 135.6021143
+  },
+  {
+    "id": "node-nankai-1007",
+    "name_en": "Hashimoto",
+    "name_ja": "橋本",
+    "operator_id": "nankai",
+    "lat": 34.3184566,
+    "lon": 135.6145983
+  },
+  {
+    "id": "node-nankai-1008",
+    "name_en": "Kii-Shimizu",
+    "name_ja": "紀伊清水",
+    "operator_id": "nankai",
+    "lat": 34.3074264,
+    "lon": 135.6046222
+  },
+  {
+    "id": "node-nankai-1009",
+    "name_en": "Kamuro",
+    "name_ja": "学文路",
+    "operator_id": "nankai",
+    "lat": 34.2965369,
+    "lon": 135.5800631
+  },
+  {
+    "id": "node-nankai-1010",
+    "name_en": "Kudoyama",
+    "name_ja": "九度山",
+    "operator_id": "nankai",
+    "lat": 34.2880591,
+    "lon": 135.5646138
+  },
+  {
+    "id": "node-nankai-1011",
+    "name_en": "Kōyashita",
+    "name_ja": "高野下",
+    "operator_id": "nankai",
+    "lat": 34.2716949,
+    "lon": 135.5664131
+  },
+  {
+    "id": "node-nankai-1012",
+    "name_en": "Shimo-Kosawa",
+    "name_ja": "下古沢",
+    "operator_id": "nankai",
+    "lat": 34.2664907,
+    "lon": 135.5530931
+  },
+  {
+    "id": "node-nankai-1013",
+    "name_en": "Kami-Kosawa",
+    "name_ja": "上古沢",
+    "operator_id": "nankai",
+    "lat": 34.2574852,
+    "lon": 135.548114
+  },
+  {
+    "id": "node-nankai-1014",
+    "name_en": "Kii-Hosokawa",
+    "name_ja": "紀伊細川",
+    "operator_id": "nankai",
+    "lat": 34.2358802,
+    "lon": 135.5537665
+  },
+  {
+    "id": "node-nankai-1015",
+    "name_en": "Kii-Kamiya",
+    "name_ja": "紀伊神谷",
+    "operator_id": "nankai",
+    "lat": 34.2427612,
+    "lon": 135.5711235
+  },
+  {
+    "id": "node-nankai-1016",
+    "name_en": "Gokurakubashi",
+    "name_ja": "極楽橋",
+    "operator_id": "nankai",
+    "lat": 34.2342682,
+    "lon": 135.5820245
+  },
+  {
+    "id": "node-nankai-1017",
+    "name_en": "Hagoromo",
+    "name_ja": "羽衣",
+    "operator_id": "nankai",
+    "lat": 34.5336514,
+    "lon": 135.441342
+  },
+  {
+    "id": "node-nankai-1018",
+    "name_en": "Kyarabashi",
+    "name_ja": "伽羅橋",
+    "operator_id": "nankai",
+    "lat": 34.5287913,
+    "lon": 135.4366469
+  },
+  {
+    "id": "node-nankai-1019",
+    "name_en": "Takashinohama",
+    "name_ja": "高師浜",
+    "operator_id": "nankai",
+    "lat": 34.527439,
+    "lon": 135.4318493
+  },
+  {
+    "id": "node-nankai-1020",
+    "name_en": "Wakayamashi",
+    "name_ja": "和歌山市",
+    "operator_id": "nankai",
+    "lat": 34.2366988,
+    "lon": 135.1666
+  },
+  {
+    "id": "node-nankai-1021",
+    "name_en": "Wakayamakō",
+    "name_ja": "和歌山港",
+    "operator_id": "nankai",
+    "lat": 34.2170866,
+    "lon": 135.1462005
+  },
+  {
+    "id": "node-jr-west-1022",
+    "name_en": "Kansai Airport",
+    "name_ja": "関西空港",
+    "operator_id": "jr-west",
+    "lat": 34.4360302,
+    "lon": 135.2434396
+  },
+  {
+    "id": "node-jr-west-1023",
+    "name_en": "Rinkū Town",
+    "name_ja": "りんくうタウン",
+    "operator_id": "jr-west",
+    "lat": 34.410767,
+    "lon": 135.2996653
+  },
+  {
+    "id": "node-jr-west-1024",
+    "name_en": "Hineno",
+    "name_ja": "日根野",
+    "operator_id": "jr-west",
+    "lat": 34.3908684,
+    "lon": 135.3313014
+  },
+  {
+    "id": "node-jr-west-1025",
+    "name_en": "",
+    "name_ja": "熊取",
+    "operator_id": "jr-west",
+    "lat": 34.4063548,
+    "lon": 135.3412121
+  },
+  {
+    "id": "node-jr-west-1026",
+    "name_en": "Higashi-Kishiwada",
+    "name_ja": "東岸和田",
+    "operator_id": "jr-west",
+    "lat": 34.449463,
+    "lon": 135.3859588
+  },
+  {
+    "id": "node-jr-west-1027",
+    "name_en": "Izumi-Fuchu",
+    "name_ja": "和泉府中",
+    "operator_id": "jr-west",
+    "lat": 34.488009,
+    "lon": 135.4237575
+  },
+  {
+    "id": "node-jr-west-1028",
+    "name_en": "Otori",
+    "name_ja": "鳳",
+    "operator_id": "jr-west",
+    "lat": 34.5318856,
+    "lon": 135.4586599
+  },
+  {
+    "id": "node-jr-west-1029",
+    "name_en": "Mikunigaoka",
+    "name_ja": "三国ケ丘",
+    "operator_id": "jr-west",
+    "lat": 34.5664798,
+    "lon": 135.4928447
+  },
+  {
+    "id": "node-jr-west-1030",
+    "name_en": "",
+    "name_ja": "堺市",
+    "operator_id": "jr-west",
+    "lat": 34.5778646,
+    "lon": 135.4986846
+  },
+  {
+    "id": "node-jr-west-1031",
+    "name_en": "Tennoji",
+    "name_ja": "天王寺",
+    "operator_id": "jr-west",
+    "lat": 34.6466829,
+    "lon": 135.5147537
+  },
+  {
+    "id": "node-jr-west-1032",
+    "name_en": "Shin-Imaimiya",
+    "name_ja": "新今宮",
+    "operator_id": "jr-west",
+    "lat": 34.6498332,
+    "lon": 135.502191
+  },
+  {
+    "id": "node-jr-west-1033",
+    "name_en": "Taisho",
+    "name_ja": "大正",
+    "operator_id": "jr-west",
+    "lat": 34.6654243,
+    "lon": 135.4803281
+  },
+  {
+    "id": "node-jr-west-1034",
+    "name_en": "Bentencho",
+    "name_ja": "弁天町",
+    "operator_id": "jr-west",
+    "lat": 34.6702759,
+    "lon": 135.4618093
+  },
+  {
+    "id": "node-jr-west-1035",
+    "name_en": "Nishikujo",
+    "name_ja": "西九条",
+    "operator_id": "jr-west",
+    "lat": 34.6828742,
+    "lon": 135.4667985
+  },
+  {
+    "id": "node-jr-west-1036",
+    "name_en": "Fukushima",
+    "name_ja": "福島",
+    "operator_id": "jr-west",
+    "lat": 34.6973103,
+    "lon": 135.486806
+  },
+  {
+    "id": "node-jr-west-1037",
+    "name_en": "Osaka",
+    "name_ja": "大阪",
+    "operator_id": "jr-west",
+    "lat": 34.7019992,
+    "lon": 135.4957499
+  },
+  {
+    "id": "node-jr-west-1038",
+    "name_en": "Temma",
+    "name_ja": "天満",
+    "operator_id": "jr-west",
+    "lat": 34.7049603,
+    "lon": 135.5123488
+  },
+  {
+    "id": "node-jr-west-1039",
+    "name_en": "Sakuranomiya",
+    "name_ja": "桜ノ宮",
+    "operator_id": "jr-west",
+    "lat": 34.7048568,
+    "lon": 135.5202837
+  },
+  {
+    "id": "node-jr-west-1040",
+    "name_en": "Kyobashi",
+    "name_ja": "京橋",
+    "operator_id": "jr-west",
+    "lat": 34.6967346,
+    "lon": 135.5340162
+  },
+  {
+    "id": "node-jr-west-1041",
+    "name_en": "Tennoji",
+    "name_ja": "天王寺",
+    "operator_id": "jr-west",
+    "lat": 34.6473885,
+    "lon": 135.514886
   }
 ]

@@ -14,5 +14,53 @@
     "colour": "#E5171F",
     "fare_group": "kita-osaka-kyuko",
     "url": "https://www.kita-kyu.co.jp/"
+  },
+  {
+    "id": "hankyu",
+    "name_en": "Hankyu Railway",
+    "name_ja": "阪急電鉄",
+    "colour": "#5E2D79",
+    "fare_group": "hankyu",
+    "url": "https://www.hankyu.co.jp/"
+  },
+  {
+    "id": "hanshin",
+    "name_en": "Hanshin Electric Railway",
+    "name_ja": "阪神電気鉄道",
+    "colour": "#1E3D8F",
+    "fare_group": "hanshin",
+    "url": "https://rail.hanshin.co.jp/"
+  },
+  {
+    "id": "keihan",
+    "name_en": "Keihan Electric Railway",
+    "name_ja": "京阪電気鉄道",
+    "colour": "#006432",
+    "fare_group": "keihan",
+    "url": "https://www.keihan.co.jp/"
+  },
+  {
+    "id": "kintetsu",
+    "name_en": "Kintetsu Railway",
+    "name_ja": "近畿日本鉄道",
+    "colour": "#E45E00",
+    "fare_group": "kintetsu",
+    "url": "https://www.kintetsu.co.jp/"
+  },
+  {
+    "id": "nankai",
+    "name_en": "Nankai Electric Railway",
+    "name_ja": "南海電気鉄道",
+    "colour": "#0071BC",
+    "fare_group": "nankai",
+    "url": "https://www.nankai.co.jp/"
+  },
+  {
+    "id": "jr-west",
+    "name_en": "JR West",
+    "name_ja": "西日本旅客鉄道",
+    "colour": "#003087",
+    "fare_group": "jr-west",
+    "url": "https://www.westjr.co.jp/"
   }
 ]

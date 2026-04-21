@@ -4,13 +4,34 @@
   topbar("lines");
 
   const list = document.getElementById("line-list");
-  for (const ln of db.lines) {
-    list.append(el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
-      el("span", { class: "swatch", style: `background:${ln.colour}` }),
-      ln.name_en));
+
+  // Group by operator
+  const opOrder = db.operators.map(o => o.id);
+  const byOp = {};
+  for (const ln of db.lines) (byOp[ln.operator_id] ||= []).push(ln);
+
+  function renderLineList(filter = "") {
+    list.innerHTML = "";
+    const q = filter.toLowerCase();
+    for (const opId of opOrder) {
+      const opLines = (byOp[opId] || []).filter(ln =>
+        !q || (ln.name_en || "").toLowerCase().includes(q) || (ln.name_ja || "").includes(filter));
+      if (!opLines.length) continue;
+      const op = db.byId.operators[opId];
+      list.append(el("li", { style: "padding:8px 4px 2px;font-size:11px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;cursor:default;font-weight:600" },
+        op.name_en));
+      for (const ln of opLines) {
+        list.append(el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
+          el("span", { class: "swatch", style: `background:${ln.colour}` }),
+          ln.name_en || ln.name_ja));
+      }
+    }
   }
 
-  let lineId = qs("id") || db.lines[0].id;
+  document.getElementById("search").addEventListener("input", e => renderLineList(e.target.value));
+  renderLineList();
+
+  let lineId = qs("id") || db.lines.find(l => l.operator_id === "osaka-metro")?.id || db.lines[0].id;
   const line = db.byId.lines[lineId];
   const op = db.byId.operators[line.operator_id];
   const stops = db.stopsByLine[lineId] || [];

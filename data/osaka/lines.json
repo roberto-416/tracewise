@@ -231,5 +231,2788 @@
       "stop-Y10-osaka-metro",
       "stop-Y11-osaka-metro"
     ]
+  },
+  {
+    "id": "hankyu-hanky-k-y-line",
+    "operator_id": "hankyu",
+    "code": "",
+    "name_en": "Hankyū Kōyō Line",
+    "name_ja": "阪急甲陽線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      6024236
+    ],
+    "stops": [
+      "stop-hankyu-0000"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-kyoto-main-line",
+    "operator_id": "hankyu",
+    "code": "",
+    "name_en": "Hankyū Kyoto Main Line",
+    "name_ja": "阪急電鉄京都本線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      1872143
+    ],
+    "stops": [
+      "stop-hankyu-0001",
+      "stop-hankyu-0002",
+      "stop-hankyu-0003",
+      "stop-hankyu-0004",
+      "stop-hankyu-0005",
+      "stop-hankyu-0006",
+      "stop-hankyu-0007",
+      "stop-hankyu-0008",
+      "stop-hankyu-0009",
+      "stop-hankyu-0010",
+      "stop-hankyu-0011",
+      "stop-hankyu-0012",
+      "stop-hankyu-0013",
+      "stop-hankyu-0014",
+      "stop-hankyu-0015",
+      "stop-hankyu-0016",
+      "stop-hankyu-0017",
+      "stop-hankyu-0018",
+      "stop-hankyu-0019",
+      "stop-hankyu-0020"
+    ]
+  },
+  {
+    "id": "hankyu-hankyu-kyoto-line-osaka-umeda-kyoto-kawabaramachi",
+    "operator_id": "hankyu",
+    "code": "HK",
+    "name_en": "Hankyu Kyoto Line: Osaka Umeda=>Kyoto Kawabaramachi",
+    "name_ja": "阪急電鉄京都線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      10255877
+    ],
+    "stops": [
+      "stop-hankyu-0021",
+      "stop-hankyu-0022",
+      "stop-hankyu-0023",
+      "stop-hankyu-0024",
+      "stop-hankyu-0025",
+      "stop-hankyu-0026",
+      "stop-hankyu-0027",
+      "stop-hankyu-0028",
+      "stop-hankyu-0029",
+      "stop-hankyu-0030",
+      "stop-hankyu-0031",
+      "stop-hankyu-0032",
+      "stop-hankyu-0033",
+      "stop-hankyu-0034",
+      "stop-hankyu-0035",
+      "stop-hankyu-0036",
+      "stop-hankyu-0037",
+      "stop-hankyu-0038",
+      "stop-hankyu-0039",
+      "stop-hankyu-0040",
+      "stop-hankyu-0041",
+      "stop-hankyu-0042",
+      "stop-hankyu-0043",
+      "stop-hankyu-0044",
+      "stop-hankyu-0045",
+      "stop-hankyu-0046",
+      "stop-hankyu-0047",
+      "stop-hankyu-0048"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-imazu-line",
+    "operator_id": "hankyu",
+    "code": "",
+    "name_en": "Hankyū Imazu Line",
+    "name_ja": "阪急電鉄今津線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      1983244
+    ],
+    "stops": [
+      "stop-hankyu-0049",
+      "stop-hankyu-0050",
+      "stop-hankyu-0051",
+      "stop-hankyu-0052",
+      "stop-hankyu-0053"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-itami-line",
+    "operator_id": "hankyu",
+    "code": "HK",
+    "name_en": "Hankyū Itami Line",
+    "name_ja": "阪急電鉄伊丹線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      6024245
+    ],
+    "stops": [
+      "stop-hankyu-0054",
+      "stop-hankyu-0055",
+      "stop-hankyu-0056",
+      "stop-hankyu-0057"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-senri-line-northbound",
+    "operator_id": "hankyu",
+    "code": "HK",
+    "name_en": "Hankyū Senri Line (northbound)",
+    "name_ja": "阪急電鉄千里線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      1872144
+    ],
+    "stops": [
+      "stop-hankyu-0058",
+      "stop-hankyu-0059",
+      "stop-hankyu-0060",
+      "stop-hankyu-0061",
+      "stop-hankyu-0062",
+      "stop-hankyu-0063",
+      "stop-hankyu-0064",
+      "stop-hankyu-0065",
+      "stop-hankyu-0066",
+      "stop-hankyu-0067",
+      "stop-hankyu-0068"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-takarazuka-main-line",
+    "operator_id": "hankyu",
+    "code": "HK",
+    "name_en": "Hankyū Takarazuka Main Line",
+    "name_ja": "阪急電鉄宝塚本線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      11982563
+    ],
+    "stops": [
+      "stop-hankyu-0069",
+      "stop-hankyu-0070",
+      "stop-hankyu-0071",
+      "stop-hankyu-0072",
+      "stop-hankyu-0073",
+      "stop-hankyu-0074",
+      "stop-hankyu-0075",
+      "stop-hankyu-0076",
+      "stop-hankyu-0077",
+      "stop-hankyu-0078",
+      "stop-hankyu-0079",
+      "stop-hankyu-0080",
+      "stop-hankyu-0081",
+      "stop-hankyu-0082",
+      "stop-hankyu-0083",
+      "stop-hankyu-0084",
+      "stop-hankyu-0085",
+      "stop-hankyu-0086",
+      "stop-hankyu-0087"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-arashiyama-line",
+    "operator_id": "hankyu",
+    "code": "HK",
+    "name_en": "Hankyū Arashiyama Line",
+    "name_ja": "阪急電鉄嵐山線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      11985598
+    ],
+    "stops": [
+      "stop-hankyu-0088",
+      "stop-hankyu-0089",
+      "stop-hankyu-0090",
+      "stop-hankyu-0091"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-kobe-main-line",
+    "operator_id": "hankyu",
+    "code": "",
+    "name_en": "Hankyū Kobe Main Line",
+    "name_ja": "阪急電鉄神戸本線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      1872146
+    ],
+    "stops": [
+      "stop-hankyu-0092",
+      "stop-hankyu-0093",
+      "stop-hankyu-0094",
+      "stop-hankyu-0095",
+      "stop-hankyu-0096",
+      "stop-hankyu-0097",
+      "stop-hankyu-0098",
+      "stop-hankyu-0099",
+      "stop-hankyu-0100"
+    ]
+  },
+  {
+    "id": "hankyu-kobe-kosoku-tozai-line-north-section",
+    "operator_id": "hankyu",
+    "code": "HK",
+    "name_en": "Kobe Kosoku Tozai Line (north section)",
+    "name_ja": "阪急電鉄神戸高速線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      11981765
+    ],
+    "stops": [
+      "stop-hankyu-0101",
+      "stop-hankyu-0102",
+      "stop-hankyu-0103",
+      "stop-hankyu-0104"
+    ]
+  },
+  {
+    "id": "hankyu-hanky-minoo-line",
+    "operator_id": "hankyu",
+    "code": "HK",
+    "name_en": "Hankyū Minoo Line",
+    "name_ja": "阪急電鉄箕面線",
+    "colour": "#5E2D79",
+    "osm_relation_ids": [
+      11985115
+    ],
+    "stops": [
+      "stop-hankyu-0105",
+      "stop-hankyu-0106",
+      "stop-hankyu-0107",
+      "stop-hankyu-0108"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-main-line-local-motomachi-osaka-umeda",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Main Line Local (Motomachi => Osaka-Umeda)",
+    "name_ja": "阪神電気鉄道本線 普通 (元町 => 大阪梅田)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11662344
+    ],
+    "stops": [
+      "stop-hanshin-0000",
+      "stop-hanshin-0001",
+      "stop-hanshin-0002",
+      "stop-hanshin-0003",
+      "stop-hanshin-0004",
+      "stop-hanshin-0005",
+      "stop-hanshin-0006",
+      "stop-hanshin-0007",
+      "stop-hanshin-0008",
+      "stop-hanshin-0009",
+      "stop-hanshin-0010",
+      "stop-hanshin-0011",
+      "stop-hanshin-0012",
+      "stop-hanshin-0013",
+      "stop-hanshin-0014",
+      "stop-hanshin-0015",
+      "stop-hanshin-0016",
+      "stop-hanshin-0017",
+      "stop-hanshin-0018",
+      "stop-hanshin-0019",
+      "stop-hanshin-0020",
+      "stop-hanshin-0021",
+      "stop-hanshin-0022",
+      "stop-hanshin-0023",
+      "stop-hanshin-0024",
+      "stop-hanshin-0025",
+      "stop-hanshin-0026",
+      "stop-hanshin-0027",
+      "stop-hanshin-0028",
+      "stop-hanshin-0029",
+      "stop-hanshin-0030",
+      "stop-hanshin-0031",
+      "stop-hanshin-0032"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-main-line-local-osaka-umeda-motomachi",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Main Line Local (Osaka-Umeda => Motomachi)",
+    "name_ja": "阪神電気鉄道本線 普通 (大阪梅田 => 元町)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11658109
+    ],
+    "stops": [
+      "stop-hanshin-0033",
+      "stop-hanshin-0034",
+      "stop-hanshin-0035",
+      "stop-hanshin-0036",
+      "stop-hanshin-0037",
+      "stop-hanshin-0038",
+      "stop-hanshin-0039",
+      "stop-hanshin-0040",
+      "stop-hanshin-0041",
+      "stop-hanshin-0042",
+      "stop-hanshin-0043",
+      "stop-hanshin-0044",
+      "stop-hanshin-0045",
+      "stop-hanshin-0046",
+      "stop-hanshin-0047",
+      "stop-hanshin-0048",
+      "stop-hanshin-0049",
+      "stop-hanshin-0050",
+      "stop-hanshin-0051",
+      "stop-hanshin-0052",
+      "stop-hanshin-0053",
+      "stop-hanshin-0054",
+      "stop-hanshin-0055",
+      "stop-hanshin-0056",
+      "stop-hanshin-0057",
+      "stop-hanshin-0058",
+      "stop-hanshin-0059",
+      "stop-hanshin-0060",
+      "stop-hanshin-0061",
+      "stop-hanshin-0062",
+      "stop-hanshin-0063",
+      "stop-hanshin-0064",
+      "stop-hanshin-0065"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-mukogawa-line-local-mukogawa-mukogawadanchimae",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Mukogawa Line Local (Mukogawa => Mukogawadanchimae)",
+    "name_ja": "阪神電気鉄道武庫川線 普通 (武庫川 => 武庫川団地前)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11970484
+    ],
+    "stops": [
+      "stop-hanshin-0066",
+      "stop-hanshin-0067",
+      "stop-hanshin-0068",
+      "stop-hanshin-0069"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-mukogawa-line-local-mukogawadanchimae-mukogawa",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Mukogawa Line Local (Mukogawadanchimae => Mukogawa)",
+    "name_ja": "阪神電気鉄道武庫川線 普通 (武庫川団地前 => 武庫川)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11970479
+    ],
+    "stops": [
+      "stop-hanshin-0070",
+      "stop-hanshin-0071",
+      "stop-hanshin-0072",
+      "stop-hanshin-0073"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-kobe-kosoku-line-local-motomachi-nishidai",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Kobe Kosoku Line Local (Motomachi => Nishidai)",
+    "name_ja": "阪神電気鉄道神戸高速線 普通 (元町 => 西代)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11974981
+    ],
+    "stops": [
+      "stop-hanshin-0074",
+      "stop-hanshin-0075",
+      "stop-hanshin-0076",
+      "stop-hanshin-0077",
+      "stop-hanshin-0078",
+      "stop-hanshin-0079",
+      "stop-hanshin-0080"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-kobe-kosoku-line-local-nishidai-motomachi",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Kobe Kosoku Line Local (Nishidai => Motomachi)",
+    "name_ja": "阪神電気鉄道神戸高速線 普通 (西代 => 元町)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11974980
+    ],
+    "stops": [
+      "stop-hanshin-0081",
+      "stop-hanshin-0082",
+      "stop-hanshin-0083",
+      "stop-hanshin-0084",
+      "stop-hanshin-0085",
+      "stop-hanshin-0086",
+      "stop-hanshin-0087"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-namba-line-local-osaka-namba-amagasaki",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Namba Line Local (Osaka-Namba => Amagasaki)",
+    "name_ja": "阪神電気鉄道阪神なんば線 普通 (大阪難波 => 尼崎)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11923501
+    ],
+    "stops": [
+      "stop-hanshin-0088",
+      "stop-hanshin-0089",
+      "stop-hanshin-0090",
+      "stop-hanshin-0091",
+      "stop-hanshin-0092",
+      "stop-hanshin-0093",
+      "stop-hanshin-0094",
+      "stop-hanshin-0095",
+      "stop-hanshin-0096",
+      "stop-hanshin-0097",
+      "stop-hanshin-0098"
+    ]
+  },
+  {
+    "id": "hanshin-hanshin-namba-line-local-amagasaki-osaka-namba",
+    "operator_id": "hanshin",
+    "code": "HS",
+    "name_en": "Hanshin Namba Line Local (Amagasaki => Osaka-Namba)",
+    "name_ja": "阪神電気鉄道阪神なんば線 普通 (尼崎 => 大阪難波)",
+    "colour": "#1E3D8F",
+    "osm_relation_ids": [
+      11923503
+    ],
+    "stops": [
+      "stop-hanshin-0099",
+      "stop-hanshin-0100",
+      "stop-hanshin-0101",
+      "stop-hanshin-0102",
+      "stop-hanshin-0103",
+      "stop-hanshin-0104",
+      "stop-hanshin-0105",
+      "stop-hanshin-0106",
+      "stop-hanshin-0107",
+      "stop-hanshin-0108",
+      "stop-hanshin-0109"
+    ]
+  },
+  {
+    "id": "keihan-keihan-uji-line-chushojima-uji",
+    "operator_id": "keihan",
+    "code": "KH",
+    "name_en": "Keihan Uji Line (Chushojima => Uji)",
+    "name_ja": "京阪宇治線 (中書島=>宇治)",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      11102876
+    ],
+    "stops": [
+      "stop-keihan-0000",
+      "stop-keihan-0001",
+      "stop-keihan-0002",
+      "stop-keihan-0003",
+      "stop-keihan-0004",
+      "stop-keihan-0005",
+      "stop-keihan-0006",
+      "stop-keihan-0007"
+    ]
+  },
+  {
+    "id": "keihan-keihan-uji-line-uji-chushojima",
+    "operator_id": "keihan",
+    "code": "KH",
+    "name_en": "Keihan Uji Line (Uji => Chushojima)",
+    "name_ja": "京阪宇治線 (宇治 => 中書島)",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      11940245
+    ],
+    "stops": [
+      "stop-keihan-0008",
+      "stop-keihan-0009",
+      "stop-keihan-0010",
+      "stop-keihan-0011",
+      "stop-keihan-0012",
+      "stop-keihan-0013",
+      "stop-keihan-0014",
+      "stop-keihan-0015"
+    ]
+  },
+  {
+    "id": "keihan-",
+    "operator_id": "keihan",
+    "code": "KH",
+    "name_en": "京阪本線・鴨東線",
+    "name_ja": "京阪本線・鴨東線",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      11581194
+    ],
+    "stops": [
+      "stop-keihan-0016",
+      "stop-keihan-0017",
+      "stop-keihan-0018",
+      "stop-keihan-0019",
+      "stop-keihan-0020",
+      "stop-keihan-0021",
+      "stop-keihan-0022",
+      "stop-keihan-0023",
+      "stop-keihan-0024",
+      "stop-keihan-0025",
+      "stop-keihan-0026",
+      "stop-keihan-0027",
+      "stop-keihan-0028",
+      "stop-keihan-0029",
+      "stop-keihan-0030",
+      "stop-keihan-0031",
+      "stop-keihan-0032",
+      "stop-keihan-0033",
+      "stop-keihan-0034",
+      "stop-keihan-0035",
+      "stop-keihan-0036",
+      "stop-keihan-0037",
+      "stop-keihan-0038",
+      "stop-keihan-0039",
+      "stop-keihan-0040",
+      "stop-keihan-0041",
+      "stop-keihan-0042",
+      "stop-keihan-0043",
+      "stop-keihan-0044",
+      "stop-keihan-0045",
+      "stop-keihan-0046",
+      "stop-keihan-0047",
+      "stop-keihan-0048",
+      "stop-keihan-0049",
+      "stop-keihan-0050",
+      "stop-keihan-0051",
+      "stop-keihan-0052",
+      "stop-keihan-0053",
+      "stop-keihan-0054",
+      "stop-keihan-0055",
+      "stop-keihan-0056",
+      "stop-keihan-0057"
+    ]
+  },
+  {
+    "id": "keihan-keihan-nakanoshima-line",
+    "operator_id": "keihan",
+    "code": "KH",
+    "name_en": "Keihan Nakanoshima Line",
+    "name_ja": "京阪電気鉄道中之島線",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      11981533
+    ],
+    "stops": [
+      "stop-keihan-0058",
+      "stop-keihan-0059",
+      "stop-keihan-0060",
+      "stop-keihan-0061",
+      "stop-keihan-0062"
+    ]
+  },
+  {
+    "id": "keihan-keihan-katano-line",
+    "operator_id": "keihan",
+    "code": "KH",
+    "name_en": "Keihan Katano Line",
+    "name_ja": "京阪電気鉄道交野線",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      11981442
+    ],
+    "stops": [
+      "stop-keihan-0063",
+      "stop-keihan-0064",
+      "stop-keihan-0065",
+      "stop-keihan-0066",
+      "stop-keihan-0067",
+      "stop-keihan-0068",
+      "stop-keihan-0069",
+      "stop-keihan-0070"
+    ]
+  },
+  {
+    "id": "keihan-keihan-keishin-line-eastbound",
+    "operator_id": "keihan",
+    "code": "OT",
+    "name_en": "Keihan Keishin Line (Eastbound)",
+    "name_ja": "京阪電気鉄道京津線（びわ湖浜大津方面）",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      10238009
+    ],
+    "stops": [
+      "stop-keihan-0071",
+      "stop-keihan-0072",
+      "stop-keihan-0073",
+      "stop-keihan-0074",
+      "stop-keihan-0075",
+      "stop-keihan-0076",
+      "stop-keihan-0077",
+      "stop-keihan-0078",
+      "stop-keihan-0079",
+      "stop-keihan-0080",
+      "stop-keihan-0081",
+      "stop-keihan-0082",
+      "stop-keihan-0083",
+      "stop-keihan-0084",
+      "stop-keihan-0085",
+      "stop-keihan-0086"
+    ]
+  },
+  {
+    "id": "keihan-keihan-keishin-line-westbound",
+    "operator_id": "keihan",
+    "code": "OT",
+    "name_en": "Keihan Keishin Line (Westbound)",
+    "name_ja": "京阪電気鉄道京津線（太秦天神川方面）",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      10238008
+    ],
+    "stops": [
+      "stop-keihan-0087",
+      "stop-keihan-0088",
+      "stop-keihan-0089",
+      "stop-keihan-0090",
+      "stop-keihan-0091",
+      "stop-keihan-0092",
+      "stop-keihan-0093",
+      "stop-keihan-0094",
+      "stop-keihan-0095",
+      "stop-keihan-0096",
+      "stop-keihan-0097",
+      "stop-keihan-0098",
+      "stop-keihan-0099",
+      "stop-keihan-0100",
+      "stop-keihan-0101",
+      "stop-keihan-0102"
+    ]
+  },
+  {
+    "id": "keihan-",
+    "operator_id": "keihan",
+    "code": "KH",
+    "name_en": "京阪電気鉄道京阪本線・鴨東線",
+    "name_ja": "京阪電気鉄道京阪本線・鴨東線",
+    "colour": "#006432",
+    "osm_relation_ids": [
+      11984507
+    ],
+    "stops": [
+      "stop-keihan-0103",
+      "stop-keihan-0104",
+      "stop-keihan-0105",
+      "stop-keihan-0106",
+      "stop-keihan-0107",
+      "stop-keihan-0108",
+      "stop-keihan-0109",
+      "stop-keihan-0110",
+      "stop-keihan-0111",
+      "stop-keihan-0112",
+      "stop-keihan-0113",
+      "stop-keihan-0114",
+      "stop-keihan-0115",
+      "stop-keihan-0116",
+      "stop-keihan-0117",
+      "stop-keihan-0118",
+      "stop-keihan-0119",
+      "stop-keihan-0120",
+      "stop-keihan-0121",
+      "stop-keihan-0122",
+      "stop-keihan-0123",
+      "stop-keihan-0124",
+      "stop-keihan-0125",
+      "stop-keihan-0126",
+      "stop-keihan-0127",
+      "stop-keihan-0128",
+      "stop-keihan-0129",
+      "stop-keihan-0130",
+      "stop-keihan-0131",
+      "stop-keihan-0132",
+      "stop-keihan-0133",
+      "stop-keihan-0134",
+      "stop-keihan-0135",
+      "stop-keihan-0136",
+      "stop-keihan-0137",
+      "stop-keihan-0138",
+      "stop-keihan-0139",
+      "stop-keihan-0140",
+      "stop-keihan-0141",
+      "stop-keihan-0142",
+      "stop-keihan-0143",
+      "stop-keihan-0144"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-keihanna-line-local-gakken-nara-tomigaoka-nagata",
+    "operator_id": "kintetsu",
+    "code": "C",
+    "name_en": "Kintetsu Keihanna Line Local (Gakken-Nara-Tomigaoka => Nagata)",
+    "name_ja": "近畿日本鉄道けいはんな線 普通 (学研奈良登美ヶ丘 => 長田)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      10258968
+    ],
+    "stops": [
+      "stop-kintetsu-0000",
+      "stop-kintetsu-0001",
+      "stop-kintetsu-0002",
+      "stop-kintetsu-0003",
+      "stop-kintetsu-0004",
+      "stop-kintetsu-0005",
+      "stop-kintetsu-0006"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-keihanna-line-local-nagata-gakken-nara-tomigaoka",
+    "operator_id": "kintetsu",
+    "code": "C",
+    "name_en": "Kintetsu Keihanna Line Local (Nagata => Gakken-Nara-Tomigaoka)",
+    "name_ja": "近畿日本鉄道けいはんな線 普通 (長田 => 学研奈良登美ヶ丘)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      1864803
+    ],
+    "stops": [
+      "stop-kintetsu-0007",
+      "stop-kintetsu-0008",
+      "stop-kintetsu-0009",
+      "stop-kintetsu-0010",
+      "stop-kintetsu-0011",
+      "stop-kintetsu-0012",
+      "stop-kintetsu-0013",
+      "stop-kintetsu-0014"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-kyoto-line-local-yamato-saidaiji-kintetsu-kyoto",
+    "operator_id": "kintetsu",
+    "code": "B",
+    "name_en": "Kintetsu Kyoto Line Local (Yamato-Saidaiji => Kintetsu-Kyoto)",
+    "name_ja": "近畿日本鉄道京都線 普通 (大和西大寺 => 近鉄京都)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11958447
+    ],
+    "stops": [
+      "stop-kintetsu-0015",
+      "stop-kintetsu-0016",
+      "stop-kintetsu-0017",
+      "stop-kintetsu-0018",
+      "stop-kintetsu-0019",
+      "stop-kintetsu-0020",
+      "stop-kintetsu-0021",
+      "stop-kintetsu-0022",
+      "stop-kintetsu-0023",
+      "stop-kintetsu-0024",
+      "stop-kintetsu-0025",
+      "stop-kintetsu-0026",
+      "stop-kintetsu-0027",
+      "stop-kintetsu-0028",
+      "stop-kintetsu-0029",
+      "stop-kintetsu-0030",
+      "stop-kintetsu-0031",
+      "stop-kintetsu-0032",
+      "stop-kintetsu-0033",
+      "stop-kintetsu-0034",
+      "stop-kintetsu-0035",
+      "stop-kintetsu-0036",
+      "stop-kintetsu-0037",
+      "stop-kintetsu-0038",
+      "stop-kintetsu-0039",
+      "stop-kintetsu-0040"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-kyoto-line-local-kintetsu-kyoto-yamato-saidaiji",
+    "operator_id": "kintetsu",
+    "code": "B",
+    "name_en": "Kintetsu Kyoto Line Local (Kintetsu-Kyoto => Yamato-Saidaiji)",
+    "name_ja": "近畿日本鉄道京都線 普通 (近鉄京都 => 大和西大寺)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11958414
+    ],
+    "stops": [
+      "stop-kintetsu-0041",
+      "stop-kintetsu-0042",
+      "stop-kintetsu-0043",
+      "stop-kintetsu-0044",
+      "stop-kintetsu-0045",
+      "stop-kintetsu-0046",
+      "stop-kintetsu-0047",
+      "stop-kintetsu-0048",
+      "stop-kintetsu-0049",
+      "stop-kintetsu-0050",
+      "stop-kintetsu-0051",
+      "stop-kintetsu-0052",
+      "stop-kintetsu-0053",
+      "stop-kintetsu-0054",
+      "stop-kintetsu-0055",
+      "stop-kintetsu-0056",
+      "stop-kintetsu-0057",
+      "stop-kintetsu-0058",
+      "stop-kintetsu-0059",
+      "stop-kintetsu-0060",
+      "stop-kintetsu-0061",
+      "stop-kintetsu-0062",
+      "stop-kintetsu-0063",
+      "stop-kintetsu-0064",
+      "stop-kintetsu-0065",
+      "stop-kintetsu-0066"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-minami-osaka-line-local-osaka-abenobashi-kashiharajingumae",
+    "operator_id": "kintetsu",
+    "code": "F",
+    "name_en": "Kintetsu Minami-Osaka Line Local (Osaka-Abenobashi => Kashiharajingumae)",
+    "name_ja": "近畿日本鉄道南大阪線 普通 (大阪阿部野橋 => 橿原神宮前)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11942103
+    ],
+    "stops": [
+      "stop-kintetsu-0067",
+      "stop-kintetsu-0068",
+      "stop-kintetsu-0069",
+      "stop-kintetsu-0070",
+      "stop-kintetsu-0071",
+      "stop-kintetsu-0072",
+      "stop-kintetsu-0073",
+      "stop-kintetsu-0074",
+      "stop-kintetsu-0075",
+      "stop-kintetsu-0076",
+      "stop-kintetsu-0077",
+      "stop-kintetsu-0078",
+      "stop-kintetsu-0079",
+      "stop-kintetsu-0080",
+      "stop-kintetsu-0081",
+      "stop-kintetsu-0082",
+      "stop-kintetsu-0083",
+      "stop-kintetsu-0084",
+      "stop-kintetsu-0085",
+      "stop-kintetsu-0086",
+      "stop-kintetsu-0087",
+      "stop-kintetsu-0088",
+      "stop-kintetsu-0089",
+      "stop-kintetsu-0090",
+      "stop-kintetsu-0091",
+      "stop-kintetsu-0092",
+      "stop-kintetsu-0093",
+      "stop-kintetsu-0094"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-minami-osaka-line-local-kashiharajingumae-osaka-abenobashi",
+    "operator_id": "kintetsu",
+    "code": "F",
+    "name_en": "Kintetsu Minami-Osaka Line Local (Kashiharajingumae => Osaka-Abenobashi)",
+    "name_ja": "近畿日本鉄道南大阪線 普通 (橿原神宮前 => 大阪阿部野橋)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11942101
+    ],
+    "stops": [
+      "stop-kintetsu-0095",
+      "stop-kintetsu-0096",
+      "stop-kintetsu-0097",
+      "stop-kintetsu-0098",
+      "stop-kintetsu-0099",
+      "stop-kintetsu-0100",
+      "stop-kintetsu-0101",
+      "stop-kintetsu-0102",
+      "stop-kintetsu-0103",
+      "stop-kintetsu-0104",
+      "stop-kintetsu-0105",
+      "stop-kintetsu-0106",
+      "stop-kintetsu-0107",
+      "stop-kintetsu-0108",
+      "stop-kintetsu-0109",
+      "stop-kintetsu-0110",
+      "stop-kintetsu-0111",
+      "stop-kintetsu-0112",
+      "stop-kintetsu-0113",
+      "stop-kintetsu-0114",
+      "stop-kintetsu-0115",
+      "stop-kintetsu-0116",
+      "stop-kintetsu-0117",
+      "stop-kintetsu-0118",
+      "stop-kintetsu-0119",
+      "stop-kintetsu-0120",
+      "stop-kintetsu-0121",
+      "stop-kintetsu-0122"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-yoshino-line-local-yoshino-kashiharajingumae",
+    "operator_id": "kintetsu",
+    "code": "F",
+    "name_en": "Kintetsu Yoshino Line Local (Yoshino => Kashiharajingumae)",
+    "name_ja": "近畿日本鉄道吉野線 普通 (吉野=>橿原神宮前)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11942097
+    ],
+    "stops": [
+      "stop-kintetsu-0123",
+      "stop-kintetsu-0124",
+      "stop-kintetsu-0125",
+      "stop-kintetsu-0126",
+      "stop-kintetsu-0127",
+      "stop-kintetsu-0128",
+      "stop-kintetsu-0129",
+      "stop-kintetsu-0130",
+      "stop-kintetsu-0131",
+      "stop-kintetsu-0132",
+      "stop-kintetsu-0133",
+      "stop-kintetsu-0134",
+      "stop-kintetsu-0135",
+      "stop-kintetsu-0136",
+      "stop-kintetsu-0137",
+      "stop-kintetsu-0138"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-yoshino-line-local-kashiharajingumae-yoshino",
+    "operator_id": "kintetsu",
+    "code": "F",
+    "name_en": "Kintetsu Yoshino Line Local (Kashiharajingumae => Yoshino)",
+    "name_ja": "近畿日本鉄道吉野線 普通 (橿原神宮前=>吉野)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11942098
+    ],
+    "stops": [
+      "stop-kintetsu-0139",
+      "stop-kintetsu-0140",
+      "stop-kintetsu-0141",
+      "stop-kintetsu-0142",
+      "stop-kintetsu-0143",
+      "stop-kintetsu-0144",
+      "stop-kintetsu-0145",
+      "stop-kintetsu-0146",
+      "stop-kintetsu-0147",
+      "stop-kintetsu-0148",
+      "stop-kintetsu-0149",
+      "stop-kintetsu-0150",
+      "stop-kintetsu-0151",
+      "stop-kintetsu-0152",
+      "stop-kintetsu-0153",
+      "stop-kintetsu-0154"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-osaka-line-local-ise-nakagawa-osaka-uehonmachi",
+    "operator_id": "kintetsu",
+    "code": "D",
+    "name_en": "Kintetsu Osaka Line Local (Ise-Nakagawa => Osaka-Uehonmachi)",
+    "name_ja": "近畿日本鉄道大阪線 普通 (伊勢中川 => 大阪上本町)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11601510
+    ],
+    "stops": [
+      "stop-kintetsu-0155",
+      "stop-kintetsu-0156",
+      "stop-kintetsu-0157",
+      "stop-kintetsu-0158",
+      "stop-kintetsu-0159",
+      "stop-kintetsu-0160",
+      "stop-kintetsu-0161",
+      "stop-kintetsu-0162",
+      "stop-kintetsu-0163",
+      "stop-kintetsu-0164",
+      "stop-kintetsu-0165",
+      "stop-kintetsu-0166",
+      "stop-kintetsu-0167",
+      "stop-kintetsu-0168",
+      "stop-kintetsu-0169",
+      "stop-kintetsu-0170",
+      "stop-kintetsu-0171",
+      "stop-kintetsu-0172",
+      "stop-kintetsu-0173",
+      "stop-kintetsu-0174",
+      "stop-kintetsu-0175",
+      "stop-kintetsu-0176",
+      "stop-kintetsu-0177",
+      "stop-kintetsu-0178",
+      "stop-kintetsu-0179",
+      "stop-kintetsu-0180",
+      "stop-kintetsu-0181",
+      "stop-kintetsu-0182",
+      "stop-kintetsu-0183",
+      "stop-kintetsu-0184",
+      "stop-kintetsu-0185",
+      "stop-kintetsu-0186",
+      "stop-kintetsu-0187",
+      "stop-kintetsu-0188",
+      "stop-kintetsu-0189",
+      "stop-kintetsu-0190",
+      "stop-kintetsu-0191",
+      "stop-kintetsu-0192",
+      "stop-kintetsu-0193",
+      "stop-kintetsu-0194",
+      "stop-kintetsu-0195",
+      "stop-kintetsu-0196",
+      "stop-kintetsu-0197",
+      "stop-kintetsu-0198",
+      "stop-kintetsu-0199",
+      "stop-kintetsu-0200",
+      "stop-kintetsu-0201",
+      "stop-kintetsu-0202"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-osaka-line-local-osaka-uehonmachi-ise-nakagawa",
+    "operator_id": "kintetsu",
+    "code": "D",
+    "name_en": "Kintetsu Osaka Line Local (Osaka-Uehonmachi => Ise-Nakagawa)",
+    "name_ja": "近畿日本鉄道大阪線 普通 (大阪上本町 => 伊勢中川)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11962196
+    ],
+    "stops": [
+      "stop-kintetsu-0203",
+      "stop-kintetsu-0204",
+      "stop-kintetsu-0205",
+      "stop-kintetsu-0206",
+      "stop-kintetsu-0207",
+      "stop-kintetsu-0208",
+      "stop-kintetsu-0209",
+      "stop-kintetsu-0210",
+      "stop-kintetsu-0211",
+      "stop-kintetsu-0212",
+      "stop-kintetsu-0213",
+      "stop-kintetsu-0214",
+      "stop-kintetsu-0215",
+      "stop-kintetsu-0216",
+      "stop-kintetsu-0217",
+      "stop-kintetsu-0218",
+      "stop-kintetsu-0219",
+      "stop-kintetsu-0220",
+      "stop-kintetsu-0221",
+      "stop-kintetsu-0222",
+      "stop-kintetsu-0223",
+      "stop-kintetsu-0224",
+      "stop-kintetsu-0225",
+      "stop-kintetsu-0226",
+      "stop-kintetsu-0227",
+      "stop-kintetsu-0228",
+      "stop-kintetsu-0229",
+      "stop-kintetsu-0230",
+      "stop-kintetsu-0231",
+      "stop-kintetsu-0232",
+      "stop-kintetsu-0233",
+      "stop-kintetsu-0234",
+      "stop-kintetsu-0235",
+      "stop-kintetsu-0236",
+      "stop-kintetsu-0237",
+      "stop-kintetsu-0238",
+      "stop-kintetsu-0239",
+      "stop-kintetsu-0240",
+      "stop-kintetsu-0241",
+      "stop-kintetsu-0242",
+      "stop-kintetsu-0243",
+      "stop-kintetsu-0244",
+      "stop-kintetsu-0245",
+      "stop-kintetsu-0246",
+      "stop-kintetsu-0247",
+      "stop-kintetsu-0248",
+      "stop-kintetsu-0249",
+      "stop-kintetsu-0250"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-tenri-line-local-tenri-hirahata",
+    "operator_id": "kintetsu",
+    "code": "H",
+    "name_en": "Kintetsu Tenri Line Local (Tenri => Hirahata)",
+    "name_ja": "近畿日本鉄道天理線 普通 (天理 => 平端)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11965677
+    ],
+    "stops": [
+      "stop-kintetsu-0251",
+      "stop-kintetsu-0252",
+      "stop-kintetsu-0253",
+      "stop-kintetsu-0254"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-tenri-line-local-hirahata-tenri",
+    "operator_id": "kintetsu",
+    "code": "H",
+    "name_en": "Kintetsu Tenri Line Local (Hirahata => Tenri)",
+    "name_ja": "近畿日本鉄道天理線 普通 (平端 => 天理)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11965678
+    ],
+    "stops": [
+      "stop-kintetsu-0255",
+      "stop-kintetsu-0256",
+      "stop-kintetsu-0257",
+      "stop-kintetsu-0258"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-nara-line-local-fuse-kintetsu-nara",
+    "operator_id": "kintetsu",
+    "code": "A",
+    "name_en": "Kintetsu Nara Line Local (Fuse => Kintetsu-Nara)",
+    "name_ja": "近畿日本鉄道奈良線 普通 (布施 => 近鉄奈良)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11958106
+    ],
+    "stops": [
+      "stop-kintetsu-0259",
+      "stop-kintetsu-0260",
+      "stop-kintetsu-0261",
+      "stop-kintetsu-0262",
+      "stop-kintetsu-0263",
+      "stop-kintetsu-0264",
+      "stop-kintetsu-0265",
+      "stop-kintetsu-0266",
+      "stop-kintetsu-0267",
+      "stop-kintetsu-0268",
+      "stop-kintetsu-0269",
+      "stop-kintetsu-0270",
+      "stop-kintetsu-0271",
+      "stop-kintetsu-0272",
+      "stop-kintetsu-0273",
+      "stop-kintetsu-0274",
+      "stop-kintetsu-0275",
+      "stop-kintetsu-0276",
+      "stop-kintetsu-0277"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-nara-line-local-kintetsu-nara-fuse",
+    "operator_id": "kintetsu",
+    "code": "A",
+    "name_en": "Kintetsu Nara Line Local (Kintetsu-Nara => Fuse)",
+    "name_ja": "近畿日本鉄道奈良線 普通 (近鉄奈良 => 布施)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11958105
+    ],
+    "stops": [
+      "stop-kintetsu-0278",
+      "stop-kintetsu-0279",
+      "stop-kintetsu-0280",
+      "stop-kintetsu-0281",
+      "stop-kintetsu-0282",
+      "stop-kintetsu-0283",
+      "stop-kintetsu-0284",
+      "stop-kintetsu-0285",
+      "stop-kintetsu-0286",
+      "stop-kintetsu-0287",
+      "stop-kintetsu-0288",
+      "stop-kintetsu-0289",
+      "stop-kintetsu-0290",
+      "stop-kintetsu-0291",
+      "stop-kintetsu-0292",
+      "stop-kintetsu-0293",
+      "stop-kintetsu-0294",
+      "stop-kintetsu-0295"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-gose-line-local-shakudo-kintetsu-gose",
+    "operator_id": "kintetsu",
+    "code": "P",
+    "name_en": "Kintetsu Gose Line Local (Shakudo => Kintetsu-Gose)",
+    "name_ja": "近畿日本鉄道御所線 普通 (尺土 => 近鉄御所)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11949787
+    ],
+    "stops": [
+      "stop-kintetsu-0296",
+      "stop-kintetsu-0297",
+      "stop-kintetsu-0298",
+      "stop-kintetsu-0299"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-gose-line-local-kintetsu-gose-shakudo",
+    "operator_id": "kintetsu",
+    "code": "P",
+    "name_en": "Kintetsu Gose Line Local (Kintetsu-Gose => Shakudo)",
+    "name_ja": "近畿日本鉄道御所線 普通 (近鉄御所 => 尺土)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11949783
+    ],
+    "stops": [
+      "stop-kintetsu-0300",
+      "stop-kintetsu-0301",
+      "stop-kintetsu-0302",
+      "stop-kintetsu-0303"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-kashihara-line-local-yamato-saidaiji-kashiharajingu-mae",
+    "operator_id": "kintetsu",
+    "code": "B",
+    "name_en": "Kintetsu Kashihara Line Local (Yamato-Saidaiji => Kashiharajingu-mae)",
+    "name_ja": "近畿日本鉄道橿原線 普通 (大和西大寺 => 橿原神宮前)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11959219
+    ],
+    "stops": [
+      "stop-kintetsu-0304",
+      "stop-kintetsu-0305",
+      "stop-kintetsu-0306",
+      "stop-kintetsu-0307",
+      "stop-kintetsu-0308",
+      "stop-kintetsu-0309",
+      "stop-kintetsu-0310",
+      "stop-kintetsu-0311",
+      "stop-kintetsu-0312",
+      "stop-kintetsu-0313",
+      "stop-kintetsu-0314",
+      "stop-kintetsu-0315",
+      "stop-kintetsu-0316",
+      "stop-kintetsu-0317",
+      "stop-kintetsu-0318",
+      "stop-kintetsu-0319",
+      "stop-kintetsu-0320"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-kashihara-line-local-kashiharajingu-mae-yamato-saidaiji",
+    "operator_id": "kintetsu",
+    "code": "B",
+    "name_en": "Kintetsu Kashihara Line Local (Kashiharajingu-mae => Yamato-Saidaiji)",
+    "name_ja": "近畿日本鉄道橿原線 普通 (橿原神宮前 => 大和西大寺)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11959217
+    ],
+    "stops": [
+      "stop-kintetsu-0321",
+      "stop-kintetsu-0322",
+      "stop-kintetsu-0323",
+      "stop-kintetsu-0324",
+      "stop-kintetsu-0325",
+      "stop-kintetsu-0326",
+      "stop-kintetsu-0327",
+      "stop-kintetsu-0328",
+      "stop-kintetsu-0329",
+      "stop-kintetsu-0330",
+      "stop-kintetsu-0331",
+      "stop-kintetsu-0332",
+      "stop-kintetsu-0333",
+      "stop-kintetsu-0334",
+      "stop-kintetsu-0335",
+      "stop-kintetsu-0336",
+      "stop-kintetsu-0337"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-ikoma-line-local-oji-ikoma",
+    "operator_id": "kintetsu",
+    "code": "G",
+    "name_en": "Kintetsu Ikoma Line Local (Oji => Ikoma)",
+    "name_ja": "近畿日本鉄道生駒線 普通 (王寺 => 生駒)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11962096
+    ],
+    "stops": [
+      "stop-kintetsu-0338",
+      "stop-kintetsu-0339",
+      "stop-kintetsu-0340",
+      "stop-kintetsu-0341",
+      "stop-kintetsu-0342",
+      "stop-kintetsu-0343",
+      "stop-kintetsu-0344",
+      "stop-kintetsu-0345",
+      "stop-kintetsu-0346",
+      "stop-kintetsu-0347",
+      "stop-kintetsu-0348",
+      "stop-kintetsu-0349"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-ikoma-line-local-ikoma-oji",
+    "operator_id": "kintetsu",
+    "code": "G",
+    "name_en": "Kintetsu Ikoma Line Local (Ikoma => Oji)",
+    "name_ja": "近畿日本鉄道生駒線 普通 (生駒 => 王寺)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11962099
+    ],
+    "stops": [
+      "stop-kintetsu-0350",
+      "stop-kintetsu-0351",
+      "stop-kintetsu-0352",
+      "stop-kintetsu-0353",
+      "stop-kintetsu-0354",
+      "stop-kintetsu-0355",
+      "stop-kintetsu-0356",
+      "stop-kintetsu-0357",
+      "stop-kintetsu-0358",
+      "stop-kintetsu-0359",
+      "stop-kintetsu-0360",
+      "stop-kintetsu-0361"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-tawaramoto-line-local-shin-oji-nishi-tawaramoto",
+    "operator_id": "kintetsu",
+    "code": "I",
+    "name_en": "Kintetsu Tawaramoto Line Local (Shin-Oji => Nishi-Tawaramoto)",
+    "name_ja": "近畿日本鉄道田原本線 普通 (新王寺 => 西田原本)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11965804
+    ],
+    "stops": [
+      "stop-kintetsu-0362",
+      "stop-kintetsu-0363",
+      "stop-kintetsu-0364",
+      "stop-kintetsu-0365",
+      "stop-kintetsu-0366",
+      "stop-kintetsu-0367",
+      "stop-kintetsu-0368",
+      "stop-kintetsu-0369"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-tawaramoto-line-local-nishi-tawaramoto-shin-oji",
+    "operator_id": "kintetsu",
+    "code": "I",
+    "name_en": "Kintetsu Tawaramoto Line Local (Nishi-Tawaramoto => Shin-Oji)",
+    "name_ja": "近畿日本鉄道田原本線 普通 (西田原本 => 新王寺)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11965813
+    ],
+    "stops": [
+      "stop-kintetsu-0370",
+      "stop-kintetsu-0371",
+      "stop-kintetsu-0372",
+      "stop-kintetsu-0373",
+      "stop-kintetsu-0374",
+      "stop-kintetsu-0375",
+      "stop-kintetsu-0376",
+      "stop-kintetsu-0377"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-d-my-ji-line-local-kashiwara-d-my-ji",
+    "operator_id": "kintetsu",
+    "code": "N",
+    "name_en": "Kintetsu Dōmyōji Line Local (Kashiwara => Dōmyōji)",
+    "name_ja": "近畿日本鉄道道明寺線 普通 (柏原 => 道明寺)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11942335
+    ],
+    "stops": [
+      "stop-kintetsu-0378",
+      "stop-kintetsu-0379",
+      "stop-kintetsu-0380"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-d-my-ji-line-local-d-my-ji-kashiwara",
+    "operator_id": "kintetsu",
+    "code": "N",
+    "name_en": "Kintetsu Dōmyōji Line Local (Dōmyōji => Kashiwara)",
+    "name_ja": "近畿日本鉄道道明寺線 普通 (道明寺 => 柏原)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11942338
+    ],
+    "stops": [
+      "stop-kintetsu-0381",
+      "stop-kintetsu-0382",
+      "stop-kintetsu-0383"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-nagano-line-local-furuichi-kawachi-nagano",
+    "operator_id": "kintetsu",
+    "code": "O",
+    "name_en": "Kintetsu Nagano Line Local (Furuichi => Kawachi-Nagano)",
+    "name_ja": "近畿日本鉄道長野線 普通 (古市 => 河内長野)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11944238
+    ],
+    "stops": [
+      "stop-kintetsu-0384",
+      "stop-kintetsu-0385",
+      "stop-kintetsu-0386",
+      "stop-kintetsu-0387",
+      "stop-kintetsu-0388",
+      "stop-kintetsu-0389",
+      "stop-kintetsu-0390",
+      "stop-kintetsu-0391"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-nagano-line-local-kawachi-nagano-furuichi",
+    "operator_id": "kintetsu",
+    "code": "O",
+    "name_en": "Kintetsu Nagano Line Local (Kawachi-Nagano => Furuichi)",
+    "name_ja": "近畿日本鉄道長野線 普通 (河内長野 => 古市)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11944237
+    ],
+    "stops": [
+      "stop-kintetsu-0392",
+      "stop-kintetsu-0393",
+      "stop-kintetsu-0394",
+      "stop-kintetsu-0395",
+      "stop-kintetsu-0396",
+      "stop-kintetsu-0397",
+      "stop-kintetsu-0398",
+      "stop-kintetsu-0399"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-namba-line-osaka-uehommachi-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "A",
+    "name_en": "Kintetsu Namba Line (Osaka Uehommachi => Osaka Namba)",
+    "name_ja": "近畿日本鉄道難波線 (大阪上本町=>大阪難波)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11955751
+    ],
+    "stops": [
+      "stop-kintetsu-0400",
+      "stop-kintetsu-0401",
+      "stop-kintetsu-0402"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-namba-line-osaka-namba-osaka-uehommachi",
+    "operator_id": "kintetsu",
+    "code": "A",
+    "name_en": "Kintetsu Namba Line (Osaka Namba => Osaka Uehommachi)",
+    "name_ja": "近畿日本鉄道難波線 (大阪難波=>大阪上本町)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      11955750
+    ],
+    "stops": [
+      "stop-kintetsu-0403",
+      "stop-kintetsu-0404",
+      "stop-kintetsu-0405"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kyoto-kashiharajingu-mae",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kyoto => Kashiharajingu-mae)",
+    "name_ja": "近鉄特急 (京都 => 橿原神宮前)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104831
+    ],
+    "stops": [
+      "stop-kintetsu-0406",
+      "stop-kintetsu-0407",
+      "stop-kintetsu-0408",
+      "stop-kintetsu-0409",
+      "stop-kintetsu-0410"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kyoto-kashikojima",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kyoto => Kashikojima)",
+    "name_ja": "近鉄特急 (京都 => 賢島)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104833
+    ],
+    "stops": [
+      "stop-kintetsu-0411",
+      "stop-kintetsu-0412",
+      "stop-kintetsu-0413",
+      "stop-kintetsu-0414",
+      "stop-kintetsu-0415",
+      "stop-kintetsu-0416",
+      "stop-kintetsu-0417",
+      "stop-kintetsu-0418",
+      "stop-kintetsu-0419",
+      "stop-kintetsu-0420",
+      "stop-kintetsu-0421",
+      "stop-kintetsu-0422",
+      "stop-kintetsu-0423",
+      "stop-kintetsu-0424"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kyoto-kintetsu-nara",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kyoto => Kintetsu-Nara)",
+    "name_ja": "近鉄特急 (京都 => 近鉄奈良)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104827
+    ],
+    "stops": [
+      "stop-kintetsu-0425",
+      "stop-kintetsu-0426",
+      "stop-kintetsu-0427",
+      "stop-kintetsu-0428"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-yoshino-osaka-abenobashi",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Yoshino => Osaka-Abenobashi)",
+    "name_ja": "近鉄特急 (吉野 => 大阪阿部野橋)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104999
+    ],
+    "stops": [
+      "stop-kintetsu-0429",
+      "stop-kintetsu-0430",
+      "stop-kintetsu-0431",
+      "stop-kintetsu-0432",
+      "stop-kintetsu-0433",
+      "stop-kintetsu-0434",
+      "stop-kintetsu-0435",
+      "stop-kintetsu-0436",
+      "stop-kintetsu-0437",
+      "stop-kintetsu-0438",
+      "stop-kintetsu-0439",
+      "stop-kintetsu-0440",
+      "stop-kintetsu-0441"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-osaka-abenobashi-yoshino",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Osaka-Abenobashi => Yoshino)",
+    "name_ja": "近鉄特急 (大阪阿部野橋 => 吉野)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104998
+    ],
+    "stops": [
+      "stop-kintetsu-0442",
+      "stop-kintetsu-0443",
+      "stop-kintetsu-0444",
+      "stop-kintetsu-0445",
+      "stop-kintetsu-0446",
+      "stop-kintetsu-0447",
+      "stop-kintetsu-0448",
+      "stop-kintetsu-0449",
+      "stop-kintetsu-0450",
+      "stop-kintetsu-0451",
+      "stop-kintetsu-0452",
+      "stop-kintetsu-0453",
+      "stop-kintetsu-0454"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-osaka-namba-kashikojima",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Osaka-Namba => Kashikojima)",
+    "name_ja": "近鉄特急 (大阪難波 => 賢島)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104836
+    ],
+    "stops": [
+      "stop-kintetsu-0455",
+      "stop-kintetsu-0456",
+      "stop-kintetsu-0457",
+      "stop-kintetsu-0458",
+      "stop-kintetsu-0459",
+      "stop-kintetsu-0460",
+      "stop-kintetsu-0461",
+      "stop-kintetsu-0462",
+      "stop-kintetsu-0463",
+      "stop-kintetsu-0464",
+      "stop-kintetsu-0465",
+      "stop-kintetsu-0466",
+      "stop-kintetsu-0467",
+      "stop-kintetsu-0468",
+      "stop-kintetsu-0469",
+      "stop-kintetsu-0470",
+      "stop-kintetsu-0471",
+      "stop-kintetsu-0472"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-osaka-namba-kintetsu-nara",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Osaka-Namba => Kintetsu-Nara)",
+    "name_ja": "近鉄特急 (大阪難波 => 近鉄奈良)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104254
+    ],
+    "stops": [
+      "stop-kintetsu-0473",
+      "stop-kintetsu-0474",
+      "stop-kintetsu-0475",
+      "stop-kintetsu-0476",
+      "stop-kintetsu-0477",
+      "stop-kintetsu-0478",
+      "stop-kintetsu-0479"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kashiharajingu-mae-kyoto",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kashiharajingu-mae => Kyoto)",
+    "name_ja": "近鉄特急 (橿原神宮前 => 京都)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104830
+    ],
+    "stops": [
+      "stop-kintetsu-0480",
+      "stop-kintetsu-0481",
+      "stop-kintetsu-0482",
+      "stop-kintetsu-0483",
+      "stop-kintetsu-0484"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kashikojima-kyoto",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kashikojima => Kyoto)",
+    "name_ja": "近鉄特急 (賢島 => 京都)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104834
+    ],
+    "stops": [
+      "stop-kintetsu-0485",
+      "stop-kintetsu-0486",
+      "stop-kintetsu-0487",
+      "stop-kintetsu-0488",
+      "stop-kintetsu-0489",
+      "stop-kintetsu-0490",
+      "stop-kintetsu-0491",
+      "stop-kintetsu-0492",
+      "stop-kintetsu-0493",
+      "stop-kintetsu-0494",
+      "stop-kintetsu-0495",
+      "stop-kintetsu-0496",
+      "stop-kintetsu-0497",
+      "stop-kintetsu-0498"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kashikojima-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kashikojima => Osaka-Namba)",
+    "name_ja": "近鉄特急 (賢島 => 大阪難波)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104837
+    ],
+    "stops": [
+      "stop-kintetsu-0499",
+      "stop-kintetsu-0500",
+      "stop-kintetsu-0501",
+      "stop-kintetsu-0502",
+      "stop-kintetsu-0503",
+      "stop-kintetsu-0504",
+      "stop-kintetsu-0505",
+      "stop-kintetsu-0506",
+      "stop-kintetsu-0507",
+      "stop-kintetsu-0508",
+      "stop-kintetsu-0509",
+      "stop-kintetsu-0510",
+      "stop-kintetsu-0511",
+      "stop-kintetsu-0512",
+      "stop-kintetsu-0513",
+      "stop-kintetsu-0514",
+      "stop-kintetsu-0515",
+      "stop-kintetsu-0516"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kintetsu-nara-kyoto",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kintetsu-Nara => Kyoto)",
+    "name_ja": "近鉄特急 (近鉄奈良 => 京都)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104828
+    ],
+    "stops": [
+      "stop-kintetsu-0517",
+      "stop-kintetsu-0518",
+      "stop-kintetsu-0519",
+      "stop-kintetsu-0520"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-kintetsu-nara-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express (Kintetsu-Nara => Osaka-Namba)",
+    "name_ja": "近鉄特急 (近鉄奈良 => 大阪難波)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104499
+    ],
+    "stops": [
+      "stop-kintetsu-0521",
+      "stop-kintetsu-0522",
+      "stop-kintetsu-0523",
+      "stop-kintetsu-0524",
+      "stop-kintetsu-0525",
+      "stop-kintetsu-0526",
+      "stop-kintetsu-0527"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-aoniyoshi-kyoto-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express AONIYOSHI (Kyoto => Osaka-Namba)",
+    "name_ja": "近鉄特急あをによし (京都 => 大阪難波)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104825
+    ],
+    "stops": [
+      "stop-kintetsu-0528",
+      "stop-kintetsu-0529",
+      "stop-kintetsu-0530",
+      "stop-kintetsu-0531",
+      "stop-kintetsu-0532",
+      "stop-kintetsu-0533",
+      "stop-kintetsu-0534",
+      "stop-kintetsu-0535",
+      "stop-kintetsu-0536"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-aoniyoshi-osaka-namba-kyoto",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express AONIYOSHI (Osaka-Namba => Kyoto)",
+    "name_ja": "近鉄特急あをによし (大阪難波 => 京都)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104824
+    ],
+    "stops": [
+      "stop-kintetsu-0537",
+      "stop-kintetsu-0538",
+      "stop-kintetsu-0539",
+      "stop-kintetsu-0540",
+      "stop-kintetsu-0541",
+      "stop-kintetsu-0542",
+      "stop-kintetsu-0543",
+      "stop-kintetsu-0544",
+      "stop-kintetsu-0545"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-shimakaze-kyoto-kashikojima",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express SHIMAKAZE (Kyoto => Kashikojima)",
+    "name_ja": "近鉄特急しまかぜ (京都 => 賢島)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      19960363
+    ],
+    "stops": [
+      "stop-kintetsu-0546",
+      "stop-kintetsu-0547",
+      "stop-kintetsu-0548",
+      "stop-kintetsu-0549",
+      "stop-kintetsu-0550",
+      "stop-kintetsu-0551",
+      "stop-kintetsu-0552",
+      "stop-kintetsu-0553",
+      "stop-kintetsu-0554"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-shimakaze-osaka-namba-kashikojima",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express SHIMAKAZE (Osaka-Namba => Kashikojima)",
+    "name_ja": "近鉄特急しまかぜ (大阪難波 => 賢島)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      19960360
+    ],
+    "stops": [
+      "stop-kintetsu-0555",
+      "stop-kintetsu-0556",
+      "stop-kintetsu-0557",
+      "stop-kintetsu-0558",
+      "stop-kintetsu-0559",
+      "stop-kintetsu-0560",
+      "stop-kintetsu-0561",
+      "stop-kintetsu-0562",
+      "stop-kintetsu-0563"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-shimakaze-kashikojima-kyoto",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express SHIMAKAZE (Kashikojima => Kyoto)",
+    "name_ja": "近鉄特急しまかぜ (賢島 => 京都)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      19960365
+    ],
+    "stops": [
+      "stop-kintetsu-0564",
+      "stop-kintetsu-0565",
+      "stop-kintetsu-0566",
+      "stop-kintetsu-0567",
+      "stop-kintetsu-0568",
+      "stop-kintetsu-0569",
+      "stop-kintetsu-0570",
+      "stop-kintetsu-0571"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-shimakaze-kashikojima-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express SHIMAKAZE (Kashikojima => Osaka-Namba)",
+    "name_ja": "近鉄特急しまかぜ (賢島 => 大阪難波)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      19960361
+    ],
+    "stops": [
+      "stop-kintetsu-0572",
+      "stop-kintetsu-0573",
+      "stop-kintetsu-0574",
+      "stop-kintetsu-0575",
+      "stop-kintetsu-0576",
+      "stop-kintetsu-0577",
+      "stop-kintetsu-0578",
+      "stop-kintetsu-0579",
+      "stop-kintetsu-0580"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-hinotori-osaka-namba-kintetsu-nara",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express HINOTORI (Osaka-Namba => Kintetsu-Nara)",
+    "name_ja": "近鉄特急ひのとり (大阪難波 => 近鉄奈良)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104253
+    ],
+    "stops": [
+      "stop-kintetsu-0581",
+      "stop-kintetsu-0582",
+      "stop-kintetsu-0583",
+      "stop-kintetsu-0584",
+      "stop-kintetsu-0585",
+      "stop-kintetsu-0586",
+      "stop-kintetsu-0587",
+      "stop-kintetsu-0588"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-hinotori-kintetsu-nara-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express HINOTORI (Kintetsu-Nara => Osaka-Namba)",
+    "name_ja": "近鉄特急ひのとり (近鉄奈良 => 大阪難波)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20104498
+    ],
+    "stops": [
+      "stop-kintetsu-0589",
+      "stop-kintetsu-0590",
+      "stop-kintetsu-0591",
+      "stop-kintetsu-0592",
+      "stop-kintetsu-0593",
+      "stop-kintetsu-0594",
+      "stop-kintetsu-0595"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-hinotori-osaka-namba-kintetsu-nagoya",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express HINOTORI (Osaka-Namba => Kintetsu-Nagoya)",
+    "name_ja": "近鉄特急ひのとり（大阪難波 => 近鉄名古屋）",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      9814586
+    ],
+    "stops": [
+      "stop-kintetsu-0596",
+      "stop-kintetsu-0597",
+      "stop-kintetsu-0598",
+      "stop-kintetsu-0599"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-hinotori-kintetsu-nagoya-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express HINOTORI (Kintetsu-Nagoya => Osaka-Namba)",
+    "name_ja": "近鉄特急ひのとり（近鉄名古屋 => 大阪難波）",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      9814731
+    ],
+    "stops": [
+      "stop-kintetsu-0600",
+      "stop-kintetsu-0601",
+      "stop-kintetsu-0602"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-urban-liner-osaka-namba-kintetsu-nagoya",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express URBAN LINER (Osaka-Namba => Kintetsu-Nagoya)",
+    "name_ja": "近鉄特急アーバンライナー (大阪難波 => 近鉄名古屋)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      19955635
+    ],
+    "stops": [
+      "stop-kintetsu-0603",
+      "stop-kintetsu-0604",
+      "stop-kintetsu-0605",
+      "stop-kintetsu-0606",
+      "stop-kintetsu-0607",
+      "stop-kintetsu-0608",
+      "stop-kintetsu-0609",
+      "stop-kintetsu-0610",
+      "stop-kintetsu-0611",
+      "stop-kintetsu-0612"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-urban-liner-kintetsu-nagoya-osaka-namba",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express URBAN LINER (Kintetsu-Nagoya => Osaka-Namba)",
+    "name_ja": "近鉄特急アーバンライナー (近鉄名古屋 => 大阪難波)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      19955376
+    ],
+    "stops": [
+      "stop-kintetsu-0613",
+      "stop-kintetsu-0614",
+      "stop-kintetsu-0615",
+      "stop-kintetsu-0616",
+      "stop-kintetsu-0617",
+      "stop-kintetsu-0618",
+      "stop-kintetsu-0619",
+      "stop-kintetsu-0620",
+      "stop-kintetsu-0621",
+      "stop-kintetsu-0622"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-blue-symphony-yoshino-osaka-abenobashi",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express BLUE SYMPHONY (Yoshino => Osaka-Abenobashi)",
+    "name_ja": "近鉄特急青の交響曲 (吉野 => 大阪阿部野橋)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20105002
+    ],
+    "stops": [
+      "stop-kintetsu-0623",
+      "stop-kintetsu-0624",
+      "stop-kintetsu-0625",
+      "stop-kintetsu-0626",
+      "stop-kintetsu-0627",
+      "stop-kintetsu-0628",
+      "stop-kintetsu-0629",
+      "stop-kintetsu-0630",
+      "stop-kintetsu-0631",
+      "stop-kintetsu-0632",
+      "stop-kintetsu-0633",
+      "stop-kintetsu-0634",
+      "stop-kintetsu-0635"
+    ]
+  },
+  {
+    "id": "kintetsu-kintetsu-limited-express-blue-symphony-osaka-abenobashi-yoshino",
+    "operator_id": "kintetsu",
+    "code": "",
+    "name_en": "Kintetsu Limited Express BLUE SYMPHONY (Osaka-Abenobashi => Yoshino)",
+    "name_ja": "近鉄特急青の交響曲 (大阪阿部野橋 => 吉野)",
+    "colour": "#E45E00",
+    "osm_relation_ids": [
+      20105001
+    ],
+    "stops": [
+      "stop-kintetsu-0636",
+      "stop-kintetsu-0637",
+      "stop-kintetsu-0638",
+      "stop-kintetsu-0639",
+      "stop-kintetsu-0640",
+      "stop-kintetsu-0641",
+      "stop-kintetsu-0642",
+      "stop-kintetsu-0643",
+      "stop-kintetsu-0644",
+      "stop-kintetsu-0645",
+      "stop-kintetsu-0646",
+      "stop-kintetsu-0647",
+      "stop-kintetsu-0648"
+    ]
+  },
+  {
+    "id": "nankai-nankai-kada-line-local-kada-wakayamashi",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Kada Line Local (Kada => Wakayamashi)",
+    "name_ja": "南海加太線 普通 (加太 => 和歌山市)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11984782
+    ],
+    "stops": [
+      "stop-nankai-0000",
+      "stop-nankai-0001",
+      "stop-nankai-0002",
+      "stop-nankai-0003",
+      "stop-nankai-0004",
+      "stop-nankai-0005",
+      "stop-nankai-0006",
+      "stop-nankai-0007",
+      "stop-nankai-0008"
+    ]
+  },
+  {
+    "id": "nankai-nankai-kada-line-local-wakayamashi-kada",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Kada Line Local (Wakayamashi => Kada)",
+    "name_ja": "南海加太線 普通 (和歌山市 => 加太)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11984783
+    ],
+    "stops": [
+      "stop-nankai-0009",
+      "stop-nankai-0010",
+      "stop-nankai-0011",
+      "stop-nankai-0012",
+      "stop-nankai-0013",
+      "stop-nankai-0014",
+      "stop-nankai-0015",
+      "stop-nankai-0016",
+      "stop-nankai-0017"
+    ]
+  },
+  {
+    "id": "nankai-nankai-tanagawa-line-local-misakikoen-tanagawa",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Tanagawa Line Local (Misakikoen => Tanagawa)",
+    "name_ja": "南海多奈川線 普通 (みさき公園 => 多奈川)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11984568
+    ],
+    "stops": [
+      "stop-nankai-0018",
+      "stop-nankai-0019",
+      "stop-nankai-0020",
+      "stop-nankai-0021"
+    ]
+  },
+  {
+    "id": "nankai-nankai-tanagawa-line-local-tanagawa-misakikoen",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Tanagawa Line Local (Tanagawa => Misakikoen)",
+    "name_ja": "南海多奈川線 普通 (多奈川 => みさき公園)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11984564
+    ],
+    "stops": [
+      "stop-nankai-0022",
+      "stop-nankai-0023",
+      "stop-nankai-0024",
+      "stop-nankai-0025"
+    ]
+  },
+  {
+    "id": "nankai-nankai-main-line-express-namba-wakayamashi",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Nankai Main Line -Express- (Namba => Wakayamashi)",
+    "name_ja": "南海本線 -急行- (なんば => 和歌山市)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18718961
+    ],
+    "stops": [
+      "stop-nankai-0026",
+      "stop-nankai-0027",
+      "stop-nankai-0028",
+      "stop-nankai-0029",
+      "stop-nankai-0030",
+      "stop-nankai-0031",
+      "stop-nankai-0032",
+      "stop-nankai-0033",
+      "stop-nankai-0034",
+      "stop-nankai-0035",
+      "stop-nankai-0036",
+      "stop-nankai-0037",
+      "stop-nankai-0038",
+      "stop-nankai-0039"
+    ]
+  },
+  {
+    "id": "nankai-nankai-main-line-sub-express-namba-wakayamashi",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Nankai Main Line Sub-Express (Namba => Wakayamashi)",
+    "name_ja": "南海本線 区急 (なんば => 和歌山市)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18718955
+    ],
+    "stops": [
+      "stop-nankai-0040",
+      "stop-nankai-0041",
+      "stop-nankai-0042",
+      "stop-nankai-0043",
+      "stop-nankai-0044",
+      "stop-nankai-0045",
+      "stop-nankai-0046",
+      "stop-nankai-0047",
+      "stop-nankai-0048",
+      "stop-nankai-0049",
+      "stop-nankai-0050",
+      "stop-nankai-0051",
+      "stop-nankai-0052",
+      "stop-nankai-0053",
+      "stop-nankai-0054",
+      "stop-nankai-0055",
+      "stop-nankai-0056",
+      "stop-nankai-0057",
+      "stop-nankai-0058",
+      "stop-nankai-0059",
+      "stop-nankai-0060",
+      "stop-nankai-0061",
+      "stop-nankai-0062"
+    ]
+  },
+  {
+    "id": "nankai-nankai-main-line-sub-express-wakayamashi-namba",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Nankai Main Line Sub-Express (Wakayamashi => Namba)",
+    "name_ja": "南海本線 区急 (和歌山市 => なんば)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18718954
+    ],
+    "stops": [
+      "stop-nankai-0063",
+      "stop-nankai-0064",
+      "stop-nankai-0065",
+      "stop-nankai-0066",
+      "stop-nankai-0067",
+      "stop-nankai-0068",
+      "stop-nankai-0069",
+      "stop-nankai-0070",
+      "stop-nankai-0071",
+      "stop-nankai-0072",
+      "stop-nankai-0073",
+      "stop-nankai-0074",
+      "stop-nankai-0075",
+      "stop-nankai-0076",
+      "stop-nankai-0077",
+      "stop-nankai-0078",
+      "stop-nankai-0079",
+      "stop-nankai-0080",
+      "stop-nankai-0081",
+      "stop-nankai-0082",
+      "stop-nankai-0083",
+      "stop-nankai-0084",
+      "stop-nankai-0085"
+    ]
+  },
+  {
+    "id": "nankai-nankai-main-line-express-namba-wakayamashi",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Nankai Main Line Express (Namba => Wakayamashi)",
+    "name_ja": "南海本線 急行 (なんば => 和歌山市)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18718960
+    ],
+    "stops": [
+      "stop-nankai-0086",
+      "stop-nankai-0087",
+      "stop-nankai-0088",
+      "stop-nankai-0089",
+      "stop-nankai-0090",
+      "stop-nankai-0091",
+      "stop-nankai-0092",
+      "stop-nankai-0093",
+      "stop-nankai-0094",
+      "stop-nankai-0095",
+      "stop-nankai-0096",
+      "stop-nankai-0097",
+      "stop-nankai-0098"
+    ]
+  },
+  {
+    "id": "nankai-nankai-main-line-express-namba-wakayamak",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Nankai Main Line Express (Namba => Wakayamakō)",
+    "name_ja": "南海本線 急行 (なんば => 和歌山港)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18718956
+    ],
+    "stops": [
+      "stop-nankai-0099",
+      "stop-nankai-0100",
+      "stop-nankai-0101",
+      "stop-nankai-0102",
+      "stop-nankai-0103",
+      "stop-nankai-0104",
+      "stop-nankai-0105",
+      "stop-nankai-0106",
+      "stop-nankai-0107",
+      "stop-nankai-0108",
+      "stop-nankai-0109",
+      "stop-nankai-0110",
+      "stop-nankai-0111",
+      "stop-nankai-0112"
+    ]
+  },
+  {
+    "id": "nankai-nankai-main-line-local-namba-wakayamashi",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Main Line Local (Namba => Wakayamashi)",
+    "name_ja": "南海本線 普通 (なんば => 和歌山市)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11930463
+    ],
+    "stops": [
+      "stop-nankai-0113",
+      "stop-nankai-0114",
+      "stop-nankai-0115",
+      "stop-nankai-0116",
+      "stop-nankai-0117",
+      "stop-nankai-0118",
+      "stop-nankai-0119",
+      "stop-nankai-0120",
+      "stop-nankai-0121",
+      "stop-nankai-0122",
+      "stop-nankai-0123",
+      "stop-nankai-0124",
+      "stop-nankai-0125",
+      "stop-nankai-0126",
+      "stop-nankai-0127",
+      "stop-nankai-0128",
+      "stop-nankai-0129",
+      "stop-nankai-0130",
+      "stop-nankai-0131",
+      "stop-nankai-0132",
+      "stop-nankai-0133",
+      "stop-nankai-0134",
+      "stop-nankai-0135",
+      "stop-nankai-0136",
+      "stop-nankai-0137",
+      "stop-nankai-0138",
+      "stop-nankai-0139",
+      "stop-nankai-0140",
+      "stop-nankai-0141",
+      "stop-nankai-0142",
+      "stop-nankai-0143",
+      "stop-nankai-0144",
+      "stop-nankai-0145",
+      "stop-nankai-0146",
+      "stop-nankai-0147",
+      "stop-nankai-0148",
+      "stop-nankai-0149",
+      "stop-nankai-0150",
+      "stop-nankai-0151",
+      "stop-nankai-0152",
+      "stop-nankai-0153"
+    ]
+  },
+  {
+    "id": "nankai-nankai-main-line-local-wakayamashi-namba",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Main Line Local (Wakayamashi => Namba)",
+    "name_ja": "南海本線 普通 (和歌山市 => なんば)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11930462
+    ],
+    "stops": [
+      "stop-nankai-0154",
+      "stop-nankai-0155",
+      "stop-nankai-0156",
+      "stop-nankai-0157",
+      "stop-nankai-0158",
+      "stop-nankai-0159",
+      "stop-nankai-0160",
+      "stop-nankai-0161",
+      "stop-nankai-0162",
+      "stop-nankai-0163",
+      "stop-nankai-0164",
+      "stop-nankai-0165",
+      "stop-nankai-0166",
+      "stop-nankai-0167",
+      "stop-nankai-0168",
+      "stop-nankai-0169",
+      "stop-nankai-0170",
+      "stop-nankai-0171",
+      "stop-nankai-0172",
+      "stop-nankai-0173",
+      "stop-nankai-0174",
+      "stop-nankai-0175",
+      "stop-nankai-0176",
+      "stop-nankai-0177",
+      "stop-nankai-0178",
+      "stop-nankai-0179",
+      "stop-nankai-0180",
+      "stop-nankai-0181",
+      "stop-nankai-0182",
+      "stop-nankai-0183",
+      "stop-nankai-0184",
+      "stop-nankai-0185",
+      "stop-nankai-0186",
+      "stop-nankai-0187",
+      "stop-nankai-0188",
+      "stop-nankai-0189",
+      "stop-nankai-0190",
+      "stop-nankai-0191",
+      "stop-nankai-0192",
+      "stop-nankai-0193",
+      "stop-nankai-0194"
+    ]
+  },
+  {
+    "id": "nankai-nankai-airport-line-local-namba-kansai-airport",
+    "operator_id": "nankai",
+    "code": "S",
+    "name_en": "Nankai Airport Line Local (Namba => Kansai Airport)",
+    "name_ja": "南海空港線 普通 (なんば => 関西空港)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      9583743
+    ],
+    "stops": [
+      "stop-nankai-0195",
+      "stop-nankai-0196",
+      "stop-nankai-0197",
+      "stop-nankai-0198",
+      "stop-nankai-0199",
+      "stop-nankai-0200",
+      "stop-nankai-0201",
+      "stop-nankai-0202",
+      "stop-nankai-0203",
+      "stop-nankai-0204",
+      "stop-nankai-0205",
+      "stop-nankai-0206",
+      "stop-nankai-0207",
+      "stop-nankai-0208",
+      "stop-nankai-0209",
+      "stop-nankai-0210",
+      "stop-nankai-0211",
+      "stop-nankai-0212",
+      "stop-nankai-0213",
+      "stop-nankai-0214",
+      "stop-nankai-0215",
+      "stop-nankai-0216",
+      "stop-nankai-0217",
+      "stop-nankai-0218",
+      "stop-nankai-0219",
+      "stop-nankai-0220",
+      "stop-nankai-0221",
+      "stop-nankai-0222",
+      "stop-nankai-0223",
+      "stop-nankai-0224"
+    ]
+  },
+  {
+    "id": "nankai-nankai-airport-line-local-kansai-airport-namba",
+    "operator_id": "nankai",
+    "code": "S",
+    "name_en": "Nankai Airport Line Local (Kansai Airport => Namba)",
+    "name_ja": "南海空港線 普通 (関西空港 => なんば)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      9583744
+    ],
+    "stops": [
+      "stop-nankai-0225",
+      "stop-nankai-0226",
+      "stop-nankai-0227",
+      "stop-nankai-0228",
+      "stop-nankai-0229",
+      "stop-nankai-0230",
+      "stop-nankai-0231",
+      "stop-nankai-0232",
+      "stop-nankai-0233",
+      "stop-nankai-0234",
+      "stop-nankai-0235",
+      "stop-nankai-0236",
+      "stop-nankai-0237",
+      "stop-nankai-0238",
+      "stop-nankai-0239",
+      "stop-nankai-0240",
+      "stop-nankai-0241",
+      "stop-nankai-0242",
+      "stop-nankai-0243",
+      "stop-nankai-0244",
+      "stop-nankai-0245",
+      "stop-nankai-0246",
+      "stop-nankai-0247",
+      "stop-nankai-0248",
+      "stop-nankai-0249",
+      "stop-nankai-0250",
+      "stop-nankai-0251",
+      "stop-nankai-0252",
+      "stop-nankai-0253",
+      "stop-nankai-0254"
+    ]
+  },
+  {
+    "id": "nankai-nankai-shiomibashi-line-local-kishinosato-tamade-shiomibashi",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Shiomibashi Line Local (Kishinosato-Tamade => Shiomibashi)",
+    "name_ja": "南海電気鉄道汐見橋線 普通 (岸里玉出 => 汐見橋)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11999471
+    ],
+    "stops": [
+      "stop-nankai-0255",
+      "stop-nankai-0256",
+      "stop-nankai-0257",
+      "stop-nankai-0258",
+      "stop-nankai-0259",
+      "stop-nankai-0260"
+    ]
+  },
+  {
+    "id": "nankai-nankai-shiomibashi-line-local-shiomibashi-kishinosato-tamade",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Shiomibashi Line Local (Shiomibashi => Kishinosato-Tamade)",
+    "name_ja": "南海電気鉄道汐見橋線 普通 (汐見橋 => 岸里玉出)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11998675
+    ],
+    "stops": [
+      "stop-nankai-0261",
+      "stop-nankai-0262",
+      "stop-nankai-0263",
+      "stop-nankai-0264",
+      "stop-nankai-0265",
+      "stop-nankai-0266"
+    ]
+  },
+  {
+    "id": "nankai-nankai-k-ya-line",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Kōya Line",
+    "name_ja": "南海電気鉄道高野線",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11940316
+    ],
+    "stops": [
+      "stop-nankai-0267",
+      "stop-nankai-0268",
+      "stop-nankai-0269",
+      "stop-nankai-0270",
+      "stop-nankai-0271",
+      "stop-nankai-0272",
+      "stop-nankai-0273",
+      "stop-nankai-0274",
+      "stop-nankai-0275",
+      "stop-nankai-0276",
+      "stop-nankai-0277",
+      "stop-nankai-0278",
+      "stop-nankai-0279",
+      "stop-nankai-0280",
+      "stop-nankai-0281",
+      "stop-nankai-0282",
+      "stop-nankai-0283",
+      "stop-nankai-0284",
+      "stop-nankai-0285",
+      "stop-nankai-0286",
+      "stop-nankai-0287",
+      "stop-nankai-0288",
+      "stop-nankai-0289",
+      "stop-nankai-0290",
+      "stop-nankai-0291",
+      "stop-nankai-0292",
+      "stop-nankai-0293",
+      "stop-nankai-0294",
+      "stop-nankai-0295",
+      "stop-nankai-0296",
+      "stop-nankai-0297",
+      "stop-nankai-0298",
+      "stop-nankai-0299",
+      "stop-nankai-0300",
+      "stop-nankai-0301",
+      "stop-nankai-0302",
+      "stop-nankai-0303",
+      "stop-nankai-0304",
+      "stop-nankai-0305",
+      "stop-nankai-0306",
+      "stop-nankai-0307",
+      "stop-nankai-0308"
+    ]
+  },
+  {
+    "id": "nankai-nankai-takashinohama-line-local-hagoromo-takashinohama",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Takashinohama Line Local (Hagoromo => Takashinohama)",
+    "name_ja": "南海高師浜線 普通 (羽衣 => 高師浜)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11984576
+    ],
+    "stops": [
+      "stop-nankai-0309",
+      "stop-nankai-0310",
+      "stop-nankai-0311"
+    ]
+  },
+  {
+    "id": "nankai-nankai-takashinohama-line-local-takashinohama-hagoromo",
+    "operator_id": "nankai",
+    "code": "NK",
+    "name_en": "Nankai Takashinohama Line Local (Takashinohama => Hagoromo)",
+    "name_ja": "南海高師浜線 普通 (高師浜 => 羽衣)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      11984573
+    ],
+    "stops": [
+      "stop-nankai-0312",
+      "stop-nankai-0313",
+      "stop-nankai-0314"
+    ]
+  },
+  {
+    "id": "nankai-express-southern-namba-wakayamashi",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Express Southern (Namba => Wakayamashi)",
+    "name_ja": "特急サザン (なんば => 和歌山市)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18696135
+    ],
+    "stops": [
+      "stop-nankai-0315",
+      "stop-nankai-0316",
+      "stop-nankai-0317",
+      "stop-nankai-0318",
+      "stop-nankai-0319",
+      "stop-nankai-0320",
+      "stop-nankai-0321",
+      "stop-nankai-0322",
+      "stop-nankai-0323",
+      "stop-nankai-0324"
+    ]
+  },
+  {
+    "id": "nankai-express-southern-namba-wakayamako",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Express Southern (Namba => Wakayamako)",
+    "name_ja": "特急サザン (なんば => 和歌山港)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18696134
+    ],
+    "stops": [
+      "stop-nankai-0325",
+      "stop-nankai-0326",
+      "stop-nankai-0327",
+      "stop-nankai-0328",
+      "stop-nankai-0329",
+      "stop-nankai-0330",
+      "stop-nankai-0331",
+      "stop-nankai-0332",
+      "stop-nankai-0333",
+      "stop-nankai-0334",
+      "stop-nankai-0335"
+    ]
+  },
+  {
+    "id": "nankai-airport-express-namba-kansai-airport",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Airport Express (Namba => Kansai Airport)",
+    "name_ja": "空港急行 (なんば => 関西空港)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18668904
+    ],
+    "stops": [
+      "stop-nankai-0336",
+      "stop-nankai-0337",
+      "stop-nankai-0338",
+      "stop-nankai-0339",
+      "stop-nankai-0340",
+      "stop-nankai-0341",
+      "stop-nankai-0342",
+      "stop-nankai-0343",
+      "stop-nankai-0344",
+      "stop-nankai-0345",
+      "stop-nankai-0346",
+      "stop-nankai-0347"
+    ]
+  },
+  {
+    "id": "nankai-airport-express-kansai-airport-namba",
+    "operator_id": "nankai",
+    "code": "",
+    "name_en": "Airport Express (Kansai Airport => Namba)",
+    "name_ja": "空港急行 (関西空港 => なんば)",
+    "colour": "#0071BC",
+    "osm_relation_ids": [
+      18668905
+    ],
+    "stops": [
+      "stop-nankai-0348",
+      "stop-nankai-0349",
+      "stop-nankai-0350",
+      "stop-nankai-0351",
+      "stop-nankai-0352",
+      "stop-nankai-0353",
+      "stop-nankai-0354",
+      "stop-nankai-0355",
+      "stop-nankai-0356",
+      "stop-nankai-0357",
+      "stop-nankai-0358",
+      "stop-nankai-0359"
+    ]
+  },
+  {
+    "id": "jr-west-jr-kansai-airport-line-shuttle-kansai-airport-hineno",
+    "operator_id": "jr-west",
+    "code": "S",
+    "name_en": "JR Kansai Airport Line Shuttle (Kansai Airport => Hineno)",
+    "name_ja": "JR関西空港線 シャトル (関西空港 => 日根野)",
+    "colour": "#003087",
+    "osm_relation_ids": [
+      11232175
+    ],
+    "stops": [
+      "stop-jr-west-0000",
+      "stop-jr-west-0001",
+      "stop-jr-west-0002"
+    ]
+  },
+  {
+    "id": "jr-west-kansai-airport-rapid-kansai-airport-kyobashi",
+    "operator_id": "jr-west",
+    "code": "S",
+    "name_en": "Kansai Airport Rapid (Kansai Airport => Kyobashi)",
+    "name_ja": "関空快速 (関西空港 => 京橋)",
+    "colour": "#003087",
+    "osm_relation_ids": [
+      18630327
+    ],
+    "stops": [
+      "stop-jr-west-0003",
+      "stop-jr-west-0004",
+      "stop-jr-west-0005",
+      "stop-jr-west-0006",
+      "stop-jr-west-0007",
+      "stop-jr-west-0008",
+      "stop-jr-west-0009",
+      "stop-jr-west-0010",
+      "stop-jr-west-0011",
+      "stop-jr-west-0012",
+      "stop-jr-west-0013",
+      "stop-jr-west-0014",
+      "stop-jr-west-0015",
+      "stop-jr-west-0016",
+      "stop-jr-west-0017",
+      "stop-jr-west-0018",
+      "stop-jr-west-0019",
+      "stop-jr-west-0020",
+      "stop-jr-west-0021"
+    ]
+  },
+  {
+    "id": "jr-west-kansai-airport-rapid-kansai-airport-tennoji",
+    "operator_id": "jr-west",
+    "code": "S",
+    "name_en": "Kansai Airport Rapid (Kansai Airport => Tennoji)",
+    "name_ja": "関空快速 (関西空港 => 天王寺)",
+    "colour": "#003087",
+    "osm_relation_ids": [
+      18630328
+    ],
+    "stops": [
+      "stop-jr-west-0022",
+      "stop-jr-west-0023",
+      "stop-jr-west-0024",
+      "stop-jr-west-0025",
+      "stop-jr-west-0026",
+      "stop-jr-west-0027",
+      "stop-jr-west-0028",
+      "stop-jr-west-0029",
+      "stop-jr-west-0030",
+      "stop-jr-west-0031"
+    ]
   }
 ]
