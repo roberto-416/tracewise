@@ -1,0 +1,20 @@
+[
+  {
+    "id": "zone-osaka-metro",
+    "operator_id": "osaka-metro",
+    "name_en": "Osaka Metro distance fare",
+    "base_fare_jpy": 190,
+    "calculation": "distance-stepped, self-contained within Osaka Metro",
+    "supplement_required": false,
+    "notes": "IC card accepted. One-day pass 820 JPY covers unlimited rides on Osaka Metro + buses."
+  },
+  {
+    "id": "zone-kita-osaka-kyuko",
+    "operator_id": "kita-osaka-kyuko",
+    "name_en": "Kita-Osaka Kyuko distance fare",
+    "base_fare_jpy": 100,
+    "calculation": "short separate table; added to Osaka Metro fare on through journeys",
+    "supplement_required": false,
+    "notes": "Through fare Namba → Senri-chuo = 330 JPY (240 Metro + 90 Kita-kyu example). No reserved-seat supplement; no limited-express surcharge."
+  }
+]

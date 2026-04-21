@@ -1,0 +1,18 @@
+[
+  {
+    "id": "osaka-metro",
+    "name_en": "Osaka Metro",
+    "name_ja": "大阪市高速電気軌道",
+    "colour": "#0072BC",
+    "fare_group": "osaka-metro",
+    "url": "https://subway.osakametro.co.jp/"
+  },
+  {
+    "id": "kita-osaka-kyuko",
+    "name_en": "Kita-Osaka Kyuko Railway",
+    "name_ja": "北大阪急行電鉄",
+    "colour": "#E5171F",
+    "fare_group": "kita-osaka-kyuko",
+    "url": "https://www.kita-kyu.co.jp/"
+  }
+]

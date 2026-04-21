@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "stops",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "line_id", "station_node_id", "order"],
+    "additionalProperties": true,
+    "properties": {
+      "id": { "type": "string" },
+      "line_id": { "type": "string" },
+      "station_node_id": { "type": "string" },
+      "code": { "type": "string" },
+      "order": { "type": "integer", "minimum": 0 },
+      "km": { "type": "number" },
+      "note": { "type": "string" }
+    }
+  }
+}

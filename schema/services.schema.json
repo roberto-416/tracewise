@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "services",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "display_name_en", "service_type", "supplement", "line_path", "stop_pattern", "frequency_bands"],
+    "additionalProperties": true,
+    "properties": {
+      "id": { "type": "string" },
+      "display_name_en": { "type": "string" },
+      "display_name_ja": { "type": "string" },
+      "service_type": {
+        "type": "string",
+        "enum": ["local", "semi-express", "rapid", "express", "rapid-express", "limited-express", "special"]
+      },
+      "supplement": {
+        "type": "string",
+        "enum": ["none", "limited-express", "reserved", "green-car", "special"]
+      },
+      "line_path": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": ["line_id", "from_stop", "to_stop"],
+          "properties": {
+            "line_id": { "type": "string" },
+            "from_stop": { "type": "string" },
+            "to_stop": { "type": "string" }
+          }
+        }
+      },
+      "stop_pattern": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+      "frequency_bands": {
+        "type": "object",
+        "additionalProperties": { "type": "number", "minimum": 0 }
+      },
+      "notes": { "type": "string" }
+    }
+  }
+}

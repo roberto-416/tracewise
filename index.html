@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tracewise — Map</title>
+  <link rel="stylesheet" href="css/app.css?v=7" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <style>
+    .layout { grid-template-columns: 280px 1fr; }
+    #map { height: calc(100vh - 48px); }
+    .sidebar .small { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Lines</h2>
+      <ul id="lines"></ul>
+      <div class="small" id="hint" style="margin-top:8px">Click a line or station for detail.</div>
+    </aside>
+    <main class="content" style="padding:0">
+      <div id="map"></div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="js/data.js?v=7"></script>
+  <script src="js/map.js?v=7"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tracewise — Transfer graph</title>
+  <link rel="stylesheet" href="css/app.css?v=7" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Legend</h2>
+      <ul>
+        <li><span class="swatch" style="background:var(--red)"></span> Same name — NOT connected</li>
+        <li><span class="swatch" style="background:var(--green)"></span> Same name — connected</li>
+        <li><span class="swatch" style="background:var(--accent)"></span> Different name — connected</li>
+        <li><span class="swatch" style="background:var(--yellow)"></span> Through-run boundary</li>
+      </ul>
+      <p class="small">The tourist-gotcha and railfan-curiosity index.</p>
+    </aside>
+    <main class="content">
+      <h1>Transfer graph</h1>
+      <div id="lists"></div>
+    </main>
+  </div>
+  <script src="js/data.js?v=7"></script>
+  <script src="js/transfers.js?v=7"></script>
+</body>
+</html>

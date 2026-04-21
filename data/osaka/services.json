@@ -1,0 +1,309 @@
+[
+  {
+    "id": "svc-midosuji-through-full",
+    "display_name_en": "Local (through — Minoh-Kayano to Nakamozu)",
+    "display_name_ja": "普通（箕面萱野⇔なかもず）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-midosuji-line", "from_stop": "stop-M01-osaka-metro", "to_stop": "stop-M25-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-M01-osaka-metro","stop-M02-osaka-metro","stop-M03-osaka-metro","stop-M04-osaka-metro",
+      "stop-M05-osaka-metro","stop-M06-osaka-metro","stop-M07-osaka-metro","stop-M08-osaka-metro",
+      "stop-M09-osaka-metro","stop-M10-osaka-metro","stop-M11-osaka-metro","stop-M12-osaka-metro",
+      "stop-M13-osaka-metro","stop-M14-osaka-metro","stop-M15-osaka-metro","stop-M16-osaka-metro",
+      "stop-M17-osaka-metro","stop-M18-osaka-metro","stop-M19-osaka-metro","stop-M20-osaka-metro",
+      "stop-M21-osaka-metro","stop-M22-osaka-metro","stop-M23-osaka-metro","stop-M24-osaka-metro",
+      "stop-M25-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 15,
+      "midday": 9,
+      "peak_pm": 12,
+      "evening": 6,
+      "late_night": 2,
+      "weekend_midday": 8
+    },
+    "notes": "Backbone service. Full corridor including former Kita-Osaka Kyuko section (M01–M05). OSM models as single Midosuji route. KoK fare applies M01–M05."
+  },
+  {
+    "id": "svc-midosuji-short-senri",
+    "display_name_en": "Local (short-turn Senri-chuo)",
+    "display_name_ja": "普通（千里中央折返）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-midosuji-line", "from_stop": "stop-M03-osaka-metro", "to_stop": "stop-M25-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-M03-osaka-metro","stop-M04-osaka-metro","stop-M05-osaka-metro","stop-M06-osaka-metro",
+      "stop-M07-osaka-metro","stop-M08-osaka-metro","stop-M09-osaka-metro","stop-M10-osaka-metro",
+      "stop-M11-osaka-metro","stop-M12-osaka-metro","stop-M13-osaka-metro","stop-M14-osaka-metro",
+      "stop-M15-osaka-metro","stop-M16-osaka-metro","stop-M17-osaka-metro","stop-M18-osaka-metro",
+      "stop-M19-osaka-metro","stop-M20-osaka-metro","stop-M21-osaka-metro","stop-M22-osaka-metro",
+      "stop-M23-osaka-metro","stop-M24-osaka-metro","stop-M25-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 3,
+      "midday": 0,
+      "peak_pm": 2,
+      "evening": 1,
+      "late_night": 0,
+      "weekend_midday": 0
+    },
+    "notes": "Peak supplement. Short-turns at Senri-chuo (M03); does not continue to Minoh-kayano."
+  },
+  {
+    "id": "svc-midosuji-short-tennoji",
+    "display_name_en": "Local (short-turn Tennoji)",
+    "display_name_ja": "普通（天王寺折返）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-midosuji-line", "from_stop": "stop-M06-osaka-metro", "to_stop": "stop-M18-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-M06-osaka-metro","stop-M07-osaka-metro","stop-M08-osaka-metro","stop-M09-osaka-metro",
+      "stop-M10-osaka-metro","stop-M11-osaka-metro","stop-M12-osaka-metro","stop-M13-osaka-metro",
+      "stop-M14-osaka-metro","stop-M15-osaka-metro","stop-M16-osaka-metro","stop-M17-osaka-metro",
+      "stop-M18-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 1,
+      "midday": 0,
+      "peak_pm": 0,
+      "evening": 0,
+      "late_night": 2,
+      "weekend_midday": 0
+    },
+    "notes": "Late-night only. Esaka ↔ Tennoji. Does not extend into former KoK section."
+  },
+  {
+    "id": "svc-chuo-full",
+    "display_name_en": "Local (Yumeshima to Nagata)",
+    "display_name_ja": "普通（夢洲⇔長田）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-chuo-line", "from_stop": "stop-C01-osaka-metro", "to_stop": "stop-C15-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-C01-osaka-metro","stop-C02-osaka-metro","stop-C03-osaka-metro","stop-C04-osaka-metro",
+      "stop-C05-osaka-metro","stop-C06-osaka-metro","stop-C07-osaka-metro","stop-C08-osaka-metro",
+      "stop-C09-osaka-metro","stop-C10-osaka-metro","stop-C11-osaka-metro","stop-C12-osaka-metro",
+      "stop-C13-osaka-metro","stop-C14-osaka-metro","stop-C15-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 8,
+      "midday": 6,
+      "peak_pm": 8,
+      "evening": 5,
+      "late_night": 2,
+      "weekend_midday": 6
+    },
+    "notes": "Through-runs with Kintetsu Keihanna Line beyond Nagata (C15). Yumeshima (C01) extension opened April 2025 for Expo 2025. Some peak services short-turn at Cosmo Square (C02)."
+  },
+  {
+    "id": "svc-chuo-short-cosmo",
+    "display_name_en": "Local (short-turn Cosmo Square)",
+    "display_name_ja": "普通（コスモスクエア折返）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-chuo-line", "from_stop": "stop-C02-osaka-metro", "to_stop": "stop-C15-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-C02-osaka-metro","stop-C03-osaka-metro","stop-C04-osaka-metro","stop-C05-osaka-metro",
+      "stop-C06-osaka-metro","stop-C07-osaka-metro","stop-C08-osaka-metro","stop-C09-osaka-metro",
+      "stop-C10-osaka-metro","stop-C11-osaka-metro","stop-C12-osaka-metro","stop-C13-osaka-metro",
+      "stop-C14-osaka-metro","stop-C15-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 2,
+      "midday": 0,
+      "peak_pm": 2,
+      "evening": 1,
+      "late_night": 0,
+      "weekend_midday": 0
+    },
+    "notes": "Does not serve Yumeshima. Short-turns at Cosmo Square. Majority of daily service; Yumeshima segment runs less frequently outside Expo periods."
+  },
+  {
+    "id": "svc-imazatosuji-full",
+    "display_name_en": "Local (Imazato to Itakano)",
+    "display_name_ja": "普通（今里⇔湯里六丁目）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-imazatosuji-line", "from_stop": "stop-I01-osaka-metro", "to_stop": "stop-I11-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-I01-osaka-metro","stop-I02-osaka-metro","stop-I03-osaka-metro","stop-I04-osaka-metro",
+      "stop-I05-osaka-metro","stop-I06-osaka-metro","stop-I07-osaka-metro","stop-I08-osaka-metro",
+      "stop-I09-osaka-metro","stop-I10-osaka-metro","stop-I11-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 6,
+      "midday": 4,
+      "peak_pm": 6,
+      "evening": 4,
+      "late_night": 2,
+      "weekend_midday": 4
+    },
+    "notes": "Rubber-tyred AGT. No express service, no through-running. Least busy line on the Osaka Metro network."
+  },
+  {
+    "id": "svc-sakaisuji-full",
+    "display_name_en": "Local (Tenjinbashisuji 6-chome to Tengachaya)",
+    "display_name_ja": "普通（天神橋筋六丁目⇔天下茶屋）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-sakaisuji-line", "from_stop": "stop-K01-osaka-metro", "to_stop": "stop-K10-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-K01-osaka-metro","stop-K02-osaka-metro","stop-K03-osaka-metro","stop-K04-osaka-metro",
+      "stop-K05-osaka-metro","stop-K06-osaka-metro","stop-K07-osaka-metro","stop-K08-osaka-metro",
+      "stop-K09-osaka-metro","stop-K10-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 8,
+      "midday": 5,
+      "peak_pm": 8,
+      "evening": 4,
+      "late_night": 2,
+      "weekend_midday": 5
+    },
+    "notes": "Through-runs with Hankyu Senri Line and Kyoto Line north of Tenjinbashisuji 6-chome (K01). Hankyu not yet in dataset. Combined peak headway counts include Hankyu-originating trains."
+  },
+  {
+    "id": "svc-nagahori-full",
+    "display_name_en": "Local (Taisho to Kadoma-Minami)",
+    "display_name_ja": "普通（大正⇔門真南）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-nagahori-tsurumi-ryokuchi-line", "from_stop": "stop-N01-osaka-metro", "to_stop": "stop-N17-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-N01-osaka-metro","stop-N02-osaka-metro","stop-N03-osaka-metro","stop-N04-osaka-metro",
+      "stop-N05-osaka-metro","stop-N06-osaka-metro","stop-N07-osaka-metro","stop-N08-osaka-metro",
+      "stop-N09-osaka-metro","stop-N10-osaka-metro","stop-N11-osaka-metro","stop-N12-osaka-metro",
+      "stop-N13-osaka-metro","stop-N14-osaka-metro","stop-N15-osaka-metro","stop-N16-osaka-metro",
+      "stop-N17-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 6,
+      "midday": 4,
+      "peak_pm": 6,
+      "evening": 4,
+      "late_night": 2,
+      "weekend_midday": 4
+    },
+    "notes": "Rubber-tyred AGT. No through-running, no express."
+  },
+  {
+    "id": "svc-sennichimae-full",
+    "display_name_en": "Local (Nodahanshin to Minami-Tatsumi)",
+    "display_name_ja": "普通（野田阪神⇔南巽）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-sennichimae-line", "from_stop": "stop-S01-osaka-metro", "to_stop": "stop-S14-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-S01-osaka-metro","stop-S02-osaka-metro","stop-S03-osaka-metro","stop-S04-osaka-metro",
+      "stop-S05-osaka-metro","stop-S06-osaka-metro","stop-S07-osaka-metro","stop-S08-osaka-metro",
+      "stop-S09-osaka-metro","stop-S10-osaka-metro","stop-S11-osaka-metro","stop-S12-osaka-metro",
+      "stop-S13-osaka-metro","stop-S14-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 6,
+      "midday": 4,
+      "peak_pm": 6,
+      "evening": 4,
+      "late_night": 2,
+      "weekend_midday": 4
+    },
+    "notes": "Cross-city east-west line. No through-running, no express."
+  },
+  {
+    "id": "svc-tanimachi-full",
+    "display_name_en": "Local (Dainichi to Yao-Minami)",
+    "display_name_ja": "普通（大日⇔八尾南）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-tanimachi-line", "from_stop": "stop-T01-osaka-metro", "to_stop": "stop-T26-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-T01-osaka-metro","stop-T02-osaka-metro","stop-T03-osaka-metro","stop-T04-osaka-metro",
+      "stop-T05-osaka-metro","stop-T06-osaka-metro","stop-T07-osaka-metro","stop-T08-osaka-metro",
+      "stop-T09-osaka-metro","stop-T10-osaka-metro","stop-T11-osaka-metro","stop-T12-osaka-metro",
+      "stop-T13-osaka-metro","stop-T14-osaka-metro","stop-T15-osaka-metro","stop-T16-osaka-metro",
+      "stop-T17-osaka-metro","stop-T18-osaka-metro","stop-T19-osaka-metro","stop-T20-osaka-metro",
+      "stop-T21-osaka-metro","stop-T22-osaka-metro","stop-T23-osaka-metro","stop-T24-osaka-metro",
+      "stop-T25-osaka-metro","stop-T26-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 8,
+      "midday": 5,
+      "peak_pm": 8,
+      "evening": 4,
+      "late_night": 2,
+      "weekend_midday": 5
+    },
+    "notes": "Longest Osaka Metro line at 26 stops. Some peak short-turns at Tennoji (T17). No through-running."
+  },
+  {
+    "id": "svc-tanimachi-short-tennoji",
+    "display_name_en": "Local (short-turn Tennoji)",
+    "display_name_ja": "普通（天王寺折返）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-tanimachi-line", "from_stop": "stop-T01-osaka-metro", "to_stop": "stop-T17-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-T01-osaka-metro","stop-T02-osaka-metro","stop-T03-osaka-metro","stop-T04-osaka-metro",
+      "stop-T05-osaka-metro","stop-T06-osaka-metro","stop-T07-osaka-metro","stop-T08-osaka-metro",
+      "stop-T09-osaka-metro","stop-T10-osaka-metro","stop-T11-osaka-metro","stop-T12-osaka-metro",
+      "stop-T13-osaka-metro","stop-T14-osaka-metro","stop-T15-osaka-metro","stop-T16-osaka-metro",
+      "stop-T17-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 2,
+      "midday": 0,
+      "peak_pm": 2,
+      "evening": 0,
+      "late_night": 0,
+      "weekend_midday": 0
+    },
+    "notes": "Peak short-turn. Does not continue to Yao-Minami. Tennoji is the midpoint of the Tanimachi Line."
+  },
+  {
+    "id": "svc-yotsubashi-full",
+    "display_name_en": "Local (Suminoekoen to Nishi-Umeda)",
+    "display_name_ja": "普通（住之江公園⇔西梅田）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      { "line_id": "osaka-metro-yotsubashi-line", "from_stop": "stop-Y01-osaka-metro", "to_stop": "stop-Y11-osaka-metro" }
+    ],
+    "stop_pattern": [
+      "stop-Y01-osaka-metro","stop-Y02-osaka-metro","stop-Y03-osaka-metro","stop-Y04-osaka-metro",
+      "stop-Y05-osaka-metro","stop-Y06-osaka-metro","stop-Y07-osaka-metro","stop-Y08-osaka-metro",
+      "stop-Y09-osaka-metro","stop-Y10-osaka-metro","stop-Y11-osaka-metro"
+    ],
+    "frequency_bands": {
+      "peak_am": 6,
+      "midday": 4,
+      "peak_pm": 6,
+      "evening": 4,
+      "late_night": 2,
+      "weekend_midday": 4
+    },
+    "notes": "Runs parallel to Midosuji between Daikokucho (Y06) and Namba (Y07). Supplements Midosuji in central corridor. No through-running or express."
+  }
+]

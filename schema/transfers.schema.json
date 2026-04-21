@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "transfers",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "a", "b", "walking_time_min", "same_name", "category"],
+    "additionalProperties": true,
+    "properties": {
+      "id": { "type": "string" },
+      "a": { "type": "string" },
+      "b": { "type": "string" },
+      "walking_time_min": { "type": "number", "minimum": 0 },
+      "paid_area": { "type": "boolean" },
+      "same_name": { "type": "boolean" },
+      "note": { "type": "string" },
+      "category": {
+        "type": "string",
+        "enum": ["same-name-connected", "same-name-not-connected", "different-name-connected", "through-run-boundary"]
+      }
+    }
+  }
+}

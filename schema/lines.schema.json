@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "lines",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "operator_id", "name_en", "colour", "stops"],
+    "additionalProperties": true,
+    "properties": {
+      "id": { "type": "string" },
+      "operator_id": { "type": "string" },
+      "code": { "type": "string" },
+      "name_en": { "type": "string" },
+      "name_ja": { "type": "string" },
+      "colour": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+      "stops": { "type": "array", "items": { "type": "string" }, "minItems": 2 }
+    }
+  }
+}

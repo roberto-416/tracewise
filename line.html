@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tracewise — Line</title>
+  <link rel="stylesheet" href="css/app.css?v=7" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Lines</h2>
+      <ul id="line-list"></ul>
+    </aside>
+    <main class="content" id="content">
+      <div id="header"></div>
+      <h2>Stopping pattern matrix</h2>
+      <div class="legend">
+        <span class="item"><span class="dot f5"></span> ≥12/hr</span>
+        <span class="item"><span class="dot f4"></span> 8–11</span>
+        <span class="item"><span class="dot f3"></span> 4–7</span>
+        <span class="item"><span class="dot f2"></span> 2–3</span>
+        <span class="item"><span class="dot f1"></span> &lt;2</span>
+        <span class="item"><span class="dot f0"></span> does not stop</span>
+      </div>
+      <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
+      <h2>Services on this line</h2>
+      <div id="services"></div>
+    </main>
+  </div>
+  <script src="js/data.js?v=7"></script>
+  <script src="js/line.js?v=7"></script>
+</body>
+</html>

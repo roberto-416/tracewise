@@ -1,0 +1,235 @@
+[
+  {
+    "id": "osaka-metro-chuo-line",
+    "operator_id": "osaka-metro",
+    "code": "C",
+    "name_en": "Chuo Line",
+    "name_ja": "中央線",
+    "colour": "#27A842",
+    "osm_relation_ids": [
+      444881
+    ],
+    "stops": [
+      "stop-C01-osaka-metro",
+      "stop-C02-osaka-metro",
+      "stop-C03-osaka-metro",
+      "stop-C04-osaka-metro",
+      "stop-C05-osaka-metro",
+      "stop-C06-osaka-metro",
+      "stop-C07-osaka-metro",
+      "stop-C08-osaka-metro",
+      "stop-C09-osaka-metro",
+      "stop-C10-osaka-metro",
+      "stop-C11-osaka-metro",
+      "stop-C12-osaka-metro",
+      "stop-C13-osaka-metro",
+      "stop-C14-osaka-metro",
+      "stop-C15-osaka-metro"
+    ]
+  },
+  {
+    "id": "osaka-metro-imazatosuji-line",
+    "operator_id": "osaka-metro",
+    "code": "I",
+    "name_en": "Imazatosuji Line",
+    "name_ja": "今里筋線",
+    "colour": "#9444A3",
+    "osm_relation_ids": [
+      444889
+    ],
+    "stops": [
+      "stop-I01-osaka-metro",
+      "stop-I02-osaka-metro",
+      "stop-I03-osaka-metro",
+      "stop-I04-osaka-metro",
+      "stop-I05-osaka-metro",
+      "stop-I06-osaka-metro",
+      "stop-I07-osaka-metro",
+      "stop-I08-osaka-metro",
+      "stop-I09-osaka-metro",
+      "stop-I10-osaka-metro",
+      "stop-I11-osaka-metro"
+    ]
+  },
+  {
+    "id": "osaka-metro-sakaisuji-line",
+    "operator_id": "osaka-metro",
+    "code": "K",
+    "name_en": "Sakaisuji Line",
+    "name_ja": "堺筋線",
+    "colour": "#B5602C",
+    "osm_relation_ids": [
+      444905
+    ],
+    "stops": [
+      "stop-K01-osaka-metro",
+      "stop-K02-osaka-metro",
+      "stop-K03-osaka-metro",
+      "stop-K04-osaka-metro",
+      "stop-K05-osaka-metro",
+      "stop-K06-osaka-metro",
+      "stop-K07-osaka-metro",
+      "stop-K08-osaka-metro",
+      "stop-K09-osaka-metro",
+      "stop-K10-osaka-metro"
+    ]
+  },
+  {
+    "id": "osaka-metro-midosuji-line",
+    "operator_id": "osaka-metro",
+    "code": "M",
+    "name_en": "Midosuji Line",
+    "name_ja": "御堂筋線",
+    "colour": "#E5171F",
+    "osm_relation_ids": [
+      2411153
+    ],
+    "stops": [
+      "stop-M01-osaka-metro",
+      "stop-M02-osaka-metro",
+      "stop-M03-osaka-metro",
+      "stop-M04-osaka-metro",
+      "stop-M05-osaka-metro",
+      "stop-M06-osaka-metro",
+      "stop-M07-osaka-metro",
+      "stop-M08-osaka-metro",
+      "stop-M09-osaka-metro",
+      "stop-M10-osaka-metro",
+      "stop-M11-osaka-metro",
+      "stop-M12-osaka-metro",
+      "stop-M13-osaka-metro",
+      "stop-M14-osaka-metro",
+      "stop-M15-osaka-metro",
+      "stop-M16-osaka-metro",
+      "stop-M17-osaka-metro",
+      "stop-M18-osaka-metro",
+      "stop-M19-osaka-metro",
+      "stop-M20-osaka-metro",
+      "stop-M21-osaka-metro",
+      "stop-M22-osaka-metro",
+      "stop-M23-osaka-metro",
+      "stop-M24-osaka-metro",
+      "stop-M25-osaka-metro"
+    ]
+  },
+  {
+    "id": "osaka-metro-nagahori-tsurumi-ryokuchi-line",
+    "operator_id": "osaka-metro",
+    "code": "N",
+    "name_en": "Nagahori Tsurumi-ryokuchi Line",
+    "name_ja": "長堀鶴見緑地線",
+    "colour": "#91A200",
+    "osm_relation_ids": [
+      444878
+    ],
+    "stops": [
+      "stop-N01-osaka-metro",
+      "stop-N02-osaka-metro",
+      "stop-N03-osaka-metro",
+      "stop-N04-osaka-metro",
+      "stop-N05-osaka-metro",
+      "stop-N06-osaka-metro",
+      "stop-N07-osaka-metro",
+      "stop-N08-osaka-metro",
+      "stop-N09-osaka-metro",
+      "stop-N10-osaka-metro",
+      "stop-N11-osaka-metro",
+      "stop-N12-osaka-metro",
+      "stop-N13-osaka-metro",
+      "stop-N14-osaka-metro",
+      "stop-N15-osaka-metro",
+      "stop-N16-osaka-metro",
+      "stop-N17-osaka-metro"
+    ]
+  },
+  {
+    "id": "osaka-metro-sennichimae-line",
+    "operator_id": "osaka-metro",
+    "code": "S",
+    "name_en": "Sennichimae Line",
+    "name_ja": "千日前線",
+    "colour": "#E85298",
+    "osm_relation_ids": [
+      444891
+    ],
+    "stops": [
+      "stop-S01-osaka-metro",
+      "stop-S02-osaka-metro",
+      "stop-S03-osaka-metro",
+      "stop-S04-osaka-metro",
+      "stop-S05-osaka-metro",
+      "stop-S06-osaka-metro",
+      "stop-S07-osaka-metro",
+      "stop-S08-osaka-metro",
+      "stop-S09-osaka-metro",
+      "stop-S10-osaka-metro",
+      "stop-S11-osaka-metro",
+      "stop-S12-osaka-metro",
+      "stop-S13-osaka-metro",
+      "stop-S14-osaka-metro"
+    ]
+  },
+  {
+    "id": "osaka-metro-tanimachi-line",
+    "operator_id": "osaka-metro",
+    "code": "T",
+    "name_en": "Tanimachi Line",
+    "name_ja": "谷町線",
+    "colour": "#9B6C2F",
+    "osm_relation_ids": [
+      444907
+    ],
+    "stops": [
+      "stop-T01-osaka-metro",
+      "stop-T02-osaka-metro",
+      "stop-T03-osaka-metro",
+      "stop-T04-osaka-metro",
+      "stop-T05-osaka-metro",
+      "stop-T06-osaka-metro",
+      "stop-T07-osaka-metro",
+      "stop-T08-osaka-metro",
+      "stop-T09-osaka-metro",
+      "stop-T10-osaka-metro",
+      "stop-T11-osaka-metro",
+      "stop-T12-osaka-metro",
+      "stop-T13-osaka-metro",
+      "stop-T14-osaka-metro",
+      "stop-T15-osaka-metro",
+      "stop-T16-osaka-metro",
+      "stop-T17-osaka-metro",
+      "stop-T18-osaka-metro",
+      "stop-T19-osaka-metro",
+      "stop-T20-osaka-metro",
+      "stop-T21-osaka-metro",
+      "stop-T22-osaka-metro",
+      "stop-T23-osaka-metro",
+      "stop-T24-osaka-metro",
+      "stop-T25-osaka-metro",
+      "stop-T26-osaka-metro"
+    ]
+  },
+  {
+    "id": "osaka-metro-yotsubashi-line",
+    "operator_id": "osaka-metro",
+    "code": "Y",
+    "name_en": "Yotsubashi Line",
+    "name_ja": "四つ橋線",
+    "colour": "#0068B7",
+    "osm_relation_ids": [
+      444899
+    ],
+    "stops": [
+      "stop-Y01-osaka-metro",
+      "stop-Y02-osaka-metro",
+      "stop-Y03-osaka-metro",
+      "stop-Y04-osaka-metro",
+      "stop-Y05-osaka-metro",
+      "stop-Y06-osaka-metro",
+      "stop-Y07-osaka-metro",
+      "stop-Y08-osaka-metro",
+      "stop-Y09-osaka-metro",
+      "stop-Y10-osaka-metro",
+      "stop-Y11-osaka-metro"
+    ]
+  }
+]

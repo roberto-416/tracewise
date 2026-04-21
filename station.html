@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tracewise — Station</title>
+  <link rel="stylesheet" href="css/app.css?v=7" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Stations</h2>
+      <input id="search" placeholder="Search…" style="width:100%;padding:6px;background:var(--panel-2);border:1px solid var(--rule);color:var(--ink);border-radius:4px;margin-bottom:8px" />
+      <ul id="station-list"></ul>
+    </aside>
+    <main class="content" id="content">
+      <div id="header"></div>
+      <h2>Transfers at this location</h2>
+      <div id="transfers"></div>
+      <h2>Services stopping here</h2>
+      <div id="services"></div>
+    </main>
+  </div>
+  <script src="js/data.js?v=7"></script>
+  <script src="js/station.js?v=7"></script>
+</body>
+</html>
