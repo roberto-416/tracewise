@@ -40,8 +40,15 @@
   const op = db.byId.operators[line.primary_operator_id];
   const tracks = db.tracksByLine[lineId] || [];
 
-  // Collect all stops across all tracks (in order)
-  const allStops = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
+  // Collect all stops across all tracks (in order), deduplicated by station_node_id.
+  // OSM route relations include both directions so each station appears twice; keep first.
+  const _allStopsRaw = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
+  const _seenNodes = new Set();
+  const allStops = _allStopsRaw.filter(s => {
+    if (_seenNodes.has(s.station_node_id)) return false;
+    _seenNodes.add(s.station_node_id);
+    return true;
+  });
 
   document.getElementById("header").append(
     el("h1", {},

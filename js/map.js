@@ -3,22 +3,38 @@
   const db = await loadCity();
   topbar("map");
 
-  // ---- Sidebar: named lines grouped by operator ----
+  // ---- Sidebar: named lines grouped by operator (collapsible) ----
   const sidebar = document.getElementById("lines");
   const opOrder = db.operators.map(o => o.id);
+  // Default: expand only Osaka Metro (first operator)
+  const defaultOpen = new Set([opOrder[0]]);
   for (const opId of opOrder) {
     const opLines = db.linesByOperator[opId] || [];
     if (!opLines.length) continue;
     const op = db.byId.operators[opId];
-    sidebar.append(el("li", {
-      style: "padding:6px 4px 2px;font-size:11px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;cursor:default;font-weight:600"
-    }, op.name_en));
-    for (const ln of opLines) {
-      sidebar.append(el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
+    let open = defaultOpen.has(opId);
+
+    const lineItems = opLines.map(ln =>
+      el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
         el("span", { class: "swatch", style: `background:${ln.colour}` }),
         el("span", {}, ln.display_name_en || ln.display_name_ja || "")
-      ));
-    }
+      )
+    );
+    const group = el("ul", {
+      style: `list-style:none;padding:0;margin:0;display:${open ? "block" : "none"}`
+    }, ...lineItems);
+
+    const header = el("li", {
+      style: "padding:6px 4px 2px;font-size:11px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;cursor:pointer;font-weight:600;display:flex;justify-content:space-between;align-items:center",
+      onclick() {
+        open = !open;
+        group.style.display = open ? "block" : "none";
+        arrow.textContent = open ? "▾" : "▸";
+      }
+    }, op.name_en);
+    const arrow = el("span", {}, open ? "▾" : "▸");
+    header.append(arrow);
+    sidebar.append(header, group);
   }
 
   // ---- Node → track colour ----

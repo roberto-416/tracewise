@@ -108,7 +108,13 @@
     const patternNodeIds = new Set(
       svc.stop_pattern.map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
     );
-    const allTrackStops = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
+    const _mapRaw = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
+    const _mapSeen = new Set();
+    const allTrackStops = _mapRaw.filter(s => {
+      if (_mapSeen.has(s.station_node_id)) return false;
+      _mapSeen.add(s.station_node_id);
+      return true;
+    });
 
     const stopFeatures = allTrackStops.map(stp => {
       const node = db.byId.station_nodes[stp.station_node_id];
@@ -162,11 +168,40 @@
     }
   });
 
+  // ── Path across lines ─────────────────────────────────────────────────────
+  const pathDiv = document.getElementById("path");
+  if (svc.line_path?.length) {
+    const wrap = el("div", { class: "stop-list", style: "margin-bottom:8px" });
+    for (const seg of svc.line_path) {
+      const track = db.byId.tracks[seg.track_id];
+      const fromNode = db.byId.station_nodes[db.byId.stops[seg.from_stop]?.station_node_id];
+      const toNode   = db.byId.station_nodes[db.byId.stops[seg.to_stop]?.station_node_id];
+      wrap.append(el("div", { class: "card", style: "display:flex;align-items:center;gap:10px;padding:10px 14px" },
+        el("span", { class: "swatch", style: `background:${track?.colour || line?.colour || '#888'};width:12px;height:12px;border-radius:2px;flex-shrink:0` }),
+        el("div", {},
+          el("div", { style: "font-weight:600;font-size:13px" }, track?.name_en || seg.track_id),
+          el("div", { class: "small" },
+            (fromNode?.name_en || "?"), " → ", (toNode?.name_en || "?"))
+        )
+      ));
+    }
+    pathDiv.append(wrap);
+  } else {
+    pathDiv.append(el("div", { class: "small" }, "No line path recorded."));
+  }
+
   // ── Stop list (vertical, expandable) ─────────────────────────────────────
   const patternNodeIds = new Set(
     svc.stop_pattern.map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
   );
-  const allTrackStops = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
+  // Deduplicate stops by station_node_id (OSM routes include both directions)
+  const _rawTrackStops = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
+  const _seenSvcNodes = new Set();
+  const allTrackStops = _rawTrackStops.filter(s => {
+    if (_seenSvcNodes.has(s.station_node_id)) return false;
+    _seenSvcNodes.add(s.station_node_id);
+    return true;
+  });
 
   let showAll = false;
   const toggleBtn = el("button", {
@@ -192,9 +227,11 @@
       const served  = patternNodeIds.has(stp.station_node_id);
       const colour  = track?.colour || line?.colour || "#888";
 
+      const nodeId = stp.station_node_id;
       stopListEl.append(el("div", {
         class: `stop-row${served ? " served" : " skipped"}`,
-        onclick: served ? undefined : undefined
+        style: "cursor:pointer",
+        onclick: () => { location.href = `station.html?id=${nodeId}`; }
       },
         el("span", { class: "stop-dot", style: served
           ? `background:${colour};border-color:${colour}`

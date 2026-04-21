@@ -200,23 +200,13 @@
     ]
   },
   {
-    "id": "line-keihan-",
-    "display_name_en": "京阪本線・鴨東線",
-    "display_name_ja": "京阪本線・鴨東線",
-    "primary_operator_id": "keihan",
-    "colour": "#006432",
-    "tracks": [
-      "keihan-"
-    ]
-  },
-  {
-    "id": "line-keihan--2",
-    "display_name_en": "京阪電気鉄道京阪本線・鴨東線",
+    "id": "line-keihan-keihan-main-line",
+    "display_name_en": "Keihan Main Line",
     "display_name_ja": "京阪電気鉄道京阪本線・鴨東線",
     "primary_operator_id": "keihan",
     "colour": "#006432",
     "tracks": [
-      "keihan--2"
+      "keihan-keihan-main-line"
     ]
   },
   {

@@ -769,7 +769,7 @@
       {
         "from_stop": "stop-keihan-0016",
         "to_stop": "stop-keihan-0144",
-        "track_id": "keihan--2"
+        "track_id": "keihan-keihan-main-line"
       }
     ],
     "stop_pattern": [
@@ -868,7 +868,7 @@
       "weekend_midday": 4
     },
     "notes": "Osaka Namba/Nakanoshima to Demachiyanagi direction.",
-    "line_id": "line-keihan--2"
+    "line_id": "line-keihan-keihan-main-line"
   },
   {
     "id": "kintetsu-nara-local",
@@ -1028,20 +1028,16 @@
     "service_type": "limited_express",
     "line_path": [
       {
-        "from_stop": "stop-kintetsu-0581",
-        "to_stop": "stop-kintetsu-0588",
+        "from_stop": "stop-kintetsu-0259",
+        "to_stop": "stop-kintetsu-0277",
         "track_id": "kintetsu-kintetsu-nara-line"
       }
     ],
     "stop_pattern": [
-      "stop-kintetsu-0581",
-      "stop-kintetsu-0582",
-      "stop-kintetsu-0583",
-      "stop-kintetsu-0584",
-      "stop-kintetsu-0585",
-      "stop-kintetsu-0586",
-      "stop-kintetsu-0587",
-      "stop-kintetsu-0588"
+      "stop-kintetsu-0259",
+      "stop-kintetsu-0270",
+      "stop-kintetsu-0275",
+      "stop-kintetsu-0277"
     ],
     "supplement": "limited_express",
     "frequency_bands": {
@@ -1062,21 +1058,16 @@
     "service_type": "limited_express",
     "line_path": [
       {
-        "from_stop": "stop-kintetsu-0555",
-        "to_stop": "stop-kintetsu-0563",
+        "from_stop": "stop-kintetsu-0203",
+        "to_stop": "stop-kintetsu-0250",
         "track_id": "kintetsu-kintetsu-osaka-line"
       }
     ],
     "stop_pattern": [
-      "stop-kintetsu-0555",
-      "stop-kintetsu-0556",
-      "stop-kintetsu-0557",
-      "stop-kintetsu-0558",
-      "stop-kintetsu-0559",
-      "stop-kintetsu-0560",
-      "stop-kintetsu-0561",
-      "stop-kintetsu-0562",
-      "stop-kintetsu-0563"
+      "stop-kintetsu-0203",
+      "stop-kintetsu-0204",
+      "stop-kintetsu-0228",
+      "stop-kintetsu-0250"
     ],
     "supplement": "reserved",
     "frequency_bands": {
@@ -1270,24 +1261,17 @@
     "service_type": "limited_express",
     "line_path": [
       {
-        "from_stop": "stop-nankai-0336",
-        "to_stop": "stop-nankai-0347",
+        "from_stop": "stop-nankai-0195",
+        "to_stop": "stop-nankai-0224",
         "track_id": "nankai-nankai-airport-line"
       }
     ],
     "stop_pattern": [
-      "stop-nankai-0336",
-      "stop-nankai-0337",
-      "stop-nankai-0338",
-      "stop-nankai-0339",
-      "stop-nankai-0340",
-      "stop-nankai-0341",
-      "stop-nankai-0342",
-      "stop-nankai-0343",
-      "stop-nankai-0344",
-      "stop-nankai-0345",
-      "stop-nankai-0346",
-      "stop-nankai-0347"
+      "stop-nankai-0195",
+      "stop-nankai-0197",
+      "stop-nankai-0222",
+      "stop-nankai-0223",
+      "stop-nankai-0224"
     ],
     "supplement": "reserved",
     "frequency_bands": {
