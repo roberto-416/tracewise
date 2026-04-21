@@ -4,9 +4,9 @@
   topbar("stations");
 
   // ---- Sidebar: group by name, no duplicates ----
-  // Build node-id → set of line_ids
+  // Build node-id → set of track_ids (then map to line colour)
   const nodeLines = {};
-  for (const s of db.stops) (nodeLines[s.station_node_id] ||= new Set()).add(s.line_id);
+  for (const s of db.stops) (nodeLines[s.station_node_id] ||= new Set()).add(s.track_id);
 
   // Group station_nodes by display name (same name = same physical station group)
   const byName = {};
@@ -20,11 +20,11 @@
       const ja = nodes.map(n => n.name_ja).filter(Boolean)[0] || "";
       if (filter && !(`${name} ${ja}`.toLowerCase().includes(filter.toLowerCase()))) continue;
 
-      // Collect all unique lines across all nodes in this name group
-      const allLineIds = [...new Set(nodes.flatMap(n => [...(nodeLines[n.id] || [])]))];
-      const swatches = allLineIds.map(lid => {
-        const ln = db.byId.lines[lid];
-        return ln ? el("span", { class: "swatch", style: `background:${ln.colour}` }) : null;
+      // Collect all unique tracks across all nodes in this name group
+      const allTrackIds = [...new Set(nodes.flatMap(n => [...(nodeLines[n.id] || [])]))];
+      const swatches = allTrackIds.map(tid => {
+        const t = db.byId.tracks[tid];
+        return t ? el("span", { class: "swatch", style: `background:${t.colour}` }) : null;
       }).filter(Boolean);
 
       const primary = nodes[0]; // navigate to first node; its station page shows all transfers
@@ -85,26 +85,43 @@
     ));
   }
 
-  // Services
+  // Services — group by line (named brand), show which patterns stop here
   const sdiv = document.getElementById("services");
   const stopsHere = db.stops.filter(s => s.station_node_id === node.id);
-  if (!stopsHere.length) sdiv.append(el("div", { class: "small" }, "No stops on modelled lines."));
+  if (!stopsHere.length) sdiv.append(el("div", { class: "small" }, "No stops on modelled tracks."));
+
+  // Deduplicate: group by the Line (not track) so each named line appears once
+  const linesSeen = new Set();
   for (const stp of stopsHere) {
-    const line = db.byId.lines[stp.line_id];
-    const svcs = (db.servicesByLine[line.id] || []).filter(s =>
-      s.stop_pattern.some(sid => db.byId.stops[sid]?.station_node_id === stp.station_node_id));
+    const track = db.byId.tracks[stp.track_id];
+    if (!track) continue;
+    const line = db.lineByTrack[stp.track_id];
+    const lineKey = line?.id || stp.track_id;
+    if (linesSeen.has(lineKey)) continue;
+    linesSeen.add(lineKey);
+
+    const colour = track.colour || line?.colour || "#888";
+    const svcs = (db.servicesByLine[lineKey] || []).filter(s =>
+      s.stop_pattern.some(sid => db.byId.stops[sid]?.station_node_id === node.id));
+
     sdiv.append(el("div", { class: "card" },
       el("div", { class: "title" },
-        el("span", { class: "swatch", style: `background:${line.colour}` }),
-        `${line.name_en} · ${stp.code || stp.order}`),
-      el("ul", { style: "margin:6px 0 0;padding-left:18px" },
-        ...svcs.map(svc => el("li", {},
-          el("a", { href: `service.html?id=${svc.id}` }, svc.display_name_en),
-          svc.supplement !== "none" ? el("span", { class: "pill warn", style: "margin-left:8px" }, svc.supplement) : null,
-          el("span", { class: "small", style: "margin-left:8px" },
-            Object.entries(svc.frequency_bands).filter(([, v]) => v > 0)
-              .map(([k, v]) => `${BAND_LABELS[k] || k} ${v}`).join(" · "))
-        )))
+        el("span", { class: "swatch", style: `background:${colour}` }),
+        line
+          ? el("a", { href: `line.html?id=${line.id}` }, line.display_name_en || line.id)
+          : (track.name_en || track.id),
+        el("span", { class: "small", style: "margin-left:6px" }, `· ${stp.code || ""}`)),
+      svcs.length
+        ? el("ul", { style: "margin:6px 0 0;padding-left:18px" },
+            ...svcs.map(svc => el("li", {},
+              el("a", { href: `service.html?id=${svc.id}` }, svc.display_name_en),
+              svc.supplement !== "none"
+                ? el("span", { class: "pill warn", style: "margin-left:8px" }, svc.supplement) : null,
+              el("span", { class: "small", style: "margin-left:8px" },
+                Object.entries(svc.frequency_bands).filter(([, v]) => v > 0)
+                  .map(([k, v]) => `${BAND_LABELS[k] || k} ${v}`).join(" · "))
+            )))
+        : el("div", { class: "small", style: "margin-top:4px" }, "No services defined yet.")
     ));
   }
 })();

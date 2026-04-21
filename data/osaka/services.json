@@ -7,9 +7,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-midosuji-line",
         "from_stop": "stop-M01-osaka-metro",
-        "to_stop": "stop-M25-osaka-metro"
+        "to_stop": "stop-M25-osaka-metro",
+        "track_id": "osaka-metro-midosuji-line"
       }
     ],
     "stop_pattern": [
@@ -47,7 +47,8 @@
       "late_night": 2,
       "weekend_midday": 8
     },
-    "notes": "Backbone service. Full corridor including former Kita-Osaka Kyuko section (M01–M05). OSM models as single Midosuji route. KoK fare applies M01–M05."
+    "notes": "Backbone service. Full corridor including former Kita-Osaka Kyuko section (M01–M05). OSM models as single Midosuji route. KoK fare applies M01–M05.",
+    "line_id": "line-osaka-metro-midosuji-line"
   },
   {
     "id": "svc-midosuji-short-senri",
@@ -57,9 +58,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-midosuji-line",
         "from_stop": "stop-M03-osaka-metro",
-        "to_stop": "stop-M25-osaka-metro"
+        "to_stop": "stop-M25-osaka-metro",
+        "track_id": "osaka-metro-midosuji-line"
       }
     ],
     "stop_pattern": [
@@ -95,7 +96,8 @@
       "late_night": 0,
       "weekend_midday": 0
     },
-    "notes": "Peak supplement. Short-turns at Senri-chuo (M03); does not continue to Minoh-kayano."
+    "notes": "Peak supplement. Short-turns at Senri-chuo (M03); does not continue to Minoh-kayano.",
+    "line_id": "line-osaka-metro-midosuji-line"
   },
   {
     "id": "svc-midosuji-short-tennoji",
@@ -105,9 +107,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-midosuji-line",
         "from_stop": "stop-M06-osaka-metro",
-        "to_stop": "stop-M18-osaka-metro"
+        "to_stop": "stop-M18-osaka-metro",
+        "track_id": "osaka-metro-midosuji-line"
       }
     ],
     "stop_pattern": [
@@ -133,7 +135,8 @@
       "late_night": 2,
       "weekend_midday": 0
     },
-    "notes": "Late-night only. Esaka ↔ Tennoji. Does not extend into former KoK section."
+    "notes": "Late-night only. Esaka ↔ Tennoji. Does not extend into former KoK section.",
+    "line_id": "line-osaka-metro-midosuji-line"
   },
   {
     "id": "svc-chuo-full",
@@ -143,9 +146,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-chuo-line",
         "from_stop": "stop-C01-osaka-metro",
-        "to_stop": "stop-C15-osaka-metro"
+        "to_stop": "stop-C15-osaka-metro",
+        "track_id": "osaka-metro-chuo-line"
       }
     ],
     "stop_pattern": [
@@ -173,7 +176,8 @@
       "late_night": 2,
       "weekend_midday": 6
     },
-    "notes": "Through-runs with Kintetsu Keihanna Line beyond Nagata (C15). Yumeshima (C01) extension opened April 2025 for Expo 2025. Some peak services short-turn at Cosmo Square (C02)."
+    "notes": "Through-runs with Kintetsu Keihanna Line beyond Nagata (C15). Yumeshima (C01) extension opened April 2025 for Expo 2025. Some peak services short-turn at Cosmo Square (C02).",
+    "line_id": "line-osaka-metro-chuo-line"
   },
   {
     "id": "svc-chuo-short-cosmo",
@@ -183,9 +187,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-chuo-line",
         "from_stop": "stop-C02-osaka-metro",
-        "to_stop": "stop-C15-osaka-metro"
+        "to_stop": "stop-C15-osaka-metro",
+        "track_id": "osaka-metro-chuo-line"
       }
     ],
     "stop_pattern": [
@@ -212,7 +216,8 @@
       "late_night": 0,
       "weekend_midday": 0
     },
-    "notes": "Does not serve Yumeshima. Short-turns at Cosmo Square. Majority of daily service; Yumeshima segment runs less frequently outside Expo periods."
+    "notes": "Does not serve Yumeshima. Short-turns at Cosmo Square. Majority of daily service; Yumeshima segment runs less frequently outside Expo periods.",
+    "line_id": "line-osaka-metro-chuo-line"
   },
   {
     "id": "svc-imazatosuji-full",
@@ -222,9 +227,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-imazatosuji-line",
         "from_stop": "stop-I01-osaka-metro",
-        "to_stop": "stop-I11-osaka-metro"
+        "to_stop": "stop-I11-osaka-metro",
+        "track_id": "osaka-metro-imazatosuji-line"
       }
     ],
     "stop_pattern": [
@@ -248,7 +253,8 @@
       "late_night": 2,
       "weekend_midday": 4
     },
-    "notes": "Rubber-tyred AGT. No express service, no through-running. Least busy line on the Osaka Metro network."
+    "notes": "Rubber-tyred AGT. No express service, no through-running. Least busy line on the Osaka Metro network.",
+    "line_id": "line-osaka-metro-imazatosuji-line"
   },
   {
     "id": "svc-sakaisuji-full",
@@ -258,9 +264,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-sakaisuji-line",
         "from_stop": "stop-K01-osaka-metro",
-        "to_stop": "stop-K10-osaka-metro"
+        "to_stop": "stop-K10-osaka-metro",
+        "track_id": "osaka-metro-sakaisuji-line"
       }
     ],
     "stop_pattern": [
@@ -283,7 +289,8 @@
       "late_night": 2,
       "weekend_midday": 5
     },
-    "notes": "Through-runs with Hankyu Senri Line and Kyoto Line north of Tenjinbashisuji 6-chome (K01). Hankyu not yet in dataset. Combined peak headway counts include Hankyu-originating trains."
+    "notes": "Through-runs with Hankyu Senri Line and Kyoto Line north of Tenjinbashisuji 6-chome (K01). Hankyu not yet in dataset. Combined peak headway counts include Hankyu-originating trains.",
+    "line_id": "line-osaka-metro-sakaisuji-line"
   },
   {
     "id": "svc-nagahori-full",
@@ -293,9 +300,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-nagahori-tsurumi-ryokuchi-line",
         "from_stop": "stop-N01-osaka-metro",
-        "to_stop": "stop-N17-osaka-metro"
+        "to_stop": "stop-N17-osaka-metro",
+        "track_id": "osaka-metro-nagahori-tsurumi-ryokuchi-line"
       }
     ],
     "stop_pattern": [
@@ -325,7 +332,8 @@
       "late_night": 2,
       "weekend_midday": 4
     },
-    "notes": "Rubber-tyred AGT. No through-running, no express."
+    "notes": "Rubber-tyred AGT. No through-running, no express.",
+    "line_id": "line-osaka-metro-nagahori-tsurumi-ryokuchi-line"
   },
   {
     "id": "svc-sennichimae-full",
@@ -335,9 +343,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-sennichimae-line",
         "from_stop": "stop-S01-osaka-metro",
-        "to_stop": "stop-S14-osaka-metro"
+        "to_stop": "stop-S14-osaka-metro",
+        "track_id": "osaka-metro-sennichimae-line"
       }
     ],
     "stop_pattern": [
@@ -364,7 +372,8 @@
       "late_night": 2,
       "weekend_midday": 4
     },
-    "notes": "Cross-city east-west line. No through-running, no express."
+    "notes": "Cross-city east-west line. No through-running, no express.",
+    "line_id": "line-osaka-metro-sennichimae-line"
   },
   {
     "id": "svc-tanimachi-full",
@@ -374,9 +383,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-tanimachi-line",
         "from_stop": "stop-T01-osaka-metro",
-        "to_stop": "stop-T26-osaka-metro"
+        "to_stop": "stop-T26-osaka-metro",
+        "track_id": "osaka-metro-tanimachi-line"
       }
     ],
     "stop_pattern": [
@@ -415,7 +424,8 @@
       "late_night": 2,
       "weekend_midday": 5
     },
-    "notes": "Longest Osaka Metro line at 26 stops. Some peak short-turns at Tennoji (T17). No through-running."
+    "notes": "Longest Osaka Metro line at 26 stops. Some peak short-turns at Tennoji (T17). No through-running.",
+    "line_id": "line-osaka-metro-tanimachi-line"
   },
   {
     "id": "svc-tanimachi-short-tennoji",
@@ -425,9 +435,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-tanimachi-line",
         "from_stop": "stop-T01-osaka-metro",
-        "to_stop": "stop-T17-osaka-metro"
+        "to_stop": "stop-T17-osaka-metro",
+        "track_id": "osaka-metro-tanimachi-line"
       }
     ],
     "stop_pattern": [
@@ -457,7 +467,8 @@
       "late_night": 0,
       "weekend_midday": 0
     },
-    "notes": "Peak short-turn. Does not continue to Yao-Minami. Tennoji is the midpoint of the Tanimachi Line."
+    "notes": "Peak short-turn. Does not continue to Yao-Minami. Tennoji is the midpoint of the Tanimachi Line.",
+    "line_id": "line-osaka-metro-tanimachi-line"
   },
   {
     "id": "svc-yotsubashi-full",
@@ -467,9 +478,9 @@
     "supplement": "none",
     "line_path": [
       {
-        "line_id": "osaka-metro-yotsubashi-line",
         "from_stop": "stop-Y01-osaka-metro",
-        "to_stop": "stop-Y11-osaka-metro"
+        "to_stop": "stop-Y11-osaka-metro",
+        "track_id": "osaka-metro-yotsubashi-line"
       }
     ],
     "stop_pattern": [
@@ -493,7 +504,8 @@
       "late_night": 2,
       "weekend_midday": 4
     },
-    "notes": "Runs parallel to Midosuji between Daikokucho (Y06) and Namba (Y07). Supplements Midosuji in central corridor. No through-running or express."
+    "notes": "Runs parallel to Midosuji between Daikokucho (Y06) and Namba (Y07). Supplements Midosuji in central corridor. No through-running or express.",
+    "line_id": "line-osaka-metro-yotsubashi-line"
   },
   {
     "id": "hankyu-kyoto-local",
@@ -502,9 +514,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "hankyu-hanky-kyoto-main-line",
         "from_stop": "stop-hankyu-0001",
-        "to_stop": "stop-hankyu-0020"
+        "to_stop": "stop-hankyu-0020",
+        "track_id": "hankyu-hankyu-kyoto-line"
       }
     ],
     "stop_pattern": [
@@ -537,7 +549,8 @@
       "evening": 3,
       "late_night": 2,
       "weekend_midday": 4
-    }
+    },
+    "line_id": "line-hankyu-hankyu-kyoto-line"
   },
   {
     "id": "hankyu-takarazuka-local",
@@ -546,9 +559,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "hankyu-hanky-takarazuka-main-line",
         "from_stop": "stop-hankyu-0069",
-        "to_stop": "stop-hankyu-0087"
+        "to_stop": "stop-hankyu-0087",
+        "track_id": "hankyu-hankyu-takarazuka-line"
       }
     ],
     "stop_pattern": [
@@ -580,7 +593,8 @@
       "evening": 2,
       "late_night": 1,
       "weekend_midday": 3
-    }
+    },
+    "line_id": "line-hankyu-hankyu-takarazuka-line"
   },
   {
     "id": "hankyu-kobe-local",
@@ -589,9 +603,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "hankyu-hanky-kobe-main-line",
         "from_stop": "stop-hankyu-0092",
-        "to_stop": "stop-hankyu-0100"
+        "to_stop": "stop-hankyu-0100",
+        "track_id": "hankyu-hankyu-kobe-line"
       }
     ],
     "stop_pattern": [
@@ -613,7 +627,8 @@
       "evening": 3,
       "late_night": 2,
       "weekend_midday": 4
-    }
+    },
+    "line_id": "line-hankyu-hankyu-kobe-line"
   },
   {
     "id": "hankyu-senri-local",
@@ -622,9 +637,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "hankyu-hanky-senri-line-northbound",
         "from_stop": "stop-hankyu-0058",
-        "to_stop": "stop-hankyu-0068"
+        "to_stop": "stop-hankyu-0068",
+        "track_id": "hankyu-hankyu-senri-line"
       }
     ],
     "stop_pattern": [
@@ -648,7 +663,8 @@
       "evening": 2,
       "late_night": 1,
       "weekend_midday": 3
-    }
+    },
+    "line_id": "line-hankyu-hankyu-senri-line"
   },
   {
     "id": "hanshin-main-local",
@@ -657,9 +673,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "hanshin-hanshin-main-line-local-osaka-umeda-motomachi",
         "from_stop": "stop-hanshin-0033",
-        "to_stop": "stop-hanshin-0065"
+        "to_stop": "stop-hanshin-0065",
+        "track_id": "hanshin-hanshin-line"
       }
     ],
     "stop_pattern": [
@@ -705,7 +721,8 @@
       "evening": 3,
       "late_night": 2,
       "weekend_midday": 4
-    }
+    },
+    "line_id": "line-hanshin-hanshin-line"
   },
   {
     "id": "hanshin-namba-local",
@@ -714,9 +731,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "hanshin-hanshin-namba-line-local-osaka-namba-amagasaki",
         "from_stop": "stop-hanshin-0088",
-        "to_stop": "stop-hanshin-0098"
+        "to_stop": "stop-hanshin-0098",
+        "track_id": "hanshin-hanshin-namba-line"
       }
     ],
     "stop_pattern": [
@@ -740,7 +757,8 @@
       "evening": 2,
       "late_night": 1,
       "weekend_midday": 3
-    }
+    },
+    "line_id": "line-hanshin-hanshin-namba-line"
   },
   {
     "id": "keihan-main-local",
@@ -749,9 +767,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "keihan-",
         "from_stop": "stop-keihan-0016",
-        "to_stop": "stop-keihan-0144"
+        "to_stop": "stop-keihan-0144",
+        "track_id": "keihan--2"
       }
     ],
     "stop_pattern": [
@@ -849,7 +867,8 @@
       "late_night": 2,
       "weekend_midday": 4
     },
-    "notes": "Osaka Namba/Nakanoshima to Demachiyanagi direction."
+    "notes": "Osaka Namba/Nakanoshima to Demachiyanagi direction.",
+    "line_id": "line-keihan--2"
   },
   {
     "id": "kintetsu-nara-local",
@@ -858,9 +877,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "kintetsu-kintetsu-nara-line-local-fuse-kintetsu-nara",
         "from_stop": "stop-kintetsu-0259",
-        "to_stop": "stop-kintetsu-0277"
+        "to_stop": "stop-kintetsu-0277",
+        "track_id": "kintetsu-kintetsu-nara-line"
       }
     ],
     "stop_pattern": [
@@ -892,7 +911,8 @@
       "evening": 3,
       "late_night": 2,
       "weekend_midday": 4
-    }
+    },
+    "line_id": "line-kintetsu-kintetsu-nara-line"
   },
   {
     "id": "kintetsu-keihanna-local",
@@ -901,9 +921,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "kintetsu-kintetsu-keihanna-line-local-nagata-gakken-nara-tomigaoka",
         "from_stop": "stop-kintetsu-0007",
-        "to_stop": "stop-kintetsu-0014"
+        "to_stop": "stop-kintetsu-0014",
+        "track_id": "kintetsu-kintetsu-keihanna-line"
       }
     ],
     "stop_pattern": [
@@ -925,7 +945,8 @@
       "late_night": 1,
       "weekend_midday": 3
     },
-    "notes": "Through-runs with Osaka Metro Chuo Line. Fare boundary at Nagata."
+    "notes": "Through-runs with Osaka Metro Chuo Line. Fare boundary at Nagata.",
+    "line_id": "line-kintetsu-kintetsu-keihanna-line"
   },
   {
     "id": "kintetsu-osaka-local",
@@ -934,9 +955,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "kintetsu-kintetsu-osaka-line-local-osaka-uehonmachi-ise-nakagawa",
         "from_stop": "stop-kintetsu-0203",
-        "to_stop": "stop-kintetsu-0250"
+        "to_stop": "stop-kintetsu-0250",
+        "track_id": "kintetsu-kintetsu-osaka-line"
       }
     ],
     "stop_pattern": [
@@ -997,7 +1018,8 @@
       "evening": 2,
       "late_night": 1,
       "weekend_midday": 3
-    }
+    },
+    "line_id": "line-kintetsu-kintetsu-osaka-line"
   },
   {
     "id": "kintetsu-hinotori",
@@ -1006,9 +1028,9 @@
     "service_type": "limited_express",
     "line_path": [
       {
-        "line_id": "kintetsu-kintetsu-limited-express-hinotori-osaka-namba-kintetsu-nara",
         "from_stop": "stop-kintetsu-0581",
-        "to_stop": "stop-kintetsu-0588"
+        "to_stop": "stop-kintetsu-0588",
+        "track_id": "kintetsu-kintetsu-nara-line"
       }
     ],
     "stop_pattern": [
@@ -1030,7 +1052,8 @@
       "late_night": 0,
       "weekend_midday": 2
     },
-    "notes": "Premium limited express Osaka Namba–Nara. Reserved seats required."
+    "notes": "Premium limited express Osaka Namba–Nara. Reserved seats required.",
+    "line_id": "line-kintetsu-kintetsu-nara-line"
   },
   {
     "id": "kintetsu-shimakaze",
@@ -1039,9 +1062,9 @@
     "service_type": "limited_express",
     "line_path": [
       {
-        "line_id": "kintetsu-kintetsu-limited-express-shimakaze-osaka-namba-kashikojima",
         "from_stop": "stop-kintetsu-0555",
-        "to_stop": "stop-kintetsu-0563"
+        "to_stop": "stop-kintetsu-0563",
+        "track_id": "kintetsu-kintetsu-osaka-line"
       }
     ],
     "stop_pattern": [
@@ -1064,7 +1087,8 @@
       "late_night": 0,
       "weekend_midday": 1
     },
-    "notes": "Luxury limited express to Ise-Shima. Runs 3 days/week; supplement + reservation required."
+    "notes": "Luxury limited express to Ise-Shima. Runs 3 days/week; supplement + reservation required.",
+    "line_id": "line-kintetsu-kintetsu-osaka-line"
   },
   {
     "id": "nankai-main-local",
@@ -1073,9 +1097,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "nankai-nankai-main-line-local-namba-wakayamashi",
         "from_stop": "stop-nankai-0113",
-        "to_stop": "stop-nankai-0153"
+        "to_stop": "stop-nankai-0153",
+        "track_id": "nankai-nankai-line"
       }
     ],
     "stop_pattern": [
@@ -1129,7 +1153,8 @@
       "evening": 2,
       "late_night": 1,
       "weekend_midday": 3
-    }
+    },
+    "line_id": "line-nankai-nankai-line"
   },
   {
     "id": "nankai-main-express",
@@ -1138,9 +1163,9 @@
     "service_type": "express",
     "line_path": [
       {
-        "line_id": "nankai-nankai-main-line-express-namba-wakayamashi",
         "from_stop": "stop-nankai-0026",
-        "to_stop": "stop-nankai-0039"
+        "to_stop": "stop-nankai-0039",
+        "track_id": "nankai-nankai-line"
       }
     ],
     "stop_pattern": [
@@ -1180,7 +1205,8 @@
       "evening": 1,
       "late_night": 0,
       "weekend_midday": 1
-    }
+    },
+    "line_id": "line-nankai-nankai-line"
   },
   {
     "id": "nankai-airport-local",
@@ -1189,9 +1215,9 @@
     "service_type": "local",
     "line_path": [
       {
-        "line_id": "nankai-nankai-airport-line-local-namba-kansai-airport",
         "from_stop": "stop-nankai-0195",
-        "to_stop": "stop-nankai-0224"
+        "to_stop": "stop-nankai-0224",
+        "track_id": "nankai-nankai-airport-line"
       }
     ],
     "stop_pattern": [
@@ -1234,7 +1260,8 @@
       "evening": 2,
       "late_night": 1,
       "weekend_midday": 3
-    }
+    },
+    "line_id": "line-nankai-nankai-airport-line"
   },
   {
     "id": "nankai-rapit",
@@ -1243,9 +1270,9 @@
     "service_type": "limited_express",
     "line_path": [
       {
-        "line_id": "nankai-airport-express-namba-kansai-airport",
         "from_stop": "stop-nankai-0336",
-        "to_stop": "stop-nankai-0347"
+        "to_stop": "stop-nankai-0347",
+        "track_id": "nankai-nankai-airport-line"
       }
     ],
     "stop_pattern": [
@@ -1271,7 +1298,8 @@
       "late_night": 1,
       "weekend_midday": 2
     },
-    "notes": "Rapi:t alpha/beta to Kansai Airport. Reserved seat supplement required."
+    "notes": "Rapi:t alpha/beta to Kansai Airport. Reserved seat supplement required.",
+    "line_id": "line-nankai-nankai-airport-line"
   },
   {
     "id": "jr-west-haruka",
@@ -1280,9 +1308,9 @@
     "service_type": "limited_express",
     "line_path": [
       {
-        "line_id": "jr-west-kansai-airport-rapid-kansai-airport-kyobashi",
         "from_stop": "stop-jr-west-0003",
-        "to_stop": "stop-jr-west-0021"
+        "to_stop": "stop-jr-west-0021",
+        "track_id": "jr-west-kansai-airport"
       }
     ],
     "stop_pattern": [
@@ -1315,6 +1343,7 @@
       "late_night": 1,
       "weekend_midday": 3
     },
-    "notes": "JR Haruka Kansai Airport–Osaka–Kyoto. Reserved seat supplement."
+    "notes": "JR Haruka Kansai Airport–Osaka–Kyoto. Reserved seat supplement.",
+    "line_id": "line-jr-west-kansai-airport"
   }
 ]

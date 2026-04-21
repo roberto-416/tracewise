@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <title>Tracewise — Line</title>
-  <link rel="stylesheet" href="css/app.css?v=9" />
+  <link rel="stylesheet" href="css/app.css?v=10" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 </head>
 <body>
   <div class="layout">
     <aside class="sidebar">
       <h2>Lines</h2>
-      <input id="search" type="search" placeholder="Filter lines…" style="width:100%;padding:5px 8px;margin-bottom:8px;background:var(--panel-2);border:1px solid var(--rule);border-radius:4px;color:var(--ink);font-size:13px;" />
+      <input id="search" type="search" placeholder="Filter lines…"
+        style="width:100%;padding:5px 8px;margin-bottom:8px;background:var(--panel-2);border:1px solid var(--rule);border-radius:4px;color:var(--ink);font-size:13px;" />
       <ul id="line-list"></ul>
     </aside>
     <main class="content" id="content">
       <div id="header"></div>
+      <h2>Route map</h2>
+      <div id="line-map"></div>
       <h2>Stopping pattern matrix</h2>
       <div class="legend">
         <span class="item"><span class="dot f5"></span> ≥12/hr</span>
@@ -24,11 +28,10 @@
         <span class="item"><span class="dot f0"></span> does not stop</span>
       </div>
       <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
-      <h2>Services on this line</h2>
-      <div id="services"></div>
     </main>
   </div>
-  <script src="js/data.js?v=9"></script>
-  <script src="js/line.js?v=9"></script>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="js/data.js?v=10"></script>
+  <script src="js/line.js?v=10"></script>
 </body>
 </html>

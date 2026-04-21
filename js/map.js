@@ -3,22 +3,29 @@
   const db = await loadCity();
   topbar("map");
 
-  // ---- Sidebar ----
+  // ---- Sidebar: named lines grouped by operator ----
   const sidebar = document.getElementById("lines");
-  for (const ln of db.lines) {
-    const op = db.byId.operators[ln.operator_id];
-    sidebar.append(el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
-      el("span", { class: "swatch", style: `background:${ln.colour}` }),
-      el("span", {}, ln.name_en),
-      el("div", { class: "small", style: "padding-left:18px;margin-top:1px" }, op?.name_en || "")
-    ));
+  const opOrder = db.operators.map(o => o.id);
+  for (const opId of opOrder) {
+    const opLines = db.linesByOperator[opId] || [];
+    if (!opLines.length) continue;
+    const op = db.byId.operators[opId];
+    sidebar.append(el("li", {
+      style: "padding:6px 4px 2px;font-size:11px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;cursor:default;font-weight:600"
+    }, op.name_en));
+    for (const ln of opLines) {
+      sidebar.append(el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
+        el("span", { class: "swatch", style: `background:${ln.colour}` }),
+        el("span", {}, ln.display_name_en || ln.display_name_ja || "")
+      ));
+    }
   }
 
-  // ---- Node → line colour ----
+  // ---- Node → track colour ----
   const nodeLineColour = {};
   for (const s of db.stops) {
     if (!nodeLineColour[s.station_node_id])
-      nodeLineColour[s.station_node_id] = db.byId.lines[s.line_id]?.colour || "#888";
+      nodeLineColour[s.station_node_id] = db.byId.tracks[s.track_id]?.colour || "#888";
   }
 
   // ---- Union-Find: cluster co-located stations ----
@@ -89,23 +96,29 @@
   const lineGeom = await fetch(`data/${CITY}/line_geometry.json`)
     .then(r => r.ok ? r.json() : {}).catch(() => ({}));
 
-  function stationLineCoords(line) {
-    return (db.stopsByLine[line.id] || []).map(s => {
+  function stationTrackCoords(track) {
+    return (db.stopsByTrack[track.id] || []).map(s => {
       const n = db.byId.station_nodes[s.station_node_id];
-      return [n.lon, n.lat];
-    });
+      return n ? [n.lon, n.lat] : null;
+    }).filter(Boolean);
   }
 
   map.on("load", () => {
-    // Lines
-    const lineFeatures = db.lines.map(ln => ({
-      type: "Feature",
-      properties: { id: ln.id, name: ln.name_en, colour: ln.colour },
-      geometry: {
-        type: "LineString",
-        coordinates: (lineGeom[ln.id]?.length >= 2) ? lineGeom[ln.id] : stationLineCoords(ln)
-      }
-    }));
+    // Tracks — physical corridors shown on map
+    // Navigate to the named Line page when clicked
+    const lineFeatures = db.tracks.map(t => {
+      const line = db.lineByTrack[t.id];
+      const coords = lineGeom[t.id]?.length >= 2 ? lineGeom[t.id] : stationTrackCoords(t);
+      return {
+        type: "Feature",
+        properties: {
+          id: line?.id || t.id,   // navigate to Line page on click
+          name: t.name_en || "",
+          colour: t.colour || "#888"
+        },
+        geometry: { type: "LineString", coordinates: coords }
+      };
+    }).filter(f => f.geometry.coordinates.length >= 2);
 
     map.addSource("lines", { type: "geojson", data: { type: "FeatureCollection", features: lineFeatures } });
     map.addLayer({

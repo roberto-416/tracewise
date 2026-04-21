@@ -97,8 +97,19 @@ code { background: var(--panel-2); padding: 1px 5px; border-radius: 3px; font-si
 .stn-swatches { display: flex; gap: 3px; flex-wrap: wrap; margin-bottom: 2px; }
 .stn-name { font-size: 13px; }
 
-/* Service route map */
-#svc-map { height: 300px; border-radius: 6px; overflow: hidden; border: 1px solid var(--rule); margin-bottom: 4px; }
+/* Route maps (line + service pages) */
+#svc-map, #line-map { height: 300px; border-radius: 6px; overflow: hidden; border: 1px solid var(--rule); margin-bottom: 4px; }
+/* Vertical stop list */
+.stop-list { display: flex; flex-direction: column; gap: 0; }
+.stop-row { display: flex; align-items: center; gap: 10px; padding: 5px 6px; border-radius: 4px; cursor: default; }
+.stop-row:hover { background: var(--panel-2); }
+.stop-row.skipped { opacity: 0.38; }
+.stop-dot { flex: 0 0 10px; width: 10px; height: 10px; border-radius: 50%; border: 2px solid #888; }
+.stop-row-text { flex: 1; min-width: 0; font-size: 13px; }
+.stop-name { color: var(--ink); }
+.stop-name.dim { color: var(--ink-dim); }
+.stop-code { font-size: 11px; color: var(--ink-dim); font-family: monospace; }
+
 .svc-stop-label {
   font: 600 10px/1.2 -apple-system, sans-serif;
   color: #111;

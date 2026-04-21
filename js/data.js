@@ -4,7 +4,8 @@
 const CITY = new URLSearchParams(location.search).get("city") || "osaka";
 
 async function loadCity(city = CITY) {
-  const files = ["operators", "lines", "stops", "station_nodes", "transfers", "services", "fare_zones"];
+  // Three-level schema: Track (physical) → Line (brand) → Service (pattern)
+  const files = ["operators", "tracks", "lines", "stops", "station_nodes", "transfers", "services", "fare_zones"];
   const entries = await Promise.all(
     files.map(f => fetch(`data/${city}/${f}.json`).then(r => {
       if (!r.ok) throw new Error(`${f}.json: ${r.status}`);
@@ -19,24 +20,47 @@ async function loadCity(city = CITY) {
     db.byId[coll] = Object.fromEntries(db[coll].map(x => [x.id, x]));
   }
 
-  // reverse indexes
-  db.stopsByLine = {};
-  for (const s of db.stops) (db.stopsByLine[s.line_id] ||= []).push(s);
-  for (const lineId in db.stopsByLine) db.stopsByLine[lineId].sort((a, b) => a.order - b.order);
+  // stops by track
+  db.stopsByTrack = {};
+  for (const s of db.stops) (db.stopsByTrack[s.track_id] ||= []).push(s);
+  for (const tid in db.stopsByTrack) db.stopsByTrack[tid].sort((a, b) => a.order - b.order);
 
+  // transfers by node
   db.transfersByNode = {};
   for (const t of db.transfers) {
     (db.transfersByNode[t.a] ||= []).push(t);
     if (t.a !== t.b) (db.transfersByNode[t.b] ||= []).push(t);
   }
 
+  // lines by operator
   db.linesByOperator = {};
-  for (const l of db.lines) (db.linesByOperator[l.operator_id] ||= []).push(l);
+  for (const l of db.lines) (db.linesByOperator[l.primary_operator_id] ||= []).push(l);
 
+  // tracks by line (from lines.tracks array)
+  db.tracksByLine = {};
+  for (const l of db.lines) {
+    db.tracksByLine[l.id] = (l.tracks || []).map(tid => db.byId.tracks[tid]).filter(Boolean);
+  }
+
+  // services by line_id
   db.servicesByLine = {};
   for (const svc of db.services) {
-    const lineIds = new Set(svc.line_path.map(p => p.line_id));
-    for (const lid of lineIds) (db.servicesByLine[lid] ||= []).push(svc);
+    if (svc.line_id) (db.servicesByLine[svc.line_id] ||= []).push(svc);
+  }
+
+  // track → primary line (first line whose tracks[] includes this track)
+  db.lineByTrack = {};
+  for (const l of db.lines) {
+    for (const tid of (l.tracks || [])) {
+      if (!db.lineByTrack[tid]) db.lineByTrack[tid] = l;
+    }
+  }
+
+  // station_node → set of track_ids (for station page)
+  db.tracksByNode = {};
+  for (const s of db.stops) {
+    const stn = db.byId.station_nodes[s.station_node_id];
+    if (stn) (db.tracksByNode[stn.id] ||= new Set()).add(s.track_id);
   }
 
   return db;
