@@ -51,7 +51,7 @@
   },
   {
     "id": "line-hankyu-hankyu-kyoto-line",
-    "display_name_en": "Hankyu Kyoto Line: Osaka Umeda=>Kyoto Kawabaramachi",
+    "display_name_en": "Hankyu Kyoto Line",
     "display_name_ja": "阪急電鉄京都線",
     "primary_operator_id": "hankyu",
     "colour": "#5E2D79",
@@ -71,7 +71,7 @@
   },
   {
     "id": "line-hankyu-hankyu-senri-line",
-    "display_name_en": "Hankyū Senri Line (northbound)",
+    "display_name_en": "Hankyū Senri Line",
     "display_name_ja": "阪急電鉄千里線",
     "primary_operator_id": "hankyu",
     "colour": "#5E2D79",
@@ -93,7 +93,7 @@
   },
   {
     "id": "line-hankyu-kobe-kosoku-tozai-line",
-    "display_name_en": "Kobe Kosoku Tozai Line (north section)",
+    "display_name_en": "Kobe Kosoku Tozai Line",
     "display_name_ja": "阪急電鉄神戸高速線",
     "primary_operator_id": "hankyu",
     "colour": "#5E2D79",
@@ -103,7 +103,7 @@
   },
   {
     "id": "line-hanshin-hanshin-kobe-kosoku-line",
-    "display_name_en": "Hanshin Kobe Kosoku Line Local (Motomachi => Nishidai)",
+    "display_name_en": "Hanshin Kobe Kosoku Line",
     "display_name_ja": "阪神電気鉄道神戸高速線 普通 (元町 => 西代)",
     "primary_operator_id": "hanshin",
     "colour": "#1E3D8F",
@@ -113,7 +113,7 @@
   },
   {
     "id": "line-hanshin-hanshin-line",
-    "display_name_en": "Hanshin Main Line Local (Motomachi => Osaka-Umeda)",
+    "display_name_en": "Hanshin Main Line",
     "display_name_ja": "阪神電気鉄道本線 普通 (元町 => 大阪梅田)",
     "primary_operator_id": "hanshin",
     "colour": "#1E3D8F",
@@ -123,7 +123,7 @@
   },
   {
     "id": "line-hanshin-hanshin-mukogawa-line",
-    "display_name_en": "Hanshin Mukogawa Line Local (Mukogawa => Mukogawadanchimae)",
+    "display_name_en": "Hanshin Mukogawa Line",
     "display_name_ja": "阪神電気鉄道武庫川線 普通 (武庫川 => 武庫川団地前)",
     "primary_operator_id": "hanshin",
     "colour": "#1E3D8F",
@@ -133,7 +133,7 @@
   },
   {
     "id": "line-hanshin-hanshin-namba-line",
-    "display_name_en": "Hanshin Namba Line Local (Osaka-Namba => Amagasaki)",
+    "display_name_en": "Hanshin Namba Line",
     "display_name_ja": "阪神電気鉄道阪神なんば線 普通 (大阪難波 => 尼崎)",
     "primary_operator_id": "hanshin",
     "colour": "#1E3D8F",
@@ -143,7 +143,7 @@
   },
   {
     "id": "line-jr-west-jr-kansai-airport-line",
-    "display_name_en": "JR Kansai Airport Line Shuttle (Kansai Airport => Hineno)",
+    "display_name_en": "JR Kansai Airport Line",
     "display_name_ja": "JR関西空港線 シャトル (関西空港 => 日根野)",
     "primary_operator_id": "jr-west",
     "colour": "#003087",
@@ -153,7 +153,7 @@
   },
   {
     "id": "line-jr-west-kansai-airport",
-    "display_name_en": "Kansai Airport Rapid (Kansai Airport => Kyobashi)",
+    "display_name_en": "Kansai Airport Rapid Line",
     "display_name_ja": "関空快速 (関西空港 => 京橋)",
     "primary_operator_id": "jr-west",
     "colour": "#003087",
@@ -173,7 +173,7 @@
   },
   {
     "id": "line-keihan-keihan-keishin-line",
-    "display_name_en": "Keihan Keishin Line (Eastbound)",
+    "display_name_en": "Keihan Keishin Line",
     "display_name_ja": "京阪電気鉄道京津線（びわ湖浜大津方面）",
     "primary_operator_id": "keihan",
     "colour": "#006432",
@@ -193,7 +193,7 @@
   },
   {
     "id": "line-keihan-keihan-uji-line",
-    "display_name_en": "Keihan Uji Line (Chushojima => Uji)",
+    "display_name_en": "Keihan Uji Line",
     "display_name_ja": "京阪宇治線 (中書島=>宇治)",
     "primary_operator_id": "keihan",
     "colour": "#006432",
@@ -213,7 +213,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-domyoji-line",
-    "display_name_en": "Kintetsu Dōmyōji Line Local (Kashiwara => Dōmyōji)",
+    "display_name_en": "Kintetsu Dōmyoji Line",
     "display_name_ja": "近畿日本鉄道道明寺線 普通 (柏原 => 道明寺)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -223,7 +223,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-gose-line",
-    "display_name_en": "Kintetsu Gose Line Local (Shakudo => Kintetsu-Gose)",
+    "display_name_en": "Kintetsu Gose Line",
     "display_name_ja": "近畿日本鉄道御所線 普通 (尺土 => 近鉄御所)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -233,7 +233,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-ikoma-line",
-    "display_name_en": "Kintetsu Ikoma Line Local (Oji => Ikoma)",
+    "display_name_en": "Kintetsu Ikoma Line",
     "display_name_ja": "近畿日本鉄道生駒線 普通 (王寺 => 生駒)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -243,7 +243,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-kashihara-line",
-    "display_name_en": "Kintetsu Kashihara Line Local (Yamato-Saidaiji => Kashiharajingu-mae)",
+    "display_name_en": "Kintetsu Kashihara Line",
     "display_name_ja": "近畿日本鉄道橿原線 普通 (大和西大寺 => 橿原神宮前)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -253,7 +253,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-keihanna-line",
-    "display_name_en": "Kintetsu Keihanna Line Local (Nagata => Gakken-Nara-Tomigaoka)",
+    "display_name_en": "Kintetsu Keihanna Line",
     "display_name_ja": "近畿日本鉄道けいはんな線 普通 (長田 => 学研奈良登美ヶ丘)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -263,7 +263,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-kyoto-line",
-    "display_name_en": "Kintetsu Kyoto Line Local (Yamato-Saidaiji => Kintetsu-Kyoto)",
+    "display_name_en": "Kintetsu Kyoto Line",
     "display_name_ja": "近畿日本鉄道京都線 普通 (大和西大寺 => 近鉄京都)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -273,7 +273,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-minami-osaka-line",
-    "display_name_en": "Kintetsu Minami-Osaka Line Local (Osaka-Abenobashi => Kashiharajingumae)",
+    "display_name_en": "Kintetsu Minami-Osaka Line",
     "display_name_ja": "近畿日本鉄道南大阪線 普通 (大阪阿部野橋 => 橿原神宮前)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -283,7 +283,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-nagano-line",
-    "display_name_en": "Kintetsu Nagano Line Local (Furuichi => Kawachi-Nagano)",
+    "display_name_en": "Kintetsu Nagano Line",
     "display_name_ja": "近畿日本鉄道長野線 普通 (古市 => 河内長野)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -303,7 +303,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-nara-line",
-    "display_name_en": "Kintetsu Nara Line Local (Fuse => Kintetsu-Nara)",
+    "display_name_en": "Kintetsu Nara Line",
     "display_name_ja": "近畿日本鉄道奈良線 普通 (布施 => 近鉄奈良)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -313,7 +313,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-osaka-line",
-    "display_name_en": "Kintetsu Osaka Line Local (Ise-Nakagawa => Osaka-Uehonmachi)",
+    "display_name_en": "Kintetsu Osaka Line",
     "display_name_ja": "近畿日本鉄道大阪線 普通 (伊勢中川 => 大阪上本町)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -323,7 +323,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-tawaramoto-line",
-    "display_name_en": "Kintetsu Tawaramoto Line Local (Shin-Oji => Nishi-Tawaramoto)",
+    "display_name_en": "Kintetsu Tawaramoto Line",
     "display_name_ja": "近畿日本鉄道田原本線 普通 (新王寺 => 西田原本)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -333,7 +333,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-tenri-line",
-    "display_name_en": "Kintetsu Tenri Line Local (Tenri => Hirahata)",
+    "display_name_en": "Kintetsu Tenri Line",
     "display_name_ja": "近畿日本鉄道天理線 普通 (天理 => 平端)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -343,7 +343,7 @@
   },
   {
     "id": "line-kintetsu-kintetsu-yoshino-line",
-    "display_name_en": "Kintetsu Yoshino Line Local (Yoshino => Kashiharajingumae)",
+    "display_name_en": "Kintetsu Yoshino Line",
     "display_name_ja": "近畿日本鉄道吉野線 普通 (吉野=>橿原神宮前)",
     "primary_operator_id": "kintetsu",
     "colour": "#E45E00",
@@ -353,7 +353,7 @@
   },
   {
     "id": "line-nankai-nankai-airport-line",
-    "display_name_en": "Nankai Airport Line Local (Namba => Kansai Airport)",
+    "display_name_en": "Nankai Airport Line",
     "display_name_ja": "南海空港線 普通 (なんば => 関西空港)",
     "primary_operator_id": "nankai",
     "colour": "#0071BC",
@@ -363,7 +363,7 @@
   },
   {
     "id": "line-nankai-nankai-kada-line",
-    "display_name_en": "Nankai Kada Line Local (Kada => Wakayamashi)",
+    "display_name_en": "Nankai Kada Line",
     "display_name_ja": "南海加太線 普通 (加太 => 和歌山市)",
     "primary_operator_id": "nankai",
     "colour": "#0071BC",
@@ -383,7 +383,7 @@
   },
   {
     "id": "line-nankai-nankai-line",
-    "display_name_en": "Nankai Main Line Local (Namba => Wakayamashi)",
+    "display_name_en": "Nankai Main Line",
     "display_name_ja": "南海本線 普通 (なんば => 和歌山市)",
     "primary_operator_id": "nankai",
     "colour": "#0071BC",
@@ -393,7 +393,7 @@
   },
   {
     "id": "line-nankai-nankai-shiomibashi-line",
-    "display_name_en": "Nankai Shiomibashi Line Local (Kishinosato-Tamade => Shiomibashi)",
+    "display_name_en": "Nankai Shiomibashi Line",
     "display_name_ja": "南海電気鉄道汐見橋線 普通 (岸里玉出 => 汐見橋)",
     "primary_operator_id": "nankai",
     "colour": "#0071BC",
@@ -403,7 +403,7 @@
   },
   {
     "id": "line-nankai-nankai-takashinohama-line",
-    "display_name_en": "Nankai Takashinohama Line Local (Hagoromo => Takashinohama)",
+    "display_name_en": "Nankai Takashinohama Line",
     "display_name_ja": "南海高師浜線 普通 (羽衣 => 高師浜)",
     "primary_operator_id": "nankai",
     "colour": "#0071BC",
@@ -413,7 +413,7 @@
   },
   {
     "id": "line-nankai-nankai-tanagawa-line",
-    "display_name_en": "Nankai Tanagawa Line Local (Misakikoen => Tanagawa)",
+    "display_name_en": "Nankai Tanagawa Line",
     "display_name_ja": "南海多奈川線 普通 (みさき公園 => 多奈川)",
     "primary_operator_id": "nankai",
     "colour": "#0071BC",

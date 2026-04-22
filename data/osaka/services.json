@@ -220,6 +220,60 @@
     "line_id": "line-osaka-metro-chuo-line"
   },
   {
+    "id": "svc-chuo-keihanna-through",
+    "display_name_en": "Local (through — Yumeshima to Gakken-Nara-Tomigaoka)",
+    "display_name_ja": "普通（夢洲⇔学研奈良登美ヶ丘）",
+    "service_type": "local",
+    "supplement": "none",
+    "line_path": [
+      {
+        "from_stop": "stop-C01-osaka-metro",
+        "to_stop": "stop-C15-osaka-metro",
+        "track_id": "osaka-metro-chuo-line"
+      },
+      {
+        "from_stop": "stop-kintetsu-0007",
+        "to_stop": "stop-kintetsu-0014",
+        "track_id": "kintetsu-kintetsu-keihanna-line"
+      }
+    ],
+    "stop_pattern": [
+      "stop-C01-osaka-metro",
+      "stop-C02-osaka-metro",
+      "stop-C03-osaka-metro",
+      "stop-C04-osaka-metro",
+      "stop-C05-osaka-metro",
+      "stop-C06-osaka-metro",
+      "stop-C07-osaka-metro",
+      "stop-C08-osaka-metro",
+      "stop-C09-osaka-metro",
+      "stop-C10-osaka-metro",
+      "stop-C11-osaka-metro",
+      "stop-C12-osaka-metro",
+      "stop-C13-osaka-metro",
+      "stop-C14-osaka-metro",
+      "stop-C15-osaka-metro",
+      "stop-kintetsu-0007",
+      "stop-kintetsu-0008",
+      "stop-kintetsu-0009",
+      "stop-kintetsu-0010",
+      "stop-kintetsu-0011",
+      "stop-kintetsu-0012",
+      "stop-kintetsu-0013",
+      "stop-kintetsu-0014"
+    ],
+    "frequency_bands": {
+      "peak_am": 6,
+      "midday": 4,
+      "peak_pm": 6,
+      "evening": 3,
+      "late_night": 1,
+      "weekend_midday": 4
+    },
+    "notes": "Through-running service. Fare boundary at Nagata (C15 / kintetsu-0007). Osaka Metro fare applies C01–C15; Kintetsu fare applies beyond.",
+    "line_id": "line-osaka-metro-chuo-line"
+  },
+  {
     "id": "svc-imazatosuji-full",
     "display_name_en": "Local (Imazato to Itakano)",
     "display_name_ja": "普通（今里⇔湯里六丁目）",
