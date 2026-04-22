@@ -40,15 +40,18 @@
   const op = db.byId.operators[line.primary_operator_id];
   const tracks = db.tracksByLine[lineId] || [];
 
-  // Collect all stops across all tracks (in order), deduplicated by station_node_id.
-  // OSM route relations include both directions so each station appears twice; keep first.
-  const _allStopsRaw = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
-  const _seenNodes = new Set();
-  const allStops = _allStopsRaw.filter(s => {
-    if (_seenNodes.has(s.station_node_id)) return false;
-    _seenNodes.add(s.station_node_id);
-    return true;
+  // Per-track deduplicated stops (OSM gives both directions; keep first per node).
+  // trackStops is the canonical source; allStops is the flat view used by the map.
+  const trackStops = tracks.map(t => {
+    const raw = db.stopsByTrack[t.id] || [];
+    const seen = new Set();
+    return { track: t, stops: raw.filter(s => {
+      if (seen.has(s.station_node_id)) return false;
+      seen.add(s.station_node_id);
+      return true;
+    })};
   });
+  const allStops = trackStops.flatMap(ts => ts.stops);
 
   document.getElementById("header").append(
     el("h1", {},
@@ -58,8 +61,15 @@
     el("div", { class: "kv" },
       el("div", { class: "k" }, "Operator"),
       el("div", { class: "v" }, op?.name_en || "—"),
-      el("div", { class: "k" }, "Tracks"),
-      el("div", { class: "v" }, tracks.map(t => t.name_en || t.id).join(", ") || "—"),
+      el("div", { class: "k" }, tracks.length > 1 ? "Tracks" : "Track"),
+      el("div", { class: "v" }, ...tracks.map((t, i) => {
+        const tOp = db.byId.operators[t.operator_id];
+        const link = el("a", { href: `track.html?id=${t.id}` }, t.name_en || t.id);
+        const opNote = (tOp && tOp.id !== line.primary_operator_id)
+          ? el("span", { class: "small", style: "margin-left:4px" }, `(${tOp.name_en})`)
+          : null;
+        return [link, opNote, i < tracks.length - 1 ? document.createTextNode(" · ") : null];
+      }).flat().filter(Boolean)),
       el("div", { class: "k" }, "Stations"),
       el("div", { class: "v" }, allStops.length)
     )
@@ -153,18 +163,36 @@
     table.closest(".matrix-wrap").before(el("p", { class: "small" }, "No services defined for this line yet."));
   } else {
     const thead = el("thead");
+
+    // Row 1: track ownership headers (span columns per track)
+    if (tracks.length > 1) {
+      const trackRow = el("tr");
+      trackRow.append(el("th", { class: "svc" }));
+      for (const { track, stops: tStops } of trackStops) {
+        const tOp = db.byId.operators[track.operator_id];
+        trackRow.append(el("th", {
+          colspan: tStops.length,
+          style: `background:${track.colour}22;border-bottom:2px solid ${track.colour};font-size:10px;color:var(--ink-dim);text-align:center;padding:4px 6px;white-space:nowrap`
+        }, el("a", { href: `track.html?id=${track.id}`, style: "color:inherit" },
+          `${track.name_en || track.id} (${tOp?.name_en || track.operator_id})`)));
+      }
+      thead.append(trackRow);
+    }
+
+    // Row 2: stop name headers
     const headRow = el("tr");
     headRow.append(el("th", { class: "svc" }, "Service ↓ / Stop →"));
-    for (const stp of allStops) {
-      const node = db.byId.station_nodes[stp.station_node_id];
-      headRow.append(el("th", { class: "stopcol" }, node?.name_en || stp.code || ""));
+    for (const { stops: tStops } of trackStops) {
+      for (const stp of tStops) {
+        const node = db.byId.station_nodes[stp.station_node_id];
+        headRow.append(el("th", { class: "stopcol" }, node?.name_en || stp.code || ""));
+      }
     }
     thead.append(headRow);
     table.append(thead);
 
     const tbody = el("tbody");
     for (const svc of services) {
-      // Build set of station_node_ids served by this service
       const servedNodes = new Set(
         svc.stop_pattern.map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
       );
@@ -185,11 +213,13 @@
         el("div", { class: "small", style: "margin-top:2px" }, freqParts)
       ));
 
-      for (const stp of allStops) {
-        const served = servedNodes.has(stp.station_node_id);
-        tr.append(el("td", { class: "stop" },
-          el("span", { class: served ? `dot ${freqClass}` : "dot f0" })
-        ));
+      for (const { stops: tStops } of trackStops) {
+        for (const stp of tStops) {
+          const served = servedNodes.has(stp.station_node_id);
+          tr.append(el("td", { class: "stop" },
+            el("span", { class: served ? `dot ${freqClass}` : "dot f0" })
+          ));
+        }
       }
       tbody.append(tr);
     }

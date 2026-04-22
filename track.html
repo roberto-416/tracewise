@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tracewise — Track</title>
+  <link rel="stylesheet" href="css/app.css?v=11" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Tracks</h2>
+      <ul id="track-list"></ul>
+    </aside>
+    <main class="content" id="content">
+      <div id="header"></div>
+      <h2>Route map</h2>
+      <div id="track-map"></div>
+      <h2>Stations</h2>
+      <div id="stations"></div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="js/data.js?v=11"></script>
+  <script src="js/track.js?v=11"></script>
+</body>
+</html>

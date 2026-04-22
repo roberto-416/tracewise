@@ -56,6 +56,14 @@ async function loadCity(city = CITY) {
     }
   }
 
+  // track → ALL lines that include it (a track can be shared by multiple lines)
+  db.linesByTrack = {};
+  for (const l of db.lines) {
+    for (const tid of (l.tracks || [])) {
+      (db.linesByTrack[tid] ||= []).push(l);
+    }
+  }
+
   // station_node → set of track_ids (for station page)
   db.tracksByNode = {};
   for (const s of db.stops) {
@@ -109,7 +117,8 @@ function topbar(active) {
         ["Lines", "line.html"],
         ["Stations", "station.html"],
         ["Services", "service.html"],
-        ["Transfers", "transfers.html"]
+        ["Transfers", "transfers.html"],
+        ["Tracks", "track.html"]
       ].map(([t, href]) => {
         const a = el("a", { href }, t);
         if (active === t.toLowerCase()) a.className = "active";
