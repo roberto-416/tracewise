@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Tracewise — Line</title>
-  <link rel="stylesheet" href="css/app.css?v=11" />
+  <link rel="stylesheet" href="css/app.css?v=12" />
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 </head>
 <body>
@@ -18,20 +18,23 @@
       <div id="header"></div>
       <h2>Route map</h2>
       <div id="line-map"></div>
-      <h2>Stopping pattern matrix</h2>
+      <h2>Stopping pattern</h2>
+      <div class="small" style="margin-bottom:8px">● = stops, ○ = passes through. Rows are services.</div>
+      <div id="pattern"></div>
+      <h2>Frequency at each station</h2>
       <div class="legend">
         <span class="item"><span class="dot f5"></span> ≥12/hr</span>
         <span class="item"><span class="dot f4"></span> 8–11</span>
         <span class="item"><span class="dot f3"></span> 4–7</span>
         <span class="item"><span class="dot f2"></span> 2–3</span>
         <span class="item"><span class="dot f1"></span> &lt;2</span>
-        <span class="item"><span class="dot f0"></span> does not stop</span>
+        <span class="item"><span class="dot f0"></span> none</span>
       </div>
-      <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
+      <div id="heat"></div>
     </main>
   </div>
   <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-  <script src="js/data.js?v=11"></script>
-  <script src="js/line.js?v=11"></script>
+  <script src="js/data.js?v=12"></script>
+  <script src="js/line.js?v=12"></script>
 </body>
 </html>

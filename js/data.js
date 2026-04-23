@@ -71,6 +71,101 @@ async function loadCity(city = CITY) {
     if (stn) (db.tracksByNode[stn.id] ||= new Set()).add(s.track_id);
   }
 
+  // services by track_id (via line_path[].track_id)
+  db.servicesByTrack = {};
+  for (const svc of db.services) {
+    const tids = new Set((svc.line_path || []).map(seg => seg.track_id).filter(Boolean));
+    for (const tid of tids) (db.servicesByTrack[tid] ||= []).push(svc);
+  }
+
+  // Proximity + transfer clustering of station nodes.
+  // Merge nodes that are (a) linked by same-name-connected / through-run-boundary
+  // transfers, or (b) within ~150m of each other. Fixes duplicate dots at Noda,
+  // Osaka-Namba, Hankyu Umeda, etc., regardless of whether a transfer record exists.
+  const parent = {};
+  for (const n of db.station_nodes) parent[n.id] = n.id;
+  const find = id => parent[id] === id ? id : (parent[id] = find(parent[id]));
+  const union = (a, b) => { const ra = find(a), rb = find(b); if (ra !== rb) parent[ra] = rb; };
+
+  // Merge by transfer category
+  for (const t of db.transfers) {
+    if (t.a === t.b) continue;
+    if (t.category === "same-name-connected" || t.category === "through-run-boundary") union(t.a, t.b);
+  }
+  // Merge by proximity (~150m, rough). Brute force OK: ~few hundred nodes.
+  const R_DEG = 0.0014; // ~155m at 34.7°N
+  const nodes = db.station_nodes;
+  for (let i = 0; i < nodes.length; i++) {
+    const a = nodes[i];
+    for (let j = i + 1; j < nodes.length; j++) {
+      const b = nodes[j];
+      if (Math.abs(a.lat - b.lat) > R_DEG) continue;
+      if (Math.abs(a.lon - b.lon) > R_DEG) continue;
+      const dLat = a.lat - b.lat, dLon = a.lon - b.lon;
+      if (dLat * dLat + dLon * dLon <= R_DEG * R_DEG) union(a.id, b.id);
+    }
+  }
+
+  db.nodeCluster = {};
+  db.clusterNodes = {};
+  for (const n of db.station_nodes) {
+    const cid = find(n.id);
+    db.nodeCluster[n.id] = cid;
+    (db.clusterNodes[cid] ||= []).push(n);
+  }
+
+  // tracks touching a cluster (union of tracksByNode across cluster members)
+  db.tracksByCluster = {};
+  for (const [cid, members] of Object.entries(db.clusterNodes)) {
+    const set = new Set();
+    for (const n of members) for (const tid of (db.tracksByNode[n.id] || [])) set.add(tid);
+    db.tracksByCluster[cid] = set;
+  }
+
+  // lines touching a cluster (via tracksByCluster → linesByTrack)
+  db.linesByCluster = {};
+  for (const [cid, tids] of Object.entries(db.tracksByCluster)) {
+    const seen = new Set();
+    const arr = [];
+    for (const tid of tids) {
+      for (const ln of (db.linesByTrack[tid] || [])) {
+        if (!seen.has(ln.id)) { seen.add(ln.id); arr.push(ln); }
+      }
+    }
+    db.linesByCluster[cid] = arr;
+  }
+
+  // services touching a cluster: any service whose stop_pattern hits a node in the cluster
+  db.servicesByCluster = {};
+  for (const svc of db.services) {
+    const hits = new Set();
+    for (const sid of (svc.stop_pattern || [])) {
+      const stop = db.byId.stops[sid];
+      if (!stop) continue;
+      const cid = db.nodeCluster[stop.station_node_id];
+      if (cid) hits.add(cid);
+    }
+    for (const cid of hits) (db.servicesByCluster[cid] ||= []).push(svc);
+  }
+
+  // Aggregate frequency (tph) at a cluster for a time band, summed across all services
+  // that stop in the cluster during that band.
+  db.clusterFrequency = (cid, band) => {
+    const svcs = db.servicesByCluster[cid] || [];
+    let tph = 0;
+    for (const svc of svcs) {
+      // Only count if service actually stops at a node in this cluster
+      const stops = svc.stop_pattern || [];
+      const hit = stops.some(sid => {
+        const s = db.byId.stops[sid];
+        return s && db.nodeCluster[s.station_node_id] === cid;
+      });
+      if (!hit) continue;
+      tph += (svc.frequency_bands?.[band] || 0);
+    }
+    return tph;
+  };
+
   return db;
 }
 
@@ -106,6 +201,18 @@ const BAND_LABELS = {
   weekend_midday: "Wknd midday",
 };
 
+const BAND_ORDER = ["peak_am", "midday", "peak_pm", "evening", "late_night", "weekend_midday"];
+
+// Map tph → bucket (0-5) matching .dot.f0..f5 shading
+function freqBucket(tph) {
+  if (tph >= 12) return 5;
+  if (tph >= 8)  return 4;
+  if (tph >= 4)  return 3;
+  if (tph >= 2)  return 2;
+  if (tph >= 0.5)return 1;
+  return 0;
+}
+
 function topbar(active) {
   const bar = el("div", { class: "topbar" },
     el("div", { class: "brand" },
@@ -130,4 +237,4 @@ function topbar(active) {
   document.body.prepend(bar);
 }
 
-window.TW = { CITY, loadCity, frequencyBucket, BAND_LABELS, qs, el, topbar };
+window.TW = { CITY, loadCity, frequencyBucket, freqBucket, BAND_LABELS, BAND_ORDER, qs, el, topbar };

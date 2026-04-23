@@ -44,34 +44,13 @@
       nodeLineColour[s.station_node_id] = db.byId.tracks[s.track_id]?.colour || "#888";
   }
 
-  // ---- Union-Find: cluster co-located stations ----
-  // Merge nodes connected by same-name-connected or through-run-boundary transfers
-  // into single map dots. Different-name-connected (e.g. Umeda / Nishi-Umeda) stay separate.
-  const parent = {};
-  for (const n of db.station_nodes) parent[n.id] = n.id;
-  function find(id) {
-    if (parent[id] !== id) parent[id] = find(parent[id]);
-    return parent[id];
-  }
-  for (const t of db.transfers) {
-    if ((t.category === "same-name-connected" || t.category === "through-run-boundary") && t.a !== t.b) {
-      const ra = find(t.a), rb = find(t.b);
-      if (ra !== rb) parent[ra] = rb;
-    }
-  }
-  const clusters = {};
-  for (const n of db.station_nodes) {
-    const root = find(n.id);
-    (clusters[root] ||= []).push(n);
-  }
-
-  // Build GeoJSON: one feature per cluster
-  const clusterFeatures = Object.values(clusters).map(members => {
+  // Build GeoJSON: one feature per cluster (clustering done in data.js)
+  const clusterFeatures = Object.entries(db.clusterNodes).map(([cid, members]) => {
     const lat = members.reduce((s, n) => s + n.lat, 0) / members.length;
     const lon = members.reduce((s, n) => s + n.lon, 0) / members.length;
     const colours = [...new Set(members.map(n => nodeLineColour[n.id]).filter(Boolean))];
-    const isInterchange = members.length > 1;
-    // Interchange: neutral dark stroke. Single-line: that line's colour.
+    const trackCount = (db.tracksByCluster[cid] || new Set()).size;
+    const isInterchange = trackCount > 1;
     const strokeColour = isInterchange ? "#2a2a2a" : (colours[0] || "#888");
     const name = [...new Set(members.map(n => n.name_en))].join(" / ");
     const ja   = [...new Set(members.map(n => n.name_ja).filter(Boolean))].join("・");

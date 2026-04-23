@@ -1,10 +1,10 @@
 (async () => {
-  const { loadCity, el, topbar, qs, CITY } = window.TW;
+  const { loadCity, el, topbar, qs, freqBucket, BAND_LABELS, BAND_ORDER, CITY } = window.TW;
   const db = await loadCity();
   topbar("tracks");
 
-  // ── Sidebar: tracks grouped by operator ──────────────────────────────────
-  const list = document.getElementById("track-list");
+  // ── Sidebar ──────────────────────────────────────────────────────────────
+  const listEl = document.getElementById("track-list");
   const opOrder = db.operators.map(o => o.id);
   const byOp = {};
   for (const t of db.tracks) (byOp[t.operator_id] ||= []).push(t);
@@ -12,11 +12,11 @@
     const opTracks = byOp[opId] || [];
     if (!opTracks.length) continue;
     const op = db.byId.operators[opId];
-    list.append(el("li", {
+    listEl.append(el("li", {
       style: "padding:8px 4px 2px;font-size:11px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;cursor:default;font-weight:600"
     }, op.name_en));
     for (const t of opTracks) {
-      list.append(el("li", { onclick: () => location.href = `track.html?id=${t.id}` },
+      listEl.append(el("li", { onclick: () => location.href = `track.html?id=${t.id}` },
         el("span", { class: "swatch", style: `background:${t.colour || '#888'}` }),
         el("span", {}, t.name_en || t.id)
       ));
@@ -30,8 +30,16 @@
     return;
   }
 
-  const op     = db.byId.operators[track.operator_id];
-  const lines  = db.linesByTrack[id] || [];
+  const op        = db.byId.operators[track.operator_id];
+  const lines     = db.linesByTrack[id] || [];
+  const services  = db.servicesByTrack[id] || [];
+  const rawStops  = db.stopsByTrack[id] || [];
+  const seenNodes = new Set();
+  const uniqStops = rawStops.filter(s => {
+    if (seenNodes.has(s.station_node_id)) return false;
+    seenNodes.add(s.station_node_id);
+    return true;
+  });
 
   // ── Header ───────────────────────────────────────────────────────────────
   document.getElementById("header").append(
@@ -42,7 +50,7 @@
     el("div", { class: "kv", style: "margin-top:8px" },
       el("div", { class: "k" }, "Operator"),
       el("div", { class: "v" }, op?.name_en || track.operator_id || "—"),
-      el("div", { class: "k" }, "Part of line(s)"),
+      el("div", { class: "k" }, lines.length === 1 ? "Line" : "Lines"),
       el("div", { class: "v" },
         lines.length
           ? lines.map((l, i) => [
@@ -53,12 +61,16 @@
             ]).flat().filter(Boolean)
           : "—"
       ),
+      el("div", { class: "k" }, "Stations"),
+      el("div", { class: "v" }, String(uniqStops.length)),
+      el("div", { class: "k" }, services.length === 1 ? "Service" : "Services"),
+      el("div", { class: "v" }, String(services.length)),
       track.code ? el("div", { class: "k" }, "Code") : null,
       track.code ? el("div", { class: "v" }, el("code", {}, track.code)) : null
     )
   );
 
-  // ── Map ───────────────────────────────────────────────────────────────────
+  // ── Map (with geometry fallback to station coords) ───────────────────────
   const lineGeom = await fetch(`data/${CITY}/line_geometry.json`)
     .then(r => r.ok ? r.json() : {}).catch(() => ({}));
 
@@ -86,7 +98,13 @@
   });
 
   trackMap.on("load", () => {
-    const coords = lineGeom[id] || [];
+    // Geometry fallback: use station coords in stop order if no OSM geometry
+    const nodeCoords = uniqStops.map(s => {
+      const n = db.byId.station_nodes[s.station_node_id];
+      return n ? [n.lon, n.lat] : null;
+    }).filter(Boolean);
+    const coords = (lineGeom[id]?.length >= 2) ? lineGeom[id] : nodeCoords;
+
     if (coords.length >= 2) {
       trackMap.addSource("t", { type: "geojson", data: { type: "Feature",
         properties: {}, geometry: { type: "LineString", coordinates: coords } } });
@@ -97,20 +115,11 @@
         paint: { "line-color": track.colour || "#888", "line-width": 3 } });
     }
 
-    // Deduplicated stops
-    const rawStops = db.stopsByTrack[id] || [];
-    const seenN = new Set();
-    const uniqStops = rawStops.filter(s => {
-      if (seenN.has(s.station_node_id)) return false;
-      seenN.add(s.station_node_id);
-      return true;
-    });
-
     const stopFeatures = uniqStops.map(stp => {
       const node = db.byId.station_nodes[stp.station_node_id];
       if (!node) return null;
       return { type: "Feature",
-        properties: { name: node.name_en },
+        properties: { name: node.name_en, id: node.id },
         geometry: { type: "Point", coordinates: [node.lon, node.lat] } };
     }).filter(Boolean);
 
@@ -120,6 +129,11 @@
       trackMap.addLayer({ id: "stops-c", type: "circle", source: "stops",
         paint: { "circle-radius": 4, "circle-color": "#fff",
           "circle-stroke-color": track.colour || "#888", "circle-stroke-width": 2 } });
+      trackMap.on("click", "stops-c", e => {
+        if (e.features.length) location.href = `station.html?id=${e.features[0].properties.id}`;
+      });
+      trackMap.on("mouseenter", "stops-c", () => trackMap.getCanvas().style.cursor = "pointer");
+      trackMap.on("mouseleave", "stops-c", () => trackMap.getCanvas().style.cursor = "");
 
       const nodes = uniqStops.map(s => db.byId.station_nodes[s.station_node_id]).filter(Boolean);
       const lons = nodes.map(n => n.lon), lats = nodes.map(n => n.lat);
@@ -131,15 +145,92 @@
     }
   });
 
-  // ── Station list ──────────────────────────────────────────────────────────
-  const rawStops = db.stopsByTrack[id] || [];
-  const seenNodes = new Set();
-  const uniqStops = rawStops.filter(s => {
-    if (seenNodes.has(s.station_node_id)) return false;
-    seenNodes.add(s.station_node_id);
-    return true;
-  });
+  // ── Services on this track (stopping pattern + frequency) ────────────────
+  const svcDiv = document.getElementById("services");
+  if (!services.length) {
+    svcDiv.append(el("div", { class: "small" }, "No services recorded for this track."));
+  } else {
+    const wrap = el("div", { class: "matrix-wrap" });
+    const tbl = el("table", { class: "matrix" });
+    const thead = el("thead");
+    const headRow = el("tr");
+    headRow.append(el("th", { class: "svc" }, "Service ↓ / Stop →"));
+    for (const stp of uniqStops) {
+      const node = db.byId.station_nodes[stp.station_node_id];
+      headRow.append(el("th", { class: "stopcol" }, node?.name_en || stp.code || ""));
+    }
+    thead.append(headRow);
+    tbl.append(thead);
 
+    const tbody = el("tbody");
+    for (const svc of services) {
+      const servedNodes = new Set(
+        (svc.stop_pattern || []).map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
+      );
+      const tr = el("tr");
+      const peakTph = Math.max(0, ...Object.values(svc.frequency_bands || {}));
+      const freqClass = `f${freqBucket(peakTph)}`;
+      const freqParts = Object.entries(svc.frequency_bands || {})
+        .filter(([, v]) => v > 0)
+        .map(([k, v]) => `${BAND_LABELS[k] || k} ${v}`).join(" · ");
+
+      tr.append(el("th", { class: "svc" },
+        el("a", { href: `service.html?id=${svc.id}`, style: "font-weight:600" },
+          svc.display_name_en || svc.id),
+        el("div", { class: "small", style: "margin-top:2px" }, freqParts)
+      ));
+      for (const stp of uniqStops) {
+        const served = servedNodes.has(stp.station_node_id);
+        tr.append(el("td", { class: "stop" },
+          el("span", { class: served ? `dot ${freqClass}` : "dot f0" })
+        ));
+      }
+      tbody.append(tr);
+    }
+    tbl.append(tbody);
+    wrap.append(tbl);
+    svcDiv.append(wrap);
+  }
+
+  // ── Per-band frequency heatmap at each station (aggregate across services) ──
+  const heatDiv = document.getElementById("heat");
+  if (heatDiv && services.length) {
+    const wrap = el("div", { class: "matrix-wrap" });
+    const tbl = el("table", { class: "matrix" });
+    const thead = el("thead");
+    const headRow = el("tr");
+    headRow.append(el("th", { class: "svc" }, "Band ↓ / Stop →"));
+    for (const stp of uniqStops) {
+      const node = db.byId.station_nodes[stp.station_node_id];
+      headRow.append(el("th", { class: "stopcol" }, node?.name_en || ""));
+    }
+    thead.append(headRow);
+    tbl.append(thead);
+
+    const tbody = el("tbody");
+    for (const band of BAND_ORDER) {
+      const tr = el("tr");
+      tr.append(el("th", { class: "svc" }, BAND_LABELS[band]));
+      for (const stp of uniqStops) {
+        let tph = 0;
+        for (const svc of services) {
+          const stops = svc.stop_pattern || [];
+          const hits = stops.some(sid => db.byId.stops[sid]?.station_node_id === stp.station_node_id);
+          if (hits) tph += (svc.frequency_bands?.[band] || 0);
+        }
+        const cls = `f${freqBucket(tph)}`;
+        tr.append(el("td", { class: "stop", title: `${tph} tph` },
+          el("span", { class: `dot ${cls}` })
+        ));
+      }
+      tbody.append(tr);
+    }
+    tbl.append(tbody);
+    wrap.append(tbl);
+    heatDiv.append(wrap);
+  }
+
+  // ── Station list (vertical) ──────────────────────────────────────────────
   const stnDiv = document.getElementById("stations");
   if (!uniqStops.length) {
     stnDiv.append(el("div", { class: "small" }, "No stops recorded for this track."));
