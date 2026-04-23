@@ -65,6 +65,15 @@ table.matrix tr:hover td { background: var(--panel-2); }
 .dot.f0 { background: transparent; border: 1px solid #2e3647; }
 .svctype-limited-express { color: var(--yellow); }
 
+/* Frequency heatmap cells: colored background + number text */
+td.freq-cell { font-size: 11px; font-weight: 600; text-align: center; padding: 4px 2px !important; }
+td.freq-cell.f0 { background: transparent; color: #3a4255; }
+td.freq-cell.f1 { background: #1a2744; color: #6a8abb; }
+td.freq-cell.f2 { background: #1a3560; color: #7fb3e8; }
+td.freq-cell.f3 { background: #0e4040; color: #4bb8a8; }
+td.freq-cell.f4 { background: #1a4020; color: #5fc870; }
+td.freq-cell.f5 { background: #2a5a10; color: #a0e050; }
+
 .strip { display: flex; gap: 4px; overflow-x: auto; padding: 8px 0 14px; }
 .strip .stop {
   display: flex; flex-direction: column; align-items: center; min-width: 56px; font-size: 11px;

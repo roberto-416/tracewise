@@ -173,8 +173,7 @@
       const tph = db.clusterFrequency(cid, band);
       const tr = el("tr");
       tr.append(el("th", { class: "svc" }, BAND_LABELS[band]));
-      tr.append(el("td", { class: "stop", style: "text-align:center" }, String(tph)));
-      tr.append(el("td", { class: "stop" }, el("span", { class: `dot f${freqBucket(tph)}` })));
+      tr.append(el("td", { class: `stop freq-cell f${freqBucket(tph)}` }, tph > 0 ? String(tph) : "—"));
       tbody.append(tr);
     }
     tbl.append(tbody);

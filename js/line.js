@@ -3,7 +3,7 @@
   const db = await loadCity();
   topbar("lines");
 
-  // ── Sidebar: Lines grouped by operator ──────────────────────────────────
+  // ── Sidebar ───────────────────────────────────────────────────────────────
   const list = document.getElementById("line-list");
   const opOrder = db.operators.map(o => o.id);
   const byOp = {};
@@ -22,10 +22,9 @@
         style: "padding:8px 4px 2px;font-size:11px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;cursor:default;font-weight:600"
       }, op.name_en));
       for (const ln of opLines) {
-        const colour = ln.colour || "#888";
         list.append(el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
-          el("span", { class: "swatch", style: `background:${colour}` }),
-          ln.display_name_en || ln.display_name_ja));
+          el("span", { class: "swatch", style: `background:${ln.colour || "#888"}` }),
+          ln.display_name_en || ln.display_name_ja || ln.id));
       }
     }
   }
@@ -37,10 +36,9 @@
   const line   = db.byId.lines[lineId];
   if (!line) { document.getElementById("header").append(el("p", {}, `No line ${lineId}`)); return; }
 
-  const op = db.byId.operators[line.primary_operator_id];
+  const op     = db.byId.operators[line.primary_operator_id];
   const tracks = db.tracksByLine[lineId] || [];
 
-  // Per-track stops (deduplicated by node).
   const trackStops = tracks.map(t => {
     const raw = db.stopsByTrack[t.id] || [];
     const seen = new Set();
@@ -54,8 +52,8 @@
 
   document.getElementById("header").append(
     el("h1", {},
-      el("span", { class: "swatch", style: `background:${line.colour};width:14px;height:14px;display:inline-block;border-radius:3px;vertical-align:middle;margin-right:6px` }),
-      line.display_name_en || "", " ",
+      el("span", { class: "swatch", style: `background:${line.colour || "#888"};width:14px;height:14px;display:inline-block;border-radius:3px;vertical-align:middle;margin-right:6px` }),
+      line.display_name_en || line.id, " ",
       el("span", { class: "small" }, line.display_name_ja || "")),
     el("div", { class: "kv" },
       el("div", { class: "k" }, "Operator"),
@@ -74,7 +72,7 @@
     )
   );
 
-  // ── Map ──────────────────────────────────────────────────────────────────
+  // ── Map ───────────────────────────────────────────────────────────────────
   const lineGeom = await fetch(`data/${CITY}/line_geometry.json`)
     .then(r => r.ok ? r.json() : {}).catch(() => ({}));
 
@@ -83,15 +81,10 @@
     style: {
       version: 8,
       sources: {
-        carto: {
-          type: "raster",
-          tiles: [
-            "https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png",
-            "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png"
-          ],
-          tileSize: 256, maxzoom: 20,
-          attribution: "© CARTO © OpenStreetMap contributors"
-        }
+        carto: { type: "raster",
+          tiles: ["https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png",
+                  "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png"],
+          tileSize: 256, maxzoom: 20, attribution: "© CARTO © OpenStreetMap contributors" }
       },
       layers: [
         { id: "bg", type: "background", paint: { "background-color": "#f5f5f0" } },
@@ -133,7 +126,7 @@
       lineMap.on("mouseleave", "line-track-fg", () => lineMap.getCanvas().style.cursor = "");
     }
 
-    // Dedupe by cluster so Umeda etc. show as one dot
+    // Dedupe by cluster, show one dot per cluster
     const seenClusters = new Set();
     const stopFeatures = [];
     for (const stp of allStops) {
@@ -145,20 +138,34 @@
       const track = db.byId.tracks[stp.track_id];
       stopFeatures.push({
         type: "Feature",
-        properties: { colour: track?.colour || line.colour || "#888", name: node.name_en, id: node.id },
+        properties: { colour: track?.colour || line.colour || "#888", name: node.name_en || "", id: node.id },
         geometry: { type: "Point", coordinates: [node.lon, node.lat] }
       });
     }
 
-    lineMap.addSource("line-stops", { type: "geojson", data: { type: "FeatureCollection", features: stopFeatures } });
+    lineMap.addSource("line-stops", { type: "geojson",
+      data: { type: "FeatureCollection", features: stopFeatures } });
     lineMap.addLayer({ id: "line-stops-circle", type: "circle", source: "line-stops",
-      paint: {
-        "circle-radius": 4,
-        "circle-color": "#fff",
-        "circle-stroke-color": ["get", "colour"],
-        "circle-stroke-width": 2
-      }
+      paint: { "circle-radius": 4, "circle-color": "#fff",
+        "circle-stroke-color": ["get", "colour"], "circle-stroke-width": 2 }
     });
+
+    // Station name labels
+    lineMap.addLayer({
+      id: "line-stop-labels", type: "symbol", source: "line-stops",
+      minzoom: 12,
+      layout: {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 11,
+        "text-offset": [0, 1.2],
+        "text-anchor": "top",
+        "text-max-width": 8,
+        "text-allow-overlap": false
+      },
+      paint: { "text-color": "#111", "text-halo-color": "rgba(255,255,255,0.9)", "text-halo-width": 1.5 }
+    });
+
     lineMap.on("click", "line-stops-circle", e => {
       if (e.features.length) location.href = `station.html?id=${e.features[0].properties.id}`;
     });
@@ -176,68 +183,18 @@
     }
   });
 
-  // ── Stopping pattern (binary, rows=services, columns=stations) ──────────
-  // Vertical orientation when >15 stations (rows=stations, columns=services)
+  // ── Stopping pattern (horizontal matrix, rows=services, columns=stations) ──
   const services = db.servicesByLine[lineId] || [];
   const patternDiv = document.getElementById("pattern");
-  const vertical = allStops.length > 15;
 
   if (!services.length) {
     patternDiv.append(el("p", { class: "small" }, "No services defined for this line yet."));
-  } else if (vertical) {
-    // Vertical: rows = stations, columns = services
-    const wrap = el("div", { class: "matrix-wrap" });
-    const tbl = el("table", { class: "matrix" });
-    const thead = el("thead");
-
-    // Header: track ownership bands (if multi)
-    if (tracks.length > 1) {
-      const trackRow = el("tr");
-      trackRow.append(el("th", { class: "svc" }, "Track"));
-      for (const svc of services) trackRow.append(el("th", {}));
-      thead.append(trackRow);
-    }
-
-    const headRow = el("tr");
-    headRow.append(el("th", { class: "svc" }, "Station ↓ / Service →"));
-    for (const svc of services) {
-      headRow.append(el("th", { class: "stopcol", style: "writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap" },
-        el("a", { href: `service.html?id=${svc.id}`, style: "color:inherit" }, svc.display_name_en || svc.id)
-      ));
-    }
-    thead.append(headRow);
-    tbl.append(thead);
-
-    const tbody = el("tbody");
-    for (const { track, stops: tStops } of trackStops) {
-      const tOp = db.byId.operators[track.operator_id];
-      for (const stp of tStops) {
-        const node = db.byId.station_nodes[stp.station_node_id];
-        const tr = el("tr");
-        const th = el("th", { class: "svc" },
-          el("span", { class: "swatch", style: `background:${track.colour};vertical-align:middle;margin-right:6px` }),
-          el("a", { href: `station.html?id=${stp.station_node_id}`, style: "color:inherit" }, node?.name_en || stp.code || ""),
-          node?.name_ja ? el("span", { class: "small", style: "margin-left:6px" }, node.name_ja) : null
-        );
-        tr.append(th);
-        for (const svc of services) {
-          const served = (svc.stop_pattern || []).some(sid => db.byId.stops[sid]?.station_node_id === stp.station_node_id);
-          tr.append(el("td", { class: "stop" },
-            el("span", { class: served ? "dot f3" : "dot f0" })
-          ));
-        }
-        tbody.append(tr);
-      }
-    }
-    tbl.append(tbody);
-    wrap.append(tbl);
-    patternDiv.append(wrap);
   } else {
-    // Horizontal: rows = services, columns = stations
     const wrap = el("div", { class: "matrix-wrap" });
-    const tbl = el("table", { class: "matrix" });
+    const tbl  = el("table", { class: "matrix" });
     const thead = el("thead");
 
+    // Track ownership header row when multiple tracks
     if (tracks.length > 1) {
       const trackRow = el("tr");
       trackRow.append(el("th", { class: "svc" }));
@@ -272,11 +229,11 @@
         (svc.stop_pattern || []).map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
       );
       const tr = el("tr");
-      const typeClass = svc.service_type === "limited_express" ? ";color:var(--yellow)" : "";
+      const typeStyle = svc.service_type === "limited_express" ? ";color:var(--yellow)" : "";
       tr.append(el("th", { class: "svc" },
-        el("a", { href: `service.html?id=${svc.id}`, style: `font-weight:600${typeClass}` },
+        el("a", { href: `service.html?id=${svc.id}`, style: `font-weight:600${typeStyle}` },
           svc.display_name_en || svc.id),
-        svc.supplement && svc.supplement !== "none"
+        (svc.supplement && svc.supplement !== "none")
           ? el("span", { class: "pill warn", style: "margin-left:6px" }, svc.supplement)
           : null
       ));
@@ -295,77 +252,46 @@
     patternDiv.append(wrap);
   }
 
-  // ── Frequency heatmap: rows = bands, columns = stations ──────────────────
+  // ── Frequency heatmap (rows=bands, columns=stations) ─────────────────────
   const heatDiv = document.getElementById("heat");
   if (services.length) {
     const wrap = el("div", { class: "matrix-wrap" });
-    const tbl = el("table", { class: "matrix" });
+    const tbl  = el("table", { class: "matrix" });
     const thead = el("thead");
     const headRow = el("tr");
-    headRow.append(el("th", { class: "svc" }, vertical ? "Station ↓ / Band →" : "Band ↓ / Stop →"));
-
-    if (vertical) {
-      for (const band of BAND_ORDER) {
-        headRow.append(el("th", { class: "stopcol" }, BAND_LABELS[band]));
+    headRow.append(el("th", { class: "svc" }, "Band ↓ / Stop →"));
+    for (const { stops: tStops } of trackStops) {
+      for (const stp of tStops) {
+        const node = db.byId.station_nodes[stp.station_node_id];
+        headRow.append(el("th", { class: "stopcol" },
+          el("a", { href: `station.html?id=${stp.station_node_id}`, style: "color:inherit" },
+            node?.name_en || "")
+        ));
       }
-      thead.append(headRow);
-      tbl.append(thead);
+    }
+    thead.append(headRow);
+    tbl.append(thead);
 
-      const tbody = el("tbody");
-      for (const { track, stops: tStops } of trackStops) {
-        for (const stp of tStops) {
-          const node = db.byId.station_nodes[stp.station_node_id];
-          const tr = el("tr");
-          tr.append(el("th", { class: "svc" },
-            el("span", { class: "swatch", style: `background:${track.colour};vertical-align:middle;margin-right:6px` }),
-            el("a", { href: `station.html?id=${stp.station_node_id}`, style: "color:inherit" }, node?.name_en || "")
-          ));
-          for (const band of BAND_ORDER) {
-            let tph = 0;
-            for (const svc of services) {
-              const hits = (svc.stop_pattern || []).some(sid => db.byId.stops[sid]?.station_node_id === stp.station_node_id);
-              if (hits) tph += (svc.frequency_bands?.[band] || 0);
-            }
-            tr.append(el("td", { class: "stop", title: `${tph} tph` },
-              el("span", { class: `dot f${freqBucket(tph)}` })
-            ));
-          }
-          tbody.append(tr);
-        }
-      }
-      tbl.append(tbody);
-    } else {
+    const tbody = el("tbody");
+    for (const band of BAND_ORDER) {
+      const tr = el("tr");
+      tr.append(el("th", { class: "svc" }, BAND_LABELS[band]));
       for (const { stops: tStops } of trackStops) {
         for (const stp of tStops) {
-          const node = db.byId.station_nodes[stp.station_node_id];
-          headRow.append(el("th", { class: "stopcol" },
-            el("a", { href: `station.html?id=${stp.station_node_id}`, style: "color:inherit" }, node?.name_en || "")
+          let tph = 0;
+          for (const svc of services) {
+            const hits = (svc.stop_pattern || []).some(sid =>
+              db.byId.stops[sid]?.station_node_id === stp.station_node_id);
+            if (hits) tph += (svc.frequency_bands?.[band] || 0);
+          }
+          tr.append(el("td", { class: `stop freq-cell f${freqBucket(tph)}` },
+            tph > 0 ? String(tph) : ""
           ));
         }
       }
-      thead.append(headRow);
-      tbl.append(thead);
-
-      const tbody = el("tbody");
-      for (const band of BAND_ORDER) {
-        const tr = el("tr");
-        tr.append(el("th", { class: "svc" }, BAND_LABELS[band]));
-        for (const { stops: tStops } of trackStops) {
-          for (const stp of tStops) {
-            let tph = 0;
-            for (const svc of services) {
-              const hits = (svc.stop_pattern || []).some(sid => db.byId.stops[sid]?.station_node_id === stp.station_node_id);
-              if (hits) tph += (svc.frequency_bands?.[band] || 0);
-            }
-            tr.append(el("td", { class: "stop", title: `${tph} tph` },
-              el("span", { class: `dot f${freqBucket(tph)}` })
-            ));
-          }
-        }
-        tbody.append(tr);
-      }
-      tbl.append(tbody);
+      tbody.append(tr);
     }
+    tbl.append(tbody);
     wrap.append(tbl);
     heatDiv.append(wrap);
   }

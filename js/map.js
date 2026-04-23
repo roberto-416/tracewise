@@ -3,27 +3,25 @@
   const db = await loadCity();
   topbar("map");
 
-  // ---- Sidebar: named lines grouped by operator (collapsible) ----
+  // ── Sidebar: named lines grouped by operator (collapsible) ────────────────
   const sidebar = document.getElementById("lines");
   const opOrder = db.operators.map(o => o.id);
-  // Default: expand only Osaka Metro (first operator)
   const defaultOpen = new Set([opOrder[0]]);
   for (const opId of opOrder) {
     const opLines = db.linesByOperator[opId] || [];
     if (!opLines.length) continue;
     const op = db.byId.operators[opId];
     let open = defaultOpen.has(opId);
-
     const lineItems = opLines.map(ln =>
       el("li", { onclick: () => location.href = `line.html?id=${ln.id}` },
-        el("span", { class: "swatch", style: `background:${ln.colour}` }),
+        el("span", { class: "swatch", style: `background:${ln.colour || "#888"}` }),
         el("span", {}, ln.display_name_en || ln.display_name_ja || "")
       )
     );
     const group = el("ul", {
       style: `list-style:none;padding:0;margin:0;display:${open ? "block" : "none"}`
     }, ...lineItems);
-
+    const arrow = el("span", {}, open ? "▾" : "▸");
     const header = el("li", {
       style: "padding:6px 4px 2px;font-size:11px;color:var(--ink-dim);text-transform:uppercase;letter-spacing:.05em;cursor:pointer;font-weight:600;display:flex;justify-content:space-between;align-items:center",
       onclick() {
@@ -32,19 +30,18 @@
         arrow.textContent = open ? "▾" : "▸";
       }
     }, op.name_en);
-    const arrow = el("span", {}, open ? "▾" : "▸");
     header.append(arrow);
     sidebar.append(header, group);
   }
 
-  // ---- Node → track colour ----
+  // ── Node → track colour ───────────────────────────────────────────────────
   const nodeLineColour = {};
   for (const s of db.stops) {
     if (!nodeLineColour[s.station_node_id])
       nodeLineColour[s.station_node_id] = db.byId.tracks[s.track_id]?.colour || "#888";
   }
 
-  // Build GeoJSON: one feature per cluster (clustering done in data.js)
+  // ── Cluster features (from data.js proximity clustering) ─────────────────
   const clusterFeatures = Object.entries(db.clusterNodes).map(([cid, members]) => {
     const lat = members.reduce((s, n) => s + n.lat, 0) / members.length;
     const lon = members.reduce((s, n) => s + n.lon, 0) / members.length;
@@ -61,7 +58,7 @@
     };
   });
 
-  // ---- Map ----
+  // ── Map ───────────────────────────────────────────────────────────────────
   const map = new maplibregl.Map({
     container: "map",
     style: {
@@ -73,9 +70,7 @@
             "https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png",
             "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png"
           ],
-          tileSize: 256,
-          attribution: "© CARTO © OpenStreetMap contributors",
-          maxzoom: 20
+          tileSize: 256, attribution: "© CARTO © OpenStreetMap contributors", maxzoom: 20
         }
       },
       layers: [
@@ -83,11 +78,9 @@
         { id: "carto", type: "raster", source: "carto", paint: { "raster-opacity": 0.85 } }
       ]
     },
-    center: [135.500, 34.700],
-    zoom: 11
+    center: [135.500, 34.700], zoom: 11
   });
 
-  // Load pre-baked geometry
   const lineGeom = await fetch(`data/${CITY}/line_geometry.json`)
     .then(r => r.ok ? r.json() : {}).catch(() => ({}));
 
@@ -99,60 +92,93 @@
   }
 
   map.on("load", () => {
-    // Tracks — physical corridors shown on map
-    // Navigate to the named Line page when clicked
-    const lineFeatures = db.tracks.map(t => {
-      const line = db.lineByTrack[t.id];
-      const coords = lineGeom[t.id]?.length >= 2 ? lineGeom[t.id] : stationTrackCoords(t);
-      return {
+    // Render one polyline per TRACK, but each track only once even if shared by multiple lines.
+    // Use the primary line's colour for each track.
+    const seenTracks = new Set();
+    const lineFeatures = [];
+    for (const line of db.lines) {
+      for (const trackId of (line.tracks || [])) {
+        if (seenTracks.has(trackId)) continue;
+        seenTracks.add(trackId);
+        const track = db.byId.tracks[trackId];
+        if (!track) continue;
+        const g = lineGeom[trackId];
+        const coords = (g?.length >= 2) ? g : stationTrackCoords(track);
+        if (coords.length < 2) continue;
+        lineFeatures.push({
+          type: "Feature",
+          properties: {
+            lineId: line.id,
+            colour: line.colour || track.colour || "#888"
+          },
+          geometry: { type: "LineString", coordinates: coords }
+        });
+      }
+    }
+    // Also render any tracks not claimed by any line (orphaned tracks)
+    for (const track of db.tracks) {
+      if (seenTracks.has(track.id)) continue;
+      const g = lineGeom[track.id];
+      const coords = (g?.length >= 2) ? g : stationTrackCoords(track);
+      if (coords.length < 2) continue;
+      lineFeatures.push({
         type: "Feature",
-        properties: {
-          id: line?.id || t.id,   // navigate to Line page on click
-          name: t.name_en || "",
-          colour: t.colour || "#888"
-        },
+        properties: { lineId: track.id, colour: track.colour || "#888" },
         geometry: { type: "LineString", coordinates: coords }
-      };
-    }).filter(f => f.geometry.coordinates.length >= 2);
+      });
+    }
 
     map.addSource("lines", { type: "geojson", data: { type: "FeatureCollection", features: lineFeatures } });
     map.addLayer({
       id: "lines-bg", type: "line", source: "lines",
-      paint: { "line-color": "#fff", "line-width": 5, "line-opacity": 0.8 }
+      paint: { "line-color": "#fff", "line-width": 4, "line-opacity": 0.8 }
     });
     map.addLayer({
       id: "lines-fg", type: "line", source: "lines",
       layout: { "line-cap": "round", "line-join": "round" },
-      paint: { "line-color": ["get", "colour"], "line-width": 2.5 }
+      paint: { "line-color": ["get", "colour"], "line-width": 2 }
     });
 
-    // Station clusters — single circle per interchange group
+    // Station clusters
     map.addSource("nodes", {
-      type: "geojson",
-      generateId: true,
+      type: "geojson", generateId: true,
       data: { type: "FeatureCollection", features: clusterFeatures }
     });
-
-    // Base radius: interchange = 5.5px, single = 4px; hover adds 2.5px
-    const baseR   = ["case", ["boolean", ["get", "isInterchange"], false], 5.5, 4.0];
-    const hoverR  = ["case", ["boolean", ["get", "isInterchange"], false], 8.0, 6.5];
-    const baseW   = ["case", ["boolean", ["get", "isInterchange"], false], 2.0, 1.5];
-    const hoverW  = 2.5;
-
+    const baseR  = ["case", ["boolean", ["get", "isInterchange"], false], 5.5, 4.0];
+    const hoverR = ["case", ["boolean", ["get", "isInterchange"], false], 7.5, 6.0];
     map.addLayer({
       id: "nodes", type: "circle", source: "nodes",
       paint: {
         "circle-radius": ["case", ["boolean", ["feature-state", "hover"], false], hoverR, baseR],
         "circle-color": "#fff",
         "circle-stroke-color": ["get", "strokeColour"],
-        "circle-stroke-width": ["case", ["boolean", ["feature-state", "hover"], false], hoverW, baseW]
+        "circle-stroke-width": ["case", ["boolean", ["feature-state", "hover"], false], 2.5,
+          ["case", ["boolean", ["get", "isInterchange"], false], 2.0, 1.5]]
       }
     });
 
-    // Hover via feature-state
+    // Station name labels at zoom ≥ 13
+    map.addLayer({
+      id: "node-labels", type: "symbol", source: "nodes",
+      minzoom: 13,
+      layout: {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 11,
+        "text-offset": [0, 1.2],
+        "text-anchor": "top",
+        "text-max-width": 8
+      },
+      paint: {
+        "text-color": "#222",
+        "text-halo-color": "#fff",
+        "text-halo-width": 1.5
+      }
+    });
+
+    // Hover
     let hoveredId = null;
     const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 10 });
-
     map.on("mousemove", "nodes", e => {
       if (!e.features.length) return;
       if (hoveredId !== null) map.setFeatureState({ source: "nodes", id: hoveredId }, { hover: false });
@@ -162,7 +188,7 @@
       const f = e.features[0].properties;
       popup.setLngLat(e.features[0].geometry.coordinates)
         .setHTML(`<div style="font:600 13px/1.4 sans-serif;color:#111">${f.name}</div>
-                  <div style="font:12px/1.3 sans-serif;color:#555">${f.ja}</div>`)
+                  <div style="font:11px/1.3 sans-serif;color:#555">${f.ja || ""}</div>`)
         .addTo(map);
     });
     map.on("mouseleave", "nodes", () => {
@@ -171,7 +197,6 @@
       map.getCanvas().style.cursor = "";
       popup.remove();
     });
-
     map.on("mouseenter", "lines-fg", () => map.getCanvas().style.cursor = "pointer");
     map.on("mouseleave", "lines-fg", () => map.getCanvas().style.cursor = "");
 
@@ -180,7 +205,7 @@
       const nh = map.queryRenderedFeatures(e.point, { layers: ["nodes"] });
       if (nh.length) { location.href = `station.html?id=${nh[0].properties.id}`; return; }
       const lh = map.queryRenderedFeatures(e.point, { layers: ["lines-fg"] });
-      if (lh.length) location.href = `line.html?id=${lh[0].properties.id}`;
+      if (lh.length) location.href = `line.html?id=${lh[0].properties.lineId}`;
     });
   });
 })();

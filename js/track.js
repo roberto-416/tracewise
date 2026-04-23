@@ -129,6 +129,16 @@
       trackMap.addLayer({ id: "stops-c", type: "circle", source: "stops",
         paint: { "circle-radius": 4, "circle-color": "#fff",
           "circle-stroke-color": track.colour || "#888", "circle-stroke-width": 2 } });
+      trackMap.addLayer({
+        id: "stops-labels", type: "symbol", source: "stops",
+        minzoom: 12,
+        layout: {
+          "text-field": ["get", "name"], "text-font": ["Open Sans Regular"],
+          "text-size": 11, "text-offset": [0, 1.2], "text-anchor": "top",
+          "text-max-width": 8, "text-allow-overlap": false
+        },
+        paint: { "text-color": "#111", "text-halo-color": "rgba(255,255,255,0.9)", "text-halo-width": 1.5 }
+      });
       trackMap.on("click", "stops-c", e => {
         if (e.features.length) location.href = `station.html?id=${e.features[0].properties.id}`;
       });
@@ -182,7 +192,7 @@
       for (const stp of uniqStops) {
         const served = servedNodes.has(stp.station_node_id);
         tr.append(el("td", { class: "stop" },
-          el("span", { class: served ? `dot ${freqClass}` : "dot f0" })
+          el("span", { class: served ? "dot f3" : "dot f0" })
         ));
       }
       tbody.append(tr);
@@ -218,9 +228,8 @@
           const hits = stops.some(sid => db.byId.stops[sid]?.station_node_id === stp.station_node_id);
           if (hits) tph += (svc.frequency_bands?.[band] || 0);
         }
-        const cls = `f${freqBucket(tph)}`;
-        tr.append(el("td", { class: "stop", title: `${tph} tph` },
-          el("span", { class: `dot ${cls}` })
+        tr.append(el("td", { class: `stop freq-cell f${freqBucket(tph)}` },
+          tph > 0 ? String(tph) : ""
         ));
       }
       tbody.append(tr);

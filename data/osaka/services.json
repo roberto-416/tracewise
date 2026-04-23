@@ -931,12 +931,20 @@
     "service_type": "local",
     "line_path": [
       {
+        "from_stop": "stop-kintetsu-0402",
+        "to_stop": "stop-kintetsu-0400",
+        "track_id": "kintetsu-kintetsu-namba-line"
+      },
+      {
         "from_stop": "stop-kintetsu-0259",
         "to_stop": "stop-kintetsu-0277",
         "track_id": "kintetsu-kintetsu-nara-line"
       }
     ],
     "stop_pattern": [
+      "stop-kintetsu-0402",
+      "stop-kintetsu-0401",
+      "stop-kintetsu-0400",
       "stop-kintetsu-0259",
       "stop-kintetsu-0260",
       "stop-kintetsu-0261",

@@ -1,9 +1,9 @@
 (async () => {
-  const { loadCity, el, topbar, qs, BAND_LABELS, CITY } = window.TW;
+  const { loadCity, el, topbar, qs, BAND_LABELS, freqBucket, CITY } = window.TW;
   const db = await loadCity();
   topbar("services");
 
-  // ── Sidebar: services grouped by line ────────────────────────────────────
+  // ── Sidebar ───────────────────────────────────────────────────────────────
   const list = document.getElementById("svc-list");
   const opOrder = db.operators.map(o => o.id);
   for (const opId of opOrder) {
@@ -18,11 +18,11 @@
         list.append(el("li", { onclick: () => location.href = `service.html?id=${svc.id}` },
           el("div", { class: "svc-sidebar-item" },
             el("div", { class: "svc-sidebar-swatch" },
-              el("span", { class: "swatch", style: `background:${ln.colour}` })
+              el("span", { class: "swatch", style: `background:${ln.colour || "#888"}` })
             ),
             el("div", { class: "svc-sidebar-text" },
-              el("div", {}, svc.display_name_en),
-              el("div", { class: "small" }, svc.service_type)
+              el("div", {}, svc.display_name_en || svc.id),
+              el("div", { class: "small" }, svc.service_type || "")
             )
           )
         ));
@@ -40,18 +40,18 @@
 
   document.getElementById("header").append(
     el("div", { class: "small", style: "margin-bottom:4px;color:var(--ink-dim)" },
-      line ? el("a", { href: `line.html?id=${line.id}` }, line.display_name_en) : ""),
+      line ? el("a", { href: `line.html?id=${line.id}` }, line.display_name_en || line.id) : ""),
     el("h1", {},
       line ? el("span", {
         class: "swatch",
-        style: `background:${line.colour};width:12px;height:12px;display:inline-block;border-radius:2px;vertical-align:middle;margin-right:6px`
+        style: `background:${line.colour || "#888"};width:12px;height:12px;display:inline-block;border-radius:2px;vertical-align:middle;margin-right:6px`
       }) : null,
-      svc.display_name_en, " ",
+      svc.display_name_en || svc.id, " ",
       el("span", { class: "small" }, svc.display_name_ja || "")
     ),
     el("div", { style: "margin-top:6px" },
-      el("span", { class: "pill" }, svc.service_type),
-      svc.supplement !== "none"
+      el("span", { class: "pill" }, svc.service_type || "service"),
+      (svc.supplement && svc.supplement !== "none")
         ? el("span", { class: "pill warn" }, `supplement: ${svc.supplement}`)
         : el("span", { class: "pill" }, "no supplement")),
     svc.notes ? el("div", { class: "small", style: "margin-top:6px" }, svc.notes) : null
@@ -84,10 +84,18 @@
     center: [135.5, 34.7], zoom: 11, interactive: true
   });
 
+  function stationCoords(track) {
+    return (db.stopsByTrack[track.id] || []).map(s => {
+      const n = db.byId.station_nodes[s.station_node_id];
+      return n ? [n.lon, n.lat] : null;
+    }).filter(Boolean);
+  }
+
   svcMap.on("load", () => {
-    // Draw tracks
+    // Track lines
     const trackFeatures = tracks.map(t => {
-      const coords = lineGeom[t.id] || [];
+      const g = lineGeom[t.id];
+      const coords = (g?.length >= 2) ? g : stationCoords(t);
       return coords.length >= 2 ? {
         type: "Feature",
         properties: { colour: t.colour || line?.colour || "#888" },
@@ -104,9 +112,9 @@
         paint: { "line-color": ["get", "colour"], "line-width": 3 } });
     }
 
-    // All stops on these tracks: dim if not in pattern, bright if served
+    // Stops: dim those not in pattern, bright for served
     const patternNodeIds = new Set(
-      svc.stop_pattern.map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
+      (svc.stop_pattern || []).map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
     );
     const _mapRaw = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
     const _mapSeen = new Set();
@@ -123,17 +131,20 @@
       return {
         type: "Feature",
         properties: {
+          id: node.id,
           inPattern: patternNodeIds.has(stp.station_node_id),
-          colour: track?.colour || line?.colour || "#888"
+          colour: track?.colour || line?.colour || "#888",
+          name: node.name_en || ""
         },
         geometry: { type: "Point", coordinates: [node.lon, node.lat] }
       };
     }).filter(Boolean);
 
-    svcMap.addSource("svc-stops", { type: "geojson", data: { type: "FeatureCollection", features: stopFeatures } });
+    svcMap.addSource("svc-stops", { type: "geojson",
+      data: { type: "FeatureCollection", features: stopFeatures } });
     svcMap.addLayer({ id: "svc-stops-ctx", type: "circle", source: "svc-stops",
       filter: ["==", ["get", "inPattern"], false],
-      paint: { "circle-radius": 2.5, "circle-color": "#aaa", "circle-opacity": 0.5 }
+      paint: { "circle-radius": 2.5, "circle-color": "#aaa", "circle-opacity": 0.4 }
     });
     svcMap.addLayer({ id: "svc-stops-on", type: "circle", source: "svc-stops",
       filter: ["==", ["get", "inPattern"], true],
@@ -143,21 +154,40 @@
       }
     });
 
-    // Labels for served stops (alternating left/right)
-    const servedNodes = svc.stop_pattern
-      .map(sid => db.byId.station_nodes[db.byId.stops[sid]?.station_node_id])
-      .filter(Boolean);
-
-    servedNodes.forEach((node, i) => {
-      const div = document.createElement("div");
-      div.className = "svc-stop-label";
-      div.textContent = node.name_en;
-      const anchor = i % 2 === 0 ? "right" : "left";
-      const offset  = i % 2 === 0 ? [-8, 0] : [8, 0];
-      new maplibregl.Marker({ element: div, anchor, offset })
-        .setLngLat([node.lon, node.lat]).addTo(svcMap);
+    // Station name labels (symbol layer — no DOM markers, no obscuring)
+    svcMap.addLayer({
+      id: "svc-stop-labels", type: "symbol", source: "svc-stops",
+      filter: ["==", ["get", "inPattern"], true],
+      layout: {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 11,
+        "text-offset": [0, 1.2],
+        "text-anchor": "top",
+        "text-max-width": 8,
+        "text-allow-overlap": false
+      },
+      paint: {
+        "text-color": "#111",
+        "text-halo-color": "rgba(255,255,255,0.9)",
+        "text-halo-width": 1.5
+      }
     });
 
+    // Click on served stops → station page
+    svcMap.on("click", "svc-stops-on", e => {
+      if (e.features.length) location.href = `station.html?id=${e.features[0].properties.id}`;
+    });
+    svcMap.on("click", "svc-stops-ctx", e => {
+      if (e.features.length) location.href = `station.html?id=${e.features[0].properties.id}`;
+    });
+    svcMap.on("mouseenter", "svc-stops-on", () => svcMap.getCanvas().style.cursor = "pointer");
+    svcMap.on("mouseleave", "svc-stops-on", () => svcMap.getCanvas().style.cursor = "");
+
+    // Fit to served stops
+    const servedNodes = (svc.stop_pattern || [])
+      .map(sid => db.byId.station_nodes[db.byId.stops[sid]?.station_node_id])
+      .filter(Boolean);
     if (servedNodes.length) {
       const lons = servedNodes.map(n => n.lon), lats = servedNodes.map(n => n.lat);
       svcMap.fitBounds(
@@ -173,15 +203,22 @@
   if (svc.line_path?.length) {
     const wrap = el("div", { class: "stop-list", style: "margin-bottom:8px" });
     for (const seg of svc.line_path) {
-      const track = db.byId.tracks[seg.track_id];
-      const fromNode = db.byId.station_nodes[db.byId.stops[seg.from_stop]?.station_node_id];
-      const toNode   = db.byId.station_nodes[db.byId.stops[seg.to_stop]?.station_node_id];
+      const track   = db.byId.tracks[seg.track_id];
+      const fromStop = db.byId.stops[seg.from_stop];
+      const toStop   = db.byId.stops[seg.to_stop];
+      const fromNode = fromStop ? db.byId.station_nodes[fromStop.station_node_id] : null;
+      const toNode   = toStop   ? db.byId.station_nodes[toStop.station_node_id]   : null;
       wrap.append(el("div", { class: "card", style: "display:flex;align-items:center;gap:10px;padding:10px 14px" },
-        el("span", { class: "swatch", style: `background:${track?.colour || line?.colour || '#888'};width:12px;height:12px;border-radius:2px;flex-shrink:0` }),
+        el("span", { class: "swatch", style: `background:${track?.colour || line?.colour || "#888"};width:12px;height:12px;border-radius:2px;flex-shrink:0` }),
         el("div", {},
-          el("div", { style: "font-weight:600;font-size:13px" }, track?.name_en || seg.track_id),
+          el("div", { style: "font-weight:600;font-size:13px" },
+            track ? el("a", { href: `track.html?id=${track.id}`, style: "color:inherit" }, track.name_en || track.id) : (seg.track_id || "Unknown track")
+          ),
           el("div", { class: "small" },
-            (fromNode?.name_en || "?"), " → ", (toNode?.name_en || "?"))
+            el("a", { href: `station.html?id=${fromStop?.station_node_id}`, style: "color:inherit" }, fromNode?.name_en || "?"),
+            " → ",
+            el("a", { href: `station.html?id=${toStop?.station_node_id}`, style: "color:inherit" }, toNode?.name_en || "?")
+          )
         )
       ));
     }
@@ -190,11 +227,10 @@
     pathDiv.append(el("div", { class: "small" }, "No line path recorded."));
   }
 
-  // ── Stop list (vertical, expandable) ─────────────────────────────────────
+  // ── Stop list (vertical) ──────────────────────────────────────────────────
   const patternNodeIds = new Set(
-    svc.stop_pattern.map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
+    (svc.stop_pattern || []).map(sid => db.byId.stops[sid]?.station_node_id).filter(Boolean)
   );
-  // Deduplicate stops by station_node_id (OSM routes include both directions)
   const _rawTrackStops = tracks.flatMap(t => db.stopsByTrack[t.id] || []);
   const _seenSvcNodes = new Set();
   const allTrackStops = _rawTrackStops.filter(s => {
@@ -220,18 +256,15 @@
     stopListEl.innerHTML = "";
     const stopsToShow = showAll ? allTrackStops
       : allTrackStops.filter(s => patternNodeIds.has(s.station_node_id));
-
     for (const stp of stopsToShow) {
-      const node    = db.byId.station_nodes[stp.station_node_id];
-      const track   = db.byId.tracks[stp.track_id];
-      const served  = patternNodeIds.has(stp.station_node_id);
-      const colour  = track?.colour || line?.colour || "#888";
-
-      const nodeId = stp.station_node_id;
+      const node   = db.byId.station_nodes[stp.station_node_id];
+      const track  = db.byId.tracks[stp.track_id];
+      const served = patternNodeIds.has(stp.station_node_id);
+      const colour = track?.colour || line?.colour || "#888";
       stopListEl.append(el("div", {
-        class: `stop-row${served ? " served" : " skipped"}`,
+        class: `stop-row${served ? "" : " skipped"}`,
         style: "cursor:pointer",
-        onclick: () => { location.href = `station.html?id=${nodeId}`; }
+        onclick: () => { location.href = `station.html?id=${stp.station_node_id}`; }
       },
         el("span", { class: "stop-dot", style: served
           ? `background:${colour};border-color:${colour}`
@@ -249,11 +282,13 @@
 
   // ── Frequency ─────────────────────────────────────────────────────────────
   const kv = el("div", { class: "kv" });
-  for (const [k, v] of Object.entries(svc.frequency_bands)) {
-    kv.append(
-      el("div", { class: "k" }, BAND_LABELS[k] || k),
-      el("div", { class: "v" }, v ? `${v} trains / hr` : "—")
-    );
+  for (const [k, v] of Object.entries(svc.frequency_bands || {})) {
+    if (BAND_LABELS[k]) {
+      kv.append(
+        el("div", { class: "k" }, BAND_LABELS[k]),
+        el("div", { class: "v" }, v ? `${v} trains / hr` : "—")
+      );
+    }
   }
   document.getElementById("freq").append(kv);
 })();
