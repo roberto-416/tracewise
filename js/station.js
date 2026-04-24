@@ -1,5 +1,5 @@
 (async () => {
-  const { loadCity, el, topbar, qs, freqBucket, BAND_LABELS, BAND_ORDER } = window.TW;
+  const { loadCity, el, topbar, qs, freqBucket, BAND_LABELS, BAND_ORDER, CITY, trimGeometry } = window.TW;
   const db = await loadCity();
   topbar("stations");
 
@@ -64,6 +64,124 @@
       members.length > 1 ? el("div", { class: "v" }, String(members.length)) : null
     )
   );
+
+  // ── Station mini-map ────────────────────────────────────────────────────
+  const lineGeom = await fetch(`data/${CITY}/line_geometry.json`)
+    .then(r => r.ok ? r.json() : {}).catch(() => ({}));
+
+  const stnMap = new maplibregl.Map({
+    container: "station-map",
+    style: {
+      version: 8,
+      sources: {
+        carto: {
+          type: "raster",
+          tiles: [
+            "https://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png",
+            "https://b.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png"
+          ],
+          tileSize: 256, maxzoom: 20,
+          attribution: "© CARTO © OpenStreetMap contributors"
+        }
+      },
+      layers: [
+        { id: "bg", type: "background", paint: { "background-color": "#f5f5f0" } },
+        { id: "carto", type: "raster", source: "carto", paint: { "raster-opacity": 0.85 } }
+      ]
+    },
+    center: [node.lon, node.lat], zoom: 14, interactive: true
+  });
+
+  stnMap.on("load", () => {
+    const tracksHere = [...(db.tracksByCluster[cid] || [])]
+      .map(tid => db.byId.tracks[tid]).filter(Boolean);
+
+    // Track lines
+    const trackFeatures = tracksHere.map(t => {
+      const g = lineGeom[t.id];
+      const nodeCoords = (db.stopsByTrack[t.id] || []).map(s => {
+        const n = db.byId.station_nodes[s.station_node_id];
+        return n ? [n.lon, n.lat] : null;
+      }).filter(Boolean);
+      const coords = trimGeometry((g?.length >= 2) ? g : nodeCoords);
+      return coords.length >= 2 ? {
+        type: "Feature",
+        properties: { colour: t.colour || "#888" },
+        geometry: { type: "LineString", coordinates: coords }
+      } : null;
+    }).filter(Boolean);
+
+    if (trackFeatures.length) {
+      stnMap.addSource("stn-tracks", { type: "geojson", data: { type: "FeatureCollection", features: trackFeatures } });
+      stnMap.addLayer({ id: "stn-track-bg", type: "line", source: "stn-tracks",
+        paint: { "line-color": "#fff", "line-width": 5, "line-opacity": 0.7 } });
+      stnMap.addLayer({ id: "stn-track-fg", type: "line", source: "stn-tracks",
+        layout: { "line-cap": "round" },
+        paint: { "line-color": ["get", "colour"], "line-width": 3 } });
+    }
+
+    // Stops on serving tracks, deduped by cluster
+    const seenCids = new Set();
+    const stopFeatures = [];
+    for (const t of tracksHere) {
+      for (const stp of (db.stopsByTrack[t.id] || [])) {
+        const n = db.byId.station_nodes[stp.station_node_id];
+        if (!n) continue;
+        const stopCid = db.nodeCluster[n.id];
+        if (seenCids.has(stopCid)) continue;
+        seenCids.add(stopCid);
+        stopFeatures.push({
+          type: "Feature",
+          properties: {
+            id: n.id,
+            name: n.name_en || "",
+            colour: t.colour || "#888",
+            isCurrent: stopCid === cid
+          },
+          geometry: { type: "Point", coordinates: [n.lon, n.lat] }
+        });
+      }
+    }
+
+    stnMap.addSource("stn-stops", { type: "geojson",
+      data: { type: "FeatureCollection", features: stopFeatures } });
+
+    stnMap.addLayer({ id: "stn-stops-ctx", type: "circle", source: "stn-stops",
+      filter: ["==", ["get", "isCurrent"], false],
+      paint: { "circle-radius": 4, "circle-color": "#fff",
+        "circle-stroke-color": ["get", "colour"], "circle-stroke-width": 2 }
+    });
+    stnMap.addLayer({ id: "stn-stops-here", type: "circle", source: "stn-stops",
+      filter: ["==", ["get", "isCurrent"], true],
+      paint: { "circle-radius": 7, "circle-color": ["get", "colour"],
+        "circle-stroke-color": "#fff", "circle-stroke-width": 2.5 }
+    });
+    stnMap.addLayer({
+      id: "stn-stop-labels", type: "symbol", source: "stn-stops",
+      layout: {
+        "text-field": ["get", "name"],
+        "text-font": ["Open Sans Regular"],
+        "text-size": 11,
+        "text-offset": [0, 1.2],
+        "text-anchor": "top",
+        "text-max-width": 8,
+        "text-allow-overlap": false
+      },
+      paint: {
+        "text-color": "#111",
+        "text-halo-color": "rgba(255,255,255,0.9)",
+        "text-halo-width": 1.5
+      }
+    });
+
+    ["stn-stops-ctx", "stn-stops-here"].forEach(layer => {
+      stnMap.on("click", layer, e => {
+        if (e.features.length) location.href = `station.html?id=${e.features[0].properties.id}`;
+      });
+      stnMap.on("mouseenter", layer, () => stnMap.getCanvas().style.cursor = "pointer");
+      stnMap.on("mouseleave", layer, () => stnMap.getCanvas().style.cursor = "");
+    });
+  });
 
   // ── Transfers (across cluster) ──────────────────────────────────────────
   const tdiv = document.getElementById("transfers");

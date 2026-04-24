@@ -1,5 +1,5 @@
 (async () => {
-  const { loadCity, el, topbar, qs, freqBucket, BAND_LABELS, BAND_ORDER, CITY } = window.TW;
+  const { loadCity, el, topbar, qs, freqBucket, BAND_LABELS, BAND_ORDER, CITY, trimGeometry } = window.TW;
   const db = await loadCity();
   topbar("tracks");
 
@@ -103,7 +103,7 @@
       const n = db.byId.station_nodes[s.station_node_id];
       return n ? [n.lon, n.lat] : null;
     }).filter(Boolean);
-    const coords = (lineGeom[id]?.length >= 2) ? lineGeom[id] : nodeCoords;
+    const coords = trimGeometry((lineGeom[id]?.length >= 2) ? lineGeom[id] : nodeCoords);
 
     if (coords.length >= 2) {
       trackMap.addSource("t", { type: "geojson", data: { type: "Feature",

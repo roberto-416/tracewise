@@ -73,6 +73,14 @@ td.freq-cell.f2 { background: #1a3560; color: #7fb3e8; }
 td.freq-cell.f3 { background: #0e4040; color: #4bb8a8; }
 td.freq-cell.f4 { background: #1a4020; color: #5fc870; }
 td.freq-cell.f5 { background: #2a5a10; color: #a0e050; }
+/* Legend swatches matching freq-cell colours */
+.freq-swatch { display:inline-block; font-size:10px; font-weight:600; padding:1px 5px; border-radius:3px; min-width:20px; text-align:center; }
+.freq-swatch.f0 { background: var(--panel-2); color: #3a4255; }
+.freq-swatch.f1 { background: #1a2744; color: #6a8abb; }
+.freq-swatch.f2 { background: #1a3560; color: #7fb3e8; }
+.freq-swatch.f3 { background: #0e4040; color: #4bb8a8; }
+.freq-swatch.f4 { background: #1a4020; color: #5fc870; }
+.freq-swatch.f5 { background: #2a5a10; color: #a0e050; }
 
 .strip { display: flex; gap: 4px; overflow-x: auto; padding: 8px 0 14px; }
 .strip .stop {
@@ -107,7 +115,7 @@ code { background: var(--panel-2); padding: 1px 5px; border-radius: 3px; font-si
 .stn-name { font-size: 13px; }
 
 /* Route maps (line + service pages) */
-#svc-map, #line-map, #track-map { height: 300px; border-radius: 6px; overflow: hidden; border: 1px solid var(--rule); margin-bottom: 4px; }
+#svc-map, #line-map, #track-map, #station-map { height: 300px; border-radius: 6px; overflow: hidden; border: 1px solid var(--rule); margin-bottom: 4px; }
 
 table.matrix a { color: inherit; }
 table.matrix a:hover { color: var(--accent); text-decoration: underline; }

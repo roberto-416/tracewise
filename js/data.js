@@ -178,6 +178,23 @@ function frequencyBucket(tph) {
   return 0;
 }
 
+// Trim bidirectional OSM geometry: some route relations include both-direction
+// ways, creating a path that goes A→B then snakes back toward A. Detect by
+// finding the index of max distance from the start; if a significant return
+// fraction follows (>15%), truncate there.
+function trimGeometry(coords) {
+  if (!coords || coords.length < 6) return coords;
+  const [x0, y0] = coords[0];
+  let maxDist = 0, peakIdx = 0;
+  for (let i = 1; i < coords.length; i++) {
+    const dx = coords[i][0] - x0, dy = coords[i][1] - y0;
+    const d = dx * dx + dy * dy;
+    if (d > maxDist) { maxDist = d; peakIdx = i; }
+  }
+  const returnFrac = (coords.length - 1 - peakIdx) / coords.length;
+  return returnFrac > 0.15 ? coords.slice(0, peakIdx + 1) : coords;
+}
+
 function qs(name) { return new URLSearchParams(location.search).get(name); }
 
 function el(tag, attrs = {}, ...children) {
@@ -237,4 +254,4 @@ function topbar(active) {
   document.body.prepend(bar);
 }
 
-window.TW = { CITY, loadCity, frequencyBucket, freqBucket, BAND_LABELS, BAND_ORDER, qs, el, topbar };
+window.TW = { CITY, loadCity, frequencyBucket, freqBucket, BAND_LABELS, BAND_ORDER, qs, el, topbar, trimGeometry };

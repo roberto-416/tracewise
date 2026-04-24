@@ -1,5 +1,5 @@
 (async () => {
-  const { loadCity, el, topbar, CITY } = window.TW;
+  const { loadCity, el, topbar, CITY, trimGeometry } = window.TW;
   const db = await loadCity();
   topbar("map");
 
@@ -103,7 +103,7 @@
         const track = db.byId.tracks[trackId];
         if (!track) continue;
         const g = lineGeom[trackId];
-        const coords = (g?.length >= 2) ? g : stationTrackCoords(track);
+        const coords = trimGeometry((g?.length >= 2) ? g : stationTrackCoords(track));
         if (coords.length < 2) continue;
         lineFeatures.push({
           type: "Feature",
@@ -119,7 +119,7 @@
     for (const track of db.tracks) {
       if (seenTracks.has(track.id)) continue;
       const g = lineGeom[track.id];
-      const coords = (g?.length >= 2) ? g : stationTrackCoords(track);
+      const coords = trimGeometry((g?.length >= 2) ? g : stationTrackCoords(track));
       if (coords.length < 2) continue;
       lineFeatures.push({
         type: "Feature",

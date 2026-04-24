@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <title>Tracewise — Station</title>
-  <link rel="stylesheet" href="css/app.css?v=13" />
+  <link rel="stylesheet" href="css/app.css?v=14" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 </head>
 <body>
   <div class="layout">
@@ -14,6 +15,7 @@
     </aside>
     <main class="content" id="content">
       <div id="header"></div>
+      <div id="station-map"></div>
       <h2>Lines serving this station</h2>
       <div id="lines"></div>
       <h2>Transfers at this location</h2>
@@ -24,7 +26,8 @@
       <div id="freq"></div>
     </main>
   </div>
-  <script src="js/data.js?v=13"></script>
-  <script src="js/station.js?v=13"></script>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="js/data.js?v=14"></script>
+  <script src="js/station.js?v=14"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 (async () => {
-  const { loadCity, el, topbar, qs, BAND_LABELS, freqBucket, CITY } = window.TW;
+  const { loadCity, el, topbar, qs, BAND_LABELS, freqBucket, CITY, trimGeometry } = window.TW;
   const db = await loadCity();
   topbar("services");
 
@@ -95,7 +95,7 @@
     // Track lines
     const trackFeatures = tracks.map(t => {
       const g = lineGeom[t.id];
-      const coords = (g?.length >= 2) ? g : stationCoords(t);
+      const coords = trimGeometry((g?.length >= 2) ? g : stationCoords(t));
       return coords.length >= 2 ? {
         type: "Feature",
         properties: { colour: t.colour || line?.colour || "#888" },
