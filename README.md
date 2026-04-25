@@ -1,4 +1,8 @@
-# Tracewise (Osaka pilot)
+# Tracewise (Osaka pilot) — v0 SUPERSEDED
+
+> **This is v0.** It is tagged `v0-deprecated` in git and superseded by a spec-first rebuild. See [DEPRECATED.md](DEPRECATED.md) for context.
+
+---
 
 A static site that makes complex transit systems legible — stopping patterns, interlining, transfer ambiguity, fare supplements. Pilot city: Osaka. Schema city-agnostic.
 
