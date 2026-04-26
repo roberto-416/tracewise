@@ -1,0 +1,5 @@
+{
+  "cluster_threshold_m": 200,
+  "default_centre": [135.5023, 34.6937],
+  "default_zoom": 11
+}
