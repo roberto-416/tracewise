@@ -4,18 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tracewise — System overview</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #0d1117; color: #ffffff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-    .stub { text-align: center; }
-    .wordmark { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
-    .label { font-size: 13px; color: #8b949e; }
-  </style>
+  <meta name="description" content="Transit, made legible.">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/ui.js"></script>
 </head>
 <body>
-  <div class="stub">
-    <div class="wordmark">Tracewise</div>
-    <div class="label">System overview — building</div>
+  <div class="tw-grid">
+    <aside class="tw-sidebar" aria-label="Lines">
+      <input type="search" class="tw-search" id="tw-search" placeholder="Search lines or operators…" autocomplete="off">
+      <div id="tw-line-list">
+        <div class="tw-skeleton" aria-hidden="true">
+          <div class="tw-skel-bar"></div><div class="tw-skel-bar" style="width:80%"></div>
+          <div class="tw-skel-bar" style="width:60%"></div><div class="tw-skel-bar" style="width:70%"></div>
+        </div>
+      </div>
+    </aside>
+    <main class="tw-main tw-main--full" id="tw-main">
+      <div class="tw-map tw-map--full" id="tw-map" role="application" aria-label="Map of all transit lines and stations">
+        <div class="tw-loading">Loading…</div>
+      </div>
+    </main>
   </div>
+
+  <script>
+  (async function () {
+    'use strict';
+    TW.renderHeader('index');
+
+    try {
+      await Tracewise.load(TW.qs('city') || undefined);
+    } catch (e) {
+      document.getElementById('tw-line-list').innerHTML = '<div class="tw-empty">Could not load data.</div>';
+      document.getElementById('tw-map').innerHTML = '<div class="tw-loading">Could not load data.</div>';
+      return;
+    }
+
+    const ix = Tracewise.indexes;
+    const data = Tracewise.data;
+
+    const renderSidebar = TW.renderLineSidebar('tw-line-list', {});
+    TW.wireSearch('tw-search', renderSidebar);
+
+    // ----- map -----
+    const styleUrl = await TW.mapStyle();
+    const mapContainer = document.getElementById('tw-map');
+    mapContainer.innerHTML = '';
+
+    const map = new maplibregl.Map({
+      container: 'tw-map',
+      style: styleUrl,
+      center: (data.config && data.config.default_centre) || [135.5, 34.7],
+      zoom: (data.config && data.config.default_zoom) || 11,
+      attributionControl: { compact: true }
+    });
+    map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), 'top-right');
+
+    const allTrackIds = (data.tracks || []).map(t => t.id);
+    let trackFC = TW.trackFC(allTrackIds);
+    trackFC.features.forEach((f, i) => { f.id = i; });
+    const allClusterIds = Array.from(ix.clusters.keys());
+    const clusterFC = TW.clusterFC(allClusterIds);
+
+    map.on('load', () => {
+      map.addSource('tw-tracks', { type: 'geojson', data: trackFC });
+      map.addSource('tw-clusters', { type: 'geojson', data: clusterFC });
+      TW.addCommonLayers(map, { labelMinZoom: 13, lineWidth: 3, casingWidth: 5 });
+
+      // tweak track line opacity for dim state on system view
+      map.setPaintProperty('tw-tracks-line', 'line-opacity',
+        ['case', ['boolean', ['feature-state', 'dim'], false], 0.3, 1.0]);
+      map.setPaintProperty('tw-tracks-casing', 'line-opacity',
+        ['case', ['boolean', ['feature-state', 'dim'], false], 0.15, 0.5]);
+
+      map.on('click', 'tw-tracks-line', e => {
+        const f = e.features[0]; if (!f) return;
+        const tid = f.properties.track_id;
+        const lines = ix.linesByTrack.get(tid) || [];
+        if (lines.length === 0) return;
+        const target = lines.slice().sort((a, b) => (a.tracks || []).length - (b.tracks || []).length)[0];
+        location.href = `line.html?id=${encodeURIComponent(target.id)}`;
+      });
+      map.on('click', 'tw-cluster-dots', e => {
+        const f = e.features[0]; if (!f) return;
+        location.href = `station.html?id=${encodeURIComponent(f.properties.cluster_id)}`;
+      });
+      for (const layer of ['tw-tracks-line']) {
+        map.on('mouseenter', layer, () => map.getCanvas().style.cursor = 'pointer');
+        map.on('mouseleave', layer, () => map.getCanvas().style.cursor = '');
+      }
+
+      TW.fitBoundsToFC(map, clusterFC, 60);
+
+      Tracewise.geometryReady.then(() => {
+        const src = map.getSource('tw-tracks');
+        if (!src) return;
+        trackFC = TW.trackFC(allTrackIds);
+        trackFC.features.forEach((f, i) => { f.id = i; });
+        src.setData(trackFC);
+      });
+    });
+
+    map.on('error', e => console.warn('[map]', e && e.error ? e.error.message : e));
+  })();
+  </script>
 </body>
 </html>

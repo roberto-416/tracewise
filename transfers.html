@@ -3,19 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracewise — Transfer graph</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #0d1117; color: #ffffff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-    .stub { text-align: center; }
-    .wordmark { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
-    .label { font-size: 13px; color: #8b949e; }
-  </style>
+  <title>Tracewise — Transfers</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/data.js"></script>
+  <script src="assets/ui.js"></script>
 </head>
 <body>
-  <div class="stub">
-    <div class="wordmark">Tracewise</div>
-    <div class="label">Transfer graph — building</div>
+  <div class="tw-grid">
+    <aside class="tw-sidebar" aria-label="Filters">
+      <input type="search" class="tw-search" id="tw-search" placeholder="Search by station…" autocomplete="off">
+      <div class="tw-filter-group" id="tw-cat-filters">
+        <div class="tw-op-header"><span class="tw-op-bar" style="background:var(--accent)"></span><span>Categories</span></div>
+      </div>
+      <div class="tw-filter-group" id="tw-op-filters">
+        <div class="tw-op-header"><span class="tw-op-bar" style="background:var(--accent)"></span><span>Operators</span></div>
+      </div>
+    </aside>
+    <main class="tw-main" id="tw-main">
+      <div class="tw-loading">Loading…</div>
+    </main>
   </div>
+  <script>
+  (async function () {
+    'use strict';
+    TW.renderHeader('transfers');
+    try { await Tracewise.load(TW.qs('city') || undefined); }
+    catch { document.getElementById('tw-main').innerHTML = '<div class="tw-empty-section">Could not load data.</div>'; return; }
+
+    const ix = Tracewise.indexes;
+    const data = Tracewise.data;
+
+    const CATEGORIES = [
+      { key: 'same_name_disconnected',   label: 'Same name, separate stations', cls: 'tw-tx-cat--same_name_disconnected' },
+      { key: 'same_name_connected',      label: 'Same name, connected',          cls: 'tw-tx-cat--same_name_connected' },
+      { key: 'different_name_connected', label: 'Different name, same interchange', cls: 'tw-tx-cat--different_name_connected' },
+      { key: 'through_run_boundary',     label: 'Through-running',               cls: 'tw-tx-cat--through_run_boundary' }
+    ];
+
+    // build filter checkboxes
+    const catHost = document.getElementById('tw-cat-filters');
+    let catHtml = catHost.innerHTML;
+    for (const c of CATEGORIES) {
+      catHtml += `<label><input type="checkbox" data-cat="${c.key}" checked><span class="${c.cls}">${c.label}</span></label>`;
+    }
+    catHost.innerHTML = catHtml;
+
+    const opHost = document.getElementById('tw-op-filters');
+    let opHtml = opHost.innerHTML;
+    for (const op of (data.operators || [])) {
+      opHtml += `<label><input type="checkbox" data-op="${op.id}" checked><span class="tw-swatch" style="background:${op.colour}"></span><span>${TW.escapeHtml(op.name_en)}</span></label>`;
+    }
+    opHost.innerHTML = opHtml;
+
+    // main shell
+    const main = document.getElementById('tw-main');
+    main.innerHTML = `
+      <div class="tw-page-title">Transfers</div>
+      <div class="tw-page-subtitle">All inter-station and inter-operator edges.</div>
+      <div id="tw-tx-sections"></div>
+    `;
+
+    function clusterForNode(nid) {
+      const cid = ix.clusterByNode.get(nid);
+      return cid ? ix.clusters.get(cid) : null;
+    }
+
+    function rowForTransfer(t) {
+      const aNode = ix.nodesById.get(t.a);
+      const bNode = ix.nodesById.get(t.b);
+      const aOp = aNode ? ix.operatorsById.get(aNode.operator_id) : null;
+      const bOp = bNode ? ix.operatorsById.get(bNode.operator_id) : null;
+      const aClu = clusterForNode(t.a);
+      const bClu = clusterForNode(t.b);
+      return {
+        t,
+        from_op: aOp, to_op: bOp,
+        from_name: aClu ? aClu.display_name_en : (aNode ? aNode.name_en : '?'),
+        to_name:   bClu ? bClu.display_name_en : (bNode ? bNode.name_en : '?'),
+        from_id: aClu ? aClu.id : null
+      };
+    }
+
+    function render() {
+      const enabledCats = new Set(Array.from(document.querySelectorAll('[data-cat]:checked')).map(el => el.dataset.cat));
+      const enabledOps  = new Set(Array.from(document.querySelectorAll('[data-op]:checked')).map(el => el.dataset.op));
+      const q = (document.getElementById('tw-search').value || '').trim().toLowerCase();
+
+      const sections = document.getElementById('tw-tx-sections');
+      let html = '';
+      for (const cat of CATEGORIES) {
+        const rows = (data.transfers || [])
+          .filter(t => t.category === cat.key)
+          .filter(t => enabledCats.has(t.category))
+          .map(rowForTransfer)
+          .filter(r => (!r.from_op || enabledOps.has(r.from_op.id)) && (!r.to_op || enabledOps.has(r.to_op.id)))
+          .filter(r => !q || r.from_name.toLowerCase().includes(q) || r.to_name.toLowerCase().includes(q));
+
+        html += `<h2 class="tw-section-h"><span class="${cat.cls}">${cat.label}</span> <span class="tw-counts">(${rows.length})</span></h2>`;
+        if (rows.length === 0) {
+          html += '<div class="tw-empty-section">None matching current filters.</div>';
+          continue;
+        }
+        html += `<table class="tw-tx-table">
+          <thead><tr>
+            <th>From</th><th>To</th><th>Walk</th><th>Paid area</th>
+          </tr></thead><tbody>`;
+        for (const r of rows) {
+          html += `<tr ${r.from_id ? `data-href="station.html?id=${encodeURIComponent(r.from_id)}"` : ''}>
+            <td>${r.from_op ? `<span class="tw-swatch" style="background:${r.from_op.colour}"></span> ` : ''}${TW.escapeHtml(r.from_name)}</td>
+            <td>${r.to_op   ? `<span class="tw-swatch" style="background:${r.to_op.colour}"></span> ` : ''}${TW.escapeHtml(r.to_name)}</td>
+            <td>${r.t.walking_time_min} min</td>
+            <td>${r.t.paid_area ? 'yes' : 'no'}</td>
+          </tr>`;
+        }
+        html += '</tbody></table>';
+      }
+      sections.innerHTML = html;
+
+      sections.querySelectorAll('tr[data-href]').forEach(tr => {
+        tr.addEventListener('click', () => { location.href = tr.dataset.href; });
+      });
+    }
+
+    document.querySelectorAll('[data-cat], [data-op]').forEach(el =>
+      el.addEventListener('change', render));
+    document.getElementById('tw-search').addEventListener('input', render);
+    document.getElementById('tw-search').addEventListener('keydown', e => {
+      if (e.key === 'Escape') { e.target.value = ''; render(); }
+    });
+
+    render();
+  })();
+  </script>
 </body>
 </html>

@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "umeda-osaka",
+    "member_node_ids": [
+      "osaka-metro--umeda",
+      "osaka-metro--higashi-umeda",
+      "osaka-metro--nishi-umeda"
+    ],
+    "display_name_en": "Umeda / Osaka",
+    "display_name_ja": "梅田・大阪",
+    "primary_node_id": "osaka-metro--umeda"
+  }
+]

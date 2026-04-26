@@ -3,19 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracewise — Track detail</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #0d1117; color: #ffffff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-    .stub { text-align: center; }
-    .wordmark { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
-    .label { font-size: 13px; color: #8b949e; }
-  </style>
+  <title>Tracewise — Track</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/ui.js"></script>
 </head>
 <body>
-  <div class="stub">
-    <div class="wordmark">Tracewise</div>
-    <div class="label">Track detail — building</div>
+  <div class="tw-grid">
+    <aside class="tw-sidebar" aria-label="Tracks">
+      <input type="search" class="tw-search" id="tw-search" placeholder="Search tracks or operators…" autocomplete="off">
+      <div id="tw-track-list">
+        <div class="tw-skeleton" aria-hidden="true">
+          <div class="tw-skel-bar"></div><div class="tw-skel-bar" style="width:80%"></div>
+          <div class="tw-skel-bar" style="width:60%"></div><div class="tw-skel-bar" style="width:70%"></div>
+        </div>
+      </div>
+    </aside>
+    <main class="tw-main" id="tw-main">
+      <div class="tw-loading">Loading…</div>
+    </main>
   </div>
+  <script>
+  (async function () {
+    'use strict';
+    TW.renderHeader('index');
+    const trackId = TW.qs('id');
+    if (!trackId) { TW.notFound('track'); return; }
+    try { await Tracewise.load(TW.qs('city') || undefined); }
+    catch { document.getElementById('tw-main').innerHTML = '<div class="tw-empty-section">Could not load data.</div>'; return; }
+
+    const ix = Tracewise.indexes;
+    const track = ix.tracksById.get(trackId);
+    if (!track) { TW.notFound('track'); return; }
+
+    const op = ix.operatorsById.get(track.operator_id);
+    const linesUsing = ix.linesByTrack.get(track.id) || [];
+    const stops = ix.stopsByTrack.get(track.id) || [];
+    const services = ix.servicesByTrack.get(track.id) || [];
+    const stationCount = new Set(stops.map(s => s.station_node_id)).size;
+
+    const renderSidebar = TW.renderTrackSidebar('tw-track-list', { activeId: track.id });
+    TW.wireSearch('tw-search', renderSidebar);
+
+    const usedByHtml = linesUsing.map(ln =>
+      `<a href="line.html?id=${encodeURIComponent(ln.id)}" class="tw-pill"><span class="tw-swatch" style="background:${ln.colour}"></span>${TW.escapeHtml(ln.display_name_en)}</a>`
+    ).join(' ') || '<span class="tw-counts">—</span>';
+
+    document.getElementById('tw-main').innerHTML = `
+      <div class="tw-page-title" style="color:${track.colour}">${TW.escapeHtml(track.name_en)}${track.code?` <span class="tw-counts">(${TW.escapeHtml(track.code)})</span>`:''}</div>
+      <div class="tw-page-subtitle">${TW.escapeHtml(track.name_ja || '')}</div>
+      <div class="tw-meta">
+        ${TW.opPill(op)}
+        <span class="tw-counts">Used by:</span> ${usedByHtml}
+      </div>
+      <div class="tw-counts" style="margin-bottom:16px">${stationCount} station${stationCount===1?'':'s'} · ${services.length} service${services.length===1?'':'s'}</div>
+      <div class="tw-map" id="tw-map" role="application" aria-label="Map of ${TW.escapeHtml(track.name_en)}"></div>
+      <h2 class="tw-section-h">Stopping pattern</h2>
+      <div id="tw-matrix-wrap"></div>
+      <h2 class="tw-section-h">Frequency (trains per hour)</h2>
+      <div id="tw-freq-wrap"></div>
+      <h2 class="tw-section-h">Stations</h2>
+      <ul class="tw-stop-list" id="tw-stn-list"></ul>
+    `;
+
+    // ----- map -----
+    const styleUrl = await TW.mapStyle();
+    const map = new maplibregl.Map({
+      container: 'tw-map', style: styleUrl,
+      center: (Tracewise.data.config && Tracewise.data.config.default_centre) || [135.5, 34.7],
+      zoom: 11, attributionControl: { compact: true }
+    });
+    map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), 'top-right');
+
+    const trackFC = TW.trackFC([track.id]);
+    const clusterIds = new Set();
+    for (const stop of stops) {
+      const cid = ix.clusterByNode.get(stop.station_node_id);
+      if (cid) clusterIds.add(cid);
+    }
+    const clusterFC = TW.clusterFC(Array.from(clusterIds));
+
+    map.on('load', () => {
+      map.addSource('tw-tracks', { type: 'geojson', data: trackFC });
+      map.addSource('tw-clusters', { type: 'geojson', data: clusterFC });
+      TW.addCommonLayers(map, { labelMinZoom: 11, lineWidth: 4, casingWidth: 6 });
+      map.on('click', 'tw-cluster-dots', e => {
+        const f = e.features[0]; if (!f) return;
+        location.href = `station.html?id=${encodeURIComponent(f.properties.cluster_id)}`;
+      });
+      TW.fitBoundsToFC(map, trackFC, 60);
+    });
+
+    Tracewise.geometryReady.then(() => {
+      const src = map.getSource && map.getSource('tw-tracks');
+      if (src) src.setData(TW.trackFC([track.id]));
+    });
+
+    // ----- matrix -----
+    const matrixWrap = document.getElementById('tw-matrix-wrap');
+    if (services.length === 0 || stops.length === 0) {
+      matrixWrap.innerHTML = '<div class="tw-empty-section">No services on this track.</div>';
+    } else {
+      let head = '<tr class="tw-headers"><th class="tw-svc-label">Service</th>';
+      for (const s of stops) {
+        const node = ix.nodesById.get(s.station_node_id);
+        const en = node ? node.name_en : '?', ja = node ? node.name_ja : '';
+        head += `<th class="tw-stn-h" title="${TW.escapeHtml(en)}"><span class="tw-stn-h-rot">${TW.escapeHtml(en)}<span class="tw-stn-h-ja">${TW.escapeHtml(ja)}</span></span></th>`;
+      }
+      head += '</tr>';
+      let body = '';
+      for (const svc of services) {
+        const inPattern = new Set(svc.stop_pattern || []);
+        body += `<tr><td class="tw-svc-label" title="${TW.escapeHtml(svc.display_name_en)}">
+          <a href="service.html?id=${encodeURIComponent(svc.id)}" style="color:inherit">${TW.escapeHtml(svc.display_name_en)}</a> ${TW.suppPill(svc.supplement)}
+        </td>`;
+        for (const s of stops) {
+          if (inPattern.has(s.id)) body += `<td class="tw-cell"><span class="tw-stop-dot" style="background:${op?op.colour:'#888'}"></span></td>`;
+          else body += `<td class="tw-cell"><span class="tw-skip-dot"></span></td>`;
+        }
+        body += '</tr>';
+      }
+      matrixWrap.innerHTML = `<div class="tw-matrix-wrap"><table class="tw-matrix" role="grid"><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
+    }
+
+    // ----- frequency heatmap -----
+    const freqWrap = document.getElementById('tw-freq-wrap');
+    if (stops.length === 0) {
+      freqWrap.innerHTML = '<div class="tw-empty-section">No frequency data.</div>';
+    } else {
+      const bands = ['peak_am','midday','peak_pm','evening','weekend'];
+      const labels = { peak_am:'AM peak', midday:'Midday', peak_pm:'PM peak', evening:'Evening', weekend:'Weekend' };
+      let head = '<tr><th class="tw-band-label">Band</th>';
+      for (const s of stops) {
+        const node = ix.nodesById.get(s.station_node_id);
+        head += `<th class="tw-stn-h"><span class="tw-stn-h-rot">${TW.escapeHtml(node ? node.name_en : '?')}</span></th>`;
+      }
+      head += '</tr>';
+      let body = '';
+      for (const band of bands) {
+        body += `<tr><td class="tw-band-label">${labels[band]}</td>`;
+        for (const s of stops) {
+          const f = ix.frequencyByStop.get(s.id);
+          body += TW.freqCell(f ? f[band] : 0);
+        }
+        body += '</tr>';
+      }
+      freqWrap.innerHTML = `<div class="tw-matrix-wrap"><table class="tw-freq-table" role="grid"><thead>${head}</thead><tbody>${body}</tbody></table></div>`;
+    }
+
+    // ----- station list -----
+    const stnList = document.getElementById('tw-stn-list');
+    if (stops.length === 0) {
+      stnList.outerHTML = '<div class="tw-empty-section">No stations.</div>';
+    } else {
+      let html = '';
+      for (const s of stops) {
+        const node = ix.nodesById.get(s.station_node_id);
+        const cid = ix.clusterByNode.get(s.station_node_id);
+        const km = (s.km_post != null) ? s.km_post.toFixed(1) + ' km' : '';
+        html += `<li class="tw-stop-row">
+          <span class="tw-dot" style="background:${op?op.colour:'#888'}"></span>
+          <span class="tw-stn-en">${cid ? `<a href="station.html?id=${encodeURIComponent(cid)}">${TW.escapeHtml(node?node.name_en:'?')}</a>` : TW.escapeHtml(node?node.name_en:'?')}</span>
+          <span class="tw-stn-ja">${TW.escapeHtml(node ? node.name_ja : '')}</span>
+          <span class="tw-stn-code">${TW.escapeHtml(s.code || '')}</span>
+          <span class="tw-stn-km">${TW.escapeHtml(km)}</span>
+        </li>`;
+      }
+      stnList.innerHTML = html;
+    }
+  })();
+  </script>
 </body>
 </html>

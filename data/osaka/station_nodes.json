@@ -1,1 +1,898 @@
-[]
+[
+  {
+    "id": "osaka-metro--abeno",
+    "name_en": "Abeno",
+    "name_ja": "阿倍野",
+    "lat": 34.64173,
+    "lon": 135.51416,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--abiko",
+    "name_en": "Abiko",
+    "name_ja": "あびこ",
+    "lat": 34.60088,
+    "lon": 135.52083,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--asashiobashi",
+    "name_en": "Asashiobashi",
+    "name_ja": "朝潮橋",
+    "lat": 34.66247,
+    "lon": 135.4449,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--awaza",
+    "name_en": "Awaza",
+    "name_ja": "阿波座",
+    "lat": 34.6819,
+    "lon": 135.48533,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--bentencho",
+    "name_en": "Bentencho",
+    "name_ja": "弁天町",
+    "lat": 34.66923,
+    "lon": 135.46193,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--cosmosquare",
+    "name_en": "Cosmosquare",
+    "name_ja": "コスモスクエア",
+    "lat": 34.64333,
+    "lon": 135.4111,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--daido-toyosato",
+    "name_en": "Daido-Toyosato",
+    "name_ja": "だいどう豊里",
+    "lat": 34.74287,
+    "lon": 135.544,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--daikokucho",
+    "name_en": "Daikokucho",
+    "name_ja": "大国町",
+    "lat": 34.6589,
+    "lon": 135.49807,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--dainichi",
+    "name_en": "Dainichi",
+    "name_ja": "大日",
+    "lat": 34.76842,
+    "lon": 135.59731,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--deto",
+    "name_en": "Deto",
+    "name_ja": "出戸",
+    "lat": 34.5994,
+    "lon": 135.5722,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--dobutsuen-mae",
+    "name_en": "Dobutsuen-mae",
+    "name_ja": "動物園前",
+    "lat": 34.65166,
+    "lon": 135.50284,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--dome-mae-chiyozaki",
+    "name_en": "Dome-mae Chiyozaki",
+    "name_ja": "ドーム前千代崎",
+    "lat": 34.67133,
+    "lon": 135.4818,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--ebisucho",
+    "name_en": "Ebisucho",
+    "name_ja": "恵美須町",
+    "lat": 34.6554,
+    "lon": 135.5058,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--esaka",
+    "name_en": "Esaka",
+    "name_ja": "江坂",
+    "lat": 34.7606,
+    "lon": 135.49778,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--ferry-terminal",
+    "name_en": "Ferry Terminal",
+    "name_ja": "フェリーターミナル",
+    "lat": 34.62498,
+    "lon": 135.4381,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--fukaebashi",
+    "name_en": "Fukaebashi",
+    "name_ja": "深江橋",
+    "lat": 34.67845,
+    "lon": 135.5546,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--furukawabashi",
+    "name_en": "Furukawabashi",
+    "name_ja": "古市",
+    "lat": 34.73443,
+    "lon": 135.54573,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--gamo-4-chome",
+    "name_en": "Gamo 4-chome",
+    "name_ja": "蒲生四丁目",
+    "lat": 34.7032,
+    "lon": 135.5505,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--hanazonocho",
+    "name_en": "Hanazonocho",
+    "name_ja": "花園町",
+    "lat": 34.64976,
+    "lon": 135.4917,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--higashi-mikuni",
+    "name_en": "Higashi-Mikuni",
+    "name_ja": "東三国",
+    "lat": 34.74815,
+    "lon": 135.49814,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--higashi-umeda",
+    "name_en": "Higashi-Umeda",
+    "name_ja": "東梅田",
+    "lat": 34.70183,
+    "lon": 135.50142,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--higobashi",
+    "name_en": "Higobashi",
+    "name_ja": "肥後橋",
+    "lat": 34.6922,
+    "lon": 135.4958,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--hirabayashi",
+    "name_en": "Hirabayashi",
+    "name_ja": "平林",
+    "lat": 34.6071,
+    "lon": 135.4581,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--hirano",
+    "name_en": "Hirano",
+    "name_ja": "平野",
+    "lat": 34.61055,
+    "lon": 135.5447,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--hommachi",
+    "name_en": "Hommachi",
+    "name_ja": "本町",
+    "lat": 34.6834,
+    "lon": 135.49678,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--hommachi-2",
+    "name_en": "Hommachi",
+    "name_ja": "本町",
+    "lat": 34.6834,
+    "lon": 135.49962,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--honmachi",
+    "name_en": "Honmachi",
+    "name_ja": "本町",
+    "lat": 34.6834,
+    "lon": 135.49962,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--imafuku-tsurumi",
+    "name_en": "Imafuku-Tsurumi",
+    "name_ja": "今福鶴見",
+    "lat": 34.7104,
+    "lon": 135.56415,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--imazato",
+    "name_en": "Imazato",
+    "name_ja": "今里",
+    "lat": 34.66533,
+    "lon": 135.55155,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--itakano",
+    "name_en": "Itakano",
+    "name_ja": "井高野",
+    "lat": 34.7577,
+    "lon": 135.5471,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kadoma-minami",
+    "name_en": "Kadoma-Minami",
+    "name_ja": "門真南",
+    "lat": 34.72513,
+    "lon": 135.5923,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kire-uriwari",
+    "name_en": "Kire-Uriwari",
+    "name_ja": "喜連瓜破",
+    "lat": 34.6033,
+    "lon": 135.5588,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kishinosato",
+    "name_en": "Kishinosato",
+    "name_ja": "岸里",
+    "lat": 34.64141,
+    "lon": 135.4957,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kita-hanada",
+    "name_en": "Kita-Hanada",
+    "name_ja": "北花田",
+    "lat": 34.59247,
+    "lon": 135.5092,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kitabatake",
+    "name_en": "Kitabatake",
+    "name_ja": "北加賀屋",
+    "lat": 34.6153,
+    "lon": 135.488,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kitahama",
+    "name_en": "Kitahama",
+    "name_ja": "北浜",
+    "lat": 34.6902,
+    "lon": 135.50858,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kitatatsumi",
+    "name_en": "Kitatatsumi",
+    "name_ja": "北巽",
+    "lat": 34.6611,
+    "lon": 135.5789,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--komagawa-nakano",
+    "name_en": "Komagawa-Nakano",
+    "name_ja": "駒川中野",
+    "lat": 34.6179,
+    "lon": 135.53,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kujo",
+    "name_en": "Kujo",
+    "name_ja": "九条",
+    "lat": 34.67445,
+    "lon": 135.4741,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--kyobashi",
+    "name_en": "Kyobashi",
+    "name_ja": "京橋",
+    "lat": 34.69655,
+    "lon": 135.5342,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--matsuyamachi",
+    "name_en": "Matsuyamachi",
+    "name_ja": "松屋町",
+    "lat": 34.67558,
+    "lon": 135.5137,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--midoribashi",
+    "name_en": "Midoribashi",
+    "name_ja": "緑橋",
+    "lat": 34.6793,
+    "lon": 135.5429,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--minami-morimachi",
+    "name_en": "Minami-Morimachi",
+    "name_ja": "南森町",
+    "lat": 34.69587,
+    "lon": 135.51016,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--minami-tatsumi",
+    "name_en": "Minami-Tatsumi",
+    "name_ja": "南巽",
+    "lat": 34.65512,
+    "lon": 135.5855,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--miyakojima",
+    "name_en": "Miyakojima",
+    "name_ja": "都島",
+    "lat": 34.718,
+    "lon": 135.5226,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--moriguchi",
+    "name_en": "Moriguchi",
+    "name_ja": "守口",
+    "lat": 34.75857,
+    "lon": 135.5771,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--morinomiya",
+    "name_en": "Morinomiya",
+    "name_ja": "森ノ宮",
+    "lat": 34.6831,
+    "lon": 135.53156,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nagahara",
+    "name_en": "Nagahara",
+    "name_ja": "長原",
+    "lat": 34.6002,
+    "lon": 135.5892,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nagahoribashi",
+    "name_en": "Nagahoribashi",
+    "name_ja": "長堀橋",
+    "lat": 34.675,
+    "lon": 135.50686,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nagai",
+    "name_en": "Nagai",
+    "name_ja": "長居",
+    "lat": 34.60937,
+    "lon": 135.5198,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nagata",
+    "name_en": "Nagata",
+    "name_ja": "長田",
+    "lat": 34.6746,
+    "lon": 135.5832,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nakafuto",
+    "name_en": "Nakafuto",
+    "name_ja": "中ふ頭",
+    "lat": 34.64223,
+    "lon": 135.42605,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nakamozu",
+    "name_en": "Nakamozu",
+    "name_ja": "なかもず",
+    "lat": 34.56972,
+    "lon": 135.49444,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nakatsu",
+    "name_en": "Nakatsu",
+    "name_ja": "中津",
+    "lat": 34.7114,
+    "lon": 135.49765,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nakazakicho",
+    "name_en": "Nakazakicho",
+    "name_ja": "中崎町",
+    "lat": 34.70686,
+    "lon": 135.5048,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--namba",
+    "name_en": "Namba",
+    "name_ja": "難波",
+    "lat": 34.66639,
+    "lon": 135.50054,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--namba-2",
+    "name_en": "Namba",
+    "name_ja": "なんば",
+    "lat": 34.66645,
+    "lon": 135.49744,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--namba-3",
+    "name_en": "Namba",
+    "name_ja": "なんば",
+    "lat": 34.666,
+    "lon": 135.50213,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nanko-east",
+    "name_en": "Nanko-East",
+    "name_ja": "南港東",
+    "lat": 34.61863,
+    "lon": 135.44085,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nanko-guchi",
+    "name_en": "Nanko-guchi",
+    "name_ja": "南港口",
+    "lat": 34.6119,
+    "lon": 135.4432,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nippombashi",
+    "name_en": "Nippombashi",
+    "name_ja": "日本橋",
+    "lat": 34.6661,
+    "lon": 135.50678,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nishi-nagahori",
+    "name_en": "Nishi-Nagahori",
+    "name_ja": "西長堀",
+    "lat": 34.67802,
+    "lon": 135.4867,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nishi-ohashi",
+    "name_en": "Nishi-Ohashi",
+    "name_ja": "西大橋",
+    "lat": 34.675,
+    "lon": 135.49622,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nishi-umeda",
+    "name_en": "Nishi-Umeda",
+    "name_ja": "西梅田",
+    "lat": 34.7006,
+    "lon": 135.4957,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nishinakajima-minamigata",
+    "name_en": "Nishinakajima-Minamigata",
+    "name_ja": "西中島南方",
+    "lat": 34.72594,
+    "lon": 135.49955,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nishitanabe",
+    "name_en": "Nishitanabe",
+    "name_ja": "西田辺",
+    "lat": 34.6241,
+    "lon": 135.51957,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--nodahanshin",
+    "name_en": "Nodahanshin",
+    "name_ja": "野田阪神",
+    "lat": 34.69505,
+    "lon": 135.4719,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--noe-uchindai",
+    "name_en": "Noe-Uchindai",
+    "name_ja": "野江内代",
+    "lat": 34.7272,
+    "lon": 135.5273,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--ogimachi",
+    "name_en": "Ogimachi",
+    "name_ja": "扇町",
+    "lat": 34.70395,
+    "lon": 135.5101,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--osaka-business-park",
+    "name_en": "Osaka Business Park",
+    "name_ja": "大阪ビジネスパーク",
+    "lat": 34.68953,
+    "lon": 135.534,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--osakako",
+    "name_en": "Osakako",
+    "name_ja": "大阪港",
+    "lat": 34.65487,
+    "lon": 135.4351,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--port-town-higashi",
+    "name_en": "Port Town-higashi",
+    "name_ja": "ポートタウン東",
+    "lat": 34.63095,
+    "lon": 135.4348,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--port-town-nishi",
+    "name_en": "Port Town-nishi",
+    "name_ja": "ポートタウン西",
+    "lat": 34.6346,
+    "lon": 135.42915,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--sakaisuji-hommachi",
+    "name_en": "Sakaisuji-Hommachi",
+    "name_ja": "堺筋本町",
+    "lat": 34.68362,
+    "lon": 135.50705,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--sakuragawa",
+    "name_en": "Sakuragawa",
+    "name_ja": "桜川",
+    "lat": 34.67133,
+    "lon": 135.4912,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--seimei-ga-oka",
+    "name_en": "Seimei-ga-oka",
+    "name_ja": "清水",
+    "lat": 34.72683,
+    "lon": 135.5472,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--sekime-seiiku",
+    "name_en": "Sekime-Seiiku",
+    "name_ja": "関目成育",
+    "lat": 34.73026,
+    "lon": 135.55665,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--sekime-takadono",
+    "name_en": "Sekime-Takadono",
+    "name_ja": "関目高殿",
+    "lat": 34.73613,
+    "lon": 135.5359,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--sembayashi",
+    "name_en": "Sembayashi",
+    "name_ja": "千林",
+    "lat": 34.7356,
+    "lon": 135.55385,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--sembayashi-omiya",
+    "name_en": "Sembayashi-Omiya",
+    "name_ja": "千林大宮",
+    "lat": 34.7442,
+    "lon": 135.5453,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--shin-fukae",
+    "name_en": "Shin-Fukae",
+    "name_ja": "新深江",
+    "lat": 34.67,
+    "lon": 135.5596,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--shin-kanaoka",
+    "name_en": "Shin-Kanaoka",
+    "name_ja": "新金岡",
+    "lat": 34.57884,
+    "lon": 135.5025,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--shin-moriguchi",
+    "name_en": "Shin-Moriguchi",
+    "name_ja": "新森古市",
+    "lat": 34.7239,
+    "lon": 135.5498,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--shin-osaka",
+    "name_en": "Shin-Osaka",
+    "name_ja": "新大阪",
+    "lat": 34.73362,
+    "lon": 135.50016,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--shinsaibashi",
+    "name_en": "Shinsaibashi",
+    "name_ja": "心斎橋",
+    "lat": 34.67475,
+    "lon": 135.50108,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--shitennoji-mae-yuhigaoka",
+    "name_en": "Shitennoji-mae Yuhigaoka",
+    "name_ja": "四天王寺前夕陽ヶ丘",
+    "lat": 34.66012,
+    "lon": 135.5191,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--shoji",
+    "name_en": "Shoji",
+    "name_ja": "小路",
+    "lat": 34.66785,
+    "lon": 135.5714,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--showacho",
+    "name_en": "Showacho",
+    "name_ja": "昭和町",
+    "lat": 34.63425,
+    "lon": 135.51797,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--suminoekoen",
+    "name_en": "Suminoekoen",
+    "name_ja": "住之江公園",
+    "lat": 34.608,
+    "lon": 135.4842,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--taishibashi-imaichi",
+    "name_en": "Taishibashi-Imaichi",
+    "name_ja": "太子橋今市",
+    "lat": 34.75113,
+    "lon": 135.5589,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--taisho",
+    "name_en": "Taisho",
+    "name_ja": "大正",
+    "lat": 34.66724,
+    "lon": 135.4845,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--takaida",
+    "name_en": "Takaida",
+    "name_ja": "高井田",
+    "lat": 34.67667,
+    "lon": 135.5708,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tamade",
+    "name_en": "Tamade",
+    "name_ja": "玉出",
+    "lat": 34.6272,
+    "lon": 135.49384,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tamagawa",
+    "name_en": "Tamagawa",
+    "name_ja": "玉川",
+    "lat": 34.691,
+    "lon": 135.48022,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tamatsukuri",
+    "name_en": "Tamatsukuri",
+    "name_ja": "玉造",
+    "lat": 34.6817,
+    "lon": 135.53288,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tanabe",
+    "name_en": "Tanabe",
+    "name_ja": "田辺",
+    "lat": 34.6257,
+    "lon": 135.52306,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tanimachi-4-chome",
+    "name_en": "Tanimachi 4-chome",
+    "name_ja": "谷町四丁目",
+    "lat": 34.6829,
+    "lon": 135.5176,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tanimachi-6-chome",
+    "name_en": "Tanimachi 6-chome",
+    "name_ja": "谷町六丁目",
+    "lat": 34.6755,
+    "lon": 135.51877,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tanimachi-9-chome",
+    "name_en": "Tanimachi 9-chome",
+    "name_ja": "谷町九丁目",
+    "lat": 34.66662,
+    "lon": 135.5191,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tengachaya",
+    "name_en": "Tengachaya",
+    "name_ja": "天下茶屋",
+    "lat": 34.63873,
+    "lon": 135.50173,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tenjimbashisuji-6-chome",
+    "name_en": "Tenjimbashisuji 6-chome",
+    "name_ja": "天神橋筋六丁目",
+    "lat": 34.71135,
+    "lon": 135.5116,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tenmabashi",
+    "name_en": "Tenmabashi",
+    "name_ja": "天満橋",
+    "lat": 34.68705,
+    "lon": 135.51537,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tennoji",
+    "name_en": "Tennoji",
+    "name_ja": "天王寺",
+    "lat": 34.64729,
+    "lon": 135.51343,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--trade-center-mae",
+    "name_en": "Trade Center-mae",
+    "name_ja": "トレードセンター前",
+    "lat": 34.6495,
+    "lon": 135.41785,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tsuruhashi",
+    "name_en": "Tsuruhashi",
+    "name_ja": "鶴橋",
+    "lat": 34.6652,
+    "lon": 135.53104,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--tsurumi-ryokuchi",
+    "name_en": "Tsurumi-ryokuchi",
+    "name_ja": "鶴見緑地",
+    "lat": 34.71953,
+    "lon": 135.5841,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--umeda",
+    "name_en": "Umeda",
+    "name_ja": "梅田",
+    "lat": 34.70244,
+    "lon": 135.4983,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--yao-minami",
+    "name_en": "Yao-Minami",
+    "name_ja": "八尾南",
+    "lat": 34.6033,
+    "lon": 135.598,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--yodoyabashi",
+    "name_en": "Yodoyabashi",
+    "name_ja": "淀屋橋",
+    "lat": 34.69247,
+    "lon": 135.50106,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--yokozutsumi",
+    "name_en": "Yokozutsumi",
+    "name_ja": "横堤",
+    "lat": 34.71375,
+    "lon": 135.57787,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--yotsubashi",
+    "name_en": "Yotsubashi",
+    "name_ja": "四ツ橋",
+    "lat": 34.67485,
+    "lon": 135.4981,
+    "operator_id": "osaka-metro"
+  },
+  {
+    "id": "osaka-metro--zuiko-4-chome",
+    "name_en": "Zuiko 4-chome",
+    "name_ja": "瑞光四丁目",
+    "lat": 34.75103,
+    "lon": 135.544,
+    "operator_id": "osaka-metro"
+  }
+]

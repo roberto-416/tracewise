@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "id": "osaka-metro",
+    "name_en": "Osaka Metro",
+    "name_ja": "大阪メトロ",
+    "colour": "#1A4F9C",
+    "url": "https://www.osakametro.co.jp/en/"
+  },
+  {
+    "id": "jr-west",
+    "name_en": "JR West",
+    "name_ja": "JR西日本",
+    "colour": "#0072BC",
+    "url": "https://www.westjr.co.jp/global/en/"
+  },
+  {
+    "id": "hankyu",
+    "name_en": "Hankyu Railway",
+    "name_ja": "阪急電鉄",
+    "colour": "#7B2D26",
+    "url": "https://www.hankyu.co.jp/global/en/"
+  },
+  {
+    "id": "hanshin",
+    "name_en": "Hanshin Railway",
+    "name_ja": "阪神電鉄",
+    "colour": "#FFC107",
+    "url": "https://rail.hanshin.co.jp/global/en/"
+  },
+  {
+    "id": "keihan",
+    "name_en": "Keihan Railway",
+    "name_ja": "京阪電鉄",
+    "colour": "#0F6E3F",
+    "url": "https://www.keihan.co.jp/travel/en/"
+  },
+  {
+    "id": "kintetsu",
+    "name_en": "Kintetsu Railway",
+    "name_ja": "近鉄",
+    "colour": "#C8102E",
+    "url": "https://www.kintetsu.co.jp/foreign/english/"
+  },
+  {
+    "id": "nankai",
+    "name_en": "Nankai Electric Railway",
+    "name_ja": "南海電鉄",
+    "colour": "#003D7C",
+    "url": "https://www.nankai.co.jp/library/en/"
+  },
+  {
+    "id": "kobe-rapid",
+    "name_en": "Kobe Rapid Transit",
+    "name_ja": "神戸高速",
+    "colour": "#7E7E7E",
+    "url": ""
+  }
+]

@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "osaka-metro-midosuji",
+    "operator_id": "osaka-metro",
+    "name_en": "Midosuji Line",
+    "name_ja": "御堂筋線",
+    "colour": "#D7252A",
+    "code": "M"
+  },
+  {
+    "id": "osaka-metro-tanimachi",
+    "operator_id": "osaka-metro",
+    "name_en": "Tanimachi Line",
+    "name_ja": "谷町線",
+    "colour": "#522F92",
+    "code": "T"
+  },
+  {
+    "id": "osaka-metro-yotsubashi",
+    "operator_id": "osaka-metro",
+    "name_en": "Yotsubashi Line",
+    "name_ja": "四つ橋線",
+    "colour": "#1976D2",
+    "code": "Y"
+  },
+  {
+    "id": "osaka-metro-chuo",
+    "operator_id": "osaka-metro",
+    "name_en": "Chuo Line",
+    "name_ja": "中央線",
+    "colour": "#009E60",
+    "code": "C"
+  },
+  {
+    "id": "osaka-metro-sennichimae",
+    "operator_id": "osaka-metro",
+    "name_en": "Sennichimae Line",
+    "name_ja": "千日前線",
+    "colour": "#E85298",
+    "code": "S"
+  },
+  {
+    "id": "osaka-metro-sakaisuji",
+    "operator_id": "osaka-metro",
+    "name_en": "Sakaisuji Line",
+    "name_ja": "堺筋線",
+    "colour": "#8B5A2B",
+    "code": "K"
+  },
+  {
+    "id": "osaka-metro-nagahori",
+    "operator_id": "osaka-metro",
+    "name_en": "Nagahori Tsurumi-ryokuchi Line",
+    "name_ja": "長堀鶴見緑地線",
+    "colour": "#80C342",
+    "code": "N"
+  },
+  {
+    "id": "osaka-metro-imazatosuji",
+    "operator_id": "osaka-metro",
+    "name_en": "Imazatosuji Line",
+    "name_ja": "今里筋線",
+    "colour": "#F39800",
+    "code": "I"
+  },
+  {
+    "id": "osaka-metro-nanko",
+    "operator_id": "osaka-metro",
+    "name_en": "Nanko Port Town Line",
+    "name_ja": "南港ポートタウン線",
+    "colour": "#00ABDB",
+    "code": "P"
+  }
+]

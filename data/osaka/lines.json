@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "id": "osaka-metro-midosuji",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Midosuji Line",
+    "display_name_ja": "御堂筋線",
+    "colour": "#D7252A",
+    "tracks": [
+      "osaka-metro-midosuji"
+    ]
+  },
+  {
+    "id": "osaka-metro-tanimachi",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Tanimachi Line",
+    "display_name_ja": "谷町線",
+    "colour": "#522F92",
+    "tracks": [
+      "osaka-metro-tanimachi"
+    ]
+  },
+  {
+    "id": "osaka-metro-yotsubashi",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Yotsubashi Line",
+    "display_name_ja": "四つ橋線",
+    "colour": "#1976D2",
+    "tracks": [
+      "osaka-metro-yotsubashi"
+    ]
+  },
+  {
+    "id": "osaka-metro-chuo",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Chuo Line",
+    "display_name_ja": "中央線",
+    "colour": "#009E60",
+    "tracks": [
+      "osaka-metro-chuo"
+    ]
+  },
+  {
+    "id": "osaka-metro-sennichimae",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Sennichimae Line",
+    "display_name_ja": "千日前線",
+    "colour": "#E85298",
+    "tracks": [
+      "osaka-metro-sennichimae"
+    ]
+  },
+  {
+    "id": "osaka-metro-sakaisuji",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Sakaisuji Line",
+    "display_name_ja": "堺筋線",
+    "colour": "#8B5A2B",
+    "tracks": [
+      "osaka-metro-sakaisuji"
+    ]
+  },
+  {
+    "id": "osaka-metro-nagahori",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Nagahori Tsurumi-ryokuchi Line",
+    "display_name_ja": "長堀鶴見緑地線",
+    "colour": "#80C342",
+    "tracks": [
+      "osaka-metro-nagahori"
+    ]
+  },
+  {
+    "id": "osaka-metro-imazatosuji",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Imazatosuji Line",
+    "display_name_ja": "今里筋線",
+    "colour": "#F39800",
+    "tracks": [
+      "osaka-metro-imazatosuji"
+    ]
+  },
+  {
+    "id": "osaka-metro-nanko",
+    "primary_operator_id": "osaka-metro",
+    "display_name_en": "Nanko Port Town Line",
+    "display_name_ja": "南港ポートタウン線",
+    "colour": "#00ABDB",
+    "tracks": [
+      "osaka-metro-nanko"
+    ]
+  }
+]

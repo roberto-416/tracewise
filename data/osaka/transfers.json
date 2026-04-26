@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "tx-umeda--higashi-umeda",
+    "a": "osaka-metro--umeda",
+    "b": "osaka-metro--higashi-umeda",
+    "category": "different_name_connected",
+    "walking_time_min": 5,
+    "paid_area": false,
+    "note": "Underground concourse. Tap out and re-tap if outside paid area window."
+  },
+  {
+    "id": "tx-umeda--nishi-umeda",
+    "a": "osaka-metro--umeda",
+    "b": "osaka-metro--nishi-umeda",
+    "category": "different_name_connected",
+    "walking_time_min": 7,
+    "paid_area": false,
+    "note": "Long underground walk via Whity Umeda."
+  },
+  {
+    "id": "tx-higashi-umeda--nishi-umeda",
+    "a": "osaka-metro--higashi-umeda",
+    "b": "osaka-metro--nishi-umeda",
+    "category": "different_name_connected",
+    "walking_time_min": 8,
+    "paid_area": false,
+    "note": "Diagonal walk across the Umeda complex."
+  }
+]

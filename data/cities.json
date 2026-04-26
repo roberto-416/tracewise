@@ -1,3 +1,8 @@
 [
-  {"id": "osaka", "name_en": "Osaka", "name_ja": "大阪", "default": true}
+  {
+    "id": "osaka",
+    "name_en": "Osaka",
+    "name_ja": "大阪",
+    "default": true
+  }
 ]

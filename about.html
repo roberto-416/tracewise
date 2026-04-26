@@ -4,18 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tracewise — About</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #0d1117; color: #ffffff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-    .stub { text-align: center; }
-    .wordmark { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
-    .label { font-size: 13px; color: #8b949e; }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/ui.js"></script>
 </head>
 <body>
-  <div class="stub">
-    <div class="wordmark">Tracewise</div>
-    <div class="label">About — building</div>
-  </div>
+  <main class="tw-main" style="margin: 0 auto;">
+    <div class="tw-page-title">Tracewise</div>
+    <div class="tw-page-subtitle">Transit, made legible.</div>
+
+    <p style="margin: 16px 0;">Tracewise is a static reference for understanding complex urban transit systems <em>as systems</em> — stopping patterns, frequencies, through-running relationships, and station/interchange structure. It is for railfans, transit students, and curious tourists who want comprehension over wayfinding. It is not a trip planner, not a real-time arrival board, and not a fare calculator.</p>
+
+    <h2 class="tw-section-h">Data sources</h2>
+    <p>v1 covers Osaka. The eight operators in scope are Osaka Metro, JR West, Hankyu, Hanshin, Keihan, Kintetsu, Nankai, and Kobe Rapid Transit. v1 ships seed data for Osaka Metro only; the other operators are present as placeholders so the schema is exercised end-to-end.</p>
+    <ul style="margin: 8px 0 8px 20px; color: var(--ink-dim);">
+      <li>Operator timetables, station codes, and line colours: official operator publications.</li>
+      <li>Station coordinates: approximated for visualisation. To be refined against OpenStreetMap by the build pipeline.</li>
+      <li>Service frequencies: typical-day estimates, not real-time.</li>
+    </ul>
+
+    <h2 class="tw-section-h">Methodology</h2>
+    <p><strong>Three-level model: track / line / service.</strong> A <em>track</em> is a physical corridor owned by one operator. A <em>line</em> is a passenger-facing brand composed of one or more tracks. A <em>service</em> is one stopping pattern that travels along a sequence of tracks. This separation is what lets Tracewise show through-running relationships clearly: when a service crosses an operator boundary, the path-across-lines view marks the transition explicitly.</p>
+    <p><strong>Frequencies aggregate at the stop.</strong> A station's tph in a given band is the sum of all services that include it in their stopping pattern for that band. Through-services are not double-counted because each through-service is a single record, not two.</p>
+    <p><strong>Clusters group nearby and connected nodes.</strong> A station like Umeda groups together the Midosuji Umeda, Tanimachi Higashi-Umeda, and Yotsubashi Nishi-Umeda nodes (plus Hankyu, Hanshin, and JR Osaka when their data is added). The cluster is built from a hand-curated list, the inter-station transfer graph, and a 250 m proximity rule.</p>
+
+    <h2 class="tw-section-h">FAQ</h2>
+    <p><strong>Why is "Umeda" listed as one station when it's actually three?</strong> Because as a passenger you treat them as one interchange. The transfer page shows the underlying separate stations and the walks between them.</p>
+    <p><strong>Why no real-time data?</strong> Out of scope for v1. The static, file-based architecture is part of the goal: a reference, not a wayfinding tool.</p>
+    <p><strong>Why are private operators (Hankyu, Hanshin, etc.) empty?</strong> Their data is not public via GTFS. Adding them requires curation from operator timetables and Wikipedia, which is the next milestone.</p>
+
+    <h2 class="tw-section-h">Credits</h2>
+    <p>Map tiles by <a href="https://openfreemap.org">OpenFreeMap</a>. Map rendering by <a href="https://maplibre.org">MapLibre GL JS</a>. Geometry sourced from <a href="https://www.openstreetmap.org">OpenStreetMap</a> contributors. Operator data per official sources listed above.</p>
+
+    <p style="margin-top: 24px; color: var(--ink-dim); font-size: 11px;">© 2026 — open data, open source.</p>
+  </main>
+  <script>TW.renderHeader('about');</script>
 </body>
 </html>

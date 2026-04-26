@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "osaka-metro-standard",
+    "operator_id": "osaka-metro",
+    "name_en": "Osaka Metro Standard Fare Zone",
+    "name_ja": "大阪メトロ普通運賃",
+    "supplement_classes": []
+  }
+]

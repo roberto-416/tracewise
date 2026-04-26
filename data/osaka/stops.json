@@ -1,1 +1,1058 @@
-[]
+[
+  {
+    "id": "osaka-metro-midosuji--m11",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--esaka",
+    "sequence": 0,
+    "code": "M11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m12",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--higashi-mikuni",
+    "sequence": 1,
+    "code": "M12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m13",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--shin-osaka",
+    "sequence": 2,
+    "code": "M13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m14",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--nishinakajima-minamigata",
+    "sequence": 3,
+    "code": "M14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m15",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--nakatsu",
+    "sequence": 4,
+    "code": "M15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m16",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--umeda",
+    "sequence": 5,
+    "code": "M16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m17",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--yodoyabashi",
+    "sequence": 6,
+    "code": "M17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m18",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--honmachi",
+    "sequence": 7,
+    "code": "M18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m19",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--shinsaibashi",
+    "sequence": 8,
+    "code": "M19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m20",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--namba",
+    "sequence": 9,
+    "code": "M20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m21",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--daikokucho",
+    "sequence": 10,
+    "code": "M21",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m22",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--dobutsuen-mae",
+    "sequence": 11,
+    "code": "M22",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m23",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--tennoji",
+    "sequence": 12,
+    "code": "M23",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m24",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--showacho",
+    "sequence": 13,
+    "code": "M24",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m25",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--nishitanabe",
+    "sequence": 14,
+    "code": "M25",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m26",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--nagai",
+    "sequence": 15,
+    "code": "M26",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m27",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--abiko",
+    "sequence": 16,
+    "code": "M27",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m28",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--kita-hanada",
+    "sequence": 17,
+    "code": "M28",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m29",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--shin-kanaoka",
+    "sequence": 18,
+    "code": "M29",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-midosuji--m30",
+    "track_id": "osaka-metro-midosuji",
+    "station_node_id": "osaka-metro--nakamozu",
+    "sequence": 19,
+    "code": "M30",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t11",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--dainichi",
+    "sequence": 0,
+    "code": "T11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t12",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--moriguchi",
+    "sequence": 1,
+    "code": "T12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t13",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--taishibashi-imaichi",
+    "sequence": 2,
+    "code": "T13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t14",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--sembayashi-omiya",
+    "sequence": 3,
+    "code": "T14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t15",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--sekime-takadono",
+    "sequence": 4,
+    "code": "T15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t16",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--noe-uchindai",
+    "sequence": 5,
+    "code": "T16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t17",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--miyakojima",
+    "sequence": 6,
+    "code": "T17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t18",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--tenjimbashisuji-6-chome",
+    "sequence": 7,
+    "code": "T18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t19",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--nakazakicho",
+    "sequence": 8,
+    "code": "T19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t20",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--higashi-umeda",
+    "sequence": 9,
+    "code": "T20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t21",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--minami-morimachi",
+    "sequence": 10,
+    "code": "T21",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t22",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--tenmabashi",
+    "sequence": 11,
+    "code": "T22",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t23",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--tanimachi-4-chome",
+    "sequence": 12,
+    "code": "T23",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t24",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--tanimachi-6-chome",
+    "sequence": 13,
+    "code": "T24",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t25",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--tanimachi-9-chome",
+    "sequence": 14,
+    "code": "T25",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t26",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--shitennoji-mae-yuhigaoka",
+    "sequence": 15,
+    "code": "T26",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t27",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--tennoji",
+    "sequence": 16,
+    "code": "T27",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t28",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--abeno",
+    "sequence": 17,
+    "code": "T28",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t29",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--showacho",
+    "sequence": 18,
+    "code": "T29",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t30",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--tanabe",
+    "sequence": 19,
+    "code": "T30",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t31",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--komagawa-nakano",
+    "sequence": 20,
+    "code": "T31",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t32",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--hirano",
+    "sequence": 21,
+    "code": "T32",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t33",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--kire-uriwari",
+    "sequence": 22,
+    "code": "T33",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t34",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--deto",
+    "sequence": 23,
+    "code": "T34",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t35",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--nagahara",
+    "sequence": 24,
+    "code": "T35",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-tanimachi--t36",
+    "track_id": "osaka-metro-tanimachi",
+    "station_node_id": "osaka-metro--yao-minami",
+    "sequence": 25,
+    "code": "T36",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y11",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--nishi-umeda",
+    "sequence": 0,
+    "code": "Y11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y12",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--higobashi",
+    "sequence": 1,
+    "code": "Y12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y13",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--hommachi",
+    "sequence": 2,
+    "code": "Y13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y14",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--yotsubashi",
+    "sequence": 3,
+    "code": "Y14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y15",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--namba-2",
+    "sequence": 4,
+    "code": "Y15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y16",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--daikokucho",
+    "sequence": 5,
+    "code": "Y16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y17",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--hanazonocho",
+    "sequence": 6,
+    "code": "Y17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y18",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--kishinosato",
+    "sequence": 7,
+    "code": "Y18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y19",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--tamade",
+    "sequence": 8,
+    "code": "Y19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y20",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--kitabatake",
+    "sequence": 9,
+    "code": "Y20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-yotsubashi--y21",
+    "track_id": "osaka-metro-yotsubashi",
+    "station_node_id": "osaka-metro--suminoekoen",
+    "sequence": 10,
+    "code": "Y21",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c10",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--cosmosquare",
+    "sequence": 0,
+    "code": "C10",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c11",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--osakako",
+    "sequence": 1,
+    "code": "C11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c12",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--asashiobashi",
+    "sequence": 2,
+    "code": "C12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c13",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--bentencho",
+    "sequence": 3,
+    "code": "C13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c14",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--kujo",
+    "sequence": 4,
+    "code": "C14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c15",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--awaza",
+    "sequence": 5,
+    "code": "C15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c16",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--hommachi-2",
+    "sequence": 6,
+    "code": "C16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c17",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--sakaisuji-hommachi",
+    "sequence": 7,
+    "code": "C17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c18",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--tanimachi-4-chome",
+    "sequence": 8,
+    "code": "C18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c19",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--morinomiya",
+    "sequence": 9,
+    "code": "C19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c20",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--midoribashi",
+    "sequence": 10,
+    "code": "C20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c21",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--fukaebashi",
+    "sequence": 11,
+    "code": "C21",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c22",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--takaida",
+    "sequence": 12,
+    "code": "C22",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-chuo--c23",
+    "track_id": "osaka-metro-chuo",
+    "station_node_id": "osaka-metro--nagata",
+    "sequence": 13,
+    "code": "C23",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s11",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--nodahanshin",
+    "sequence": 0,
+    "code": "S11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s12",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--tamagawa",
+    "sequence": 1,
+    "code": "S12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s13",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--awaza",
+    "sequence": 2,
+    "code": "S13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s14",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--nishi-nagahori",
+    "sequence": 3,
+    "code": "S14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s15",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--sakuragawa",
+    "sequence": 4,
+    "code": "S15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s16",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--namba-3",
+    "sequence": 5,
+    "code": "S16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s17",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--nippombashi",
+    "sequence": 6,
+    "code": "S17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s18",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--tanimachi-9-chome",
+    "sequence": 7,
+    "code": "S18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s19",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--tsuruhashi",
+    "sequence": 8,
+    "code": "S19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s20",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--imazato",
+    "sequence": 9,
+    "code": "S20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s21",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--shin-fukae",
+    "sequence": 10,
+    "code": "S21",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s22",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--shoji",
+    "sequence": 11,
+    "code": "S22",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s23",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--kitatatsumi",
+    "sequence": 12,
+    "code": "S23",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sennichimae--s24",
+    "track_id": "osaka-metro-sennichimae",
+    "station_node_id": "osaka-metro--minami-tatsumi",
+    "sequence": 13,
+    "code": "S24",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k11",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--tenjimbashisuji-6-chome",
+    "sequence": 0,
+    "code": "K11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k12",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--ogimachi",
+    "sequence": 1,
+    "code": "K12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k13",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--minami-morimachi",
+    "sequence": 2,
+    "code": "K13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k14",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--kitahama",
+    "sequence": 3,
+    "code": "K14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k15",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--sakaisuji-hommachi",
+    "sequence": 4,
+    "code": "K15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k16",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--nagahoribashi",
+    "sequence": 5,
+    "code": "K16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k17",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--nippombashi",
+    "sequence": 6,
+    "code": "K17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k18",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--ebisucho",
+    "sequence": 7,
+    "code": "K18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k19",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--dobutsuen-mae",
+    "sequence": 8,
+    "code": "K19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-sakaisuji--k20",
+    "track_id": "osaka-metro-sakaisuji",
+    "station_node_id": "osaka-metro--tengachaya",
+    "sequence": 9,
+    "code": "K20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n11",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--taisho",
+    "sequence": 0,
+    "code": "N11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n12",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--dome-mae-chiyozaki",
+    "sequence": 1,
+    "code": "N12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n13",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--nishi-nagahori",
+    "sequence": 2,
+    "code": "N13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n14",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--nishi-ohashi",
+    "sequence": 3,
+    "code": "N14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n15",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--shinsaibashi",
+    "sequence": 4,
+    "code": "N15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n16",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--nagahoribashi",
+    "sequence": 5,
+    "code": "N16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n17",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--matsuyamachi",
+    "sequence": 6,
+    "code": "N17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n18",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--tanimachi-6-chome",
+    "sequence": 7,
+    "code": "N18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n19",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--tamatsukuri",
+    "sequence": 8,
+    "code": "N19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n20",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--morinomiya",
+    "sequence": 9,
+    "code": "N20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n21",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--osaka-business-park",
+    "sequence": 10,
+    "code": "N21",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n22",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--kyobashi",
+    "sequence": 11,
+    "code": "N22",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n23",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--gamo-4-chome",
+    "sequence": 12,
+    "code": "N23",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n24",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--imafuku-tsurumi",
+    "sequence": 13,
+    "code": "N24",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n25",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--yokozutsumi",
+    "sequence": 14,
+    "code": "N25",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n26",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--tsurumi-ryokuchi",
+    "sequence": 15,
+    "code": "N26",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nagahori--n27",
+    "track_id": "osaka-metro-nagahori",
+    "station_node_id": "osaka-metro--kadoma-minami",
+    "sequence": 16,
+    "code": "N27",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i11",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--itakano",
+    "sequence": 0,
+    "code": "I11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i12",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--zuiko-4-chome",
+    "sequence": 1,
+    "code": "I12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i13",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--daido-toyosato",
+    "sequence": 2,
+    "code": "I13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i14",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--furukawabashi",
+    "sequence": 3,
+    "code": "I14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i15",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--seimei-ga-oka",
+    "sequence": 4,
+    "code": "I15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i16",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--shin-moriguchi",
+    "sequence": 5,
+    "code": "I16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i17",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--sembayashi",
+    "sequence": 6,
+    "code": "I17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i18",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--sekime-seiiku",
+    "sequence": 7,
+    "code": "I18",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i19",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--gamo-4-chome",
+    "sequence": 8,
+    "code": "I19",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-imazatosuji--i20",
+    "track_id": "osaka-metro-imazatosuji",
+    "station_node_id": "osaka-metro--imazato",
+    "sequence": 9,
+    "code": "I20",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p09",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--cosmosquare",
+    "sequence": 0,
+    "code": "P09",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p10",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--trade-center-mae",
+    "sequence": 1,
+    "code": "P10",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p11",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--nakafuto",
+    "sequence": 2,
+    "code": "P11",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p12",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--port-town-nishi",
+    "sequence": 3,
+    "code": "P12",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p13",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--port-town-higashi",
+    "sequence": 4,
+    "code": "P13",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p14",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--ferry-terminal",
+    "sequence": 5,
+    "code": "P14",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p15",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--nanko-east",
+    "sequence": 6,
+    "code": "P15",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p16",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--nanko-guchi",
+    "sequence": 7,
+    "code": "P16",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p17",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--hirabayashi",
+    "sequence": 8,
+    "code": "P17",
+    "km_post": null
+  },
+  {
+    "id": "osaka-metro-nanko--p18",
+    "track_id": "osaka-metro-nanko",
+    "station_node_id": "osaka-metro--suminoekoen",
+    "sequence": 9,
+    "code": "P18",
+    "km_post": null
+  }
+]

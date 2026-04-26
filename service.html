@@ -3,19 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracewise — Service detail</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #0d1117; color: #ffffff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-    .stub { text-align: center; }
-    .wordmark { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
-    .label { font-size: 13px; color: #8b949e; }
-  </style>
+  <title>Tracewise — Service</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/ui.js"></script>
 </head>
 <body>
-  <div class="stub">
-    <div class="wordmark">Tracewise</div>
-    <div class="label">Service detail — building</div>
+  <div class="tw-grid">
+    <aside class="tw-sidebar" aria-label="Services">
+      <input type="search" class="tw-search" id="tw-search" placeholder="Search services…" autocomplete="off">
+      <div id="tw-svc-list">
+        <div class="tw-skeleton" aria-hidden="true">
+          <div class="tw-skel-bar"></div><div class="tw-skel-bar" style="width:80%"></div>
+          <div class="tw-skel-bar" style="width:60%"></div>
+        </div>
+      </div>
+    </aside>
+    <main class="tw-main" id="tw-main">
+      <div class="tw-loading">Loading…</div>
+    </main>
   </div>
+  <script>
+  (async function () {
+    'use strict';
+    TW.renderHeader('index');
+    const svcId = TW.qs('id');
+    if (!svcId) { TW.notFound('service'); return; }
+    try { await Tracewise.load(TW.qs('city') || undefined); }
+    catch { document.getElementById('tw-main').innerHTML = '<div class="tw-empty-section">Could not load data.</div>'; return; }
+
+    const ix = Tracewise.indexes;
+    const svc = ix.servicesById.get(svcId);
+    if (!svc) { TW.notFound('service'); return; }
+
+    const line = ix.linesById.get(svc.line_id);
+    const op = line ? ix.operatorsById.get(line.primary_operator_id) : null;
+
+    const renderSidebar = TW.renderServiceSidebar('tw-svc-list', { activeId: svc.id });
+    TW.wireSearch('tw-search', renderSidebar);
+
+    // resolve line_path stops + tracks
+    const pathTrackIds = (svc.line_path || []).map(seg => seg.track_id);
+    const uniqPathTrackIds = Array.from(new Set(pathTrackIds));
+    const stopPattern = (svc.stop_pattern || []).map(sid => ix.stopsById.get(sid)).filter(Boolean);
+
+    // all stops on path tracks (for "show all" toggle)
+    const allPathStops = [];
+    for (const seg of (svc.line_path || [])) {
+      const trackStops = ix.stopsByTrack.get(seg.track_id) || [];
+      const fromStop = ix.stopsById.get(seg.from_stop);
+      const toStop = ix.stopsById.get(seg.to_stop);
+      if (!fromStop || !toStop) { for (const s of trackStops) allPathStops.push(s); continue; }
+      const lo = Math.min(fromStop.sequence, toStop.sequence);
+      const hi = Math.max(fromStop.sequence, toStop.sequence);
+      const segStops = trackStops.filter(s => s.sequence >= lo && s.sequence <= hi);
+      // honour declared direction
+      if (toStop.sequence < fromStop.sequence) segStops.reverse();
+      for (const s of segStops) allPathStops.push(s);
+    }
+
+    const overridesNote = svc.stop_pattern_overrides && Object.keys(svc.stop_pattern_overrides).length > 0
+      ? `<div class="tw-counts"><em>Stop pattern varies in ${Object.keys(svc.stop_pattern_overrides).join(', ')} — see line page matrix.</em></div>` : '';
+
+    document.getElementById('tw-main').innerHTML = `
+      <div class="tw-page-title">${TW.escapeHtml(svc.display_name_en)}</div>
+      <div class="tw-page-subtitle">${TW.escapeHtml(svc.display_name_ja || '')}</div>
+      <div class="tw-meta">
+        ${line ? `<a href="line.html?id=${encodeURIComponent(line.id)}" class="tw-pill"><span class="tw-swatch" style="background:${line.colour}"></span>${TW.escapeHtml(line.display_name_en)}</a>` : ''}
+        ${TW.serviceTypePill(svc.service_type)}
+        ${TW.suppPill(svc.supplement)}
+      </div>
+      ${svc.notes ? `<p class="tw-counts" style="margin-bottom:16px">${TW.escapeHtml(svc.notes)}</p>` : ''}
+      <div class="tw-map" id="tw-map" role="application" aria-label="Map of ${TW.escapeHtml(svc.display_name_en)} path"></div>
+      <h2 class="tw-section-h">Path across lines</h2>
+      <div id="tw-path-cards"></div>
+      <h2 class="tw-section-h">Stops <button id="tw-toggle-all" class="tw-pill" style="cursor:pointer">Show all stations on path</button></h2>
+      <ul class="tw-stop-list" id="tw-stop-list"></ul>
+      <h2 class="tw-section-h">Frequency (trains per hour)</h2>
+      <div id="tw-freq-wrap"></div>
+      ${overridesNote}
+    `;
+
+    // map
+    const styleUrl = await TW.mapStyle();
+    const map = new maplibregl.Map({
+      container: 'tw-map', style: styleUrl,
+      center: (Tracewise.data.config && Tracewise.data.config.default_centre) || [135.5, 34.7],
+      zoom: 11, attributionControl: { compact: true }
+    });
+    map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), 'top-right');
+
+    const trackFC = TW.trackFC(uniqPathTrackIds);
+    if (line) for (const f of trackFC.features) f.properties.colour = line.colour;
+    const allClusterIds = new Set();
+    for (const s of allPathStops) {
+      const cid = ix.clusterByNode.get(s.station_node_id);
+      if (cid) allClusterIds.add(cid);
+    }
+    const clusterFC = TW.clusterFC(Array.from(allClusterIds));
+
+    map.on('load', () => {
+      map.addSource('tw-tracks', { type: 'geojson', data: trackFC });
+      map.addSource('tw-clusters', { type: 'geojson', data: clusterFC });
+      TW.addCommonLayers(map, { labelMinZoom: 11, lineWidth: 4, casingWidth: 6 });
+      map.on('click', 'tw-cluster-dots', e => {
+        const f = e.features[0]; if (!f) return;
+        location.href = `station.html?id=${encodeURIComponent(f.properties.cluster_id)}`;
+      });
+      TW.fitBoundsToFC(map, TW.clusterFC(Array.from(new Set(stopPattern.map(s => ix.clusterByNode.get(s.station_node_id))))), 80);
+    });
+
+    Tracewise.geometryReady.then(() => {
+      const src = map.getSource && map.getSource('tw-tracks');
+      if (!src) return;
+      const fc = TW.trackFC(uniqPathTrackIds);
+      if (line) for (const f of fc.features) f.properties.colour = line.colour;
+      src.setData(fc);
+    });
+
+    // path cards
+    const pathHost = document.getElementById('tw-path-cards');
+    const segs = svc.line_path || [];
+    let pathHtml = '';
+    let prevOp = null;
+    for (let i = 0; i < segs.length; i++) {
+      const seg = segs[i];
+      const t = ix.tracksById.get(seg.track_id);
+      const segOp = t ? ix.operatorsById.get(t.operator_id) : null;
+      if (i > 0 && prevOp && segOp && prevOp.id !== segOp.id) {
+        // boundary cluster name = clusterByNode of seg.from_stop's node
+        const boundaryStop = ix.stopsById.get(seg.from_stop);
+        const cid = boundaryStop ? ix.clusterByNode.get(boundaryStop.station_node_id) : null;
+        const cluster = cid ? ix.clusters.get(cid) : null;
+        pathHtml += `<div class="tw-through-divider">↕ Through-running boundary${cluster ? ` · ${TW.escapeHtml(cluster.display_name_en)}` : ''}</div>`;
+      }
+      const fromStop = ix.stopsById.get(seg.from_stop);
+      const toStop = ix.stopsById.get(seg.to_stop);
+      const fromNode = fromStop ? ix.nodesById.get(fromStop.station_node_id) : null;
+      const toNode = toStop ? ix.nodesById.get(toStop.station_node_id) : null;
+      const trackStops = ix.stopsByTrack.get(seg.track_id) || [];
+      let intermediate = 0;
+      if (fromStop && toStop) {
+        const lo = Math.min(fromStop.sequence, toStop.sequence);
+        const hi = Math.max(fromStop.sequence, toStop.sequence);
+        const inSegStops = trackStops.filter(s => s.sequence >= lo && s.sequence <= hi);
+        intermediate = inSegStops.filter(s => (svc.stop_pattern || []).includes(s.id)).length;
+      }
+      pathHtml += `<div class="tw-path-card">
+        <div class="tw-path-bar" style="background:${t ? t.colour : '#888'}"></div>
+        <div class="tw-path-body">
+          <div class="tw-path-title">
+            ${t ? `<a href="track.html?id=${encodeURIComponent(t.id)}" style="color:inherit">${TW.escapeHtml(t.name_en)}</a>` : '?'}
+          </div>
+          <div class="tw-path-meta">
+            ${TW.escapeHtml(fromNode ? fromNode.name_en : '?')} → ${TW.escapeHtml(toNode ? toNode.name_en : '?')}
+            · ${intermediate} served stop${intermediate===1?'':'s'} in this segment
+            ${segOp ? ` · ${TW.escapeHtml(segOp.name_en)}` : ''}
+          </div>
+        </div>
+      </div>`;
+      prevOp = segOp;
+    }
+    if (!pathHtml) pathHtml = '<div class="tw-empty-section">No path defined.</div>';
+    pathHost.innerHTML = pathHtml;
+
+    // stop list (default = pattern only; toggle reveals all path stops with skip badges)
+    const stopHost = document.getElementById('tw-stop-list');
+    const toggle = document.getElementById('tw-toggle-all');
+    let showAll = false;
+
+    function renderStops() {
+      const list = showAll ? allPathStops : stopPattern;
+      const patternSet = new Set((svc.stop_pattern || []));
+      let html = '';
+      for (const s of list) {
+        const node = ix.nodesById.get(s.station_node_id);
+        const cid = ix.clusterByNode.get(s.station_node_id);
+        const skipped = !patternSet.has(s.id);
+        html += `<li class="tw-stop-row${skipped ? ' tw-skip' : ''}">
+          <span class="tw-dot" style="background:${op?op.colour:'#888'}"></span>
+          <span class="tw-stn-en">${cid ? `<a href="station.html?id=${encodeURIComponent(cid)}">${TW.escapeHtml(node?node.name_en:'?')}</a>` : TW.escapeHtml(node?node.name_en:'?')}${skipped ? '<span class="tw-skip-badge">skip</span>' : ''}</span>
+          <span class="tw-stn-ja">${TW.escapeHtml(node ? node.name_ja : '')}</span>
+          <span class="tw-stn-code">${TW.escapeHtml(s.code || '')}</span>
+          <span class="tw-stn-km"></span>
+        </li>`;
+      }
+      stopHost.innerHTML = html || '<div class="tw-empty-section">No stops.</div>';
+    }
+    renderStops();
+    toggle.addEventListener('click', () => {
+      showAll = !showAll;
+      toggle.textContent = showAll ? 'Show only served stops' : 'Show all stations on path';
+      renderStops();
+    });
+
+    // frequency table
+    const freqWrap = document.getElementById('tw-freq-wrap');
+    const fb = svc.frequency_bands || {};
+    const bands = ['peak_am','midday','peak_pm','evening','weekend'];
+    const labels = { peak_am:'AM peak', midday:'Midday', peak_pm:'PM peak', evening:'Evening', weekend:'Weekend' };
+    let body = '';
+    for (const band of bands) {
+      const tph = Number(fb[band]) || 0;
+      body += `<tr><td class="tw-band-label">${labels[band]}</td>${TW.freqCell(tph)}</tr>`;
+    }
+    freqWrap.innerHTML = `<div class="tw-matrix-wrap" style="max-width:240px"><table class="tw-freq-table" role="grid"><tbody>${body}</tbody></table></div>`;
+  })();
+  </script>
 </body>
 </html>

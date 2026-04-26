@@ -1,1 +1,359 @@
-[]
+[
+  {
+    "id": "osaka-metro-midosuji--local",
+    "line_id": "osaka-metro-midosuji",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-midosuji",
+        "from_stop": "osaka-metro-midosuji--m11",
+        "to_stop": "osaka-metro-midosuji--m30"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-midosuji--m11",
+      "osaka-metro-midosuji--m12",
+      "osaka-metro-midosuji--m13",
+      "osaka-metro-midosuji--m14",
+      "osaka-metro-midosuji--m15",
+      "osaka-metro-midosuji--m16",
+      "osaka-metro-midosuji--m17",
+      "osaka-metro-midosuji--m18",
+      "osaka-metro-midosuji--m19",
+      "osaka-metro-midosuji--m20",
+      "osaka-metro-midosuji--m21",
+      "osaka-metro-midosuji--m22",
+      "osaka-metro-midosuji--m23",
+      "osaka-metro-midosuji--m24",
+      "osaka-metro-midosuji--m25",
+      "osaka-metro-midosuji--m26",
+      "osaka-metro-midosuji--m27",
+      "osaka-metro-midosuji--m28",
+      "osaka-metro-midosuji--m29",
+      "osaka-metro-midosuji--m30"
+    ],
+    "frequency_bands": {
+      "peak_am": 16,
+      "midday": 10,
+      "peak_pm": 16,
+      "evening": 8,
+      "weekend": 10
+    }
+  },
+  {
+    "id": "osaka-metro-tanimachi--local",
+    "line_id": "osaka-metro-tanimachi",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-tanimachi",
+        "from_stop": "osaka-metro-tanimachi--t11",
+        "to_stop": "osaka-metro-tanimachi--t36"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-tanimachi--t11",
+      "osaka-metro-tanimachi--t12",
+      "osaka-metro-tanimachi--t13",
+      "osaka-metro-tanimachi--t14",
+      "osaka-metro-tanimachi--t15",
+      "osaka-metro-tanimachi--t16",
+      "osaka-metro-tanimachi--t17",
+      "osaka-metro-tanimachi--t18",
+      "osaka-metro-tanimachi--t19",
+      "osaka-metro-tanimachi--t20",
+      "osaka-metro-tanimachi--t21",
+      "osaka-metro-tanimachi--t22",
+      "osaka-metro-tanimachi--t23",
+      "osaka-metro-tanimachi--t24",
+      "osaka-metro-tanimachi--t25",
+      "osaka-metro-tanimachi--t26",
+      "osaka-metro-tanimachi--t27",
+      "osaka-metro-tanimachi--t28",
+      "osaka-metro-tanimachi--t29",
+      "osaka-metro-tanimachi--t30",
+      "osaka-metro-tanimachi--t31",
+      "osaka-metro-tanimachi--t32",
+      "osaka-metro-tanimachi--t33",
+      "osaka-metro-tanimachi--t34",
+      "osaka-metro-tanimachi--t35",
+      "osaka-metro-tanimachi--t36"
+    ],
+    "frequency_bands": {
+      "peak_am": 12,
+      "midday": 8,
+      "peak_pm": 12,
+      "evening": 6,
+      "weekend": 8
+    }
+  },
+  {
+    "id": "osaka-metro-yotsubashi--local",
+    "line_id": "osaka-metro-yotsubashi",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-yotsubashi",
+        "from_stop": "osaka-metro-yotsubashi--y11",
+        "to_stop": "osaka-metro-yotsubashi--y21"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-yotsubashi--y11",
+      "osaka-metro-yotsubashi--y12",
+      "osaka-metro-yotsubashi--y13",
+      "osaka-metro-yotsubashi--y14",
+      "osaka-metro-yotsubashi--y15",
+      "osaka-metro-yotsubashi--y16",
+      "osaka-metro-yotsubashi--y17",
+      "osaka-metro-yotsubashi--y18",
+      "osaka-metro-yotsubashi--y19",
+      "osaka-metro-yotsubashi--y20",
+      "osaka-metro-yotsubashi--y21"
+    ],
+    "frequency_bands": {
+      "peak_am": 12,
+      "midday": 8,
+      "peak_pm": 12,
+      "evening": 6,
+      "weekend": 8
+    }
+  },
+  {
+    "id": "osaka-metro-chuo--local",
+    "line_id": "osaka-metro-chuo",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-chuo",
+        "from_stop": "osaka-metro-chuo--c10",
+        "to_stop": "osaka-metro-chuo--c23"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-chuo--c10",
+      "osaka-metro-chuo--c11",
+      "osaka-metro-chuo--c12",
+      "osaka-metro-chuo--c13",
+      "osaka-metro-chuo--c14",
+      "osaka-metro-chuo--c15",
+      "osaka-metro-chuo--c16",
+      "osaka-metro-chuo--c17",
+      "osaka-metro-chuo--c18",
+      "osaka-metro-chuo--c19",
+      "osaka-metro-chuo--c20",
+      "osaka-metro-chuo--c21",
+      "osaka-metro-chuo--c22",
+      "osaka-metro-chuo--c23"
+    ],
+    "frequency_bands": {
+      "peak_am": 12,
+      "midday": 8,
+      "peak_pm": 12,
+      "evening": 6,
+      "weekend": 8
+    }
+  },
+  {
+    "id": "osaka-metro-sennichimae--local",
+    "line_id": "osaka-metro-sennichimae",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-sennichimae",
+        "from_stop": "osaka-metro-sennichimae--s11",
+        "to_stop": "osaka-metro-sennichimae--s24"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-sennichimae--s11",
+      "osaka-metro-sennichimae--s12",
+      "osaka-metro-sennichimae--s13",
+      "osaka-metro-sennichimae--s14",
+      "osaka-metro-sennichimae--s15",
+      "osaka-metro-sennichimae--s16",
+      "osaka-metro-sennichimae--s17",
+      "osaka-metro-sennichimae--s18",
+      "osaka-metro-sennichimae--s19",
+      "osaka-metro-sennichimae--s20",
+      "osaka-metro-sennichimae--s21",
+      "osaka-metro-sennichimae--s22",
+      "osaka-metro-sennichimae--s23",
+      "osaka-metro-sennichimae--s24"
+    ],
+    "frequency_bands": {
+      "peak_am": 12,
+      "midday": 8,
+      "peak_pm": 12,
+      "evening": 6,
+      "weekend": 8
+    }
+  },
+  {
+    "id": "osaka-metro-sakaisuji--local",
+    "line_id": "osaka-metro-sakaisuji",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-sakaisuji",
+        "from_stop": "osaka-metro-sakaisuji--k11",
+        "to_stop": "osaka-metro-sakaisuji--k20"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-sakaisuji--k11",
+      "osaka-metro-sakaisuji--k12",
+      "osaka-metro-sakaisuji--k13",
+      "osaka-metro-sakaisuji--k14",
+      "osaka-metro-sakaisuji--k15",
+      "osaka-metro-sakaisuji--k16",
+      "osaka-metro-sakaisuji--k17",
+      "osaka-metro-sakaisuji--k18",
+      "osaka-metro-sakaisuji--k19",
+      "osaka-metro-sakaisuji--k20"
+    ],
+    "frequency_bands": {
+      "peak_am": 12,
+      "midday": 8,
+      "peak_pm": 12,
+      "evening": 6,
+      "weekend": 8
+    }
+  },
+  {
+    "id": "osaka-metro-nagahori--local",
+    "line_id": "osaka-metro-nagahori",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-nagahori",
+        "from_stop": "osaka-metro-nagahori--n11",
+        "to_stop": "osaka-metro-nagahori--n27"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-nagahori--n11",
+      "osaka-metro-nagahori--n12",
+      "osaka-metro-nagahori--n13",
+      "osaka-metro-nagahori--n14",
+      "osaka-metro-nagahori--n15",
+      "osaka-metro-nagahori--n16",
+      "osaka-metro-nagahori--n17",
+      "osaka-metro-nagahori--n18",
+      "osaka-metro-nagahori--n19",
+      "osaka-metro-nagahori--n20",
+      "osaka-metro-nagahori--n21",
+      "osaka-metro-nagahori--n22",
+      "osaka-metro-nagahori--n23",
+      "osaka-metro-nagahori--n24",
+      "osaka-metro-nagahori--n25",
+      "osaka-metro-nagahori--n26",
+      "osaka-metro-nagahori--n27"
+    ],
+    "frequency_bands": {
+      "peak_am": 12,
+      "midday": 8,
+      "peak_pm": 12,
+      "evening": 6,
+      "weekend": 8
+    }
+  },
+  {
+    "id": "osaka-metro-imazatosuji--local",
+    "line_id": "osaka-metro-imazatosuji",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-imazatosuji",
+        "from_stop": "osaka-metro-imazatosuji--i11",
+        "to_stop": "osaka-metro-imazatosuji--i20"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-imazatosuji--i11",
+      "osaka-metro-imazatosuji--i12",
+      "osaka-metro-imazatosuji--i13",
+      "osaka-metro-imazatosuji--i14",
+      "osaka-metro-imazatosuji--i15",
+      "osaka-metro-imazatosuji--i16",
+      "osaka-metro-imazatosuji--i17",
+      "osaka-metro-imazatosuji--i18",
+      "osaka-metro-imazatosuji--i19",
+      "osaka-metro-imazatosuji--i20"
+    ],
+    "frequency_bands": {
+      "peak_am": 12,
+      "midday": 8,
+      "peak_pm": 12,
+      "evening": 6,
+      "weekend": 8
+    }
+  },
+  {
+    "id": "osaka-metro-nanko--local",
+    "line_id": "osaka-metro-nanko",
+    "display_name_en": "Local",
+    "display_name_ja": "普通",
+    "service_type": "local",
+    "supplement": "none",
+    "notes": "All-stops service.",
+    "line_path": [
+      {
+        "track_id": "osaka-metro-nanko",
+        "from_stop": "osaka-metro-nanko--p09",
+        "to_stop": "osaka-metro-nanko--p18"
+      }
+    ],
+    "stop_pattern": [
+      "osaka-metro-nanko--p09",
+      "osaka-metro-nanko--p10",
+      "osaka-metro-nanko--p11",
+      "osaka-metro-nanko--p12",
+      "osaka-metro-nanko--p13",
+      "osaka-metro-nanko--p14",
+      "osaka-metro-nanko--p15",
+      "osaka-metro-nanko--p16",
+      "osaka-metro-nanko--p17",
+      "osaka-metro-nanko--p18"
+    ],
+    "frequency_bands": {
+      "peak_am": 8,
+      "midday": 6,
+      "peak_pm": 8,
+      "evening": 5,
+      "weekend": 6
+    }
+  }
+]
